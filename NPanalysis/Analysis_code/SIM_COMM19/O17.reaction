@@ -1,0 +1,32 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%% Reaction file for 2H(16O,17O)1H reaction %%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Beam
+ Particle= 16O 
+ Energy= 96 MeV
+ SigmaEnergy= 1 MeV
+ SigmaThetaX= 0 deg
+ SigmaPhiY= 0 deg
+ SigmaX= 2 mm
+ SigmaY= 2 mm
+ MeanThetaX= 0 deg
+ MeanPhiY= 0 deg
+ MeanX= 0 mm
+ MeanY= 0 mm
+ %EnergyProfilePath=
+ %XThetaXProfilePath=
+ %YPhiYProfilePath=
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+TwoBodyReaction
+ Beam= 16O
+ Target= 2H
+ Light= 1H
+ Heavy= 17O
+ ExcitationEnergy3= 0.0 MeV
+ ExcitationEnergy4= 0.0 MeV
+ CrossSectionPath= flat.txt CS17O
+ ShootLight= 1
+ ShootHeavy= 1
+  
+
