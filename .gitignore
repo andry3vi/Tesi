@@ -1,7 +1,7 @@
 
 ## user defined data folder
-Data/
-results/
+**/Data
+**/results
 
 ## Binary directory
 bin/
