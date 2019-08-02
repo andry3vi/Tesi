@@ -8,6 +8,10 @@ bin/
 
 ## user defined temporary files
 *_tmp*
+*.pcm
+*.d
+*.so
+*.swp
 
 ## Core latex/pdflatex auxiliary files:
 *.aux
