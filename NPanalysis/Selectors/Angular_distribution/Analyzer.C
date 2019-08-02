@@ -39,8 +39,8 @@ void Analyzer::Begin(TTree * /*tree*/)
    // When running with PROOF Begin() is only called on the client.
    // The tree argument is deprecated (on PROOF 0 is passed).
 
-   enable_cut = true;//true; //apply graph. cut on EdE MUST2 protons;
-   enable_ExGate = true;//true; //apply gate on g.s. and 1st
+   enable_cut = true; //apply graph. cut on EdE MUST2 protons;
+   enable_ExGate = true; //apply gate on g.s. and 1st
 
    //--------Check Boundaries--------//
    EdE_M2 = new TH2D("EdE","EdE",1000,0,40,1000,0,40);
