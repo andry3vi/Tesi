@@ -18,9 +18,10 @@
 
 // Headers needed by this particular selector
 #include "TMust2Data.h"
-
 #include "TMugastData.h"
 
+#include <TH2D.h>
+#include <vector>
 
 class Analyzer : public TSelector {
 public :
@@ -30,7 +31,16 @@ public :
    // Readers to access the data (delete the ones you do not need).
    TTreeReaderValue<TMust2Data> MUST2 = {fReader, "MUST2"};
    TTreeReaderValue<TMugastData> Mugast = {fReader, "Mugast"};
-
+   
+   //------------Strip Matrix----------//
+   std::vector<int> Mugast_index;
+   std::vector<int> MUST_index;
+   
+   std::vector<TH2D*> MugastDetector_X;
+   std::vector<TH2D*> MUSTDetector_X;
+   std::vector<TH2D*> MugastDetector_Y;
+   std::vector<TH2D*> MUSTDetector_Y;
+   //----------------------------------//
 
    Analyzer(TTree * /*tree*/ =0) { }
    virtual ~Analyzer() { }
@@ -47,7 +57,8 @@ public :
    virtual TList  *GetOutputList() const { return fOutput; }
    virtual void    SlaveTerminate();
    virtual void    Terminate();
-
+   void printProgBar( float);
+   
    ClassDef(Analyzer,0);
 
 };

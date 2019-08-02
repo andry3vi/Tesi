@@ -28,6 +28,7 @@
 #include "Analyzer.h"
 #include <TH2.h>
 #include <TStyle.h>
+
 #include "colormod.h"
 #include <iomanip>
 #include <iostream>
@@ -302,6 +303,5 @@ void Analyzer::printProgBar( float percent){
   std::cout<< std::setprecision(2);
 
   std::cout<< green << percent << def << "%"<< std::flush;
-  
 
 }
