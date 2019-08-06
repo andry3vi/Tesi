@@ -63,6 +63,7 @@ public :
    TH2F * impactM2;
 
    TH2D * ELabThetaL;
+   TH2D * ELabThetaLSelected;
    TH1D * ExDist;
    
    TH1F * ThetaLDist_gs;
