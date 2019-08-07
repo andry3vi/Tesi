@@ -2,6 +2,7 @@
 ## user defined data folder
 **/Data
 **/results
+**/ELOG
 
 ## Binary directory
 bin/

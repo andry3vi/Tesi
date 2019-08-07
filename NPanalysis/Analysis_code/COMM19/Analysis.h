@@ -53,6 +53,7 @@ class Analysis: public NPL::VAnalysis{
   std::vector<double> Ex;
   std::vector<double> ELab;
   std::vector<double> ThetaLab;
+  std::vector<double> PhiLab
   std::vector<double> ThetaCM;
   std::vector<double> X ;
   std::vector<double> Y ;
@@ -94,21 +95,28 @@ class Analysis: public NPL::VAnalysis{
   double ThetaGDSurface ;
 
   //Agata Branches
-  int nbHits;
   int nbTrack;  
+
   float *trackE= new float(100);
   float *trackX1= new float(100);
   float *trackY1= new float(100);
   float *trackZ1= new float(100);
   float *trackT= new float(100);
   int *trackCrystalID = new int(100);
-  int nbCores;
-  int *coreId= new int(100);
-  ULong64_t *coreTS= new ULong64_t(100);
-  float *coreE0= new float(100);
-  ULong64_t VTS; 
 
+  ULong64_t LTS; 
+  
+  int nbAdd;
+  unsigned long long int TSHit;
+  float AddE[100] ;
+  float AddX[100] ;
+  float AddY[100] ;
+  float AddZ[100] ;
+
+  std::vector<double>   AddEDC;
+  std::vector<double> TrackEDC;
   double dTheta;
+
   // Branches and detectors
   TMust2Physics* M2;
   TMugastPhysics* MG;
