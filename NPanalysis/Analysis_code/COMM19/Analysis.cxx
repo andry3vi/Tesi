@@ -57,10 +57,12 @@ void Analysis::Init() {
 	// energy losses
 	string light=NPL::ChangeNameToG4Standard(myReaction.GetNucleus3()->GetName());
 	string beam=NPL::ChangeNameToG4Standard(myReaction.GetNucleus1()->GetName());
+	string heavy=NPL::ChangeNameToG4Standard(myReaction.GetNucleus4()->GetName());
 	LightTarget = NPL::EnergyLoss(light+"_"+TargetMaterial+".G4table","G4Table",100 );
 	LightAl = NPL::EnergyLoss(light+"_Al.G4table","G4Table",100);
 	LightSi = NPL::EnergyLoss(light+"_Si.G4table","G4Table",100);
 	BeamCD2 = NPL::EnergyLoss(beam+"_"+TargetMaterial+".G4table","G4Table",100);
+	HeavyCD2 = NPL::EnergyLoss(heavy+"_"+TargetMaterial+".G4table","G4Table",100);
 
 	if(WindowsThickness){
 		BeamWindow= new NPL::EnergyLoss(beam+"_"+WindowsMaterial+".G4table","G4Table",100); 
@@ -118,6 +120,7 @@ void Analysis::TreatEvent() {
 		ThetaNormalTarget = 0;
 		TVector3 HitDirection = M2 -> GetPositionOfInteraction(countMust2) - BeamImpact ;
 		ThetaLab.push_back( HitDirection.Angle( BeamDirection ));
+                PhiLab.push_back(HitDirection.Phi());
 
 		X.push_back( M2 -> GetPositionOfInteraction(countMust2).X());
 		Y.push_back( M2 -> GetPositionOfInteraction(countMust2).Y());
@@ -168,6 +171,7 @@ void Analysis::TreatEvent() {
 		/************************************************/
 
 		ThetaLab.back()=ThetaLab.back()/deg;
+		PhiLab.back()=PhiLab.back()/deg;
 		ThetaCM.back()=ThetaCM.back()/deg;
 	}//end loop MUST2
 
@@ -184,6 +188,8 @@ void Analysis::TreatEvent() {
 		TVector3 HitDirection = MG -> GetPositionOfInteraction(countMugast) - BeamImpact ;
 
 		ThetaLab.push_back( HitDirection.Angle( BeamDirection ));
+                PhiLab.push_back(HitDirection.Phi());
+		
 		X.push_back(  MG -> GetPositionOfInteraction(countMugast).X());
 		Y.push_back(  MG -> GetPositionOfInteraction(countMugast).Y());
 		Z.push_back(  MG -> GetPositionOfInteraction(countMugast).Z());
@@ -210,7 +216,15 @@ void Analysis::TreatEvent() {
 		/************************************************/
 
 		ThetaLab.back()=ThetaLab.back()/deg;
-		ThetaCM.back()=ThetaCM.back()/deg;
+		PhiLab.back()=PhiLab.back()/deg;
+		ThetaCM.back()=ThetaCM.back()/deg;i
+
+                TLorentzVector Heavyimpulse = myReaction.GetEnergyImpulsionLab_4();
+		ThetaHeavy.push_back(Heavyimpulse.BoostVector().Angle(TVector3(0,0,1)));
+                
+		EheavyAfterTg.push_back(HeavyCD2.Slow(Heavyimpulse.E(),TargetThickness*0.5,ThetaHeavy.back()));
+
+
 
 	}//end loop Mugast
 
@@ -218,36 +232,48 @@ void Analysis::TreatEvent() {
 	///////////////////////////////// LOOP on AGATA ////////////////////////////
 	////////////////////////////////////////////////////////////////////////////
 	// Agata by track
-	/*
-	for(int j=0; j<nbTrack; j++){ // all multiplicity
-	   TLorentzVector GammaLV;
-	   // Measured E
-	   double Egamma=trackE[j]/1000.; // From keV to MeV 
-	// Gamma detection position
-	// TrackZ1 to be corrected there is a shift of +51mm
-	TVector3 GammaHit(trackX1[j],trackY1[j],trackZ1[j]+agata_zShift); 
-	// TVector3 GammaHit(trackX1[0],trackY1[0],trackZ1[0]); 
-	// Gamma Direction 
-	TVector3 GammaDirection = GammaHit-BeamImpact;
-	GammaDirection = GammaDirection.Unit();
-	// Beta from Two body kinematic
-	//TVector3 beta = reaction.GetEnergyImpulsionLab_4().BoostVector();
-	// Beta from the Beam mid target 
-	reaction.GetKinematicLine4();
-	TVector3 beta(0,0,-reaction.GetNucleus4()->GetBeta());
-
-	double ThetaGamma = GammaDirection.Angle(BeamDirection)/deg;
-	// Construct LV in lab frame
-	GammaLV.SetPx(Egamma*GammaDirection.X());
-	GammaLV.SetPy(Egamma*GammaDirection.Y());
-	GammaLV.SetPz(Egamma*GammaDirection.Z());
-	GammaLV.SetE(Egamma);
-	// Boost back in CM
-	GammaLV.Boost(beta);
-	// Get EDC
-	EDC.push_back(GammaLV.Energy());
-	}
 	
+	//position evaluated with the lifetime of first 17O Ex state and its velocity
+        /*
+       	TVector3 GammaEmission(0,0,0.557); 
+	
+	double agata_zShift=5.1;
+	
+	for(int j=0; j<nbTrack; j++){ // all multiplicity
+		
+		TLorentzVector GammaLV;
+		
+		// Measured E
+		double Egamma=trackE[j]/1000.; // From keV to MeV 
+		
+		// Gamma detection position
+		// TrackZ1 to be corrected there is a shift of +51mm
+		TVector3 GammaHit(trackX1[j],trackY1[j],trackZ1[j]+agata_zShift); 
+		//TVector3 GammaHit(trackX1[0],trackY1[0],trackZ1[0]); 
+		
+		// Gamma Direction 
+		TVector3 GammaDirection = GammaHit-(BeamImpact+GammaEmission);
+		GammaDirection = GammaDirection.Unit();
+		
+		// Beta from Two body kinematic
+		TVector3 beta = myReaction.GetEnergyImpulsionLab_4().BoostVector();
+		
+		// Beta from the Beam mid target 
+		//reaction.GetKinematicLine4();
+		//TVector3 beta(0,0,-reaction.GetNucleus4()->GetBeta());
+
+		double ThetaGamma = GammaDirection.Angle(BeamDirection)/deg;
+		// Construct LV in lab frame
+		GammaLV.SetPx(Egamma*GammaDirection.X());
+		GammaLV.SetPy(Egamma*GammaDirection.Y());
+		GammaLV.SetPz(Egamma*GammaDirection.Z());
+		GammaLV.SetE(Egamma);
+		// Boost back in CM
+		GammaLV.Boost(beta);
+		// Get EDC
+		EDC.push_back(GammaLV.Energy());
+	}
+
 
 	// Agata add back is not always multiplicity 1 ?? NO, not necessarily!
 	if(nbAdd==1){
@@ -279,7 +305,7 @@ void Analysis::TreatEvent() {
 		// Get EDC
 		AddBack_EDC = GammaLV.Energy();
 	}
-*/
+	*/
 
 }
 
@@ -300,9 +326,11 @@ void Analysis::InitOutputBranch() {
 	RootOutput::getInstance()->GetTree()->Branch("dE",&dE);
 	RootOutput::getInstance()->GetTree()->Branch("nbParticleM2",&nbParticleM2,"nbParticleM2/I");
 	RootOutput::getInstance()->GetTree()->Branch("nbParticleMG",&nbParticleMG,"nbParticleMG/I");
+	RootOutput::getInstance()->GetTree()->Branch("ThetaHeavy",&ThetaHeavy);
+	RootOutput::getInstance()->GetTree()->Branch("EheavyAfterTg",&EheavyAfterTg);
 
 	RootOutput::getInstance()->GetTree()->Branch("Run",&Run,"Run/I");
-        RootOutput::getInstance()->GetTree()->Branch("LTS",&LTS,"LTS/l");
+	RootOutput::getInstance()->GetTree()->Branch("LTS",&LTS,"LTS/l");
 
 	// Agata
 	// Time stamp of the agata trigger
@@ -332,6 +360,7 @@ void Analysis::InitOutputBranch() {
 void Analysis::InitInputBranch(){
 	//Agata
 	RootInput::getInstance()->GetChain()->SetBranchAddress("LTS",&LTS);
+	RootInput::getInstance()->GetChain()->SetBranchAddress("TStrack",&TStrack);
 	RootInput::getInstance()->GetChain()->SetBranchAddress("nbTrack",&nbTrack);
 	RootInput::getInstance()->GetChain()->SetBranchAddress("trackE",trackE);
 	RootInput::getInstance()->GetChain()->SetBranchAddress("trackX1",trackX1);
@@ -358,9 +387,8 @@ void Analysis::ReInitValue(){
 	Z.clear();
 	E.clear();
 	dE.clear();
-	AddEDC.clear();
-	TrackEDC.clear();
-
+        ThetaHeavy.clear();
+        EheavyAfterTg.clear();
 }
 
 

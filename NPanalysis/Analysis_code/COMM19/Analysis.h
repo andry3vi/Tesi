@@ -58,6 +58,8 @@ class Analysis: public NPL::VAnalysis{
   std::vector<double> X ;
   std::vector<double> Y ;
   std::vector<double> Z ;
+  std::vector<double> ThetaHeavy ;
+  std::vector<double> EheavyAfterTg ;
   
   std::vector<double> E;
   std::vector<double> dE;
@@ -71,6 +73,7 @@ class Analysis: public NPL::VAnalysis{
   NPL::EnergyLoss LightAl;
   NPL::EnergyLoss LightSi;
   NPL::EnergyLoss BeamCD2;
+  NPL::EnergyLoss HeavyCD2;
   NPL::EnergyLoss* BeamWindow;
   NPL::EnergyLoss* LightWindow;
 
@@ -103,6 +106,7 @@ class Analysis: public NPL::VAnalysis{
   float *trackZ1= new float(100);
   float *trackT= new float(100);
   int *trackCrystalID = new int(100);
+  unsigned long long int TStrack;
 
   ULong64_t LTS; 
   
@@ -113,8 +117,6 @@ class Analysis: public NPL::VAnalysis{
   float AddY[100] ;
   float AddZ[100] ;
 
-  std::vector<double>   AddEDC;
-  std::vector<double> TrackEDC;
   double dTheta;
 
   // Branches and detectors
