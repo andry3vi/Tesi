@@ -75,7 +75,7 @@ void Analysis::Init() {
 	}
 
 	//set beam energy at mid target
-	FinalBeamEnergy = BeamCD2.Slow(OriginalBeamEnergy,TargetThickness*0.5);
+	FinalBeamEnergy = BeamCD2.Slow(OriginalBeamEnergy,TargetThickness*0.5,0);
 	myReaction.SetBeamEnergy(FinalBeamEnergy);
 
 	// initialize various parameters
@@ -217,12 +217,25 @@ void Analysis::TreatEvent() {
 
 		ThetaLab.back()=ThetaLab.back()/deg;
 		PhiLab.back()=PhiLab.back()/deg;
-		ThetaCM.back()=ThetaCM.back()/deg;i
-
-                TLorentzVector Heavyimpulse = myReaction.GetEnergyImpulsionLab_4();
-		ThetaHeavy.push_back(Heavyimpulse.BoostVector().Angle(TVector3(0,0,1)));
+		ThetaCM.back()=ThetaCM.back()/deg;
                 
-		EheavyAfterTg.push_back(HeavyCD2.Slow(Heavyimpulse.E(),TargetThickness*0.5,ThetaHeavy.back()));
+                double thetah_tmp;
+                double Eh_tmp;
+
+                double thetal_tmp;
+                double El_tmp;
+                
+                myReaction.SetNuclei3(ELab.back(),ThetaLab.back()*deg); 
+                myReaction.KineRelativistic(thetal_tmp, El_tmp,thetah_tmp, Eh_tmp);
+                
+                ThetaHeavy.push_back(thetah_tmp/deg);
+		EheavyAfterTg.push_back(HeavyCD2.Slow(Eh_tmp,TargetThickness*0.5,thetah_tmp));
+       
+                
+                //TLorentzVector Heavyimpulse = myReaction.GetEnergyImpulsionLab_4();
+		//ThetaHeavy.push_back(Heavyimpulse.BoostVector().Angle(TVector3(0,0,1)));
+                //ThetaHeavy.back()=ThetaHeavy.back()/deg;
+		//EheavyAfterTg.push_back(HeavyCD2.Slow(Heavyimpulse.E(),TargetThickness*0.5,ThetaHeavy.back()));
 
 
 

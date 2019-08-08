@@ -53,7 +53,7 @@ class Analysis: public NPL::VAnalysis{
   std::vector<double> Ex;
   std::vector<double> ELab;
   std::vector<double> ThetaLab;
-  std::vector<double> PhiLab
+  std::vector<double> PhiLab;
   std::vector<double> ThetaCM;
   std::vector<double> X ;
   std::vector<double> Y ;
