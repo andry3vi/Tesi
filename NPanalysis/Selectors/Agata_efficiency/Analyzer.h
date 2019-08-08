@@ -1,4 +1,4 @@
-//////////////////////////////////////////////////////////
+	//////////////////////////////////////////////////////////
 // This class has been automatically generated on
 // Thu Aug  8 07:22:10 2019 by ROOT version 6.14/04
 // from TTree PhysicsTree/Data created / analysed with the NPTool package
@@ -64,6 +64,17 @@ public :
    TTreeReaderArray<Float_t> AddY = {fReader, "AddY"};
    TTreeReaderArray<Float_t> AddZ = {fReader, "AddZ"};
 
+   //Desired plot//
+   TH1F * nbPmultM2;
+   TH1F * nbPmultMG;
+   TH1F * nbPmultHv;
+   TH1F * nbPmultAg;
+   TH1D * Edopp;
+   TH1D * Eraw;
+
+
+
+   //------------//
 
    Analyzer(TTree * /*tree*/ =0) { }
    virtual ~Analyzer() { }
@@ -80,6 +91,7 @@ public :
    virtual TList  *GetOutputList() const { return fOutput; }
    virtual void    SlaveTerminate();
    virtual void    Terminate();
+   void printProgBar( float);
 
    ClassDef(Analyzer,0);
 
