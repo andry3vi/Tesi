@@ -119,7 +119,8 @@ void Analysis::TreatEvent() {
 		ThetaM2Surface = 0;
 		ThetaNormalTarget = 0;
 		TVector3 HitDirection = M2 -> GetPositionOfInteraction(countMust2) - BeamImpact ;
-		ThetaLab.push_back( HitDirection.Angle( BeamDirection ));
+		//ThetaLab.push_back( HitDirection.Angle( BeamDirection ));
+		ThetaLab.push_back(HitDirection.Theta());
                 PhiLab.push_back(HitDirection.Phi());
 
 		X.push_back( M2 -> GetPositionOfInteraction(countMust2).X());
@@ -186,8 +187,9 @@ void Analysis::TreatEvent() {
 		ThetaMGSurface = 0;
 		ThetaNormalTarget = 0;
 		TVector3 HitDirection = MG -> GetPositionOfInteraction(countMugast) - BeamImpact ;
-
-		ThetaLab.push_back( HitDirection.Angle( BeamDirection ));
+                
+		//ThetaLab.push_back( HitDirection.Angle( BeamDirection ));
+		ThetaLab.push_back( HitDirection.Theta());
                 PhiLab.push_back(HitDirection.Phi());
 		
 		X.push_back(  MG -> GetPositionOfInteraction(countMugast).X());
@@ -330,7 +332,7 @@ void Analysis::InitOutputBranch() {
 	RootOutput::getInstance()->GetTree()->Branch("Ex",&Ex);
 	RootOutput::getInstance()->GetTree()->Branch("ELab",&ELab);
 	RootOutput::getInstance()->GetTree()->Branch("ThetaLab",&ThetaLab);
-	RootOutput::getInstance()->GetTree()->Branch("PhiLab",&ThetaLab);
+	RootOutput::getInstance()->GetTree()->Branch("PhiLab",&PhiLab);
 	RootOutput::getInstance()->GetTree()->Branch("ThetaCM",&ThetaCM);
 	RootOutput::getInstance()->GetTree()->Branch("X",&X);
 	RootOutput::getInstance()->GetTree()->Branch("Y",&Y);
