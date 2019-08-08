@@ -233,13 +233,6 @@ void Analysis::TreatEvent() {
                 ThetaHeavy.push_back(thetah_tmp/deg);
 		EheavyAfterTg.push_back(HeavyCD2.Slow(Eh_tmp,TargetThickness*0.5,thetah_tmp));
        
-                
-                //TLorentzVector Heavyimpulse = myReaction.GetEnergyImpulsionLab_4();
-		//ThetaHeavy.push_back(Heavyimpulse.BoostVector().Angle(TVector3(0,0,1)));
-                //ThetaHeavy.back()=ThetaHeavy.back()/deg;
-		//EheavyAfterTg.push_back(HeavyCD2.Slow(Heavyimpulse.E(),TargetThickness*0.5,ThetaHeavy.back()));
-
-
 
 	}//end loop Mugast
 
