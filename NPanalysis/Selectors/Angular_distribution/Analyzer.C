@@ -57,7 +57,7 @@ void Analyzer::Begin(TTree * /*tree*/)
 	ELabThetaL = new TH2D("ELabThLab","ELabThLab",300,0,180,3000,-5,40);
 	ELabThetaL->GetXaxis()->SetTitle("#theta_{LAB} [deg]");
 	ELabThetaL->GetYaxis()->SetTitle("LAB Energy [MeV]");
-	
+
 	ELabThetaLSelected = new TH2D("ELabThLabSelected","ELabThLabSelected",300,0,180,3000,-5,40);
 	ELabThetaLSelected->GetXaxis()->SetTitle("#theta_{LAB} [deg]");
 	ELabThetaLSelected->GetYaxis()->SetTitle("LAB Energy [MeV]");
@@ -99,27 +99,40 @@ void Analyzer::Begin(TTree * /*tree*/)
 		gs_Ex = new double[2]; 
 		fs_Ex = new double[2];
 
-		double hwhmgs = 0.209996; //MeV
-		double hwhmfs = 0.345920; //MeV
 
-		          gs_Ex[0] = 0.07538 - hwhmgs;
-		          gs_Ex[1] = 0.07538 + hwhmgs;
-		
-		          fs_Ex[0] = 0.89807 - hwhmfs;
-		          fs_Ex[1] = 0.89807 + hwhmfs;
-		//
-		//          gs_Ex[0] = 0.13;
-		//          gs_Ex[1] = 0.3;
-		//
-		//          fs_Ex[0] = 0.67;
-		//          fs_Ex[1] = 1.1;
-		//
-		//          gs_Ex[0] = 6;
-		//          gs_Ex[1] = 8;
-		//
-		//          fs_Ex[0] = 6;
-		//          fs_Ex[1] = 8;
-		//
+//----------------------RUN 256+257-------------------------//  
+		double hwhmgs = 0.29119804; //MeV
+		double hwhmfs = 0.36914251; //MeV
+
+		gs_Ex[0] = 0.0424022 - hwhmgs;
+		gs_Ex[1] = 0.0424022 + hwhmgs;
+
+		fs_Ex[0] = 0.777442 - hwhmfs;
+		fs_Ex[1] = 0.777442 + hwhmfs;
+//----------------------RUN 256+257-------------------------//  
+////----------------------RUN 256-------------------------//  
+//		double hwhmgs = 0.209996; //MeV
+//		double hwhmfs = 0.345920; //MeV
+//
+//		gs_Ex[0] = 0.07538 - hwhmgs;
+//		gs_Ex[1] = 0.07538 + hwhmgs;
+//
+//		fs_Ex[0] = 0.89807 - hwhmfs;
+//		fs_Ex[1] = 0.89807 + hwhmfs;
+////----------------------RUN 256-------------------------//  
+//
+//              gs_Ex[0] = 0.13;
+//              gs_Ex[1] = 0.3;
+//
+//              fs_Ex[0] = 0.67;
+//              fs_Ex[1] = 1.1;
+//
+//              gs_Ex[0] = 6;
+//              gs_Ex[1] = 8;
+//
+//              fs_Ex[0] = 6;
+//              fs_Ex[1] = 8;
+//
 
 
 	}
@@ -195,7 +208,7 @@ Bool_t Analyzer::Process(Long64_t entry)
 	//--------------MUST2---------------//
 	for(size_t i=0; i<(*nbParticleM2); i++){
 		if(enable_cut && enable_ExGate){
-	                ELabThetaL->Fill(ThetaLab[i],ELab[i]);
+			ELabThetaL->Fill(ThetaLab[i],ELab[i]);
 			//GS check
 			if(CutG_p->IsInside(E[i],dE[i]) && Ex[i]>gs_Ex[0] && Ex[i]<gs_Ex[1]){
 				ELabThetaLSelected->Fill(ThetaLab[i],ELab[i]);
@@ -281,9 +294,9 @@ void Analyzer::Terminate()
 	C2->cd(1);
 	ELabThetaL->SetStats(kFALSE);
 	ELabThetaL->Draw("col");
-        //gStyle->SetPalette(53,0);
+	//gStyle->SetPalette(53,0);
 	if(enable_cut){
-        	ELabThetaLSelected->SetStats(kFALSE);
+		ELabThetaLSelected->SetStats(kFALSE);
 		ELabThetaLSelected->SetMarkerColor(2);
 		ELabThetaLSelected->SetMarkerStyle(3);
 		ELabThetaLSelected->SetMarkerSize(0.2);

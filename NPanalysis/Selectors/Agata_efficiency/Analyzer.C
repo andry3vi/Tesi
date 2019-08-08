@@ -92,37 +92,40 @@ Bool_t Analyzer::Process(Long64_t entry)
 	nbPmultHv->Fill(ThetaHeavy.GetSize());
 	nbPmultAg->Fill(*nbTrack);
 	//--------------------//
-        double Agata_zShift = 0;
+        double Agata_zShift = 51;//51;
         //Doppler correcting and selection of mult. one for agata and mugast//	
 	if(*nbParticleMG == 1 && *nbTrack == 1){
                 
 		double Mass = 15830.5; //17O MeV
-
-		double ImpulsionLab    = sqrt(EheavyAfterTg[0]*EheavyAfterTg[0] + 2*EheavyAfterTg[0]*Mass);
-		double ImpulsionLabX   = ImpulsionLab*sin(ThetaHeavy[0]*M_PI/180.0)*cos((PhiLab[0]-180.0)*M_PI/180.0);
-  		double ImpulsionLabY   = ImpulsionLab*sin(ThetaHeavy[0]*M_PI/180.0)*sin((PhiLab[0]-180.0)*M_PI/180.0);
-   		double ImpulsionLabZ   = ImpulsionLab*cos(ThetaHeavy[0]*M_PI/180.0);
-	       
-		TLorentzVector HeavyImpulse(TVector3(ImpulsionLabX, ImpulsionLabY, ImpulsionLabZ),Mass + EheavyAfterTg[0]);
-		
-		TVector3 beta = HeavyImpulse.BoostVector();
-
+		//double Mass = 15000.5; //17O MeV
+//
+//		double ImpulsionLab    = sqrt(EheavyAfterTg[0]*EheavyAfterTg[0] + 2*EheavyAfterTg[0]*Mass);
+//		double ImpulsionLabX   = ImpulsionLab*sin(ThetaHeavy[0]*M_PI/180.0)*cos((PhiLab[0]-180.0)*M_PI/180.0);
+//  		double ImpulsionLabY   = ImpulsionLab*sin(ThetaHeavy[0]*M_PI/180.0)*sin((PhiLab[0]-180.0)*M_PI/180.0);
+//   		double ImpulsionLabZ   = ImpulsionLab*cos(ThetaHeavy[0]*M_PI/180.0);
+//	       
+//		TLorentzVector HeavyImpulse(TVector3(ImpulsionLabX, ImpulsionLabY, ImpulsionLabZ),Mass + EheavyAfterTg[0]);
+		double Beta = TMath::Sqrt(EheavyAfterTg[0]*EheavyAfterTg[0]+2*EheavyAfterTg[0]*Mass)/(EheavyAfterTg[0]+Mass);	
 	        	
+		TVector3 BetaVector(-1.0*Beta*sin(ThetaHeavy[0]*M_PI/180.0)*cos(PhiLab[0]*M_PI/180.0),-1.0*Beta*sin(ThetaHeavy[0]*M_PI/180.0)*sin(PhiLab[0]*M_PI/180.0),Beta*cos(ThetaHeavy[0]*M_PI/180.0));
+		//TVector3 BetaVector(0,0,Beta);
+                
 		double Egamma = trackE[0]/1000; //MeV converted
 		
 		TVector3 HitPosition(trackX1[0],trackY1[0],trackZ1[0]+Agata_zShift);
-		TVector3 EmissionPosition(0,0,0);
+		TVector3 EmissionPosition(0,0,5.67);
 		
 		TVector3 GammaDirection = HitPosition - EmissionPosition;
+		TVector3 GammaVersor = GammaDirection.Unit();
 		
 		TLorentzVector Gamma;
-                Gamma.SetPx(Egamma*GammaDirection.X());
-                Gamma.SetPy(Egamma*GammaDirection.Y());
-                Gamma.SetPz(Egamma*GammaDirection.Z());
+                Gamma.SetPx(Egamma*GammaVersor.X());
+                Gamma.SetPy(Egamma*GammaVersor.Y());
+                Gamma.SetPz(Egamma*GammaVersor.Z());
 		Gamma.SetE(Egamma);
-                
-		Gamma.Boost(beta);
-
+                 
+		Gamma.Boost(BetaVector);
+	        
 		Edopp->Fill(Gamma.Energy()*1000);
                 Eraw->Fill(Egamma*1000);
 
