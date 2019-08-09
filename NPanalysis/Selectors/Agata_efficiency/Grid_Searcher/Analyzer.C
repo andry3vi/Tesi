@@ -52,8 +52,8 @@ void Analyzer::SlaveBegin(TTree * /*tree*/)
 	optree = new TTree ("BETAopt","BETAopt");
 
 	dBetaStep = 0.001;
-	dBetaRange[0] = -0.02;
-	dBetaRange[1] = 0.02;
+	dBetaRange[0] = -0.05;
+	dBetaRange[1] = 0.05;
 
 	optree->Branch("dBeta",&dBeta);
 	optree->Branch("Edopp",&Edopp);
@@ -97,6 +97,7 @@ Bool_t Analyzer::Process(Long64_t entry)
 			dBeta.push_back(i);
                         //cout<<endl<<endl<<"i---->"<<i<<endl<<endl;
 			double Beta = i+TMath::Sqrt(EheavyAfterTg[0]*EheavyAfterTg[0]+2*EheavyAfterTg[0]*Mass)/(EheavyAfterTg[0]+Mass);	
+                        //cout<<endl<<endl<<"cosTh--->"<<cos(ThetaHeavy[0]*M_PI/180.0)<<" ThetaH--->"<<ThetaHeavy[0]<<endl<<endl;
 
 			TVector3 BetaVector(-1.0*Beta*sin(ThetaHeavy[0]*M_PI/180.0)*cos(PhiLab[0]*M_PI/180.0),-1.0*Beta*sin(ThetaHeavy[0]*M_PI/180.0)*sin(PhiLab[0]*M_PI/180.0),Beta*cos(ThetaHeavy[0]*M_PI/180.0));
 
@@ -114,7 +115,7 @@ Bool_t Analyzer::Process(Long64_t entry)
 			Gamma.SetPz(Egamma*GammaVersor.Z());
 			Gamma.SetE(Egamma);
 
-			Gamma.Boost(BetaVector);
+			Gamma.Boost(-1.0*BetaVector);
 
 			Edopp.push_back(Gamma.Energy()*1000);
 		}
