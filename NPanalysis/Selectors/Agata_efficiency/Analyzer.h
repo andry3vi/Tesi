@@ -17,10 +17,14 @@
 #include <TTreeReaderArray.h>
 
 // Headers needed by this particular selector
-#include "TMust2Physics.h"
+//#include "TMust2Physics.h"
 
-#include "TMugastPhysics.h"
+//#include "TMugastPhysics.h"
 
+#include <TLorentzVector.h>
+#include <TH1D.h>
+#include <TH1F.h>
+#include <TCanvas.h>
 #include <vector>
 
 
@@ -31,38 +35,38 @@ public :
    TTree          *fChain = 0;   //!pointer to the analyzed TTree or TChain
 
    // Readers to access the data (delete the ones you do not need).
-   TTreeReaderValue<TMust2Physics> MUST2 = {fReader, "MUST2"};
-   TTreeReaderValue<TMugastPhysics> Mugast = {fReader, "Mugast"};
-   TTreeReaderArray<double> Ex = {fReader, "Ex"};
-   TTreeReaderArray<double> ELab = {fReader, "ELab"};
-   TTreeReaderArray<double> ThetaLab = {fReader, "ThetaLab"};
+//   TTreeReaderValue<TMust2Physics> MUST2 = {fReader, "MUST2"};
+//   TTreeReaderValue<TMugastPhysics> Mugast = {fReader, "Mugast"};
+//   TTreeReaderArray<double> Ex = {fReader, "Ex"};
+//   TTreeReaderArray<double> ELab = {fReader, "ELab"};
+//   TTreeReaderArray<double> ThetaLab = {fReader, "ThetaLab"};
    TTreeReaderArray<double> PhiLab = {fReader, "PhiLab"};
-   TTreeReaderArray<double> ThetaCM = {fReader, "ThetaCM"};
-   TTreeReaderArray<double> X = {fReader, "X"};
-   TTreeReaderArray<double> Y = {fReader, "Y"};
-   TTreeReaderArray<double> Z = {fReader, "Z"};
-   TTreeReaderArray<double> E = {fReader, "E"};
-   TTreeReaderArray<double> dE = {fReader, "dE"};
+//   TTreeReaderArray<double> ThetaCM = {fReader, "ThetaCM"};
+//   TTreeReaderArray<double> X = {fReader, "X"};
+//   TTreeReaderArray<double> Y = {fReader, "Y"};
+//   TTreeReaderArray<double> Z = {fReader, "Z"};
+//   TTreeReaderArray<double> E = {fReader, "E"};
+//   TTreeReaderArray<double> dE = {fReader, "dE"};
    TTreeReaderValue<Int_t> nbParticleM2 = {fReader, "nbParticleM2"};
    TTreeReaderValue<Int_t> nbParticleMG = {fReader, "nbParticleMG"};
    TTreeReaderArray<double> ThetaHeavy = {fReader, "ThetaHeavy"};
    TTreeReaderArray<double> EheavyAfterTg = {fReader, "EheavyAfterTg"};
-   TTreeReaderValue<Int_t> Run = {fReader, "Run"};
-   TTreeReaderValue<ULong64_t> LTS = {fReader, "LTS"};
-   TTreeReaderValue<ULong64_t> TStrack = {fReader, "TStrack"};
+//   TTreeReaderValue<Int_t> Run = {fReader, "Run"};
+//   TTreeReaderValue<ULong64_t> LTS = {fReader, "LTS"};
+//   TTreeReaderValue<ULong64_t> TStrack = {fReader, "TStrack"};
    TTreeReaderValue<Int_t> nbTrack = {fReader, "nbTrack"};
    TTreeReaderArray<Float_t> trackE = {fReader, "trackE"};
    TTreeReaderArray<Float_t> trackX1 = {fReader, "trackX1"};
    TTreeReaderArray<Float_t> trackY1 = {fReader, "trackY1"};
    TTreeReaderArray<Float_t> trackZ1 = {fReader, "trackZ1"};
    TTreeReaderArray<Float_t> trackT = {fReader, "trackT"};
-   TTreeReaderArray<Int_t> trackCrystalID = {fReader, "trackCrystalID"};
-   TTreeReaderValue<Int_t> nbAdd = {fReader, "nbAdd"};
-   TTreeReaderValue<ULong64_t> TSHit = {fReader, "TSHit"};
-   TTreeReaderArray<Float_t> AddE = {fReader, "AddE"};
-   TTreeReaderArray<Float_t> AddX = {fReader, "AddX"};
-   TTreeReaderArray<Float_t> AddY = {fReader, "AddY"};
-   TTreeReaderArray<Float_t> AddZ = {fReader, "AddZ"};
+//   TTreeReaderArray<Int_t> trackCrystalID = {fReader, "trackCrystalID"};
+//   TTreeReaderValue<Int_t> nbAdd = {fReader, "nbAdd"};
+//   TTreeReaderValue<ULong64_t> TSHit = {fReader, "TSHit"};
+//   TTreeReaderArray<Float_t> AddE = {fReader, "AddE"};
+//   TTreeReaderArray<Float_t> AddX = {fReader, "AddX"};
+//   TTreeReaderArray<Float_t> AddY = {fReader, "AddY"};
+//   TTreeReaderArray<Float_t> AddZ = {fReader, "AddZ"};
 
    //Desired plot//
    TH1F * nbPmultM2;
@@ -71,7 +75,10 @@ public :
    TH1F * nbPmultAg;
    TH1D * Edopp;
    TH1D * Eraw;
-
+   
+   double Mass;
+   double SoL;
+   double LifeTime;
 
 
    //------------//
@@ -91,7 +98,7 @@ public :
    virtual TList  *GetOutputList() const { return fOutput; }
    virtual void    SlaveTerminate();
    virtual void    Terminate();
-   void printProgBar( float);
+//   void printProgBar( float);
 
    ClassDef(Analyzer,0);
 
