@@ -52,10 +52,12 @@ void Analyzer::SlaveBegin(TTree * /*tree*/)
 	optree = new TTree ("BETAopt","BETAopt");
 
 	dBetaStep = 0.001;
-	dBetaRange[0] = -0.05;
-	dBetaRange[1] = 0.05;
-
-	optree->Branch("dBeta",&dBeta);
+//	dBetaRange[0] = -0.05;  //dbetarange for 1
+//	dBetaRange[1] = 0.05;
+	dBetaRange[0] = -0.03;
+	dBetaRange[1] = 0.08;
+	
+        optree->Branch("dBeta",&dBeta);
 	optree->Branch("Edopp",&Edopp);
 
 	Mass = 15829.5; //17O MeV
@@ -95,16 +97,19 @@ Bool_t Analyzer::Process(Long64_t entry)
 		for(double i = dBetaRange[0]; i<= dBetaRange[1]; i+=dBetaStep){
 
 			dBeta.push_back(i);
-                        //cout<<endl<<endl<<"i---->"<<i<<endl<<endl;
-			double Beta = i+TMath::Sqrt(EheavyAfterTg[0]*EheavyAfterTg[0]+2*EheavyAfterTg[0]*Mass)/(EheavyAfterTg[0]+Mass);	
-                        //cout<<endl<<endl<<"cosTh--->"<<cos(ThetaHeavy[0]*M_PI/180.0)<<" ThetaH--->"<<ThetaHeavy[0]<<endl<<endl;
 
-			TVector3 BetaVector(-1.0*Beta*sin(ThetaHeavy[0]*M_PI/180.0)*cos(PhiLab[0]*M_PI/180.0),-1.0*Beta*sin(ThetaHeavy[0]*M_PI/180.0)*sin(PhiLab[0]*M_PI/180.0),Beta*cos(ThetaHeavy[0]*M_PI/180.0));
+			double Beta = i+TMath::Sqrt(EheavyAfterTg[0]*EheavyAfterTg[0]+2*EheavyAfterTg[0]*Mass)/(EheavyAfterTg[0]+Mass); // Beta reconstructed with kinematics
+		        //double Beta = i+0.101;	//beta averaged fixed
+
+			//TVector3 BetaVector(-1.0*Beta*sin(ThetaHeavy[0]*M_PI/180.0)*cos(PhiLab[0]*M_PI/180.0),-1.0*Beta*sin(ThetaHeavy[0]*M_PI/180.0)*sin(PhiLab[0]*M_PI/180.0),Beta*cos(ThetaHeavy[0]*M_PI/180.0)); //correction for beta direction from kinematic
+			TVector3 BetaVector(0,0,Beta);//heavy direction z axis
 
 			double Egamma = trackE[0]/1000; //MeV converted
 
 			TVector3 HitPosition(trackX1[0],trackY1[0],trackZ1[0]);
-			TVector3 EmissionPosition(BetaVector.X()*SoL*LifeTime,BetaVector.Y()*SoL*LifeTime,BetaVector.Z()*SoL*LifeTime);
+			
+			//TVector3 EmissionPosition(BetaVector.X()*SoL*LifeTime,BetaVector.Y()*SoL*LifeTime,BetaVector.Z()*SoL*LifeTime);//correction for decay position
+			TVector3 EmissionPosition(0,0,0);//decay postion at target center
 
 			TVector3 GammaDirection = HitPosition - EmissionPosition;
 			TVector3 GammaVersor = GammaDirection.Unit();

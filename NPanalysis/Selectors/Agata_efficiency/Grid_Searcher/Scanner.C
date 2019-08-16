@@ -1,4 +1,13 @@
 double * Fitter(TH1D * histo, string name){
+        // TSpectrum Peak Search
+        TSpectrum *search_peak = new TSpectrum(1);
+
+        int found_peak = search_peak->Search(histo, 2, "", 0.05);
+
+        // Retrieving X positions of the peak
+
+        Double_t peakmax    = search_peak->GetPositionX()[0];
+        Double_t peakheight = search_peak->GetPositionY()[0];
 	
 	TF1 * background = new TF1("back","expo",200,600);
 	background->SetLineColor(3);
@@ -7,9 +16,15 @@ double * Fitter(TH1D * histo, string name){
 	double p0 = background->GetParameter(0);
 	double p1 = background->GetParameter(1);
 
-        TF1 * peak = new TF1("peak","gaus",830,940);
+        
+	TF1 * peak = new TF1("peak","gaus",peakmax-25,peakmax+25);
+	
+	peak->SetParameter(2,6);
+	peak->SetParameter(0,peakheight);
+	
 	peak->SetLineColor(2);
-	histo->Fit(peak,"QLNR");
+	
+	histo->Fit(peak,"QNR");
 
 	double mean = peak->GetParameter(1);
 	double sigma = peak->GetParameter(2);
@@ -24,13 +39,16 @@ double * Fitter(TH1D * histo, string name){
 
 	histo->Fit(peaksub,"QLNR");
 
-	double RETURN [2];
-	RETURN[1] = 2.354*peaksub->GetParameter(2);
+	double RETURN [4];
 	RETURN[0] = peaksub->GetParameter(1);
+	RETURN[1] = peaksub->GetParError(1);
+	RETURN[2] = 2.354*peaksub->GetParameter(2);
+	RETURN[3] = 2.354*peaksub->GetParError(2);
 	
 	TCanvas * tmp = new TCanvas("tmp","tmp");
 	tmp->cd();
-        histo->GetXaxis()->SetRangeUser(800,1000);	
+        histo->GetXaxis()->SetRangeUser(600,1200);	
+        histo->GetYaxis()->SetRangeUser(0,40);	
 	histo->Draw();
         background->Draw("SAME");
         peak->Draw("SAME");
@@ -60,7 +78,10 @@ void Scanner(string filename){
 	
 	std::vector<double> BetaScan;
 	std::vector<double> FWHM;
+	std::vector<double> FWHM_sig;
 	std::vector<double> MEAN;
+	std::vector<double> MEAN_sig;
+	std::vector<double> RES_sig;
 
 
 
@@ -77,7 +98,7 @@ void Scanner(string filename){
 			for(size_t j=0; j<dBeta.GetSize(); j++){
 				string name = "dBeta_"+to_string(dBeta[j]);
 				BetaScan.push_back(dBeta[j]);
-				Spectra.push_back(new TH1D(name.c_str(),name.c_str(),250,200,1300));
+				Spectra.push_back(new TH1D(name.c_str(),name.c_str(),300,200,1300));
 			}
 		}
 		for(size_t j=0; j<dBeta.GetSize(); j++){
@@ -85,8 +106,9 @@ void Scanner(string filename){
 		}
                  
 	}
-        TH1D * Res = new TH1D("Resolution","Resolution",BetaScan.size(),BetaScan[0],BetaScan.back());
-        TH1D * Centroid = new TH1D("Centroid","Centroid",BetaScan.size(),BetaScan[0],BetaScan.back());
+        
+	TGraphErrors * Res = new TGraphErrors(Spectra.size());
+	TGraphErrors * Centroid = new TGraphErrors(Spectra.size());
 	
 	gROOT->SetBatch(kTRUE);
         
@@ -94,14 +116,24 @@ void Scanner(string filename){
 		string name = "dBeta_"+to_string(BetaScan[i]);
 		double * result = Fitter(Spectra[i],name);
 		MEAN.push_back(result[0]);
-		FWHM.push_back(result[1]);
-	        if(MEAN.back() != 0) Res->SetBinContent(i+1,FWHM.back()/MEAN.back());
-	        Centroid->SetBinContent(i+1,MEAN.back());
+		MEAN_sig.push_back(result[1]);
+		FWHM.push_back(result[2]);
+		FWHM_sig.push_back(result[3]);
+	        if(MEAN.back() != 0 ) Res->SetPoint(i,BetaScan[i],FWHM.back()/MEAN.back());
+		if(MEAN.back() != 0 && FWHM.back()>1){ 
+			RES_sig.push_back(FWHM.back()/MEAN.back()*sqrt((FWHM_sig.back()/FWHM.back())*(FWHM_sig.back()/FWHM.back())+(MEAN_sig.back()/MEAN.back())*(MEAN_sig.back()/MEAN.back())));
+	                Res->SetPointError(i,0,RES_sig.back());
+		}
+		else {
+			RES_sig.push_back(0);
+		}
+		Centroid->SetPoint(i,BetaScan[i],MEAN.back());
+	        Centroid->SetPointError(i,0,MEAN_sig.back());
 	}
 
         
         for(size_t i=0; i<BetaScan.size(); i++){
-                cout<<"DBeta value -> "<<BetaScan[i]<<" Centroid -> "<<MEAN[i]<<" FWHM -> "<<FWHM[i]<<" Resolution -> "<<FWHM[i]/MEAN[i]<<endl;
+                cout<<"DBeta value -> "<<BetaScan[i]<<" Centroid -> "<<MEAN[i]<<"+/-"<<MEAN_sig[i]<<"----FWHM -> "<<FWHM[i]<<"+/-"<<FWHM_sig[i]<<"----Resolution -> "<<FWHM[i]/MEAN[i]<<"+/-"<<RES_sig[i]<<endl;
 	}
         
 	gROOT->SetBatch(kFALSE);
@@ -109,8 +141,13 @@ void Scanner(string filename){
 	TCanvas * C = new TCanvas("C","C");
         C->Divide(1,2);
         C->cd(1);
+	Res->GetXaxis()->SetTitle("#beta shift [v/c]");
+	Res->GetYaxis()->SetTitle("Resolution");
 	Res->Draw();
-        C->cd(2);
+
+	C->cd(2);
+	Centroid->GetXaxis()->SetTitle("#beta shift [v/c]");
+	Centroid->GetYaxis()->SetTitle("Peak position [keV]");
         Centroid->Draw();	
 	return;
 
