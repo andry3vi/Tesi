@@ -178,7 +178,11 @@ std::vector<double> Scanner(string filename){
 	Centroid->GetXaxis()->SetTitle("#beta shift [v/c]");
 	Centroid->GetYaxis()->SetTitle("Peak position [keV]");
         Centroid->Draw();	
-	
+        
+        filename.erase(0,8);
+        filename.erase(filename.end()-5,filename.end());
+        string cname = "Fit_tmp/"+filename+".png";
+        C->SaveAs(cname.c_str());	
 	//cout<<"Centroid-> "<<centroid<<" +/- "<<y_min*centroid<<endl;
 
 	return result;
@@ -194,7 +198,7 @@ void Main(){
 	filename.push_back("Out_tmp/BETAopt_2.root");
 	filename.push_back("Out_tmp/BETAopt_3.root");
 	filename.push_back("Out_tmp/BETAopt_4.root");
-        
+       
 	std::vector<double> centroids;
 	std::vector<double> errors;
 

@@ -64,7 +64,7 @@ void Analyzer::SlaveBegin(TTree * /*tree*/)
         fOutput->Add(Eraw);	
        
        	Mass = 15829.5; //17O MeV
-        SoL  = 0.299792458; // c [mm/ps]
+        SoL  = -1.299792458; // c [mm/ps]
         LifeTime = 178.2; // ps 
 
 }
