@@ -187,7 +187,7 @@ std::vector<double> Scanner(string filename){
 
   }
 
-void main(){
+void Main(){
 	std::vector<string> filename;
 
 	filename.push_back("Out_tmp/BETAopt_1.root");
@@ -204,7 +204,12 @@ void main(){
 		centroids.push_back(tmp_res[0]);
 		errors.push_back(tmp_res[1]);
                 
-        	cout<<"Centroid-> "<<centroids.back()<<" +/- "<<errors.back()<<endl;
 	        	
 	}
+
+	for(size_t i = 0; i<filename.size(); i++){
+
+		cout<<"Centroid-> "<<centroids[i]<<" +/- "<<errors[i]<<endl;
+	}
+		return;
 }
