@@ -227,7 +227,7 @@ Bool_t Analyzer::Process(Long64_t entry)
 		}
 	} 
 
-
+        
 	//--------------Mugast---------------//
 	for(size_t i=*nbParticleM2; i<(*nbParticleM2+*nbParticleMG); i++){
 
@@ -257,6 +257,7 @@ Bool_t Analyzer::Process(Long64_t entry)
 		}
 
 	} 
+
 	//--------------------------//
 	return kTRUE;
 }
