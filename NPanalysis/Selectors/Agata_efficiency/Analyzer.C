@@ -28,7 +28,7 @@
 #include "Analyzer.h"
 #include <TH2.h>
 #include <TStyle.h>
-//#include "colormod.h"
+#include "colormod.h"
 
 void Analyzer::Begin(TTree * /*tree*/)
 {
@@ -37,12 +37,12 @@ void Analyzer::Begin(TTree * /*tree*/)
 	// The tree argument is deprecated (on PROOF 0 is passed).
 
 	TString option = GetOption();
-//
-//	nbPmultM2 = new TH1F("multM2","multM2",10,-0.5,9.5);
-//	nbPmultMG = new TH1F("multMG","multMG",10,-0.5,9.5);
-//	nbPmultHv = new TH1F("multHv","multHv",10,-0.5,9.5);
-//	nbPmultAg = new TH1F("multAg","multAg",10,-0.5,9.5);
-//
+	//
+	//	nbPmultM2 = new TH1F("multM2","multM2",10,-0.5,9.5);
+	//	nbPmultMG = new TH1F("multMG","multMG",10,-0.5,9.5);
+	//	nbPmultHv = new TH1F("multHv","multHv",10,-0.5,9.5);
+	//	nbPmultAg = new TH1F("multAg","multAg",10,-0.5,9.5);
+	//
 }
 
 void Analyzer::SlaveBegin(TTree * /*tree*/)
@@ -52,20 +52,22 @@ void Analyzer::SlaveBegin(TTree * /*tree*/)
 	// The tree argument is deprecated (on PROOF 0 is passed).
 
 	TString option = GetOption();
-	
+
 	Edopp = new TH1D("Edopp","Edopp",2000,0,2000);
-        Edopp->GetXaxis()->SetTitle("Gamma Energy [keV]");
-        Edopp->GetYaxis()->SetTitle("Counts");
-        fOutput->Add(Edopp);	
-	
+	Edopp->GetXaxis()->SetTitle("Gamma Energy [keV]");
+	Edopp->GetYaxis()->SetTitle("Counts");
+
+	Edopp_TSgated = new TH1D("Edopp_TSgated","Edopp_TSgated",2000,0,2000);
+	Edopp_TSgated->GetXaxis()->SetTitle("Gamma Energy [keV]");
+	Edopp_TSgated->GetYaxis()->SetTitle("Counts");
+
 	Eraw = new TH1D("Eraw","Eraw",2000,0,2000);
-        Eraw->GetXaxis()->SetTitle("Gamma Energy [keV]");
-        Eraw->GetYaxis()->SetTitle("Counts");
-        fOutput->Add(Eraw);	
-       
-       	Mass = 15829.5; //17O MeV
-        SoL  = 0.299792458; // c [mm/ps]
-        LifeTime = 178.2; // ps 
+	Eraw->GetXaxis()->SetTitle("Gamma Energy [keV]");
+	Eraw->GetYaxis()->SetTitle("Counts");
+
+	Mass = 15829.5; //17O MeV
+	SoL  = 0.299792458; // c [mm/ps]
+	LifeTime = 178.2; // ps 
 
 }
 
@@ -88,44 +90,49 @@ Bool_t Analyzer::Process(Long64_t entry)
 	// The return value is currently not used.
 	fReader.SetLocalEntry(entry);
 
-	//int nbEntries = fReader.GetEntries(true);
-	//if(entry%1000 == 0) printProgBar(entry*100.0/nbEntries);
+	int nbEntries = fReader.GetEntries(true);
+	if(entry%1000 == 0) printProgBar(entry*100.0/nbEntries);
 
-//	//Filling multiplicity//
-//	nbPmultM2->Fill(*nbParticleM2);
-//	nbPmultMG->Fill(*nbParticleMG);
-//	nbPmultHv->Fill(ThetaHeavy.GetSize());
-//	nbPmultAg->Fill(*nbTrack);
-//	//--------------------//
-        
-        //Doppler correcting and selection of mult. one for agata and mugast//	
+	//	//Filling multiplicity//
+	//	nbPmultM2->Fill(*nbParticleM2);
+	//	nbPmultMG->Fill(*nbParticleMG);
+	//	nbPmultHv->Fill(ThetaHeavy.GetSize());
+	//	nbPmultAg->Fill(*nbTrack);
+	//	//--------------------//
+
+	//Doppler correcting and selection of mult. one for agata and mugast//	
 	if(*nbParticleM2 == 0 && *nbParticleMG == 1 && *nbTrack == 1){
-                
-		double Beta = TMath::Sqrt(EheavyAfterTg[0]*EheavyAfterTg[0]+2*EheavyAfterTg[0]*Mass)/(EheavyAfterTg[0]+Mass);	
-	        	
+
+		double Beta = TMath::Sqrt(EheavyAfterTg[0]*EheavyAfterTg[0]+2*EheavyAfterTg[0]*Mass)/(EheavyAfterTg[0]+Mass); // Beta reconstructed with kinematics
+		//double Beta =0.101;  //beta averaged fixed
+
 		TVector3 BetaVector(-1.0*Beta*sin(ThetaHeavy[0]*M_PI/180.0)*cos(PhiLab[0]*M_PI/180.0),-1.0*Beta*sin(ThetaHeavy[0]*M_PI/180.0)*sin(PhiLab[0]*M_PI/180.0),Beta*cos(ThetaHeavy[0]*M_PI/180.0));
-                
+		//TVector3 BetaVector(0,0,Beta);//heavy direction z axis
+
 		double Egamma = trackE[0]/1000; //MeV converted
-		
-		TVector3 HitPosition(trackX1[0],trackY1[0],trackZ1[0]);
-		//TVector3 EmissionPosition(BetaVector.X()*SoL*LifeTime,BetaVector.Y()*SoL*LifeTime,BetaVector.Z()*SoL*LifeTime); //correction of decay position
-		TVector3 EmissionPosition(0,0,0); //decay position at target center
-		
+
+		TVector3 HitPosition(trackX1[0],trackY1[0],trackZ1[0]+51);
+
+		TVector3 EmissionPosition(BetaVector.X()*SoL*LifeTime,BetaVector.Y()*SoL*LifeTime,BetaVector.Z()*SoL*LifeTime);//correction for decay position
+		//TVector3 EmissionPosition(0,0,0);//decay postion at target center
+
 		TVector3 GammaDirection = HitPosition - EmissionPosition;
 		TVector3 GammaVersor = GammaDirection.Unit();
-		
+
 		TLorentzVector Gamma;
-                Gamma.SetPx(Egamma*GammaVersor.X());
-                Gamma.SetPy(Egamma*GammaVersor.Y());
-                Gamma.SetPz(Egamma*GammaVersor.Z());
+		Gamma.SetPx(Egamma*GammaVersor.X());
+		Gamma.SetPy(Egamma*GammaVersor.Y());
+		Gamma.SetPz(Egamma*GammaVersor.Z());
 		Gamma.SetE(Egamma);
-                 
-		Gamma.Boost(BetaVector);
-	        
+
+		Gamma.Boost(-1.0*BetaVector);
+
+
 		Edopp->Fill(Gamma.Energy()*1000);
-                Eraw->Fill(Egamma*1000);
+		if((*TStrack-*LTS)>=170 && (*TStrack-*LTS)<190) Edopp_TSgated->Fill(Gamma.Energy()*1000);
+		Eraw->Fill(Egamma*1000);
 	}
-        //------------------------------------------------------------------//
+	//------------------------------------------------------------------//
 	return kTRUE;
 }
 
@@ -134,6 +141,14 @@ void Analyzer::SlaveTerminate()
 	// The SlaveTerminate() function is called after all entries or objects
 	// have been processed. When running with PROOF SlaveTerminate() is called
 	// on each slave server.
+	TCanvas *C1 = new TCanvas("C1","C1");
+	C1->Divide(1,2);
+
+	C1->cd(1);
+	Edopp->Draw();
+
+	C1->cd(2);
+	Edopp_TSgated->Draw();
 
 }
 
@@ -142,43 +157,32 @@ void Analyzer::Terminate()
 	// The Terminate() function is the last function to be called during
 	// a query. It always runs on the client, it can be used to present
 	// the results graphically or save the results to file.
-   
-	TH1D *Edopp = dynamic_cast<TH1D*>(fOutput->FindObject("Edopp"));
-	TH1D *Eraw = dynamic_cast<TH1D*>(fOutput->FindObject("Eraw"));
 
-	TCanvas *C1 = new TCanvas("C1","C1");
-	C1->Divide(1,2);
-
-	C1->cd(1);
-        Edopp->Draw();
-
-	C1->cd(2);
-	Eraw->Draw();
 
 }
-//
-//void Analyzer::printProgBar( float percent){
-//	std::string bar;
-//
-//	for(int i = 0; i < 50; i++){
-//		if( i < (int(percent)/2)){
-//			bar.replace(i,1,"=");
-//		}else if( i == int(percent/2)){
-//			bar.replace(i,1,">");
-//		}else{
-//			bar.replace(i,1," ");
-//		}
-//	}
-//
-//	Color::Modifier red(Color::FG_RED);
-//	Color::Modifier def(Color::FG_DEFAULT);
-//	Color::Modifier green(Color::FG_GREEN);
-//
-//	std::cout<<"\r [" << red << bar << def <<"]";
-//	std::cout.width( 3 );
-//	std::cout<< std::fixed;
-//	std::cout<< std::setprecision(2);
-//
-//	std::cout<< green << percent << def << "%"<< std::flush;
-//
-//}
+
+void Analyzer::printProgBar( float percent){
+	std::string bar;
+
+	for(int i = 0; i < 50; i++){
+		if( i < (int(percent)/2)){
+			bar.replace(i,1,"=");
+		}else if( i == int(percent/2)){
+			bar.replace(i,1,">");
+		}else{
+			bar.replace(i,1," ");
+		}
+	}
+
+	Color::Modifier red(Color::FG_RED);
+	Color::Modifier def(Color::FG_DEFAULT);
+	Color::Modifier green(Color::FG_GREEN);
+
+	std::cout<<"\r [" << red << bar << def <<"]";
+	std::cout.width( 3 );
+	std::cout<< std::fixed;
+	std::cout<< std::setprecision(2);
+
+	std::cout<< green << percent << def << "%"<< std::flush;
+
+}

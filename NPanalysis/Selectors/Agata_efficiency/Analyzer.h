@@ -52,8 +52,8 @@ public :
    TTreeReaderArray<double> ThetaHeavy = {fReader, "ThetaHeavy"};
    TTreeReaderArray<double> EheavyAfterTg = {fReader, "EheavyAfterTg"};
 //   TTreeReaderValue<Int_t> Run = {fReader, "Run"};
-//   TTreeReaderValue<ULong64_t> LTS = {fReader, "LTS"};
-//   TTreeReaderValue<ULong64_t> TStrack = {fReader, "TStrack"};
+   TTreeReaderValue<ULong64_t> LTS = {fReader, "LTS"};
+   TTreeReaderValue<ULong64_t> TStrack = {fReader, "TStrack"};
    TTreeReaderValue<Int_t> nbTrack = {fReader, "nbTrack"};
    TTreeReaderArray<Float_t> trackE = {fReader, "trackE"};
    TTreeReaderArray<Float_t> trackX1 = {fReader, "trackX1"};
@@ -74,6 +74,7 @@ public :
    TH1F * nbPmultHv;
    TH1F * nbPmultAg;
    TH1D * Edopp;
+   TH1D * Edopp_TSgated;
    TH1D * Eraw;
    
    double Mass;
@@ -98,7 +99,7 @@ public :
    virtual TList  *GetOutputList() const { return fOutput; }
    virtual void    SlaveTerminate();
    virtual void    Terminate();
-//   void printProgBar( float);
+   void printProgBar( float);
 
    ClassDef(Analyzer,0);
 
