@@ -71,7 +71,10 @@ public :
    
    TH1F * ThetaLDist_fs;
    TH1F * ThetaCMDist_fs;
-   
+  
+   TGraph * kineGS; 
+   TGraph * kineFS; 
+  
    Long64_t nbEntries;
    
    bool enable_cut;

@@ -5,24 +5,31 @@
 #include <fstream>
 //INCLUDE//
 
-string O17_fs_THFilename  = "../../Data/Xsection/O16_dp_O17fs.dat";   //.dat filename  
+string O17_fs_THFilename  = "../../Data/Xsection/16Odp17O_12p.dat";   //.dat filename  
+string O17_gs_THFilename  = "../../Data/Xsection/16Odp17O_52p.dat";   //.dat filename  
 string EfficiencyFilename = "../results/Efficiency.root";    //TH1F filename
 string O17_gsFilename     = "../results/ADistCMgs.root";     
 string O17_fsFilename     = "../results/ADistCMfs.root";     
 
 TGraph * O17_fs_TH = 0;
+TGraph * O17_gs_TH = 0;
 
-TSpline3 * CrossSection_fs_Spline = 0;
 
+Double_t FitFunctionGS(Double_t *v,Double_t *par) {
+	//Double_t cross = CrossSection_fs_Spline->Eval(v[0]);
+	Double_t cross = O17_gs_TH->Eval(v[0]);
+	Double_t value = par[0]*cross;
 
-Double_t FitFunction(Double_t *v,Double_t *par) {
+	return value;
+}
+
+Double_t FitFunctionFS(Double_t *v,Double_t *par) {
 	//Double_t cross = CrossSection_fs_Spline->Eval(v[0]);
 	Double_t cross = O17_fs_TH->Eval(v[0]);
 	Double_t value = par[0]*cross;
 
 	return value;
 }
-
 
 double factor(float theta1, float theta2){
 
@@ -103,10 +110,41 @@ void Differential()
 
 	//Retrieving xsec dist from .dat file 
 	ifstream O17_fs_THFile(O17_fs_THFilename.c_str(),std::ifstream::in);
+	ifstream O17_gs_THFile(O17_gs_THFilename.c_str(),std::ifstream::in);
 
 	std::vector<double> X;
 	std::vector<double> Y;
 
+	//-------------gs theoretical cross section-------------//
+	while(!O17_gs_THFile.eof()){
+		if(!O17_gs_THFile.eof()){
+			double X_p,Y_p;
+
+			O17_gs_THFile>>X_p;
+			O17_gs_THFile>>Y_p;
+
+			X.push_back(X_p);
+			Y.push_back(Y_p);
+
+		}
+	}
+
+	O17_gs_TH = new TGraph(X.size());
+
+	for(size_t i = 0; i<X.size(); i++){
+		O17_gs_TH->SetPoint(i,X[i],Y[i]); 
+	}
+	
+	TF1 * fitGS = new TF1("fitGS",FitFunctionGS,10,35,1);
+
+	fitGS->SetParameter(0,1E3);
+
+	O17_gs_treated->Fit("fitGS","RWN");
+	double rescalingGS = fitGS->GetParameter(0);
+	
+	X.clear();
+	Y.clear();
+	//-------------fs theoretical cross section-------------//
 	while(!O17_fs_THFile.eof()){
 		if(!O17_fs_THFile.eof()){
 			double X_p,Y_p;
@@ -126,17 +164,16 @@ void Differential()
 		O17_fs_TH->SetPoint(i,X[i],Y[i]); 
 	}
 
-	CrossSection_fs_Spline = new TSpline3("FS_cross", O17_fs_TH);
-	TF1 * fit = new TF1("fit",FitFunction,10,35,1);
+	TF1 * fitFS = new TF1("fitFS",FitFunctionFS,10,35,1);
 
-	fit->SetParameter(0,1E3);
+	fitFS->SetParameter(0,1E3);
 
-	O17_fs_treated->Fit("fit","RWN");
-	double rescaling = fit->GetParameter(0);
+	O17_fs_treated->Fit("fitFS","RWN");
+	double rescalingFS = fitFS->GetParameter(0);
 
 	
-	O17_fs_treated->Scale(1.0/rescaling);
-	O17_gs_treated->Scale(1.0/rescaling);
+	O17_fs_treated->Scale(1.0/rescalingFS);
+	O17_gs_treated->Scale(1.0/rescalingGS);
 
 	TCanvas * Cfactor = new TCanvas("Cfactor","Cfactor");
 	Cfactor->cd();
@@ -175,6 +212,7 @@ void Differential()
 	O17_fs_treated->Draw();
 
 	O17_fs_TH->Draw("SAME");
+	O17_gs_TH->Draw("SAME");
 
 	O17_gs_treated->SetLineColor(kRed);
 	O17_gs_treated->SetLineWidth(2);

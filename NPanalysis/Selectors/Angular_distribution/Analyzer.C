@@ -54,7 +54,7 @@ void Analyzer::Begin(TTree * /*tree*/)
 	impactMG = new TH2F("impactMG","impactMG",200,-150,150,200,-150,150);
 	impactM2 = new TH2F("impactM2","impactM2",200,-150,150,200,-150,150);
 
-	ELabThetaL = new TH2D("ELabThLab","ELabThLab",300,0,180,3000,-5,40);
+	ELabThetaL = new TH2D("ELabThLab","ELabThLab",500,0,180,5000,-5,40);
 	ELabThetaL->GetXaxis()->SetTitle("#theta_{LAB} [deg]");
 	ELabThetaL->GetYaxis()->SetTitle("LAB Energy [MeV]");
 
@@ -87,6 +87,9 @@ void Analyzer::Begin(TTree * /*tree*/)
 	ThetaCMDist_fs->GetYaxis()->SetTitle("Counts"); 
 	ThetaCMDist_fs->SetLineColor(4);//BLUE 
 
+	kineGS = new TGraph("../Data/Xsection/KinematicLineGS.txt");
+	kineFS = new TGraph("../Data/Xsection/KinematicLineFS.txt");
+	
 	//--------------------------------//
 	//---------Open Cut File----------//
 	if(enable_cut){
@@ -221,6 +224,11 @@ Bool_t Analyzer::Process(Long64_t entry)
 				ThetaLDist_fs->Fill(ThetaLab[i]);
 				ThetaCMDist_fs->Fill(ThetaCM[i]);
 			}
+//		        //Fill must2 proton in Ex dist
+//			if(CutG_p->IsInside(E[i],dE[i])){
+//				ExDist->Fill(Ex[i]);
+//			}
+
 		}
 		else{
 			ELabThetaL->Fill(ThetaLab[i],ELab[i]);
@@ -276,38 +284,41 @@ void Analyzer::Terminate()
 	// a query. It always runs on the client, it can be used to present
 	// the results graphically or save the results to file.
 	TCanvas *C1 = new TCanvas("C1","C1");
-	C1->Divide(1,2);
+	//C1->Divide(1,2);
 
 	C1->cd(1);
 	//impactM2->Draw("col");
 	//nbPmultM2->Draw();
-	EdE_M2->Draw("col");
+	//EdE_M2->Draw("col");
 	if(enable_cut) CutG_p->Draw("same");
 
-	C1->cd(2);
+	//C1->cd(2);
 	//impactMG->Draw("col");
 	//nbPmultMG->Draw();
-	ExDist->Draw("");
+	ExDist->Draw();
 
 	TCanvas *C2 = new TCanvas("C2","C2");
-	C2->Divide(1,2);
+//	C2->Divide(1,2);
 
 	C2->cd(1);
 	ELabThetaL->SetStats(kFALSE);
 	ELabThetaL->Draw("col");
+	
+	kineGS->Draw("SAME");
+	kineFS->Draw("SAME");
 	//gStyle->SetPalette(53,0);
-	if(enable_cut){
-		ELabThetaLSelected->SetStats(kFALSE);
-		ELabThetaLSelected->SetMarkerColor(2);
-		ELabThetaLSelected->SetMarkerStyle(3);
-		ELabThetaLSelected->SetMarkerSize(0.2);
-		ELabThetaLSelected->Draw("SAME");
-	}
-	C2->cd(2);
-	//   ThetaLDist_gs->Draw();
-	//   ThetaLDist_fs->Draw("same");
-	ThetaCMDist_gs->Draw();
-	ThetaCMDist_fs->Draw("same");
+//	if(enable_cut){
+//		ELabThetaLSelected->SetStats(kFALSE);
+//		ELabThetaLSelected->SetMarkerColor(2);
+//		ELabThetaLSelected->SetMarkerStyle(3);
+//		ELabThetaLSelected->SetMarkerSize(0.2);
+//		ELabThetaLSelected->Draw("SAME");
+//	}
+//	C2->cd(2);
+//	//   ThetaLDist_gs->Draw();
+//	//   ThetaLDist_fs->Draw("same");
+//	ThetaCMDist_gs->Draw();
+//	ThetaCMDist_fs->Draw("same");
 
 }
 
