@@ -3,6 +3,7 @@
 //INCLUDE//
 #include <iostream>
 #include <fstream>
+#include <TPaveStats.h>
 //INCLUDE//
 
 string O17_fs_THFilename  = "../../Data/Xsection/16Odp17O_12p.dat";   //.dat filename  
@@ -13,6 +14,8 @@ string O17_fsFilename     = "../results/ADistCMfs.root";
 
 TGraph * O17_fs_TH = 0;
 TGraph * O17_gs_TH = 0;
+
+double SigmaEff = 0.2;
 
 
 Double_t FitFunctionGS(Double_t *v,Double_t *par) {
@@ -42,6 +45,7 @@ double factor(float theta1, float theta2){
 void Differential()
 {
 
+gStyle->SetOptStat(0);
 
 
 	TFile * EfficiencyFile = new TFile( EfficiencyFilename.c_str());
@@ -53,9 +57,8 @@ void Differential()
 	TH1F * O17_fs     = (TH1F*) O17_fsFile->Get("ThCMfs");
 	TH1F * Hfactor = new TH1F("factor","factor",180,0,180);
 	
-	O17_gs->SetDefaultSumw2(kFALSE);
-	O17_fs->SetDefaultSumw2(kFALSE);
-
+	//O17_gs->SetDefaultSumw2(kFALSE);
+	//O17_fs->SetDefaultSumw2(kFALSE);
 
 
 
@@ -72,8 +75,8 @@ void Differential()
 
 	C1->Update();
 
-	Efficiency->Scale(180/10E6); //scaling factor evaluated as #Ev_generated/cross_section_integral
-
+	Efficiency->Scale(180/10E8); //scaling factor evaluated as #Ev_generated/cross_section_integral
+	
 
 
 
@@ -86,13 +89,22 @@ void Differential()
 	for(size_t i=0 ; i<180 ; i++){
 
 		Hfactor->SetBinContent(i+1,factor(i,i+1));
-		if(Efficiency->GetBinContent(i+1)!=0){
+		double Yeld_1      = O17_gs_treated->GetBinContent(i+1);
+		double SigmaYeld_1 = O17_gs_treated->GetBinError(i+1);
+		double Yeld_2      = O17_fs_treated->GetBinContent(i+1);
+		double SigmaYeld_2 = O17_fs_treated->GetBinError(i+1);
+		double Eff         = Efficiency->GetBinContent(i+1);
+		double IntFact     = factor(i,i+1);
 
-			O17_fs_treated->SetBinContent(i+1,O17_fs_treated->GetBinContent(i+1)/(factor(i,i+1)*Efficiency->GetBinContent(i+1)));
-			O17_gs_treated->SetBinContent(i+1,O17_gs_treated->GetBinContent(i+1)/(factor(i,i+1)*Efficiency->GetBinContent(i+1)));
-		
-			O17_fs_treated->SetBinError(i+1,O17_fs_treated->GetBinError(i+1)/(factor(i,i+1)*Efficiency->GetBinContent(i+1)));
-			O17_gs_treated->SetBinError(i+1,O17_gs_treated->GetBinError(i+1)/(factor(i,i+1)*Efficiency->GetBinContent(i+1)));
+		if(Eff !=0){
+
+
+			O17_fs_treated->SetBinContent(i+1,Yeld_2/(Eff*IntFact));
+			O17_gs_treated->SetBinContent(i+1,Yeld_1/(Eff*IntFact));
+		        
+			
+			O17_fs_treated->SetBinError(i+1,sqrt(pow(SigmaYeld_2/(Eff*IntFact),2)+pow(Yeld_2*SigmaEff/(Eff*IntFact),2)));
+			O17_gs_treated->SetBinError(i+1,sqrt(pow(SigmaYeld_1/(Eff*IntFact),2)+pow(Yeld_1*SigmaEff/(Eff*IntFact),2)));
 			//O17_fs_treated->SetBinContent(i+1,O17_fs_treated->GetBinContent(i+1)/(Efficiency->GetBinContent(i+1)));
 			//O17_gs_treated->SetBinContent(i+1,O17_gs_treated->GetBinContent(i+1)/(Efficiency->GetBinContent(i+1)));
 
@@ -181,13 +193,13 @@ void Differential()
 	// fit->Draw();
 	// CrossSection_fs_Spline->Draw("SAME"); 
 	//fit->Draw();
-	Cfactor->Divide(1,2);
+	//Cfactor->Divide(1,2);
 
 	Cfactor->cd(1);
 	Efficiency->Draw();
 
-	Cfactor->cd(2);
-	Hfactor->Draw();
+	//Cfactor->cd(2);
+	//Hfactor->Draw();
 
 	Cfactor->Update();
 

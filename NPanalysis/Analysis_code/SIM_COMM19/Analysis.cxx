@@ -45,7 +45,8 @@ void Analysis::Init() {
 	myInit = new TInitialConditions();
 	// get MUST2 and Gaspard objects
 	M2 = (TMust2Physics*)  m_DetectorManager -> GetDetector("M2Telescope");
-	GD = (GaspardTracker*) m_DetectorManager -> GetDetector("GaspardTracker");
+	GDtracker = (GaspardTracker*) m_DetectorManager -> GetDetector("GaspardTracker");
+	GD = (TGaspardTrackerPhysics*) GDtracker->GetEventPhysics();
 	//MG = (TMugastPhysics*) m_DetectorManager -> GetDetector("Mugast");
 
 	// get reaction information
@@ -117,7 +118,7 @@ void Analysis::TreatEvent() {
 	//Particle multiplicity
 	nbParticleM2 =  M2->Si_E.size(); 
 	nbParticleMG = 0;
-	if(GD->GetEnergyDeposit()>0) nbParticleMG = 1; 
+	if(GDtracker->GetEnergyDeposit()>0) nbParticleMG = 1; 
 
 	//////////////////////////// LOOP on MUST2 //////////////////
 	for(unsigned int countMust2 = 0 ; countMust2 < M2->Si_E.size() ; countMust2++){
@@ -128,9 +129,9 @@ void Analysis::TreatEvent() {
 		int Xstripnumber = M2->Si_X[countMust2];
 		int Ystripnumber = M2->Si_Y[countMust2];
 
-		std::string stripXID = "MM"+to_str(TelescopeNumber)+"X"+to_str(Xstripnumber); 
-		std::string stripYID = "MM"+to_str(TelescopeNumber)+"Y"+to_str(Ystripnumber); 
-		if( (BadStripSet.find(stripXID) == BadStripSet.end()) || (BadStripSet.find(stripYID) == BadStripSet.end()) ) {
+		std::string stripXID = "MM"+std::to_string(TelescopeNumber)+"X"+std::to_string(Xstripnumber); 
+		std::string stripYID = "MM"+std::to_string(TelescopeNumber)+"Y"+std::to_string(Ystripnumber); 
+		if( (BadStripSet.find(stripXID) == BadStripSet.end()) && (BadStripSet.find(stripYID) == BadStripSet.end()) ) {
 
 			/************************************************/
 			// Part 1 : Impact Angle
@@ -202,27 +203,29 @@ void Analysis::TreatEvent() {
                 std::string stripXID;
 		std::string stripYID;
 		
-		int TelescopeNumber = GD->fModuleNumber();
+		int TelescopeNumber = GD->fModuleNumber[countMugast];
 		
 		if (TelescopeNumber == 201) { 
-                     stripXID = "MG11X"+to_str(anularX[GD->fFirstStage_FrontPosition()-1]);
-                     stripYID = "MG11Y"+to_str(anularY[GD->fFirstStage_BackPosition()-1]);
+                     stripXID = "MG11X"+std::to_string(anularX[GD->fFirstStage_FrontPosition[countMugast]-1]);
+                     stripYID = "MG11Y"+std::to_string(anularY[GD->fFirstStage_BackPosition[countMugast]-1]);
 		}
                 else{
-			std::string stripXID = "MG"+to_str(GaspardMap[TelescopeNumber-1])+"X"+to_str(trapeX[GD->fFirstStage_FrontPosition()-1]); 
-			std::string stripYID = "MG"+to_str(GaspardMap[TelescopeNumber-1])+"Y"+to_str(trapeY[GD->fFirstStage_BackPosition()-1]); 
+			stripXID = "MG"+std::to_string(GaspardMap[TelescopeNumber-101])+"X"+std::to_string(trapeX[GD->fFirstStage_FrontPosition[countMugast]-1]); 
+			stripYID = "MG"+std::to_string(GaspardMap[TelescopeNumber-101])+"Y"+std::to_string(trapeY[GD->fFirstStage_BackPosition[countMugast]-1]); 
 		}
+	        
+		//cout<<"IDx -> "<<stripXID<<"IDy ->"<<stripYID<<endl;	
 		
-		if( (BadStripSet.find(stripXID) == BadStripSet.end()) || (BadStripSet.find(stripYID) == BadStripSet.end()) ) {
+		if( (BadStripSet.find(stripXID) == BadStripSet.end()) && (BadStripSet.find(stripYID) == BadStripSet.end()) ) {
 		// Part 1 : Impact Angle
 		ThetaMGSurface = 0;
 		ThetaNormalTarget = 0;
-		TVector3 HitDirection = GD -> GetPositionOfInteraction() - BeamImpact ;
+		TVector3 HitDirection = GDtracker -> GetPositionOfInteraction() - BeamImpact ;
 
 		ThetaLab.push_back( HitDirection.Angle( BeamDirection ));
-		X.push_back(  GD -> GetPositionOfInteraction().X());
-		Y.push_back(  GD -> GetPositionOfInteraction().Y());
-		Z.push_back(  GD -> GetPositionOfInteraction().Z());
+		X.push_back(  GDtracker -> GetPositionOfInteraction().X());
+		Y.push_back(  GDtracker -> GetPositionOfInteraction().Y());
+		Z.push_back(  GDtracker -> GetPositionOfInteraction().Z());
 
 		ThetaMGSurface = HitDirection.Angle( TVector3(0,0,1) ) ;
 		ThetaNormalTarget = HitDirection.Angle( TVector3(0,0,1) ) ;
@@ -230,7 +233,7 @@ void Analysis::TreatEvent() {
 
 		// Part 2 : Impact Energy
 		Energy = 0;
-		Energy = GD->GetEnergyDeposit();
+		Energy = GDtracker->GetEnergyDeposit();
 		// Target Correction
 		ELab.push_back( LightTarget.EvaluateInitialEnergy( Energy ,TargetThickness*0.5-zImpact, ThetaNormalTarget));
 

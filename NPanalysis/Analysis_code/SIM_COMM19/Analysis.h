@@ -128,7 +128,8 @@ class Analysis: public NPL::VAnalysis{
   // Branches and detectors
   TMust2Physics* M2;
   //TMugastPhysics* MG;
-  GaspardTracker* GD;
+  GaspardTracker* GDtracker;
+  TGaspardTrackerPhysics *GD;
   TInitialConditions* myInit ;
 
 };
