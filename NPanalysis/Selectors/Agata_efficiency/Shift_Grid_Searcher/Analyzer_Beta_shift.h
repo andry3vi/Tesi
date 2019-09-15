@@ -57,10 +57,17 @@ class Analyzer : public TSelector {
 		TFile * outfile;
 
 		std::vector<double> dBeta;
+		std::vector<double> dShift;
 		std::vector<double> Edopp;
 
 		double dBetaRange[2];
 		double dBetaStep;
+		double dShiftRange[2];
+		double dShiftStep;
+
+		int dBetaNb;
+		int dShiftNb;
+		
 		double Mass;
 		double SoL;
 		double LifeTime;

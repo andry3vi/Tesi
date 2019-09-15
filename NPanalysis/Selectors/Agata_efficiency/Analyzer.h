@@ -61,12 +61,12 @@ public :
    TTreeReaderArray<Float_t> trackZ1 = {fReader, "trackZ1"};
    TTreeReaderArray<Float_t> trackT = {fReader, "trackT"};
 //   TTreeReaderArray<Int_t> trackCrystalID = {fReader, "trackCrystalID"};
-//   TTreeReaderValue<Int_t> nbAdd = {fReader, "nbAdd"};
-//   TTreeReaderValue<ULong64_t> TSHit = {fReader, "TSHit"};
-//   TTreeReaderArray<Float_t> AddE = {fReader, "AddE"};
-//   TTreeReaderArray<Float_t> AddX = {fReader, "AddX"};
-//   TTreeReaderArray<Float_t> AddY = {fReader, "AddY"};
-//   TTreeReaderArray<Float_t> AddZ = {fReader, "AddZ"};
+   TTreeReaderValue<Int_t> nbAdd = {fReader, "nbAdd"};
+   TTreeReaderValue<ULong64_t> TSHit = {fReader, "TSHit"};
+   TTreeReaderArray<Float_t> AddE = {fReader, "AddE"};
+   TTreeReaderArray<Float_t> AddX = {fReader, "AddX"};
+   TTreeReaderArray<Float_t> AddY = {fReader, "AddY"};
+   TTreeReaderArray<Float_t> AddZ = {fReader, "AddZ"};
 
    //Desired plot//
    TH1F * nbPmultM2;
@@ -76,7 +76,7 @@ public :
    TH1D * Edopp;
    TH1D * Edopp_TSgated;
    TH1D * Eraw;
-   
+
    double Mass;
    double SoL;
    double LifeTime;

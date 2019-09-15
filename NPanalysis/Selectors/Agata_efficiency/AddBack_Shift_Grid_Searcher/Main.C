@@ -1,69 +1,69 @@
 std::vector<double> Fitter(TH1D * histo, string name){
-  // TSpectrum Peak Search
-  TSpectrum *search_peak = new TSpectrum(1);
+        // TSpectrum Peak Search
+        TSpectrum *search_peak = new TSpectrum(1);
 
-  int found_peak = search_peak->Search(histo, 2, "", 0.05);
+        int found_peak = search_peak->Search(histo, 2, "", 0.05);
 
-  // Retrieving X positions of the peak
+        // Retrieving X positions of the peak
 
-  Double_t peakmax    = search_peak->GetPositionX()[0];
-  Double_t peakheight = search_peak->GetPositionY()[0];
+        Double_t peakmax    = search_peak->GetPositionX()[0];
+        Double_t peakheight = search_peak->GetPositionY()[0];
 
-TF1 * background = new TF1("back","expo",200,600);
-background->SetLineColor(3);
-histo->Fit(background,"QNR");
+	TF1 * background = new TF1("back","expo",200,600);
+	background->SetLineColor(3);
+	histo->Fit(background,"QNR");
 
-double p0 = background->GetParameter(0);
-double p1 = background->GetParameter(1);
+	double p0 = background->GetParameter(0);
+	double p1 = background->GetParameter(1);
 
 
-TF1 * peak = new TF1("peak","gaus",peakmax-10,peakmax+10);
+	TF1 * peak = new TF1("peak","gaus",peakmax-10,peakmax+10);
 
-peak->SetParameter(2,6);
-peak->SetParameter(0,peakheight);
+	peak->SetParameter(2,6);
+	peak->SetParameter(0,peakheight);
 
-peak->SetLineColor(2);
+	peak->SetLineColor(2);
 
-histo->Fit(peak,"QNR");
+	histo->Fit(peak,"QNR");
 
-double mean = peak->GetParameter(1);
-double sigma = peak->GetParameter(2);
+	double mean = peak->GetParameter(1);
+	double sigma = peak->GetParameter(2);
 
-  TF1 * peaksub = new TF1("peaksub","gaus+expo(3)",400,1100);
-peaksub->SetLineColor(1);
+        TF1 * peaksub = new TF1("peaksub","gaus+expo(3)",400,1100);
+	peaksub->SetLineColor(1);
 
-peaksub->SetParameter(0,peakheight);
-peaksub->SetParameter(1,mean);
-peaksub->SetParameter(2,sigma);
-peaksub->SetParameter(3,p0);
-peaksub->SetParameter(4,p1);
+	peaksub->SetParameter(0,peakheight);
+	peaksub->SetParameter(1,mean);
+	peaksub->SetParameter(2,sigma);
+	peaksub->SetParameter(3,p0);
+	peaksub->SetParameter(4,p1);
 
-histo->Fit(peaksub,"QMNR");
+	histo->Fit(peaksub,"QNR");
 
-std::vector<double> RETURN;
-RETURN.resize(4);
-RETURN[0] = peaksub->GetParameter(1);
-RETURN[1] = peaksub->GetParError(1);
-RETURN[2] = 2.354*peaksub->GetParameter(2);
-RETURN[3] = 2.354*peaksub->GetParError(2);
+	std::vector<double> RETURN;
+	RETURN.resize(4);
+	RETURN[0] = peaksub->GetParameter(1);
+	RETURN[1] = peaksub->GetParError(1);
+	RETURN[2] = 2.354*peaksub->GetParameter(2);
+	RETURN[3] = 2.354*peaksub->GetParError(2);
 
-TCanvas * tmp = new TCanvas("tmp","tmp");
-tmp->cd();
-  histo->GetXaxis()->SetRangeUser(800,1000);
-  histo->GetYaxis()->SetRangeUser(0,60);
-histo->Draw();
-  background->Draw("SAME");
-  peak->Draw("SAME");
-  peaksub->Draw("SAME");
+	TCanvas * tmp = new TCanvas("tmp","tmp");
+	tmp->cd();
+        histo->GetXaxis()->SetRangeUser(800,1000);
+        histo->GetYaxis()->SetRangeUser(0,60);
+	histo->Draw();
+        background->Draw("SAME");
+        peak->Draw("SAME");
+        peaksub->Draw("SAME");
 
-tmp->SaveAs(("Fit_tmp/"+name+".png").c_str());
+	tmp->SaveAs(("Fit_tmp/"+name+".png").c_str());
 
-delete tmp;
-delete background;
-delete peak;
-delete peaksub;
+	delete tmp;
+	delete background;
+	delete peak;
+	delete peaksub;
 
-  return RETURN;
+        return RETURN;
 
 }
 
@@ -149,14 +149,29 @@ std::vector<double> Scanner(string filename){
 
 	gROOT->SetBatch(kFALSE);
 
-	TCanvas * C = new TCanvas("C","C");
-        C->Divide(1,2);
-        C->cd(1);
+  TCanvas *C = new TCanvas("c","c");
+
+  TPad* upperPad = new TPad("upperPad", "upperPad", .005, .400, .995, .995);
+  TPad* lowerPad = new TPad("lowerPad", "lowerPad", .005, .005, .995, .400);
+
+  upperPad->Draw();
+  lowerPad->Draw();
+
+  Float_t small = 1e-4;
+  lowerPad->SetTopMargin(small);
+  upperPad->SetBottomMargin(small);
+
+  lowerPad->SetGridx();
+  upperPad->SetGridx();
+
+  lowerPad->SetTickx(1);
+  upperPad->cd();
+
 	Res->GetXaxis()->SetTitle("#beta shift [v/c]");
 	Res->GetYaxis()->SetTitle("Resolution");
 	Res->Draw();
 
-	TF1 * quadfit =  new TF1("quadfit","pol2",dbetamin-0.01,dbetamin+0.01);
+	TF1 * quadfit =  new TF1("quadfit","pol2",dbetamin-20,dbetamin+20);
 
         Res->Fit("quadfit","R");
 	double a = quadfit->GetParameter(0);
@@ -166,7 +181,7 @@ std::vector<double> Scanner(string filename){
 	double x_min = -1.0*b/(2*c);
 	double y_min = quadfit->Eval(x_min);
 
-	C->cd(2);
+	lowerPad->cd();
 
 	TF1 * linfit = new TF1("linfit","pol1",BetaScan[0],BetaScan.back());
 
@@ -194,12 +209,11 @@ std::vector<double> Scanner(string filename){
 
 void Main(){
 	std::vector<string> filename;
-  filename.push_back("Out_tmp/BETAopt.root");
 
-	// filename.push_back("Out_tmp/BETAopt_1.root");
-	// filename.push_back("Out_tmp/BETAopt_2.root");
-	// filename.push_back("Out_tmp/BETAopt_3.root");
-	// filename.push_back("Out_tmp/BETAopt_4.root");
+	filename.push_back("Out_tmp/BETAopt.root");
+	//filename.push_back("Out_tmp/BETAopt_2.root");
+	//filename.push_back("Out_tmp/BETAopt_3.root");
+	//filename.push_back("Out_tmp/BETAopt_4.root");
 
 	std::vector<double> centroids;
 	std::vector<double> errors;

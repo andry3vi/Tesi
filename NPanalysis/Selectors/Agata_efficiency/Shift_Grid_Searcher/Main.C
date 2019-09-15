@@ -17,7 +17,7 @@ double p0 = background->GetParameter(0);
 double p1 = background->GetParameter(1);
 
 
-TF1 * peak = new TF1("peak","gaus",peakmax-10,peakmax+10);
+TF1 * peak = new TF1("peak","gaus",peakmax-7,peakmax+7);
 
 peak->SetParameter(2,6);
 peak->SetParameter(0,peakheight);
@@ -38,7 +38,7 @@ peaksub->SetParameter(2,sigma);
 peaksub->SetParameter(3,p0);
 peaksub->SetParameter(4,p1);
 
-histo->Fit(peaksub,"QMNR");
+histo->Fit(peaksub,"QNR");
 
 std::vector<double> RETURN;
 RETURN.resize(4);

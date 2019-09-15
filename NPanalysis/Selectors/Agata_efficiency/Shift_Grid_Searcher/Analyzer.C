@@ -47,28 +47,22 @@ void Analyzer::SlaveBegin(TTree * /*tree*/)
 
 	TString option = GetOption();
 
-	outfile = new TFile("Out_tmp/SHIFTopt.root","recreate");
+	outfile = new TFile("Out_tmp/BETAopt.root","recreate");
 
-	optree = new TTree ("SHIFTopt","SHIFTopt");
+	optree = new TTree ("BETAopt","BETAopt");
 
-	dBetaStep = 0.001;
-	dBetaRange[0] = -0.05;  
-	dBetaRange[1] = 0.05;
+	dBetaStep = 0.5;
+	dBetaRange[0] = 0;  //dbetarange for 1
+	dBetaRange[1] = 60;
+//	dBetaRange[0] = -0.03;
+//	dBetaRange[1] = 0.08;
 
-	dShiftStep = 5;
-	dShiftRange[0] = 0; //mm  
-	dShiftRange[1] = 100; //mm
-
-	optree->Branch("dBeta",&dBeta);
-	optree->Branch("dShift",&dShift);
-	optree->Branch("dBetaNb",&dBetaNb);
-	optree->Branch("dShiftNb",&dShiftNb);
-	
+        optree->Branch("dBeta",&dBeta);
 	optree->Branch("Edopp",&Edopp);
 
 	Mass = 15829.5; //17O MeV
 	SoL  = 0.299792458; // c [mm/ps]
-	LifeTime = 178.2; // ps 
+	LifeTime = 178.2; // ps
 
 }
 
@@ -98,50 +92,41 @@ Bool_t Analyzer::Process(Long64_t entry)
 	if(*nbParticleM2 == 0 && *nbParticleMG == 1 && *nbTrack == 1){
 
 		dBeta.clear();
-		dShift.clear();
 		Edopp.clear();
-		dBetaNb = 0;
 
 		for(double i = dBetaRange[0]; i<= dBetaRange[1]; i+=dBetaStep){
-			dBetaNb++;
-		        dShiftNb = 0;
-			for(double j = dShiftRange[0]; j<= dShiftRange[1]; j+=dShiftStep){
-		                dShiftNb++;
-				dBeta.push_back(i);
-				dShift.push_back(j);
 
-				double Beta = i+TMath::Sqrt(EheavyAfterTg[0]*EheavyAfterTg[0]+2*EheavyAfterTg[0]*Mass)/(EheavyAfterTg[0]+Mass); // Beta reconstructed with kinematics
-				//double Beta = i+0.101;	//beta averaged fixed
+			dBeta.push_back(i);
 
-				TVector3 BetaVector(-1.0*Beta*sin(ThetaHeavy[0]*M_PI/180.0)*cos(PhiLab[0]*M_PI/180.0),-1.0*Beta*sin(ThetaHeavy[0]*M_PI/180.0)*sin(PhiLab[0]*M_PI/180.0),Beta*cos(ThetaHeavy[0]*M_PI/180.0)); //correction for beta direction from kinematic
-				//TVector3 BetaVector(0,0,Beta);//heavy direction z axis
+			double Beta = TMath::Sqrt(EheavyAfterTg[0]*EheavyAfterTg[0]+2*EheavyAfterTg[0]*Mass)/(EheavyAfterTg[0]+Mass); // Beta reconstructed with kinematics
+		  //double Beta = i+0.106;	//beta averaged fixed
 
-				double Egamma = trackE[0]/1000; //MeV converted
+			TVector3 BetaVector(-1.0*Beta*sin(ThetaHeavy[0]*M_PI/180.0)*cos(PhiLab[0]*M_PI/180.0),-1.0*Beta*sin(ThetaHeavy[0]*M_PI/180.0)*sin(PhiLab[0]*M_PI/180.0),Beta*cos(ThetaHeavy[0]*M_PI/180.0)); //correction for beta direction from kinematic
+			//TVector3 BetaVector(0,0,Beta);//heavy direction z axis
 
-				TVector3 HitPosition(trackX1[0],trackY1[0],trackZ1[0]+j);
+			double Egamma = trackE[0]/1000; //MeV converted
 
-				TVector3 EmissionPosition(BetaVector.X()*SoL*LifeTime,BetaVector.Y()*SoL*LifeTime,BetaVector.Z()*SoL*LifeTime);//correction for decay position
-				//TVector3 EmissionPosition(0,0,0);//decay postion at target center
+			TVector3 HitPosition(trackX1[0],trackY1[0],trackZ1[0]+i);
 
-				TVector3 GammaDirection = HitPosition - EmissionPosition;
-				TVector3 GammaVersor = GammaDirection.Unit();
+			//TVector3 EmissionPosition(BetaVector.X()*SoL*LifeTime,BetaVector.Y()*SoL*LifeTime,BetaVector.Z()*SoL*LifeTime);//correction for decay position
+			TVector3 EmissionPosition(0,0,0);//decay postion at target center
 
-				TLorentzVector Gamma;
-				Gamma.SetPx(Egamma*GammaVersor.X());
-				Gamma.SetPy(Egamma*GammaVersor.Y());
-				Gamma.SetPz(Egamma*GammaVersor.Z());
-				Gamma.SetE(Egamma);
+			TVector3 GammaDirection = HitPosition - EmissionPosition;
+			TVector3 GammaVersor = GammaDirection.Unit();
 
-				Gamma.Boost(-1.0*BetaVector);
+			TLorentzVector Gamma;
+			Gamma.SetPx(Egamma*GammaVersor.X());
+			Gamma.SetPy(Egamma*GammaVersor.Y());
+			Gamma.SetPz(Egamma*GammaVersor.Z());
+			Gamma.SetE(Egamma);
 
-				Edopp.push_back(Gamma.Energy()*1000);
+			Gamma.Boost(-1.0*BetaVector);
 
-			}
+			Edopp.push_back(Gamma.Energy()*1000);
 		}
 
-
 		optree->Fill();
-		//optree->Write();
+	        //optree->Write();
 	}
 	//------------------------------------------------------------------//
 	return kTRUE;
@@ -159,7 +144,7 @@ void Analyzer::SlaveTerminate()
 }
 
 void Analyzer::Terminate()
-{      
+{
 	// The Terminate() function is the last function to be called during
 	// a query. It always runs on the client, it can be used to present
 	// the results graphically or save the results to file.

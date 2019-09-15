@@ -53,21 +53,21 @@ void Analyzer::SlaveBegin(TTree * /*tree*/)
 
 	TString option = GetOption();
 
-	Edopp = new TH1D("Edopp","Edopp",2000,0,2000);
+	Edopp = new TH1D("Edopp","Edopp",3000,0,3000);
 	Edopp->GetXaxis()->SetTitle("Gamma Energy [keV]");
 	Edopp->GetYaxis()->SetTitle("Counts");
 
-	Edopp_TSgated = new TH1D("Edopp_TSgated","Edopp_TSgated",2000,0,2000);
+	Edopp_TSgated = new TH1D("Edopp_TSgated","Edopp_TSgated",3000,0,3000);
 	Edopp_TSgated->GetXaxis()->SetTitle("Gamma Energy [keV]");
 	Edopp_TSgated->GetYaxis()->SetTitle("Counts");
 
-	Eraw = new TH1D("Eraw","Eraw",2000,0,2000);
+	Eraw = new TH1D("Eraw","Eraw",3000,0,3000);
 	Eraw->GetXaxis()->SetTitle("Gamma Energy [keV]");
 	Eraw->GetYaxis()->SetTitle("Counts");
 
 	Mass = 15829.5; //17O MeV
 	SoL  = 0.299792458; // c [mm/ps]
-	LifeTime = 178.2; // ps 
+	LifeTime = 178.2; // ps
 
 }
 
@@ -99,9 +99,12 @@ Bool_t Analyzer::Process(Long64_t entry)
 	//	nbPmultHv->Fill(ThetaHeavy.GetSize());
 	//	nbPmultAg->Fill(*nbTrack);
 	//	//--------------------//
+	for (size_t i = 0; i < *nbAdd; i++) {
+		Eraw->Fill(AddE[i]);
+	}
 
-	//Doppler correcting and selection of mult. one for agata and mugast//	
-	if(*nbParticleM2 == 0 && *nbParticleMG == 1 && *nbTrack == 1){
+	//Doppler correcting and selection of mult. one for agata and mugast//
+	if(*nbParticleM2 == 0 && *nbParticleMG == 1 && *nbAdd == 1){
 
 		double Beta = TMath::Sqrt(EheavyAfterTg[0]*EheavyAfterTg[0]+2*EheavyAfterTg[0]*Mass)/(EheavyAfterTg[0]+Mass); // Beta reconstructed with kinematics
 		//double Beta =0.101;  //beta averaged fixed
@@ -109,12 +112,14 @@ Bool_t Analyzer::Process(Long64_t entry)
 		TVector3 BetaVector(-1.0*Beta*sin(ThetaHeavy[0]*M_PI/180.0)*cos(PhiLab[0]*M_PI/180.0),-1.0*Beta*sin(ThetaHeavy[0]*M_PI/180.0)*sin(PhiLab[0]*M_PI/180.0),Beta*cos(ThetaHeavy[0]*M_PI/180.0));
 		//TVector3 BetaVector(0,0,Beta);//heavy direction z axis
 
-		double Egamma = trackE[0]/1000; //MeV converted
+		//double Egamma = trackE[0]/1000; //MeV converted
+		double Egamma = AddE[0]/1000; //MeV converted
 
-		TVector3 HitPosition(trackX1[0],trackY1[0],trackZ1[0]+51);
+		//TVector3 HitPosition(trackX1[0],trackY1[0],trackZ1[0]+33);
+		TVector3 HitPosition(AddX[0],AddY[0],AddZ[0]+51);
 
-		TVector3 EmissionPosition(BetaVector.X()*SoL*LifeTime,BetaVector.Y()*SoL*LifeTime,BetaVector.Z()*SoL*LifeTime);//correction for decay position
-		//TVector3 EmissionPosition(0,0,0);//decay postion at target center
+		//TVector3 EmissionPosition(BetaVector.X()*SoL*LifeTime,BetaVector.Y()*SoL*LifeTime,BetaVector.Z()*SoL*LifeTime);//correction for decay position
+		TVector3 EmissionPosition(0,0,0);//decay postion at target center
 
 		TVector3 GammaDirection = HitPosition - EmissionPosition;
 		TVector3 GammaVersor = GammaDirection.Unit();
@@ -129,8 +134,7 @@ Bool_t Analyzer::Process(Long64_t entry)
 
 
 		Edopp->Fill(Gamma.Energy()*1000);
-		if((*TStrack-*LTS)>=170 && (*TStrack-*LTS)<190) Edopp_TSgated->Fill(Gamma.Energy()*1000);
-		Eraw->Fill(Egamma*1000);
+		Edopp_TSgated->Fill(Egamma*1000);
 	}
 	//------------------------------------------------------------------//
 	return kTRUE;
@@ -142,18 +146,17 @@ void Analyzer::SlaveTerminate()
 	// have been processed. When running with PROOF SlaveTerminate() is called
 	// on each slave server.
 	TCanvas *C1 = new TCanvas("C1","C1");
-	C1->Divide(1,2);
+	//C1->Divide(1,2);
 
-	C1->cd(1);
-	Edopp->Draw();
-
-	C1->cd(2);
-	Edopp_TSgated->Draw();
+	C1->cd();
+  //Eraw->Draw();
+	Edopp->Draw("");
+	//Edopp_TSgated->Draw();
 
 }
 
 void Analyzer::Terminate()
-{      
+{
 	// The Terminate() function is the last function to be called during
 	// a query. It always runs on the client, it can be used to present
 	// the results graphically or save the results to file.

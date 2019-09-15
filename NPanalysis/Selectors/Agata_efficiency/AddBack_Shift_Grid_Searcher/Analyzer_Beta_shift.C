@@ -47,17 +47,23 @@ void Analyzer::SlaveBegin(TTree * /*tree*/)
 
 	TString option = GetOption();
 
-	outfile = new TFile("Out_tmp/BETAopt.root","recreate");
+	outfile = new TFile("Out_tmp/SHIFTopt.root","recreate");
 
-	optree = new TTree ("BETAopt","BETAopt");
+	optree = new TTree ("SHIFTopt","SHIFTopt");
 
 	dBetaStep = 0.0003;
-	dBetaRange[0] = -0.01;  //dbetarange for 1
-	dBetaRange[1] = 0.015;
-//	dBetaRange[0] = -0.03;
-//	dBetaRange[1] = 0.08;
+	dBetaRange[0] = -0.015;
+	dBetaRange[1] = 0.01;
 
-        optree->Branch("dBeta",&dBeta);
+	dShiftStep = 0.5;
+	dShiftRange[0] = 30; //mm
+	dShiftRange[1] = 70; //mm
+
+	optree->Branch("dBeta",&dBeta);
+	optree->Branch("dShift",&dShift);
+	optree->Branch("dBetaNb",&dBetaNb);
+	optree->Branch("dShiftNb",&dShiftNb);
+
 	optree->Branch("Edopp",&Edopp);
 
 	Mass = 15829.5; //17O MeV
@@ -89,44 +95,53 @@ Bool_t Analyzer::Process(Long64_t entry)
 	if(entry%100 == 0) printProgBar(entry*100.0/nbEntries);
 
 	//------------Doppler Correction---------------//
-	if(*nbParticleM2 == 0 && *nbParticleMG == 1 && *nbTrack == 1){
+	if(*nbParticleM2 == 0 && *nbParticleMG == 1 && *nbAdd == 1){
 
 		dBeta.clear();
+		dShift.clear();
 		Edopp.clear();
+		dBetaNb = 0;
 
 		for(double i = dBetaRange[0]; i<= dBetaRange[1]; i+=dBetaStep){
+			dBetaNb++;
+		        dShiftNb = 0;
+			for(double j = dShiftRange[0]; j<= dShiftRange[1]; j+=dShiftStep){
+		                dShiftNb++;
+				dBeta.push_back(i);
+				dShift.push_back(j);
 
-			dBeta.push_back(i);
+				double Beta = i+TMath::Sqrt(EheavyAfterTg[0]*EheavyAfterTg[0]+2*EheavyAfterTg[0]*Mass)/(EheavyAfterTg[0]+Mass); // Beta reconstructed with kinematics
+				//double Beta = i+0.101;	//beta averaged fixed
 
-			double Beta = i+TMath::Sqrt(EheavyAfterTg[0]*EheavyAfterTg[0]+2*EheavyAfterTg[0]*Mass)/(EheavyAfterTg[0]+Mass); // Beta reconstructed with kinematics
-		  //double Beta = i+0.106;	//beta averaged fixed
+				TVector3 BetaVector(-1.0*Beta*sin(ThetaHeavy[0]*M_PI/180.0)*cos(PhiLab[0]*M_PI/180.0),-1.0*Beta*sin(ThetaHeavy[0]*M_PI/180.0)*sin(PhiLab[0]*M_PI/180.0),Beta*cos(ThetaHeavy[0]*M_PI/180.0)); //correction for beta direction from kinematic
+				//TVector3 BetaVector(0,0,Beta);//heavy direction z axis
 
-			TVector3 BetaVector(-1.0*Beta*sin(ThetaHeavy[0]*M_PI/180.0)*cos(PhiLab[0]*M_PI/180.0),-1.0*Beta*sin(ThetaHeavy[0]*M_PI/180.0)*sin(PhiLab[0]*M_PI/180.0),Beta*cos(ThetaHeavy[0]*M_PI/180.0)); //correction for beta direction from kinematic
-			//TVector3 BetaVector(0,0,Beta);//heavy direction z axis
+				double Egamma = AddE[0]/1000; //MeV converted
 
-			double Egamma = trackE[0]/1000; //MeV converted
+				TVector3 HitPosition(AddX[0],AddY[0],AddZ[0]+j);
 
-			TVector3 HitPosition(trackX1[0],trackY1[0],trackZ1[0]+51);
+				TVector3 EmissionPosition(BetaVector.X()*SoL*LifeTime,BetaVector.Y()*SoL*LifeTime,BetaVector.Z()*SoL*LifeTime);//correction for decay position
+				//TVector3 EmissionPosition(0,0,0);//decay postion at target center
 
-			//TVector3 EmissionPosition(BetaVector.X()*SoL*LifeTime,BetaVector.Y()*SoL*LifeTime,BetaVector.Z()*SoL*LifeTime);//correction for decay position
-			TVector3 EmissionPosition(0,0,0);//decay postion at target center
+				TVector3 GammaDirection = HitPosition - EmissionPosition;
+				TVector3 GammaVersor = GammaDirection.Unit();
 
-			TVector3 GammaDirection = HitPosition - EmissionPosition;
-			TVector3 GammaVersor = GammaDirection.Unit();
+				TLorentzVector Gamma;
+				Gamma.SetPx(Egamma*GammaVersor.X());
+				Gamma.SetPy(Egamma*GammaVersor.Y());
+				Gamma.SetPz(Egamma*GammaVersor.Z());
+				Gamma.SetE(Egamma);
 
-			TLorentzVector Gamma;
-			Gamma.SetPx(Egamma*GammaVersor.X());
-			Gamma.SetPy(Egamma*GammaVersor.Y());
-			Gamma.SetPz(Egamma*GammaVersor.Z());
-			Gamma.SetE(Egamma);
+				Gamma.Boost(-1.0*BetaVector);
 
-			Gamma.Boost(-1.0*BetaVector);
+				Edopp.push_back(Gamma.Energy()*1000);
 
-			Edopp.push_back(Gamma.Energy()*1000);
+			}
 		}
 
+
 		optree->Fill();
-	        //optree->Write();
+		//optree->Write();
 	}
 	//------------------------------------------------------------------//
 	return kTRUE;

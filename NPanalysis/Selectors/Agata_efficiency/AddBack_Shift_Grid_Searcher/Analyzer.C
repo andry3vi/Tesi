@@ -51,9 +51,9 @@ void Analyzer::SlaveBegin(TTree * /*tree*/)
 
 	optree = new TTree ("BETAopt","BETAopt");
 
-	dBetaStep = 0.0003;
-	dBetaRange[0] = -0.01;  //dbetarange for 1
-	dBetaRange[1] = 0.015;
+	dBetaStep = 1;
+	dBetaRange[0] = 0;  //dbetarange for 1
+	dBetaRange[1] = 60;
 //	dBetaRange[0] = -0.03;
 //	dBetaRange[1] = 0.08;
 
@@ -89,7 +89,7 @@ Bool_t Analyzer::Process(Long64_t entry)
 	if(entry%100 == 0) printProgBar(entry*100.0/nbEntries);
 
 	//------------Doppler Correction---------------//
-	if(*nbParticleM2 == 0 && *nbParticleMG == 1 && *nbTrack == 1){
+	if(*nbParticleM2 == 0 && *nbParticleMG == 1 && *nbAdd == 1){
 
 		dBeta.clear();
 		Edopp.clear();
@@ -98,15 +98,15 @@ Bool_t Analyzer::Process(Long64_t entry)
 
 			dBeta.push_back(i);
 
-			double Beta = i+TMath::Sqrt(EheavyAfterTg[0]*EheavyAfterTg[0]+2*EheavyAfterTg[0]*Mass)/(EheavyAfterTg[0]+Mass); // Beta reconstructed with kinematics
+			double Beta = TMath::Sqrt(EheavyAfterTg[0]*EheavyAfterTg[0]+2*EheavyAfterTg[0]*Mass)/(EheavyAfterTg[0]+Mass); // Beta reconstructed with kinematics
 		  //double Beta = i+0.106;	//beta averaged fixed
 
 			TVector3 BetaVector(-1.0*Beta*sin(ThetaHeavy[0]*M_PI/180.0)*cos(PhiLab[0]*M_PI/180.0),-1.0*Beta*sin(ThetaHeavy[0]*M_PI/180.0)*sin(PhiLab[0]*M_PI/180.0),Beta*cos(ThetaHeavy[0]*M_PI/180.0)); //correction for beta direction from kinematic
 			//TVector3 BetaVector(0,0,Beta);//heavy direction z axis
 
-			double Egamma = trackE[0]/1000; //MeV converted
+			double Egamma = AddE[0]/1000; //MeV converted
 
-			TVector3 HitPosition(trackX1[0],trackY1[0],trackZ1[0]+51);
+			TVector3 HitPosition(AddX[0],AddY[0],AddZ[0]+i);
 
 			//TVector3 EmissionPosition(BetaVector.X()*SoL*LifeTime,BetaVector.Y()*SoL*LifeTime,BetaVector.Z()*SoL*LifeTime);//correction for decay position
 			TVector3 EmissionPosition(0,0,0);//decay postion at target center

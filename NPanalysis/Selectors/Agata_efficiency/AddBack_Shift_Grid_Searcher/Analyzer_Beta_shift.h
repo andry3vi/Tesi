@@ -38,29 +38,36 @@ class Analyzer : public TSelector {
 		TTreeReaderValue<Int_t> nbParticleMG = {fReader, "nbParticleMG"};
 		TTreeReaderArray<double> ThetaHeavy = {fReader, "ThetaHeavy"};
 		TTreeReaderArray<double> EheavyAfterTg = {fReader, "EheavyAfterTg"};
-		TTreeReaderValue<Int_t> nbTrack = {fReader, "nbTrack"};
-		TTreeReaderArray<Float_t> trackE = {fReader, "trackE"};
-		TTreeReaderArray<Float_t> trackX1 = {fReader, "trackX1"};
-		TTreeReaderArray<Float_t> trackY1 = {fReader, "trackY1"};
-		TTreeReaderArray<Float_t> trackZ1 = {fReader, "trackZ1"};
-		TTreeReaderArray<Float_t> trackT = {fReader, "trackT"};
-		//   TTreeReaderArray<Int_t> trackCrystalID = {fReader, "trackCrystalID"};
-		//   TTreeReaderValue<Int_t> nbAdd = {fReader, "nbAdd"};
-		//   TTreeReaderValue<ULong64_t> TSHit = {fReader, "TSHit"};
-		//   TTreeReaderArray<Float_t> AddE = {fReader, "AddE"};
-		//   TTreeReaderArray<Float_t> AddX = {fReader, "AddX"};
-		//   TTreeReaderArray<Float_t> AddY = {fReader, "AddY"};
-		//   TTreeReaderArray<Float_t> AddZ = {fReader, "AddZ"};
+//		TTreeReaderValue<Int_t> nbTrack = {fReader, "nbTrack"};
+//		TTreeReaderArray<Float_t> trackE = {fReader, "trackE"};
+//		TTreeReaderArray<Float_t> trackX1 = {fReader, "trackX1"};
+//		TTreeReaderArray<Float_t> trackY1 = {fReader, "trackY1"};
+//		TTreeReaderArray<Float_t> trackZ1 = {fReader, "trackZ1"};
+//		TTreeReaderArray<Float_t> trackT = {fReader, "trackT"};
+//		TTreeReaderArray<Int_t> trackCrystalID = {fReader, "trackCrystalID"};
+		TTreeReaderValue<Int_t> nbAdd = {fReader, "nbAdd"};
+//		TTreeReaderValue<ULong64_t> TSHit = {fReader, "TSHit"};
+		TTreeReaderArray<Float_t> AddE = {fReader, "AddE"};
+		TTreeReaderArray<Float_t> AddX = {fReader, "AddX"};
+		TTreeReaderArray<Float_t> AddY = {fReader, "AddY"};
+		TTreeReaderArray<Float_t> AddZ = {fReader, "AddZ"};
 
 		//Desired plot//
 	        TTree * optree;
 		TFile * outfile;
 
 		std::vector<double> dBeta;
+		std::vector<double> dShift;
 		std::vector<double> Edopp;
 
 		double dBetaRange[2];
 		double dBetaStep;
+		double dShiftRange[2];
+		double dShiftStep;
+
+		int dBetaNb;
+		int dShiftNb;
+		
 		double Mass;
 		double SoL;
 		double LifeTime;
