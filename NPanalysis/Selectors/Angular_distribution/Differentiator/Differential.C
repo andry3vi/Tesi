@@ -82,6 +82,9 @@ gStyle->SetOptStat(0);
 
 	TH1F * O17_gs_treated = (TH1F*) O17_gs->Clone("ThCMGs_treated");
 	TH1F * O17_fs_treated = (TH1F*) O17_fs->Clone("ThCMFs_treated");
+	
+	TH1F * O17_gs_eff = (TH1F*) O17_gs->Clone("ThCMGs_treated");
+	TH1F * O17_fs_eff = (TH1F*) O17_fs->Clone("ThCMFs_treated");
 
 	//O17_fs_treated->Sumw2(kFALSE);
 	//O17_gs_treated->Sumw2(kFALSE);
@@ -102,9 +105,14 @@ gStyle->SetOptStat(0);
 			O17_fs_treated->SetBinContent(i+1,Yeld_2/(Eff*IntFact));
 			O17_gs_treated->SetBinContent(i+1,Yeld_1/(Eff*IntFact));
 		        
+			O17_fs_eff->SetBinContent(i+1,Yeld_2/(Eff));
+			O17_gs_eff->SetBinContent(i+1,Yeld_1/(Eff));
 			
 			O17_fs_treated->SetBinError(i+1,sqrt(pow(SigmaYeld_2/(Eff*IntFact),2)+pow(Yeld_2*SigmaEff/(Eff*IntFact),2)));
 			O17_gs_treated->SetBinError(i+1,sqrt(pow(SigmaYeld_1/(Eff*IntFact),2)+pow(Yeld_1*SigmaEff/(Eff*IntFact),2)));
+			
+			O17_fs_eff->SetBinError(i+1,0);//sqrt(pow(SigmaYeld_2/(Eff*IntFact),2)+pow(Yeld_2*SigmaEff/(Eff*IntFact),2)));
+			O17_gs_eff->SetBinError(i+1,0);//sqrt(pow(SigmaYeld_1/(Eff*IntFact),2)+pow(Yeld_1*SigmaEff/(Eff*IntFact),2)));
 			//O17_fs_treated->SetBinContent(i+1,O17_fs_treated->GetBinContent(i+1)/(Efficiency->GetBinContent(i+1)));
 			//O17_gs_treated->SetBinContent(i+1,O17_gs_treated->GetBinContent(i+1)/(Efficiency->GetBinContent(i+1)));
 
@@ -152,6 +160,7 @@ gStyle->SetOptStat(0);
 	fitGS->SetParameter(0,1E3);
 
 	O17_gs_treated->Fit("fitGS","RWN");
+	cout<<endl<<endl<<"fitGS chisq-> "<<fitGS->GetChisquare()<<endl<<endl;
 	double rescalingGS = fitGS->GetParameter(0);
 	
 	X.clear();
@@ -181,6 +190,7 @@ gStyle->SetOptStat(0);
 	fitFS->SetParameter(0,1E3);
 
 	O17_fs_treated->Fit("fitFS","RWN");
+	cout<<endl<<endl<<"fitFS chisq-> "<<fitFS->GetChisquare()<<endl<<endl;
 	double rescalingFS = fitFS->GetParameter(0);
 
 	
@@ -238,6 +248,14 @@ gStyle->SetOptStat(0);
 	}
 
 	C->Update();
+
+
+	TCanvas * C2 = new TCanvas("C2","C2");
+	
+	C2->cd();
+
+	O17_gs_eff->Draw();
+	O17_fs_eff->Draw("SAME");
 
 	return ;
 }

@@ -47,7 +47,33 @@
 	\end{columns}
 \end{frame}
 
-\begin{frame}{Kinematic Line}
+\begin{frame}{Kinematic Lines}
+    	\vspace{-0.05\textheight}
+    \begin{overlayarea}{\textwidth}{0.1\textheight}
+	%\vspace{0.001\textheight}
+	\only<1>{No clear kinematic lines on MUST2}
+	\end{overlayarea}	
+	\vspace{-0.05\textheight}
+	\begin{columns}
+		\begin{column}{0.43\textwidth}
+			\begin{overlayarea}{\textwidth}{\textheight}
+				\centering
+				\vspace{0.02\textheight}
+				\only<1>{\includegraphics[width=1.09\textwidth]{ELabVsThetaLab_0}}
+				\only<2>{\includegraphics[width=1.09\textwidth]{ELabVsThetaLab_1}}
+			\end{overlayarea}
+		\end{column}
+		\begin{column}{0.57\textwidth}
+			\begin{overlayarea}{\textwidth}{\textheight}
+				\centering       
+				\only<1>{\includegraphics[width=1.1\textwidth]{Ex_0}}		
+				\only<2>{\includegraphics[width=1.1\textwidth]{Ex_1}}
+		    \end{overlayarea}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{Angular Distribution}
     	\vspace{-0.05\textheight}
     \begin{overlayarea}{\textwidth}{0.1\textheight}
 	\centering
@@ -58,40 +84,38 @@
 			\begin{overlayarea}{\textwidth}{\textheight}
 				\centering
 				\vspace{0.02\textheight}
-				\only<1>{\includegraphics[width=1.08\textwidth]{ELabVsThetaLab_0}}
-				\only<2>{\includegraphics[width=1.08\textwidth]{ELabVsThetaLab_1}}
+				\only<1>{\includegraphics[width=1.09\textwidth]{ARawDist}}
 			\end{overlayarea}
 		\end{column}
 		\begin{column}{0.57\textwidth}
 			\begin{overlayarea}{\textwidth}{\textheight}
 				\centering       
-				\only<1>{\includegraphics[width=1.1\textwidth]{Ex_0}}		
-				\only<2>{\includegraphics[width=1.1\textwidth]{Ex_1}}
-		    \end{overlayarea}	
+				\only<1>{\includegraphics[width=1.1\textwidth]{Ex_2}}	
+		    \end{overlayarea}
 		\end{column}
 	\end{columns}
 \end{frame}
 
-\begin{frame}{Cross Section}
+\begin{frame}{Differential Cross Section}
     	\vspace{-0.05\textheight}
     \begin{overlayarea}{\textwidth}{0.1\textheight}
 	\centering
 	\end{overlayarea}	
 	\vspace{-0.08\textheight}
 	\begin{columns}
-		\begin{column}{0.5\textwidth}
+		\begin{column}{0.4\textwidth}
 			\begin{overlayarea}{\textwidth}{\textheight}
 				\centering
-				%\vspace{0.02\textheight}
-				\hspace{0.15\textwidth} \text{Raw Countings}\\
-				\includegraphics[width=1.1\textwidth]{ARawDist}
+				\vspace{0.2\textheight}
+				Normalized with simulated\\ angular efficiency\\
+				$\downarrow$\\
+				Fit over the theoretical\\ distribution
 			\end{overlayarea}
 		\end{column}
-		\begin{column}{0.5\textwidth}
+		\begin{column}{0.6\textwidth}
 			\begin{overlayarea}{\textwidth}{\textheight}
-				\centering   
-				\hspace{0.10\textwidth} \text{Fitted theoretical distributions}\\    
-				\includegraphics[width=\textwidth]{ADist_jesus}			 				
+				\centering      
+				\includegraphics[width=0.9\textwidth]{ADist_jesus}			 				
 		    \end{overlayarea}	
 		\end{column}
 	\end{columns}

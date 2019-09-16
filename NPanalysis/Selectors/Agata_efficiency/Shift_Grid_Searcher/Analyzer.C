@@ -52,12 +52,12 @@ void Analyzer::SlaveBegin(TTree * /*tree*/)
 	optree = new TTree ("BETAopt","BETAopt");
 
 	dBetaStep = 0.5;
-	dBetaRange[0] = 0;  //dbetarange for 1
-	dBetaRange[1] = 60;
+	dBetaRange[0] = 10;  //dbetarange for 1
+	dBetaRange[1] = 80;
 //	dBetaRange[0] = -0.03;
 //	dBetaRange[1] = 0.08;
 
-        optree->Branch("dBeta",&dBeta);
+  optree->Branch("dBeta",&dBeta);
 	optree->Branch("Edopp",&Edopp);
 
 	Mass = 15829.5; //17O MeV

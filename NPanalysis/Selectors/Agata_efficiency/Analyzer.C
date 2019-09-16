@@ -68,7 +68,23 @@ void Analyzer::SlaveBegin(TTree * /*tree*/)
 	Mass = 15829.5; //17O MeV
 	SoL  = 0.299792458; // c [mm/ps]
 	LifeTime = 178.2; // ps
+	//------------Ex Gate-------------//
 
+		gs_Ex = new double[2];
+		fs_Ex = new double[2];
+
+		CountExGS = 0;
+		CountExFS = 0;
+
+//----------------------RUN 256+257-------------------------//
+		double hwhmgs = 0.29119804; //MeV
+		double hwhmfs = 0.36914251; //MeV
+
+		gs_Ex[0] = 0.0424022 - hwhmgs;
+		gs_Ex[1] = 0.0424022 + hwhmgs;
+
+		fs_Ex[0] = 0.777442 - hwhmfs;
+		fs_Ex[1] = 0.777442 + hwhmfs;
 }
 
 Bool_t Analyzer::Process(Long64_t entry)
@@ -104,7 +120,7 @@ Bool_t Analyzer::Process(Long64_t entry)
 	}
 
 	//Doppler correcting and selection of mult. one for agata and mugast//
-	if(*nbParticleM2 == 0 && *nbParticleMG == 1 && *nbAdd == 1){
+	if(*nbParticleM2 == 0 && *nbParticleMG == 1 && *nbAdd == 1 && Ex[0]>fs_Ex[0] && Ex[0]<fs_Ex[1]){
 
 		double Beta = TMath::Sqrt(EheavyAfterTg[0]*EheavyAfterTg[0]+2*EheavyAfterTg[0]*Mass)/(EheavyAfterTg[0]+Mass); // Beta reconstructed with kinematics
 		//double Beta =0.101;  //beta averaged fixed
@@ -116,7 +132,7 @@ Bool_t Analyzer::Process(Long64_t entry)
 		double Egamma = AddE[0]/1000; //MeV converted
 
 		//TVector3 HitPosition(trackX1[0],trackY1[0],trackZ1[0]+33);
-		TVector3 HitPosition(AddX[0],AddY[0],AddZ[0]+51);
+		TVector3 HitPosition(AddX[0],AddY[0],AddZ[0]+33);
 
 		//TVector3 EmissionPosition(BetaVector.X()*SoL*LifeTime,BetaVector.Y()*SoL*LifeTime,BetaVector.Z()*SoL*LifeTime);//correction for decay position
 		TVector3 EmissionPosition(0,0,0);//decay postion at target center
@@ -149,7 +165,7 @@ void Analyzer::SlaveTerminate()
 	//C1->Divide(1,2);
 
 	C1->cd();
-  //Eraw->Draw();
+        //Eraw->Draw();
 	Edopp->Draw("");
 	//Edopp_TSgated->Draw();
 

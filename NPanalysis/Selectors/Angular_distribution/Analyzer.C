@@ -101,7 +101,9 @@ void Analyzer::Begin(TTree * /*tree*/)
 	if(enable_ExGate){
 		gs_Ex = new double[2]; 
 		fs_Ex = new double[2];
-
+                
+		CountExGS = 0; 
+		CountExFS = 0;
 
 //----------------------RUN 256+257-------------------------//  
 		double hwhmgs = 0.29119804; //MeV
@@ -215,13 +217,13 @@ Bool_t Analyzer::Process(Long64_t entry)
 			//GS check
 			if(CutG_p->IsInside(E[i],dE[i]) && Ex[i]>gs_Ex[0] && Ex[i]<gs_Ex[1]){
 				ELabThetaLSelected->Fill(ThetaLab[i],ELab[i]);
-				ThetaLDist_gs->Fill(ThetaLab[i]);
+				//ThetaLDist_gs->Fill(ThetaLab[i]);
 				ThetaCMDist_gs->Fill(ThetaCM[i]);
 			}
 			//1S check
 			if(CutG_p->IsInside(E[i],dE[i]) && Ex[i]>fs_Ex[0] && Ex[i]<fs_Ex[1]){
 				ELabThetaLSelected->Fill(ThetaLab[i],ELab[i]);
-				ThetaLDist_fs->Fill(ThetaLab[i]);
+				//ThetaLDist_fs->Fill(ThetaLab[i]);
 				ThetaCMDist_fs->Fill(ThetaCM[i]);
 			}
 //		        //Fill must2 proton in Ex dist
@@ -247,12 +249,14 @@ Bool_t Analyzer::Process(Long64_t entry)
 				ELabThetaLSelected->Fill(ThetaLab[i],ELab[i]);
 				ThetaLDist_gs->Fill(ThetaLab[i]);
 				ThetaCMDist_gs->Fill(ThetaCM[i]);
+				CountExGS++;
 			}
 			//1S check
 			if(Ex[i]>fs_Ex[0] && Ex[i]<fs_Ex[1]){
 				ELabThetaLSelected->Fill(ThetaLab[i],ELab[i]);
 				ThetaLDist_fs->Fill(ThetaLab[i]);
 				ThetaCMDist_fs->Fill(ThetaCM[i]);
+				CountExFS++;
 			}
 		}
 		else{
@@ -283,6 +287,12 @@ void Analyzer::Terminate()
 	// The Terminate() function is the last function to be called during
 	// a query. It always runs on the client, it can be used to present
 	// the results graphically or save the results to file.
+	
+	TCanvas *C3 = new TCanvas("C3","C3");
+	C3->cd();
+	ThetaLDist_gs->Draw();
+	ThetaLDist_fs->Draw("SAME");
+	
 	TCanvas *C1 = new TCanvas("C1","C1");
 	//C1->Divide(1,2);
 
@@ -290,12 +300,17 @@ void Analyzer::Terminate()
 	//impactM2->Draw("col");
 	//nbPmultM2->Draw();
 	//EdE_M2->Draw("col");
-	if(enable_cut) CutG_p->Draw("same");
+	//if(enable_cut) CutG_p->Draw("same");
 
 	//C1->cd(2);
 	//impactMG->Draw("col");
 	//nbPmultMG->Draw();
 	ExDist->Draw();
+        TSpectrum * back = new TSpectrum();
+	TH1D * ExDist_back = (TH1D *) back->Background(ExDist,26);
+        ExDist_back->Draw("SAME");
+        ExDist->Add(ExDist_back,-1);
+        cout<<endl<<endl<<"Proton 1/2+ counts ->"<<ExDist->Integral(ExDist->FindBin(fs_Ex[0]), ExDist->FindBin(fs_Ex[1]))<<endl;
 
 	TCanvas *C2 = new TCanvas("C2","C2");
 //	C2->Divide(1,2);
@@ -306,6 +321,9 @@ void Analyzer::Terminate()
 	
 	kineGS->Draw("SAME");
 	kineFS->Draw("SAME");
+
+	std::cout<<endl<<endl<<"Counts inside GS peak and FS peak ->"<<CountExGS<<" - "<<CountExFS<<endl;
+
 	//gStyle->SetPalette(53,0);
 //	if(enable_cut){
 //		ELabThetaLSelected->SetStats(kFALSE);

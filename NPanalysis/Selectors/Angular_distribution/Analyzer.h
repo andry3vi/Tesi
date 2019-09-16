@@ -85,6 +85,9 @@ public :
    bool enable_ExGate;  
    double * gs_Ex;
    double * fs_Ex;
+
+   int CountExGS;
+   int CountExFS;
    //------------//
 
    Analyzer(TTree * /*tree*/ =0) { }

@@ -37,7 +37,7 @@ public :
    // Readers to access the data (delete the ones you do not need).
 //   TTreeReaderValue<TMust2Physics> MUST2 = {fReader, "MUST2"};
 //   TTreeReaderValue<TMugastPhysics> Mugast = {fReader, "Mugast"};
-//   TTreeReaderArray<double> Ex = {fReader, "Ex"};
+   TTreeReaderArray<double> Ex = {fReader, "Ex"};
 //   TTreeReaderArray<double> ELab = {fReader, "ELab"};
 //   TTreeReaderArray<double> ThetaLab = {fReader, "ThetaLab"};
    TTreeReaderArray<double> PhiLab = {fReader, "PhiLab"};
@@ -77,6 +77,10 @@ public :
    TH1D * Edopp_TSgated;
    TH1D * Eraw;
 
+   double * gs_Ex;
+   double * fs_Ex;
+   int CountExGS;
+   int CountExFS;
    double Mass;
    double SoL;
    double LifeTime;
