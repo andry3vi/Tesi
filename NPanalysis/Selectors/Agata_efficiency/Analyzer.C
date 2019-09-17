@@ -120,7 +120,7 @@ Bool_t Analyzer::Process(Long64_t entry)
 	}
 
 	//Doppler correcting and selection of mult. one for agata and mugast//
-	if(*nbParticleM2 == 0 && *nbParticleMG == 1 && *nbAdd == 1 && Ex[0]>fs_Ex[0] && Ex[0]<fs_Ex[1]){
+	if(*nbParticleM2 == 0 && *nbParticleMG == 1 && *nbTrack == 1 && Ex[0]>fs_Ex[0] && Ex[0]<fs_Ex[1]){
 
 		double Beta = TMath::Sqrt(EheavyAfterTg[0]*EheavyAfterTg[0]+2*EheavyAfterTg[0]*Mass)/(EheavyAfterTg[0]+Mass); // Beta reconstructed with kinematics
 		//double Beta =0.101;  //beta averaged fixed
@@ -129,10 +129,10 @@ Bool_t Analyzer::Process(Long64_t entry)
 		//TVector3 BetaVector(0,0,Beta);//heavy direction z axis
 
 		//double Egamma = trackE[0]/1000; //MeV converted
-		double Egamma = AddE[0]/1000; //MeV converted
+		double Egamma = trackE[0]/1000; //MeV converted
 
 		//TVector3 HitPosition(trackX1[0],trackY1[0],trackZ1[0]+33);
-		TVector3 HitPosition(AddX[0],AddY[0],AddZ[0]+33);
+		TVector3 HitPosition(trackX1[0],trackY1[0],trackZ1[0]+33);
 
 		//TVector3 EmissionPosition(BetaVector.X()*SoL*LifeTime,BetaVector.Y()*SoL*LifeTime,BetaVector.Z()*SoL*LifeTime);//correction for decay position
 		TVector3 EmissionPosition(0,0,0);//decay postion at target center

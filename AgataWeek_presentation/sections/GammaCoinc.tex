@@ -13,14 +13,17 @@
 		\begin{column}{0.4\textwidth}
 			\begin{overlayarea}{\textwidth}{\textheight}
 			\centering
-			    \vspace{0.1\textheight}
-				\visible<1->{Gamma spectrum w/o gate.\\
-                            $\mathbf{6.9\ 10^{7}}$~\textbf{ev}.\\				    
+			    \vspace{-0.15\textheight}
+			    
+				\only<1>{\includegraphics[width=\textwidth]{AGATAimpact.png}
+				            Gamma spectrum w/o gate.\\
+                            $\mathbf{6.9\ 10^{7}}$~\textbf{ev}.\\	
+                            		    
 						    }
-				\visible<2>{
-							$\mathbf{\downarrow}$\\
+				\only<2>{   \vspace{0.3\textheight}
 							Proton gated spectrum.\\
 							$\mathbf{1.6\ 10^{3}}$~\textbf{ev}.\\
+							$\downarrow$\\
 							\vspace{0.1\textheight}
 							\textbf{Doppler Correction Needed.}
 							}
@@ -40,7 +43,7 @@
 			\begin{overlayarea}{\textwidth}{\textheight}
 				\centering
 				\only<1-2>{\includegraphics[width=\textwidth]{GammaDP_51shift}}
-				\only<3>{\includegraphics[width=\textwidth]{GammaDP_33shift}}
+				\only<3>{\includegraphics[width=\textwidth]{GammaDP_33shiftResolution}}
 			\end{overlayarea}
 		\end{column}
 		\begin{column}{0.5\textwidth}
@@ -71,24 +74,34 @@
 		\begin{column}{0.5\textwidth}
 			\begin{overlayarea}{\textwidth}{\textheight}
 				\centering
-				\only<1-2>{\includegraphics[width=\textwidth]{GammaDP_51shift}}
-				\only<3>{\includegraphics[width=\textwidth]{GammaDP_33shift}}
+				\vspace{0.0235\textheight}
+				\only<1>{\includegraphics[width=\textwidth]{GammaDP_33shiftInt}}
 			\end{overlayarea}
 		\end{column}
 		\begin{column}{0.5\textwidth}
 			\begin{overlayarea}{\textwidth}{\textheight}
 			\centering
-			    	\only<1>{
-						\vspace{0.15\textheight}			    	        
+			    	\vspace{-0.07\textheight}			    	        
 			    	        \begin{itemize}
-							\item Beta computation from proton direction
-							\item Gamma interaction position~(51~mm AGATA shift)
-						\end{itemize}
+			    	        		\centering
+							\item 870~keV excitation peak integral\\ (background removed)\\ $\downarrow$\\ $2562 \pm 50$~protons
+							\item{870~keV gamma peak integral (background removed)\\
+								  $\downarrow$\\ 
+								  \vspace{-0.07\textheight}
+								  \begin{align*}
+								  \text{\textbf{Add Back}}\ &\rightarrow\ 177\pm 13\ \gamma\\
+								  \text{\textbf{Tracking}}\ &\rightarrow\ 160\pm 13\ \gamma
+								  \end{align*}
+								  }
+								\end{itemize}
+						\textbf{Efficiency Estimate:}\\
+					  \vspace{-0.07\textheight}
+						\begin{align*}
+								  \text{\textbf{Add Back}}\ &\rightarrow\ 7.0 \pm 0.5\ \%\\
+								  \text{\textbf{Tracking}}\ &\rightarrow\ 6.3 \pm 0.5\ \%
+						\end{align*}
 						
-						\textbf{1.8~keV shift from 1/2+ state adopted energy.}}
-				\only<2>{\includegraphics[width=\textwidth]{AGATAShift_ADD_0}}
-				\only<3>{\includegraphics[width=\textwidth]{AGATAShift_ADD_1}}
-		    \end{overlayarea}	
+			\end{overlayarea}	
 		\end{column}
 	\end{columns}
 \end{frame}
