@@ -24,7 +24,7 @@ TwoBodyReaction
  Light= 1H
  Heavy= 17O
  ExcitationEnergy3= 0.0 MeV
- ExcitationEnergy4= 0.0 MeV
+ ExcitationEnergy4= 0.87 MeV
  CrossSectionPath= flat.txt CS17O
  ShootLight= 1
  ShootHeavy= 1
