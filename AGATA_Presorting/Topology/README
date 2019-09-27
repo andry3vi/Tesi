@@ -1,0 +1,16 @@
+#------------------------------------------------------------------------------------------------#
+Topology_BuildNeda.conf    --> To build data from data:ranc0, generated event:data:ranc0
+Topology_BuildDiamant.conf --> To build data from data:ranc1, generated event:data:ranc1
+
+Topology_MergeNeda.conf    --> data merging (Build data) for AGATA+NEDA
+Topology_MergeDiamant.conf --> data merging (Build data) for AGATA+DIAMANT
+Topology_Merge.conf        --> data merging (Build data) for all sub-system (AGATA+NEDA+DIAMANT)
+
+#------------------------------------------------------------------------------------------------#
+Topology_Global.conf       --> Do the build NEDA, build DIAMANT, Post-PSA + build AGATA, Merge, and Tracking
+Topology_BuildAgata.conf   --> Do the Build of agata data and tracking
+
+
+#------------------------------------------------------------------------------------------------#
+Topology_???.conf          --> For replay of individual crystals.
+Topology_???_ndam.conf     --> For neutron damage correction of one crystal
