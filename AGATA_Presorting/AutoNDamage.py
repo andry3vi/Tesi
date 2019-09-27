@@ -62,32 +62,31 @@ def main():
 	OUT_LIST = []
 
 	for CRYID in CRY:
+		DataDir  = MAIN_DIR + '/Data/' + CRYID
 		OutDir  = MAIN_DIR + '/Out/' + CRYID
 		ConfDir = MAIN_DIR + '/Conf/' + CRYID
-		print(OutDir)	
+			
 		
 		if os.path.isdir(OutDir):
 	
 			os.chdir(ConfDir)
-
-			cmd = 'RecalEnergy -spe ' + OutDir + '/Post__5-40-16384-UI__Ener.spec -sub 79 -num 1 -gain 4 -poly1 -' + args.src[0] + ' -dwa ' + str(args.dwa[0]) +' '+ str(args.dwa[1])+'| tee recalCore.log'
-			
-			extractcmd = 'tail -n 1 recalCore.log |tee recalCore_nohead.log ; awk -F\' \' \'{printf \"\\\"RecalCC %6.3f %.6f\\\"\\n\",$16,$17}\' recalCore_nohead.log | tee recalCore_short.log'
-			os.system(cmd)
+                                  
+			cmd_1 = 'cp Trapping.cal Trapping_old.cal'
+			cmd_2 = 'for i in {0..35}; do echo -e \"$i\\t1.\\t1.\\t999999.9\\t999999.9\\t1.\\t1.\" >> Trapping.cal; done'
+			cmd_3 = 'SortPsaHits -f '+DataDir+'/Psa__0-16-F__Hits.fdat -best 1300 1350 -bpar 1 10000 0 |tee sort_hit.log'
+			cmd_4 = 'tail -n 39 sort_hit.log |head -n 36 > sort_hit_nohead.log;'
+			cmd_5 = 'awk \'FNR==NR{a[NR]=$4;next}{$4=a[FNR]}1\'  sort_hit_nohead.log Trapping.cal |awk \'{printf \"%2s %10s %10s %10s %10s %10s %10s \\n\", $1,$2,$3,$4,$5,$6,$7}\' > Trapping_tmp.cal;'
+			cmd_6 = 'awk \'FNR==NR{a[NR]=$5;next}{$5=a[FNR]}1\'  sort_hit_nohead.log Trapping_tmp.cal |awk \'{printf \"%2s %10s %10s %10s %10s %10s %10s \\n\", $1,$2,$3,$4,$5,$6,$7}\' |tee Trapping.cal;'
+		
+			os.system(cmd_1)
+			os.system(cmd_3)
+			os.system(cmd_4)
+			os.system(cmd_5)
+			os.system(cmd_6)
 			#print(cmd)
 			
 			print('\n\n')
 			
-			os.system(extractcmd)
-			#print(extractcmd)
-
-			print('\n\n')
-
-
-			recalCore_file = open ('recalCore_short.log','r')
-			
-			OUT_LIST.append('\''+CRYID+'\' : ('+recalCore_file.read()[:-1])
- 
 
 	print('\n\n\n')
 	for out in OUT_LIST:

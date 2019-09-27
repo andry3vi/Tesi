@@ -70,7 +70,7 @@ def main():
 	
 			os.chdir(ConfDir)
 			
-			cmd = 'RecalEnergy -spe ' + OutDir + '/Post__5-40-16384-UI__Ener.spec -sub 40 -num 36 -gain 4 -poly1 -lim 4500 5800 -' + args.src + ' -dwa ' + str(args.dwa[0]) +' '+ str(args.dwa[1])+'| tee recal.log'
+			cmd = 'RecalEnergy -spe ' + OutDir + '/Post__5-40-16384-UI__Ener.spec -sub 40 -num 36 -gain 4 -poly1 -lim 4500 5800 -' + args.src[0] + ' -dwa ' + str(args.dwa[0]) +' '+ str(args.dwa[1])+'| tee recal.log'
 			os.system(cmd)
 			#print(cmd)
 
