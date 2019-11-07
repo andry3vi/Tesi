@@ -68,28 +68,28 @@ void Analyzer::Begin(TTree * /*tree*/)
 
 	ThetaLDist_gs = new TH1F("ThLabgs","Lab angular distribution",180,0,180);
 	ThetaLDist_gs->GetXaxis()->SetTitle("#theta_{LAB} [deg]");
-	ThetaLDist_gs->GetYaxis()->SetTitle("Counts"); 
-	ThetaLDist_gs->SetLineColor(2);//RED 
+	ThetaLDist_gs->GetYaxis()->SetTitle("Counts");
+	ThetaLDist_gs->SetLineColor(2);//RED
 
 	ThetaLDist_fs = new TH1F("ThLabfs","Lab angular distribution",180,0,180);
 	ThetaLDist_fs->GetXaxis()->SetTitle("#theta_{LAB} [deg]");
-	ThetaLDist_fs->GetYaxis()->SetTitle("Counts"); 
-	ThetaLDist_fs->SetLineColor(4);//BLUE 
+	ThetaLDist_fs->GetYaxis()->SetTitle("Counts");
+	ThetaLDist_fs->SetLineColor(4);//BLUE
 
 
 	ThetaCMDist_gs = new TH1F("ThCMgs","CM angular distribution",180,0,180);
 	ThetaCMDist_gs->GetXaxis()->SetTitle("#theta_{CM} [deg]");
-	ThetaCMDist_gs->GetYaxis()->SetTitle("Counts"); 
-	ThetaCMDist_gs->SetLineColor(2);//RED 
+	ThetaCMDist_gs->GetYaxis()->SetTitle("Counts");
+	ThetaCMDist_gs->SetLineColor(2);//RED
 
 	ThetaCMDist_fs = new TH1F("ThCMfs","CM angular distribution",180,0,180);
 	ThetaCMDist_fs->GetXaxis()->SetTitle("#theta_{CM} [deg]");
-	ThetaCMDist_fs->GetYaxis()->SetTitle("Counts"); 
-	ThetaCMDist_fs->SetLineColor(4);//BLUE 
+	ThetaCMDist_fs->GetYaxis()->SetTitle("Counts");
+	ThetaCMDist_fs->SetLineColor(4);//BLUE
 
 	kineGS = new TGraph("../Data/Xsection/KinematicLineGS.txt");
 	kineFS = new TGraph("../Data/Xsection/KinematicLineFS.txt");
-	
+
 	//--------------------------------//
 	//---------Open Cut File----------//
 	if(enable_cut){
@@ -99,13 +99,13 @@ void Analyzer::Begin(TTree * /*tree*/)
 	//--------------------------------//
 	//------------Ex Gate-------------//
 	if(enable_ExGate){
-		gs_Ex = new double[2]; 
+		gs_Ex = new double[2];
 		fs_Ex = new double[2];
-                
-		CountExGS = 0; 
+
+		CountExGS = 0;
 		CountExFS = 0;
 
-//----------------------RUN 256+257-------------------------//  
+//----------------------RUN 256+257-------------------------//
 		double hwhmgs = 0.29119804; //MeV
 		double hwhmfs = 0.36914251; //MeV
 
@@ -114,8 +114,8 @@ void Analyzer::Begin(TTree * /*tree*/)
 
 		fs_Ex[0] = 0.777442 - hwhmfs;
 		fs_Ex[1] = 0.777442 + hwhmfs;
-//----------------------RUN 256+257-------------------------//  
-////----------------------RUN 256-------------------------//  
+//----------------------RUN 256+257-------------------------//
+////----------------------RUN 256-------------------------//
 //		double hwhmgs = 0.209996; //MeV
 //		double hwhmfs = 0.345920; //MeV
 //
@@ -124,7 +124,7 @@ void Analyzer::Begin(TTree * /*tree*/)
 //
 //		fs_Ex[0] = 0.89807 - hwhmfs;
 //		fs_Ex[1] = 0.89807 + hwhmfs;
-////----------------------RUN 256-------------------------//  
+////----------------------RUN 256-------------------------//
 //
 //              gs_Ex[0] = 0.13;
 //              gs_Ex[1] = 0.3;
@@ -192,15 +192,15 @@ Bool_t Analyzer::Process(Long64_t entry)
 	//Filling impact matrix//
 	for(size_t i=0; i<(*nbParticleM2); i++){
 
-		impactM2->Fill(X[i],Y[i]);	   
+		impactM2->Fill(X[i],Y[i]);
 
 	}
 
 	for(size_t i=*nbParticleM2; i<(*nbParticleM2+*nbParticleMG); i++){
 
-		impactMG->Fill(X[i],Y[i]);	   
+		impactMG->Fill(X[i],Y[i]);
 
-	} 
+	}
 	//-----------------------//
 
 	//Filling multiplicity//
@@ -235,9 +235,9 @@ Bool_t Analyzer::Process(Long64_t entry)
 		else{
 			ELabThetaL->Fill(ThetaLab[i],ELab[i]);
 		}
-	} 
+	}
 
-        
+
 	//--------------Mugast---------------//
 	for(size_t i=*nbParticleM2; i<(*nbParticleM2+*nbParticleMG); i++){
 
@@ -261,14 +261,14 @@ Bool_t Analyzer::Process(Long64_t entry)
 		}
 		else{
 			ELabThetaL->Fill(ThetaLab[i],ELab[i]);
-			ExDist->Fill(Ex[i]);	
+			ExDist->Fill(Ex[i]);
 			ThetaLDist_gs->Fill(ThetaLab[i]);
 			ThetaCMDist_gs->Fill(ThetaCM[i]);
 			ThetaLDist_fs->Fill(ThetaLab[i]);
 			ThetaCMDist_fs->Fill(ThetaCM[i]);
 		}
 
-	} 
+	}
 
 	//--------------------------//
 	return kTRUE;
@@ -287,12 +287,12 @@ void Analyzer::Terminate()
 	// The Terminate() function is the last function to be called during
 	// a query. It always runs on the client, it can be used to present
 	// the results graphically or save the results to file.
-	
+
 	TCanvas *C3 = new TCanvas("C3","C3");
 	C3->cd();
 	ThetaLDist_gs->Draw();
 	ThetaLDist_fs->Draw("SAME");
-	
+
 	TCanvas *C1 = new TCanvas("C1","C1");
 	//C1->Divide(1,2);
 
@@ -306,19 +306,19 @@ void Analyzer::Terminate()
 	//impactMG->Draw("col");
 	//nbPmultMG->Draw();
 	ExDist->Draw();
-        TSpectrum * back = new TSpectrum();
-	TH1D * ExDist_back = (TH1D *) back->Background(ExDist,26);
-        ExDist_back->Draw("SAME");
-        ExDist->Add(ExDist_back,-1);
-        cout<<endl<<endl<<"Proton 1/2+ counts ->"<<ExDist->Integral(ExDist->FindBin(fs_Ex[0]), ExDist->FindBin(fs_Ex[1]))<<endl;
+  //      TSpectrum * back = new TSpectrum();
+	//TH1D * ExDist_back = (TH1D *) back->Background(ExDist,26);
+  //      ExDist_back->Draw("SAME");
+  //      ExDist->Add(ExDist_back,-1);
+  //      cout<<endl<<endl<<"Proton 1/2+ counts ->"<<ExDist->Integral(ExDist->FindBin(fs_Ex[0]), ExDist->FindBin(fs_Ex[1]))<<endl;
 
 	TCanvas *C2 = new TCanvas("C2","C2");
-//	C2->Divide(1,2);
+	C2->Divide(1,2);
 
 	C2->cd(1);
 	ELabThetaL->SetStats(kFALSE);
 	ELabThetaL->Draw("col");
-	
+
 	kineGS->Draw("SAME");
 	kineFS->Draw("SAME");
 
@@ -332,11 +332,11 @@ void Analyzer::Terminate()
 //		ELabThetaLSelected->SetMarkerSize(0.2);
 //		ELabThetaLSelected->Draw("SAME");
 //	}
-//	C2->cd(2);
-//	//   ThetaLDist_gs->Draw();
-//	//   ThetaLDist_fs->Draw("same");
-//	ThetaCMDist_gs->Draw();
-//	ThetaCMDist_fs->Draw("same");
+	C2->cd(2);
+	//   ThetaLDist_gs->Draw();
+	//   ThetaLDist_fs->Draw("same");
+	ThetaCMDist_gs->Draw();
+	ThetaCMDist_fs->Draw("same");
 
 }
 

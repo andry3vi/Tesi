@@ -1,0 +1,29 @@
+%Master Thesis
+%Author: A. Raggio
+%Year: 2019/2020
+
+
+\documentclass[a4paper,11pt]{report}
+\input{Setting-report}
+
+\begin{document}
+
+\input{Title}
+
+\blankpage
+
+\tableofcontents
+\thispagestyle{empty}
+\addtocounter{page}{-1}
+
+\newpage
+\blankpage
+\input{Chapter/Introduction}
+
+\input{Chapter/Conclusion}
+
+\appendix
+\clearpage
+\bibliography{biblio.bib}
+\bibliographystyle{ieeetr}
+\end{document}
