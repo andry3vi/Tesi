@@ -47,7 +47,7 @@ void Analysis::Init() {
 	M2 = (TMust2Physics*)  m_DetectorManager -> GetDetector("M2Telescope");
 	GDtracker = (GaspardTracker*) m_DetectorManager -> GetDetector("GaspardTracker");
 	GD = (TGaspardTrackerPhysics*) GDtracker->GetEventPhysics();
-	//MG = (TMugastPhysics*) m_DetectorManager -> GetDetector("Mugast");
+        AN = (TAnnularS1Physics*) m_DetectorManager -> GetDetector("AnnularS1");
 
 	// get reaction information
 	myReaction.ReadConfigurationFile(NPOptionManager::getInstance()->GetReactionFile());
@@ -83,6 +83,7 @@ void Analysis::Init() {
 	ThetaNormalTarget = 0;
 	ThetaM2Surface = 0;
 	ThetaMGSurface = 0;
+	ThetaANSurface = 0;
 	Si_E_M2 = 0;
 	CsI_E_M2 = 0;
 	ThetaGDSurface = 0;
@@ -118,7 +119,10 @@ void Analysis::TreatEvent() {
 	//Particle multiplicity
 	nbParticleM2 =  M2->Si_E.size(); 
 	nbParticleMG = 0;
+	nbParticleAN = 0;
 	if(GDtracker->GetEnergyDeposit()>0) nbParticleMG = 1; 
+	if(AN->GetEventMultiplicity()>0) nbParticleAN = 1; 
+         
 
 	//////////////////////////// LOOP on MUST2 //////////////////
 	for(unsigned int countMust2 = 0 ; countMust2 < M2->Si_E.size() ; countMust2++){
@@ -128,7 +132,7 @@ void Analysis::TreatEvent() {
 		int TelescopeNumber = M2->TelescopeNumber[countMust2];
 		int Xstripnumber = M2->Si_X[countMust2];
 		int Ystripnumber = M2->Si_Y[countMust2];
-
+//
 		std::string stripXID = "MM"+std::to_string(TelescopeNumber)+"X"+std::to_string(Xstripnumber); 
 		std::string stripYID = "MM"+std::to_string(TelescopeNumber)+"Y"+std::to_string(Ystripnumber); 
 		if( (BadStripSet.find(stripXID) == BadStripSet.end()) && (BadStripSet.find(stripYID) == BadStripSet.end()) ) {
@@ -202,9 +206,8 @@ void Analysis::TreatEvent() {
 	for(unsigned int countMugast = 0 ; countMugast < nbParticleMG ; countMugast++){
                 std::string stripXID;
 		std::string stripYID;
-		
+	        	
 		int TelescopeNumber = GD->fModuleNumber[countMugast];
-		
 		if (TelescopeNumber == 201) { 
                      stripXID = "MG11X"+std::to_string(anularX[GD->fFirstStage_FrontPosition[countMugast]-1]);
                      stripYID = "MG11Y"+std::to_string(anularY[GD->fFirstStage_BackPosition[countMugast]-1]);
@@ -253,7 +256,66 @@ void Analysis::TreatEvent() {
 		}
 	}//end loop Mugast
 
+	////////////////////////////////////////////////////////////////////////////
+	////////////////////////////////////////////////////////////////////////////
+	//////////////////////////// LOOP on Annular ///////////////////////////////
 
+
+	for(unsigned int countAN = 0 ; countAN < nbParticleAN ; countAN++){
+                /*
+		std::string stripXID;
+		std::string stripYID;
+		
+		int TelescopeNumber = GD->fModuleNumber[countMugast];
+		
+		if (TelescopeNumber == 201) { 
+                     stripXID = "MG11X"+std::to_string(anularX[GD->fFirstStage_FrontPosition[countMugast]-1]);
+                     stripYID = "MG11Y"+std::to_string(anularY[GD->fFirstStage_BackPosition[countMugast]-1]);
+		}
+                else{
+			stripXID = "MG"+std::to_string(GaspardMap[TelescopeNumber-101])+"X"+std::to_string(trapeX[GD->fFirstStage_FrontPosition[countMugast]-1]); 
+			stripYID = "MG"+std::to_string(GaspardMap[TelescopeNumber-101])+"Y"+std::to_string(trapeY[GD->fFirstStage_BackPosition[countMugast]-1]); 
+	//	}
+	        
+		//cout<<"IDx -> "<<stripXID<<"IDy ->"<<stripYID<<endl;	
+		
+		if( (BadStripSet.find(stripXID) == BadStripSet.end()) && (BadStripSet.find(stripYID) == BadStripSet.end()) ) {
+		*/
+		// Part 1 : Impact Angle
+		ThetaANSurface = 0;
+		ThetaNormalTarget = 0;
+		TVector3 HitDirection = AN -> GetPositionOfInteraction(0) - BeamImpact ;
+
+		ThetaLab.push_back( HitDirection.Angle( BeamDirection ));
+		X.push_back(  AN -> GetPositionOfInteraction(0).X());
+		Y.push_back(  AN -> GetPositionOfInteraction(0).Y());
+		Z.push_back(  AN -> GetPositionOfInteraction(0).Z());
+
+		ThetaANSurface = HitDirection.Angle( TVector3(0,0,1) ) ;
+		ThetaNormalTarget = HitDirection.Angle( TVector3(0,0,1) ) ;
+
+
+		// Part 2 : Impact Energy
+		Energy = 0;
+		Energy = AN->Strip_E[countAN];
+		// Target Correction
+		ELab.push_back( LightTarget.EvaluateInitialEnergy( Energy ,TargetThickness*0.5-zImpact, ThetaNormalTarget));
+
+		/************************************************/
+		// Part 3 : Excitation Energy Calculation
+		Ex.push_back( myReaction.ReconstructRelativistic( ELab.back() , ThetaLab.back()));
+
+		/************************************************/
+
+		/************************************************/
+		// Part 4 : Theta CM Calculation
+		ThetaCM.push_back( myReaction.EnergyLabToThetaCM( ELab.back() , ThetaLab.back()));
+		/************************************************/
+
+		ThetaLab.back()=ThetaLab.back()/deg;
+		ThetaCM.back()=ThetaCM.back()/deg;
+
+	}//end loop Annular
 }
 
 ////////////////////////////////////////////////////////////////////////////////

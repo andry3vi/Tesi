@@ -14,7 +14,7 @@ Target
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%  ANNULAR rough S1 geometry
-GaspardTracker Annular
+AnnularS1
  Z=      -126.9 mm
  X=      -0.3   mm
  Y=       1.0   mm
