@@ -47,7 +47,7 @@ void Analysis::Init() {
 	M2 = (TMust2Physics*)  m_DetectorManager -> GetDetector("M2Telescope");
 	GDtracker = (GaspardTracker*) m_DetectorManager -> GetDetector("GaspardTracker");
 	GD = (TGaspardTrackerPhysics*) GDtracker->GetEventPhysics();
-        AN = (TAnnularS1Physics*) m_DetectorManager -> GetDetector("AnnularS1");
+  AN = (TAnnularS1Physics*) m_DetectorManager -> GetDetector("AnnularS1");
 
 	// get reaction information
 	myReaction.ReadConfigurationFile(NPOptionManager::getInstance()->GetReactionFile());
@@ -56,7 +56,7 @@ void Analysis::Init() {
 	TargetThickness = m_DetectorManager->GetTargetThickness();
 	string TargetMaterial = m_DetectorManager->GetTargetMaterial();
 	// Cryo target case
-	WindowsThickness = 0;//m_DetectorManager->GetWindowsThickness(); 
+	WindowsThickness = 0;//m_DetectorManager->GetWindowsThickness();
 	string WindowsMaterial = "";//m_DetectorManager->GetWindowsMaterial();
 
 	// energy losses
@@ -68,8 +68,8 @@ void Analysis::Init() {
 	BeamCD2 = NPL::EnergyLoss(beam+"_"+TargetMaterial+".G4table","G4Table",100);
 
 	if(WindowsThickness){
-		BeamWindow= new NPL::EnergyLoss(beam+"_"+WindowsMaterial+".G4table","G4Table",100); 
-		LightWindow=  new NPL::EnergyLoss(light+"_"+WindowsMaterial+".G4table","G4Table",100);  
+		BeamWindow= new NPL::EnergyLoss(beam+"_"+WindowsMaterial+".G4table","G4Table",100);
+		LightWindow=  new NPL::EnergyLoss(light+"_"+WindowsMaterial+".G4table","G4Table",100);
 	}
 
 	else{
@@ -99,8 +99,8 @@ void Analysis::Init() {
 			BadStripSet.insert(strip);
 		}
 	}
-        
-	
+
+
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -111,18 +111,18 @@ void Analysis::TreatEvent() {
 	//trackE_tmp=trackE;
 
 	double zImpact = 0 ;
-	BeamImpact = TVector3(0,0,zImpact); 
+	BeamImpact = TVector3(0,0,zImpact);
 	// determine beam energy for a randomized interaction point in target
 	// 1% FWHM randominastion (E/100)/2.35
 	//myReaction.SetBeamEnergy(Rand.Gaus(myInit->GetIncidentFinalKineticEnergy(),myInit->GetIncidentFinalKineticEnergy()/235));
 
 	//Particle multiplicity
-	nbParticleM2 =  M2->Si_E.size(); 
+	nbParticleM2 =  M2->Si_E.size();
 	nbParticleMG = 0;
 	nbParticleAN = 0;
-	if(GDtracker->GetEnergyDeposit()>0) nbParticleMG = 1; 
+	if(GDtracker->GetEnergyDeposit()>0) nbParticleMG = 1;
 	if(AN->GetEventMultiplicity()>0) nbParticleAN = 1; 
-         
+
 
 	//////////////////////////// LOOP on MUST2 //////////////////
 	for(unsigned int countMust2 = 0 ; countMust2 < M2->Si_E.size() ; countMust2++){
@@ -133,8 +133,8 @@ void Analysis::TreatEvent() {
 		int Xstripnumber = M2->Si_X[countMust2];
 		int Ystripnumber = M2->Si_Y[countMust2];
 //
-		std::string stripXID = "MM"+std::to_string(TelescopeNumber)+"X"+std::to_string(Xstripnumber); 
-		std::string stripYID = "MM"+std::to_string(TelescopeNumber)+"Y"+std::to_string(Ystripnumber); 
+		std::string stripXID = "MM"+std::to_string(TelescopeNumber)+"X"+std::to_string(Xstripnumber);
+		std::string stripYID = "MM"+std::to_string(TelescopeNumber)+"Y"+std::to_string(Ystripnumber);
 		if( (BadStripSet.find(stripXID) == BadStripSet.end()) && (BadStripSet.find(stripYID) == BadStripSet.end()) ) {
 
 			/************************************************/
@@ -194,7 +194,7 @@ void Analysis::TreatEvent() {
 
 
 			ThetaLab.back()=ThetaLab.back()/deg;
-		}    
+		}
 		/************************************************/
 	}//end loop MUST2
 
@@ -206,19 +206,19 @@ void Analysis::TreatEvent() {
 	for(unsigned int countMugast = 0 ; countMugast < nbParticleMG ; countMugast++){
                 std::string stripXID;
 		std::string stripYID;
-	        	
+
 		int TelescopeNumber = GD->fModuleNumber[countMugast];
-		if (TelescopeNumber == 201) { 
+		if (TelescopeNumber == 201) {
                      stripXID = "MG11X"+std::to_string(anularX[GD->fFirstStage_FrontPosition[countMugast]-1]);
                      stripYID = "MG11Y"+std::to_string(anularY[GD->fFirstStage_BackPosition[countMugast]-1]);
 		}
                 else{
-			stripXID = "MG"+std::to_string(GaspardMap[TelescopeNumber-101])+"X"+std::to_string(trapeX[GD->fFirstStage_FrontPosition[countMugast]-1]); 
-			stripYID = "MG"+std::to_string(GaspardMap[TelescopeNumber-101])+"Y"+std::to_string(trapeY[GD->fFirstStage_BackPosition[countMugast]-1]); 
+			stripXID = "MG"+std::to_string(GaspardMap[TelescopeNumber-101])+"X"+std::to_string(trapeX[GD->fFirstStage_FrontPosition[countMugast]-1]);
+			stripYID = "MG"+std::to_string(GaspardMap[TelescopeNumber-101])+"Y"+std::to_string(trapeY[GD->fFirstStage_BackPosition[countMugast]-1]);
 		}
-	        
-		//cout<<"IDx -> "<<stripXID<<"IDy ->"<<stripYID<<endl;	
-		
+
+		//cout<<"IDx -> "<<stripXID<<"IDy ->"<<stripYID<<endl;
+
 		if( (BadStripSet.find(stripXID) == BadStripSet.end()) && (BadStripSet.find(stripYID) == BadStripSet.end()) ) {
 		// Part 1 : Impact Angle
 		ThetaMGSurface = 0;
@@ -265,20 +265,20 @@ void Analysis::TreatEvent() {
                 /*
 		std::string stripXID;
 		std::string stripYID;
-		
+
 		int TelescopeNumber = GD->fModuleNumber[countMugast];
-		
-		if (TelescopeNumber == 201) { 
+
+		if (TelescopeNumber == 201) {
                      stripXID = "MG11X"+std::to_string(anularX[GD->fFirstStage_FrontPosition[countMugast]-1]);
                      stripYID = "MG11Y"+std::to_string(anularY[GD->fFirstStage_BackPosition[countMugast]-1]);
 		}
                 else{
-			stripXID = "MG"+std::to_string(GaspardMap[TelescopeNumber-101])+"X"+std::to_string(trapeX[GD->fFirstStage_FrontPosition[countMugast]-1]); 
-			stripYID = "MG"+std::to_string(GaspardMap[TelescopeNumber-101])+"Y"+std::to_string(trapeY[GD->fFirstStage_BackPosition[countMugast]-1]); 
+			stripXID = "MG"+std::to_string(GaspardMap[TelescopeNumber-101])+"X"+std::to_string(trapeX[GD->fFirstStage_FrontPosition[countMugast]-1]);
+			stripYID = "MG"+std::to_string(GaspardMap[TelescopeNumber-101])+"Y"+std::to_string(trapeY[GD->fFirstStage_BackPosition[countMugast]-1]);
 	//	}
-	        
-		//cout<<"IDx -> "<<stripXID<<"IDy ->"<<stripYID<<endl;	
-		
+
+		//cout<<"IDx -> "<<stripXID<<"IDy ->"<<stripYID<<endl;
+
 		if( (BadStripSet.find(stripXID) == BadStripSet.end()) && (BadStripSet.find(stripYID) == BadStripSet.end()) ) {
 		*/
 		// Part 1 : Impact Angle
@@ -350,7 +350,7 @@ void Analysis::InitOutputBranch() {
 	//  RootOutput::getInstance()->GetTree()->Branch("coreE0",coreE0,"coreE0[nbCores]/F");
 	//  RootOutput::getInstance()->GetTree()->Branch("VTS",&VTS,"VTS/l");
 
-} 
+}
 
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -403,4 +403,3 @@ extern "C"{
 
 	proxy_analysis p_analysis;
 }
-

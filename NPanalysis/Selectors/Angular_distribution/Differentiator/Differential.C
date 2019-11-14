@@ -6,11 +6,11 @@
 #include <TPaveStats.h>
 //INCLUDE//
 
-string O17_fs_THFilename  = "../../Data/Xsection/16Odp17O_12p.dat";   //.dat filename  
-string O17_gs_THFilename  = "../../Data/Xsection/16Odp17O_52p.dat";   //.dat filename  
-string EfficiencyFilename = "../results/Efficiency_goodAN.root";    //TH1F filename
-string O17_gsFilename     = "../results/ADistCMgs.root";     
-string O17_fsFilename     = "../results/ADistCMfs.root";     
+string O17_fs_THFilename  = "../../Data/Xsection/16Odp17O_12p.dat";   //.dat filename
+string O17_gs_THFilename  = "../../Data/Xsection/16Odp17O_52p.dat";   //.dat filename
+string EfficiencyFilename = "../results/Efficiency_VMugast.root";    //TH1F filename
+string O17_gsFilename     = "../results/ADistCMgs.root";
+string O17_fsFilename     = "../results/ADistCMfs.root";
 
 TGraph * O17_fs_TH = 0;
 TGraph * O17_gs_TH = 0;
@@ -56,7 +56,7 @@ gStyle->SetOptStat(0);
 	TH1F * O17_gs     = (TH1F*) O17_gsFile->Get("ThCMgs");
 	TH1F * O17_fs     = (TH1F*) O17_fsFile->Get("ThCMfs");
 	TH1F * Hfactor = new TH1F("factor","factor",180,0,180);
-	
+
 	//O17_gs->SetDefaultSumw2(kFALSE);
 	//O17_fs->SetDefaultSumw2(kFALSE);
 
@@ -76,19 +76,19 @@ gStyle->SetOptStat(0);
 	C1->Update();
 
 	Efficiency->Scale(180/10E8); //scaling factor evaluated as #Ev_generated/cross_section_integral
-	
+
 
 
 
 	TH1F * O17_gs_treated = (TH1F*) O17_gs->Clone("ThCMGs_treated");
 	TH1F * O17_fs_treated = (TH1F*) O17_fs->Clone("ThCMFs_treated");
-	
+
 	TH1F * O17_gs_eff = (TH1F*) O17_gs->Clone("ThCMGs_treated");
 	TH1F * O17_fs_eff = (TH1F*) O17_fs->Clone("ThCMFs_treated");
 
 	//O17_fs_treated->Sumw2(kFALSE);
 	//O17_gs_treated->Sumw2(kFALSE);
-	
+
 	for(size_t i=0 ; i<180 ; i++){
 
 		Hfactor->SetBinContent(i+1,factor(i,i+1));
@@ -104,13 +104,13 @@ gStyle->SetOptStat(0);
 
 			O17_fs_treated->SetBinContent(i+1,Yeld_2/(Eff*IntFact));
 			O17_gs_treated->SetBinContent(i+1,Yeld_1/(Eff*IntFact));
-		        
+
 			O17_fs_eff->SetBinContent(i+1,Yeld_2/(Eff));
 			O17_gs_eff->SetBinContent(i+1,Yeld_1/(Eff));
-			
+
 			O17_fs_treated->SetBinError(i+1,sqrt(pow(SigmaYeld_2/(Eff*IntFact),2)+pow(Yeld_2*SigmaEff/(Eff*IntFact),2)));
 			O17_gs_treated->SetBinError(i+1,sqrt(pow(SigmaYeld_1/(Eff*IntFact),2)+pow(Yeld_1*SigmaEff/(Eff*IntFact),2)));
-			
+
 			O17_fs_eff->SetBinError(i+1,0);//sqrt(pow(SigmaYeld_2/(Eff*IntFact),2)+pow(Yeld_2*SigmaEff/(Eff*IntFact),2)));
 			O17_gs_eff->SetBinError(i+1,0);//sqrt(pow(SigmaYeld_1/(Eff*IntFact),2)+pow(Yeld_1*SigmaEff/(Eff*IntFact),2)));
 			//O17_fs_treated->SetBinContent(i+1,O17_fs_treated->GetBinContent(i+1)/(Efficiency->GetBinContent(i+1)));
@@ -122,13 +122,13 @@ gStyle->SetOptStat(0);
 			O17_gs_treated->SetBinContent(i+1,0);
 
 		}
-	}   
+	}
 
-       	O17_fs_treated->Rebin(2);
+	O17_fs_treated->Rebin(2);
 	O17_gs_treated->Rebin(2);
-		
 
-	//Retrieving xsec dist from .dat file 
+
+	//Retrieving xsec dist from .dat file
 	ifstream O17_fs_THFile(O17_fs_THFilename.c_str(),std::ifstream::in);
 	ifstream O17_gs_THFile(O17_gs_THFilename.c_str(),std::ifstream::in);
 
@@ -152,9 +152,9 @@ gStyle->SetOptStat(0);
 	O17_gs_TH = new TGraph(X.size());
 
 	for(size_t i = 0; i<X.size(); i++){
-		O17_gs_TH->SetPoint(i,X[i],Y[i]); 
+		O17_gs_TH->SetPoint(i,X[i],Y[i]);
 	}
-	
+
 	TF1 * fitGS = new TF1("fitGS",FitFunctionGS,10,35,1);
 
 	fitGS->SetParameter(0,1E3);
@@ -162,7 +162,7 @@ gStyle->SetOptStat(0);
 	O17_gs_treated->Fit("fitGS","RWN");
 	cout<<endl<<endl<<"fitGS chisq-> "<<fitGS->GetChisquare()<<endl<<endl;
 	double rescalingGS = fitGS->GetParameter(0);
-	
+
 	X.clear();
 	Y.clear();
 	//-------------fs theoretical cross section-------------//
@@ -182,7 +182,7 @@ gStyle->SetOptStat(0);
 	O17_fs_TH = new TGraph(X.size());
 
 	for(size_t i = 0; i<X.size(); i++){
-		O17_fs_TH->SetPoint(i,X[i],Y[i]); 
+		O17_fs_TH->SetPoint(i,X[i],Y[i]);
 	}
 
 	TF1 * fitFS = new TF1("fitFS",FitFunctionFS,10,35,1);
@@ -193,7 +193,7 @@ gStyle->SetOptStat(0);
 	cout<<endl<<endl<<"fitFS chisq-> "<<fitFS->GetChisquare()<<endl<<endl;
 	double rescalingFS = fitFS->GetParameter(0);
 
-	
+
 	O17_fs_treated->Scale(1.0/rescalingFS);
 	O17_gs_treated->Scale(1.0/rescalingGS);
 
@@ -201,7 +201,7 @@ gStyle->SetOptStat(0);
 	Cfactor->cd();
 	// //O17_fs_TH->Draw();
 	// fit->Draw();
-	// CrossSection_fs_Spline->Draw("SAME"); 
+	// CrossSection_fs_Spline->Draw("SAME");
 	//fit->Draw();
 	//Cfactor->Divide(1,2);
 
@@ -226,7 +226,7 @@ gStyle->SetOptStat(0);
 	//trapezoidal detector
 	Acceptance.push_back( new TLine(8.5,0,8.5,1E3));
 	Acceptance.push_back( new TLine(37.5,0,37.5,1E3));
-        
+
 
 	O17_fs_treated->SetLineColor(kBlue);
 	O17_fs_treated->SetLineWidth(2);
@@ -249,9 +249,8 @@ gStyle->SetOptStat(0);
 
 	C->Update();
 
-
 	TCanvas * C2 = new TCanvas("C2","C2");
-	
+
 	C2->cd();
 
 	O17_gs_eff->Draw();
