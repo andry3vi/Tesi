@@ -64,18 +64,6 @@ M2Telescope
 
 %%%%%%%%%%%%%----MUGAST---%%%%%%%%%%%%%%%%%%
 
-%%%%%%%%%%%%%%%%%%%%%%%%%  ANNULAR rough S1 geometry
-AnnularS1
- Z=      -126.9 mm
- X=      -0.3   mm
- Y=       1.0   mm
- RMIN=     24.00 mm
- RMAX=     48.00 mm
- FIRSTSTAGE=  1
- SECONDSTAGE= 0
- THIRDSTAGE=  0
- VIS= all
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Mugast Trapezoid
  DetectorNumber= 7
@@ -116,3 +104,8 @@ Mugast Trapezoid
  X1_Y128=  10.11  -44.71  -99.35 mm
  X1_Y1=  43.37  -125.07  -32.74 mm
  X128_Y1=  -48.18  -125.07  -32.45 mm
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Mugast Annular
+ DetectorNumber= 11
+ Center=  -0.3 1 -126.9 mm

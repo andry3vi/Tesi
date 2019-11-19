@@ -43,7 +43,7 @@ void Analysis::Init() {
 	// get MUST2 and Gaspard objects
 	M2 = (TMust2Physics*)  m_DetectorManager -> GetDetector("M2Telescope");
 	MG = (TMugastPhysics*) m_DetectorManager -> GetDetector("Mugast");
-  AN = (TAnnularS1Physics*) m_DetectorManager -> GetDetector("AnnularS1");
+
 	// get reaction information
 	myReaction.ReadConfigurationFile(NPOptionManager::getInstance()->GetReactionFile());
 	OriginalBeamEnergy = myReaction.GetBeamEnergy();
@@ -86,7 +86,6 @@ void Analysis::Init() {
 	ThetaMGSurface = 0;
 	Si_E_M2 = 0;
 	CsI_E_M2 = 0;
-	ThetaGDSurface = 0;
 	BeamDirection = TVector3(0,0,1);
 }
 
@@ -106,7 +105,6 @@ void Analysis::TreatEvent() {
 	//Particle multiplicity
 	nbParticleM2 =  M2->Si_E.size();
 	nbParticleMG =  MG->DSSD_E.size();
-  nbParticleAN = AN->GetEventMultiplicity();
 
 	//////////////////////////// LOOP on MUST2 //////////////////
 	for(unsigned int countMust2 = 0 ; countMust2 < M2->Si_E.size() ; countMust2++){
@@ -196,7 +194,7 @@ void Analysis::TreatEvent() {
 		X.push_back(  MG -> GetPositionOfInteraction(countMugast).X());
 		Y.push_back(  MG -> GetPositionOfInteraction(countMugast).Y());
 		Z.push_back(  MG -> GetPositionOfInteraction(countMugast).Z());
-
+    //if(MG->TelescopeNumber[countMugast]==11) cout<<"X-Y-Z --->>> "<<X.back()<<" "<<Y.back()<<" "<<Z.back()<<" "<<endl<<endl;
 		ThetaMGSurface = HitDirection.Angle( TVector3(0,0,1) ) ;
 		ThetaNormalTarget = HitDirection.Angle( TVector3(0,0,1) ) ;
 
@@ -224,121 +222,6 @@ void Analysis::TreatEvent() {
 
 	}//end loop Mugast
 
-	for(unsigned int countAN = 0 ; countAN < nbParticleAN ; countAN++){
-
-		// Part 1 : Impact Angle
-		ThetaANSurface = 0;
-		ThetaNormalTarget = 0;
-		TVector3 HitDirection = AN -> GetPositionOfInteraction(0) - BeamImpact ;
-
-		ThetaLab.push_back( HitDirection.Angle( BeamDirection ));
-		X.push_back(  AN -> GetPositionOfInteraction(0).X());
-		Y.push_back(  AN -> GetPositionOfInteraction(0).Y());
-		Z.push_back(  AN -> GetPositionOfInteraction(0).Z());
-
-		ThetaANSurface = HitDirection.Angle( TVector3(0,0,1) ) ;
-		ThetaNormalTarget = HitDirection.Angle( TVector3(0,0,1) ) ;
-
-
-		// Part 2 : Impact Energy
-		Energy = 0;
-		Energy = AN->Strip_E[countAN];
-		// Target Correction
-		ELab.push_back( LightTarget.EvaluateInitialEnergy( Energy ,TargetThickness*0.5-zImpact, ThetaNormalTarget));
-
-		/************************************************/
-		// Part 3 : Excitation Energy Calculation
-		Ex.push_back( myReaction.ReconstructRelativistic( ELab.back() , ThetaLab.back()));
-
-		/************************************************/
-
-		/************************************************/
-		// Part 4 : Theta CM Calculation
-		ThetaCM.push_back( myReaction.EnergyLabToThetaCM( ELab.back() , ThetaLab.back()));
-		/************************************************/
-
-		ThetaLab.back()=ThetaLab.back()/deg;
-		ThetaCM.back()=ThetaCM.back()/deg;
-
-	}//end loop Annular
-	////////////////////////////////////////////////////////////////////////////
-	///////////////////////////////// LOOP on AGATA ////////////////////////////
-	////////////////////////////////////////////////////////////////////////////
-	// Agata by track
-
-	//position evaluated with the lifetime of first 17O Ex state and its velocity
-        /*
-       	TVector3 GammaEmission(0,0,0.557);
-
-	double agata_zShift=5.1;
-
-	for(int j=0; j<nbTrack; j++){ // all multiplicity
-
-		TLorentzVector GammaLV;
-
-		// Measured E
-		double Egamma=trackE[j]/1000.; // From keV to MeV
-
-		// Gamma detection position
-		// TrackZ1 to be corrected there is a shift of +51mm
-		TVector3 GammaHit(trackX1[j],trackY1[j],trackZ1[j]+agata_zShift);
-		//TVector3 GammaHit(trackX1[0],trackY1[0],trackZ1[0]);
-
-		// Gamma Direction
-		TVector3 GammaDirection = GammaHit-(BeamImpact+GammaEmission);
-		GammaDirection = GammaDirection.Unit();
-
-		// Beta from Two body kinematic
-		TVector3 beta = myReaction.GetEnergyImpulsionLab_4().BoostVector();
-
-		// Beta from the Beam mid target
-		//reaction.GetKinematicLine4();
-		//TVector3 beta(0,0,-reaction.GetNucleus4()->GetBeta());
-
-		double ThetaGamma = GammaDirection.Angle(BeamDirection)/deg;
-		// Construct LV in lab frame
-		GammaLV.SetPx(Egamma*GammaDirection.X());
-		GammaLV.SetPy(Egamma*GammaDirection.Y());
-		GammaLV.SetPz(Egamma*GammaDirection.Z());
-		GammaLV.SetE(Egamma);
-		// Boost back in CM
-		GammaLV.Boost(beta);
-		// Get EDC
-		EDC.push_back(GammaLV.Energy());
-	}
-
-
-	// Agata add back is not always multiplicity 1 ?? NO, not necessarily!
-	if(nbAdd==1){
-		TLorentzVector GammaLV;
-		// Measured E
-		double Egamma=AddE[0]/1000.; // From keV to MeV
-		// Gamma detection position
-		// TrackZ1 to be corrected there is a shift of +51mm
-		TVector3 GammaHit(AddX[0],AddY[0],AddZ[0]+agata_zShift);
-		// TVector3 GammaHit(trackX1[0],trackY1[0],trackZ1[0]);
-		// Gamma Direction
-		TVector3 GammaDirection = GammaHit-BeamImpact;
-		GammaDirection = GammaDirection.Unit();
-		// Beta from Two body kinematic
-		//TVector3 beta = reaction.GetEnergyImpulsionLab_4().BoostVector();
-		// Beta from the Beam mid target
-		reaction.GetKinematicLine4();
-		// TVector3 beta(0,0,-reaction.GetNucleus4()->GetBeta());
-		TVector3 beta(0,0,-0.132);
-
-		double ThetaGamma = GammaDirection.Angle(BeamDirection)/deg;
-		// Construct LV in lab frame
-		GammaLV.SetPx(Egamma*GammaDirection.X());
-		GammaLV.SetPy(Egamma*GammaDirection.Y());
-		GammaLV.SetPz(Egamma*GammaDirection.Z());
-		GammaLV.SetE(Egamma);
-		// Boost back in CM
-		GammaLV.Boost(beta);
-		// Get EDC
-		AddBack_EDC = GammaLV.Energy();
-	}
-	*/
 
 }
 
