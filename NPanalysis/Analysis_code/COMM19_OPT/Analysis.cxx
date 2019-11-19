@@ -89,6 +89,7 @@ void Analysis::Init() {
 	for (size_t i = -1.0; i <= 1.0 ; i+=0.1) {
 		Target_dThickness.push_back(i);
 	}
+	Ex.reserve(Target_dThickness.size());
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -111,10 +112,7 @@ void Analysis::TreatEvent() {
 	//////////////////////////// LOOP on MUGAST //////////////////
 
 
-	for(unsigned int countMugast = 0 ; countMugast < MG->DSSD_E.size() ; countMugast++){
-
-		std::vector<double> Ex_event;
-		Ex_event.reserve(Target_dThickness.size());
+	for(unsigned int countMugast = 0 ; countMugast < 1/*MG->DSSD_E.size()*/ ; countMugast++){
 
 		TVector3 HitDirection = MG -> GetPositionOfInteraction(countMugast) - BeamImpact ;
 
@@ -139,11 +137,11 @@ void Analysis::TreatEvent() {
 					double ELab = LightTarget.EvaluateInitialEnergy( Energy ,EffectiveThickness*0.5-zImpact, ThetaNormalTarget));
 
 					// Excitation Energy Calculation
-					Ex_event.push_back( myReaction.ReconstructRelativistic( ELab , ThetaLab.back()));
+					Ex.push_back( myReaction.ReconstructRelativistic( ELab , ThetaLab.back()));
 
 		}
 
-		Ex.push_back(Ex_event);
+		
 
 	}//end loop Mugast
 }

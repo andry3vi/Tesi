@@ -49,7 +49,7 @@ class Analysis: public NPL::VAnalysis{
   static NPL::VAnalysis* Construct();
 
   private:
-  std::vector<std::vector<double>> Ex;
+  std::vector<double> Ex;
   std::vector<double> Target_dThickness;
   std::vector<double> ThetaLab;
   std::vector<double> PhiLab;
