@@ -93,7 +93,7 @@ void Analyzer::Begin(TTree * /*tree*/)
 	//--------------------------------//
 	//---------Open Cut File----------//
 	if(enable_cut){
-		CutG_p_file = new TFile("../Data/old/EdE_CutG_p.root");
+		CutG_p_file = new TFile("../Data/cutg/EdE_CutG_p.root");
 		CutG_p = (TCutG *)CutG_p_file->Get("EdE_p");
 	}
 	//--------------------------------//
