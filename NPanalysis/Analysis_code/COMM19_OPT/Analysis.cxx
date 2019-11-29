@@ -86,7 +86,7 @@ void Analysis::Init() {
 
 
 	//target thickness scan definition
-	for (size_t i = -1.0; i <= 1.0 ; i+=0.1) {
+	for (double i = -0.0001; i <= 0.0001 ; i+=0.00001) {
 		Target_dThickness.push_back(i);
 	}
 	Ex.reserve(Target_dThickness.size());
@@ -111,34 +111,35 @@ void Analysis::TreatEvent() {
 	////////////////////////////////////////////////////////////////////////////
 	//////////////////////////// LOOP on MUGAST //////////////////
 
+ 
+        if(nbParticleMG){
 
-	for(unsigned int countMugast = 0 ; countMugast < 1/*MG->DSSD_E.size()*/ ; countMugast++){
-
-		TVector3 HitDirection = MG -> GetPositionOfInteraction(countMugast) - BeamImpact ;
+		TVector3 HitDirection = MG -> GetPositionOfInteraction(0) - BeamImpact ;
 
 		ThetaLab.push_back(HitDirection.Theta());
-    PhiLab.push_back(HitDirection.Phi());
+    		PhiLab.push_back(HitDirection.Phi());
 
 		ThetaMGSurface = HitDirection.Angle( TVector3(0,0,1) ) ;
 		ThetaNormalTarget = HitDirection.Angle( TVector3(0,0,1) ) ;
 
 		// Part 2 : Impact Energy
 		Energy = 0;
-		Energy = MG->GetEnergyDeposit(countMugast);
+		Energy = MG->GetEnergyDeposit(0);
 
 		for (auto& dthick : Target_dThickness) {
 
-					EffectiveThickness = TargetThickness + dthick;
+					double EffectiveThickness = TargetThickness + dthick;
 
 					FinalBeamEnergy = BeamCD2.Slow(OriginalBeamEnergy,EffectiveThickness*0.5,0);
 					myReaction.SetBeamEnergy(FinalBeamEnergy);
 
 					// Target Correction
-					double ELab = LightTarget.EvaluateInitialEnergy( Energy ,EffectiveThickness*0.5-zImpact, ThetaNormalTarget));
+					double ELab = LightTarget.EvaluateInitialEnergy( Energy ,EffectiveThickness*0.5-zImpact, ThetaNormalTarget);
 
 					// Excitation Energy Calculation
 					Ex.push_back( myReaction.ReconstructRelativistic( ELab , ThetaLab.back()));
 
+//cout<<"EffectiveThickness ->> "<<EffectiveThickness<<" Ex.back() ->>"<<Ex.back()<<endl;
 		}
 
 		
