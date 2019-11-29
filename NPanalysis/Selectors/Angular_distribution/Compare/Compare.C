@@ -7,8 +7,8 @@
 //INCLUDE//
 
 
-string EfficiencyFilename_1 = "../results/Efficiency_VMugast_1.1.root";    //TH1F filename
-string EfficiencyFilename_2 = "../results/Efficiency.root";    //TH1F filename
+string EfficiencyFilename_1 = "../../Data/npsim/EfficiencyAD_VMugast.root";    //TH1F filename
+string EfficiencyFilename_2 = "../../Data/npsim/EfficiencyAD_VGaspard.root";    //TH1F filename
 
 
 //macro
@@ -28,13 +28,13 @@ gStyle->SetOptStat(0);
 	TCanvas * C1 = new TCanvas("C1","C1");
 	C1->cd();
 
-	Efficiency_1->Scale(1.0/Efficiency_1->Integral()); //scaling factor evaluated as #Ev_generated/cross_section_integral
-	Efficiency_2->Scale(1.0/Efficiency_2->Integral());
+	Efficiency_1->Scale(1.0/1.0E7); //scaling factor evaluated as #Ev_generated/cross_section_integral
+	Efficiency_2->Scale(1.0/1.0E7);
   Efficiency_1->SetStats(kFALSE);
 	Efficiency_2->SetStats(kFALSE);
 	Efficiency_2->GetXaxis()->SetTitle("#theta_{CM} [deg]");
   Efficiency_2->GetYaxis()->SetTitle("Efficiency [n.u.]");
-	Efficiency_2->GetXaxis()->SetRangeUser(0,45);
+	Efficiency_2->GetXaxis()->SetRangeUser(0,180);
 
 	Efficiency_2->Draw();
 	Efficiency_1->Draw("SAME");

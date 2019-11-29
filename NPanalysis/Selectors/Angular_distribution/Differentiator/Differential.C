@@ -8,7 +8,7 @@
 
 string O17_fs_THFilename  = "../../Data/Xsection/16Odp17O_12p.dat";   //.dat filename
 string O17_gs_THFilename  = "../../Data/Xsection/16Odp17O_52p.dat";   //.dat filename
-string EfficiencyFilename = "../results/Efficiency_VMugast_1.1.root";    //TH1F filename
+string EfficiencyFilename = "../../Data/npsim/EfficiencyAD_VMugast.root";    //TH1F filename
 string O17_gsFilename     = "../results/ADistCMgs.root";
 string O17_fsFilename     = "../results/ADistCMfs.root";
 

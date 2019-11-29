@@ -120,8 +120,8 @@ void Analysis::TreatEvent() {
 	nbParticleM2 =  M2->Si_E.size();
 	nbParticleMG = 0;
 	nbParticleAN = 0;
-	if(GDtracker->GetEnergyDeposit()>0) nbParticleMG = 1;
-	if(AN->GetEventMultiplicity()>0) nbParticleAN = 1; 
+	if(GD->GetEventMultiplicity()>0) nbParticleMG = 1;
+	if(AN->GetEventMultiplicity()>0) nbParticleAN = 1;
 
 
 	//////////////////////////// LOOP on MUST2 //////////////////
@@ -356,18 +356,7 @@ void Analysis::InitOutputBranch() {
 ////////////////////////////////////////////////////////////////////////////////
 void Analysis::InitInputBranch(){
 	//Agata
-	RootInput::getInstance()->GetChain()->SetBranchAddress("VTS",&VTS);
-	RootInput::getInstance()->GetChain()->SetBranchAddress("nbTrack",&nbTrack);
-	RootInput::getInstance()->GetChain()->SetBranchAddress("trackE",trackE);
-	RootInput::getInstance()->GetChain()->SetBranchAddress("trackX1",trackX1);
-	RootInput::getInstance()->GetChain()->SetBranchAddress("trackY1",trackY1);
-	RootInput::getInstance()->GetChain()->SetBranchAddress("trackZ1",trackZ1);
-	RootInput::getInstance()->GetChain()->SetBranchAddress("trackT",trackT);
-	RootInput::getInstance()->GetChain()->SetBranchAddress("trackCrystalID",trackCrystalID);
-	RootInput::getInstance()->GetChain()->SetBranchAddress("nbCores",&nbCores);
-	RootInput::getInstance()->GetChain()->SetBranchAddress("coreId",coreId);
-	RootInput::getInstance()->GetChain()->SetBranchAddress("coreTS",coreTS);
-	RootInput::getInstance()->GetChain()->SetBranchAddress("coreE0",coreE0);
+
 }
 ////////////////////////////////////////////////////////////////////////////////
 void Analysis::ReInitValue(){

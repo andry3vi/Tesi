@@ -48,10 +48,10 @@ void Analysis::Init() {
 	myReaction.ReadConfigurationFile(NPOptionManager::getInstance()->GetReactionFile());
 	OriginalBeamEnergy = myReaction.GetBeamEnergy();
 	// target thickness
-	TargetThickness = m_DetectorManager->GetTargetThickness();
+	TargetThickness = m_DetectorManager->GetTargetThickness() - 0.004264688621; //value computed with optimization
 	string TargetMaterial = m_DetectorManager->GetTargetMaterial();
 	// Cryo target case
-	WindowsThickness = 0;//m_DetectorManager->GetWindowsThickness(); 
+	WindowsThickness = 0;//m_DetectorManager->GetWindowsThickness();
 	string WindowsMaterial = "";//m_DetectorManager->GetWindowsMaterial();
 
 	// energy losses
@@ -65,8 +65,8 @@ void Analysis::Init() {
 	HeavyCD2 = NPL::EnergyLoss(heavy+"_"+TargetMaterial+".G4table","G4Table",100);
 
 	if(WindowsThickness){
-		BeamWindow= new NPL::EnergyLoss(beam+"_"+WindowsMaterial+".G4table","G4Table",100); 
-		LightWindow=  new NPL::EnergyLoss(light+"_"+WindowsMaterial+".G4table","G4Table",100);  
+		BeamWindow= new NPL::EnergyLoss(beam+"_"+WindowsMaterial+".G4table","G4Table",100);
+		LightWindow=  new NPL::EnergyLoss(light+"_"+WindowsMaterial+".G4table","G4Table",100);
 	}
 
 	else{
@@ -98,14 +98,14 @@ void Analysis::TreatEvent() {
 	//trackE_tmp=trackE;
 
 	double zImpact = 0 ;
-	BeamImpact = TVector3(0,0,zImpact); 
+	BeamImpact = TVector3(0,0,zImpact);
 	// determine beam energy for a randomized interaction point in target
 	// 1% FWHM randominastion (E/100)/2.35
 	//myReaction.SetBeamEnergy(Rand.Gaus(myInit->GetIncidentFinalKineticEnergy(),myInit->GetIncidentFinalKineticEnergy()/235));
 
 	//Particle multiplicity
-	nbParticleM2 =  M2->Si_E.size(); 
-	nbParticleMG =  MG->DSSD_E.size(); 
+	nbParticleM2 =  M2->Si_E.size();
+	nbParticleMG =  MG->DSSD_E.size();
 
 	//////////////////////////// LOOP on MUST2 //////////////////
 	for(unsigned int countMust2 = 0 ; countMust2 < M2->Si_E.size() ; countMust2++){
@@ -187,11 +187,11 @@ void Analysis::TreatEvent() {
 		ThetaMGSurface = 0;
 		ThetaNormalTarget = 0;
 		TVector3 HitDirection = MG -> GetPositionOfInteraction(countMugast) - BeamImpact ;
-                
+
 		//ThetaLab.push_back( HitDirection.Angle( BeamDirection ));
 		ThetaLab.push_back( HitDirection.Theta());
                 PhiLab.push_back(HitDirection.Phi());
-		
+
 		X.push_back(  MG -> GetPositionOfInteraction(countMugast).X());
 		Y.push_back(  MG -> GetPositionOfInteraction(countMugast).Y());
 		Z.push_back(  MG -> GetPositionOfInteraction(countMugast).Z());
@@ -220,19 +220,19 @@ void Analysis::TreatEvent() {
 		ThetaLab.back()=ThetaLab.back()/deg;
 		PhiLab.back()=PhiLab.back()/deg;
 		ThetaCM.back()=ThetaCM.back()/deg;
-                
+
                 double thetah_tmp;
                 double Eh_tmp;
 
                 double thetal_tmp;
                 double El_tmp;
-                
-                myReaction.SetNuclei3(ELab.back(),ThetaLab.back()*deg); 
+
+                myReaction.SetNuclei3(ELab.back(),ThetaLab.back()*deg);
                 myReaction.KineRelativistic(thetal_tmp, El_tmp,thetah_tmp, Eh_tmp);
-                
+
                 ThetaHeavy.push_back(thetah_tmp/deg);
 		EheavyAfterTg.push_back(HeavyCD2.Slow(Eh_tmp,TargetThickness*0.5,thetah_tmp));
-       
+
 
 	}//end loop Mugast
 
@@ -240,33 +240,33 @@ void Analysis::TreatEvent() {
 	///////////////////////////////// LOOP on AGATA ////////////////////////////
 	////////////////////////////////////////////////////////////////////////////
 	// Agata by track
-	
+
 	//position evaluated with the lifetime of first 17O Ex state and its velocity
         /*
-       	TVector3 GammaEmission(0,0,0.557); 
-	
+       	TVector3 GammaEmission(0,0,0.557);
+
 	double agata_zShift=5.1;
-	
+
 	for(int j=0; j<nbTrack; j++){ // all multiplicity
-		
+
 		TLorentzVector GammaLV;
-		
+
 		// Measured E
-		double Egamma=trackE[j]/1000.; // From keV to MeV 
-		
+		double Egamma=trackE[j]/1000.; // From keV to MeV
+
 		// Gamma detection position
 		// TrackZ1 to be corrected there is a shift of +51mm
-		TVector3 GammaHit(trackX1[j],trackY1[j],trackZ1[j]+agata_zShift); 
-		//TVector3 GammaHit(trackX1[0],trackY1[0],trackZ1[0]); 
-		
-		// Gamma Direction 
+		TVector3 GammaHit(trackX1[j],trackY1[j],trackZ1[j]+agata_zShift);
+		//TVector3 GammaHit(trackX1[0],trackY1[0],trackZ1[0]);
+
+		// Gamma Direction
 		TVector3 GammaDirection = GammaHit-(BeamImpact+GammaEmission);
 		GammaDirection = GammaDirection.Unit();
-		
+
 		// Beta from Two body kinematic
 		TVector3 beta = myReaction.GetEnergyImpulsionLab_4().BoostVector();
-		
-		// Beta from the Beam mid target 
+
+		// Beta from the Beam mid target
 		//reaction.GetKinematicLine4();
 		//TVector3 beta(0,0,-reaction.GetNucleus4()->GetBeta());
 
@@ -287,17 +287,17 @@ void Analysis::TreatEvent() {
 	if(nbAdd==1){
 		TLorentzVector GammaLV;
 		// Measured E
-		double Egamma=AddE[0]/1000.; // From keV to MeV 
+		double Egamma=AddE[0]/1000.; // From keV to MeV
 		// Gamma detection position
 		// TrackZ1 to be corrected there is a shift of +51mm
-		TVector3 GammaHit(AddX[0],AddY[0],AddZ[0]+agata_zShift); 
-		// TVector3 GammaHit(trackX1[0],trackY1[0],trackZ1[0]); 
-		// Gamma Direction 
+		TVector3 GammaHit(AddX[0],AddY[0],AddZ[0]+agata_zShift);
+		// TVector3 GammaHit(trackX1[0],trackY1[0],trackZ1[0]);
+		// Gamma Direction
 		TVector3 GammaDirection = GammaHit-BeamImpact;
 		GammaDirection = GammaDirection.Unit();
 		// Beta from Two body kinematic
 		//TVector3 beta = reaction.GetEnergyImpulsionLab_4().BoostVector();
-		// Beta from the Beam mid target 
+		// Beta from the Beam mid target
 		reaction.GetKinematicLine4();
 		// TVector3 beta(0,0,-reaction.GetNucleus4()->GetBeta());
 		TVector3 beta(0,0,-0.132);
@@ -361,7 +361,7 @@ void Analysis::InitOutputBranch() {
 	RootOutput::getInstance()->GetTree()->Branch("AddX",AddX,"AddX[nbAdd]/F");
 	RootOutput::getInstance()->GetTree()->Branch("AddY",AddY,"AddY[nbAdd]/F");
 	RootOutput::getInstance()->GetTree()->Branch("AddZ",AddZ,"AddZ[nbAdd]/F");
-} 
+}
 
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -420,4 +420,3 @@ extern "C"{
 
 	proxy_analysis p_analysis;
 }
-
