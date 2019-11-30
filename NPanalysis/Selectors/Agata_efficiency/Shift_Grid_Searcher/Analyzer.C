@@ -108,8 +108,8 @@ Bool_t Analyzer::Process(Long64_t entry)
 
 			TVector3 HitPosition(trackX1[0],trackY1[0],trackZ1[0]+i);
 
-			//TVector3 EmissionPosition(BetaVector.X()*SoL*LifeTime,BetaVector.Y()*SoL*LifeTime,BetaVector.Z()*SoL*LifeTime);//correction for decay position
-			TVector3 EmissionPosition(0,0,0);//decay postion at target center
+			TVector3 EmissionPosition(BetaVector.X()*SoL*LifeTime,BetaVector.Y()*SoL*LifeTime,BetaVector.Z()*SoL*LifeTime);//correction for decay position
+			//TVector3 EmissionPosition(0,0,0);//decay postion at target center
 
 			TVector3 GammaDirection = HitPosition - EmissionPosition;
 			TVector3 GammaVersor = GammaDirection.Unit();

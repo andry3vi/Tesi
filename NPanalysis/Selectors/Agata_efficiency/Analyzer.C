@@ -141,7 +141,7 @@ Bool_t Analyzer::Process(Long64_t entry)
 		double Egamma = trackE[0]/1000; //MeV converted
 
 		//TVector3 HitPosition(trackX1[0],trackY1[0],trackZ1[0]+33);
-		TVector3 HitPosition(trackX1[0],trackY1[0],trackZ1[0]+33);
+		TVector3 HitPosition(trackX1[0],trackY1[0],trackZ1[0]);
 
 		//TVector3 EmissionPosition(BetaVector.X()*SoL*LifeTime,BetaVector.Y()*SoL*LifeTime,BetaVector.Z()*SoL*LifeTime);//correction for decay position
 		TVector3 EmissionPosition(0,0,0);//decay postion at target center
