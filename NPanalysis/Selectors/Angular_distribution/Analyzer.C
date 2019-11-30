@@ -104,16 +104,25 @@ void Analyzer::Begin(TTree * /*tree*/)
 
 		CountExGS = 0;
 		CountExFS = 0;
-
-//----------------------RUN 256+257-------------------------//
+//------------RUN 256+257 thickness corrected---------------//
 		double hwhmgs = 0.29119804; //MeV
 		double hwhmfs = 0.36914251; //MeV
 
-		gs_Ex[0] = 0.0424022 - hwhmgs;
-		gs_Ex[1] = 0.0424022 + hwhmgs;
+		gs_Ex[0] = 0.0 - hwhmgs;
+		gs_Ex[1] = 0.0 + hwhmgs;
 
-		fs_Ex[0] = 0.777442 - hwhmfs;
-		fs_Ex[1] = 0.777442 + hwhmfs;
+		fs_Ex[0] = 0.87073 - hwhmfs;
+		fs_Ex[1] = 0.87073 + hwhmfs;
+//------------RUN 256+257 thickness corrected---------------//
+////----------------------RUN 256+257-------------------------//
+//		double hwhmgs = 0.29119804; //MeV
+//		double hwhmfs = 0.36914251; //MeV
+//
+//		gs_Ex[0] = 0.0424022 - hwhmgs;
+//		gs_Ex[1] = 0.0424022 + hwhmgs;
+//
+//		fs_Ex[0] = 0.777442 - hwhmfs;
+//		fs_Ex[1] = 0.777442 + hwhmfs;
 //----------------------RUN 256+257-------------------------//
 ////----------------------RUN 256-------------------------//
 //		double hwhmgs = 0.209996; //MeV
