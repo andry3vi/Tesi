@@ -129,7 +129,7 @@ Bool_t Analyzer::Process(Long64_t entry)
 	}
 
 	//Doppler correcting and selection of mult. one for agata and mugast//
-	if(*nbParticleM2 == 0 && *nbParticleMG == 1 && *nbTrack == 1 && Ex[0]>fs_Ex[0] && Ex[0]<fs_Ex[1]){
+	if(*nbParticleM2 == 0 && *nbParticleMG == 1 && *nbTrack == 1 ){
 
 		double Beta = TMath::Sqrt(EheavyAfterTg[0]*EheavyAfterTg[0]+2*EheavyAfterTg[0]*Mass)/(EheavyAfterTg[0]+Mass); // Beta reconstructed with kinematics
 		//double Beta =0.101;  //beta averaged fixed
@@ -141,7 +141,7 @@ Bool_t Analyzer::Process(Long64_t entry)
 		double Egamma = trackE[0]/1000; //MeV converted
 
 		//TVector3 HitPosition(trackX1[0],trackY1[0],trackZ1[0]+33);
-		TVector3 HitPosition(trackX1[0],trackY1[0],trackZ1[0]);
+		TVector3 HitPosition(trackX1[0],trackY1[0],trackZ1[0]+51);
 
 		//TVector3 EmissionPosition(BetaVector.X()*SoL*LifeTime,BetaVector.Y()*SoL*LifeTime,BetaVector.Z()*SoL*LifeTime);//correction for decay position
 		TVector3 EmissionPosition(0,0,0);//decay postion at target center
@@ -158,7 +158,7 @@ Bool_t Analyzer::Process(Long64_t entry)
 		Gamma.Boost(-1.0*BetaVector);
 
 
-		Edopp->Fill(Gamma.Energy()*1000);
+		/*if(Ex[0]>fs_Ex[0] && Ex[0]<fs_Ex[1])*/ Edopp->Fill(Gamma.Energy()*1000);
 		Edopp_TSgated->Fill(Egamma*1000);
 	}
 	//------------------------------------------------------------------//
@@ -174,8 +174,8 @@ void Analyzer::SlaveTerminate()
 	//C1->Divide(1,2);
 
 	C1->cd();
-        //Eraw->Draw();
-	Edopp->Draw("");
+  //Eraw->Draw();
+	Edopp->Draw();
 	//Edopp_TSgated->Draw();
 
 }
