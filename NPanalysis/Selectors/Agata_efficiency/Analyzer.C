@@ -138,10 +138,11 @@ Bool_t Analyzer::Process(Long64_t entry)
 		//TVector3 BetaVector(0,0,Beta);//heavy direction z axis
 
 		//double Egamma = trackE[0]/1000; //MeV converted
-		double Egamma = trackE[0]/1000; //MeV converted
+		//double Egamma = trackE[0]/1000; //MeV converted
+		double Egamma = AddE[0]/1000; //MeV converted
 
-		//TVector3 HitPosition(trackX1[0],trackY1[0],trackZ1[0]+33);
-		TVector3 HitPosition(trackX1[0],trackY1[0],trackZ1[0]+51);
+		TVector3 HitPosition(AddX[0],AddY[0],AddZ[0]+51);
+		//TVector3 HitPosition(trackX1[0],trackY1[0],trackZ1[0]+51);
 
 		//TVector3 EmissionPosition(BetaVector.X()*SoL*LifeTime,BetaVector.Y()*SoL*LifeTime,BetaVector.Z()*SoL*LifeTime);//correction for decay position
 		TVector3 EmissionPosition(0,0,0);//decay postion at target center
@@ -158,7 +159,7 @@ Bool_t Analyzer::Process(Long64_t entry)
 		Gamma.Boost(-1.0*BetaVector);
 
 
-		/*if(Ex[0]>fs_Ex[0] && Ex[0]<fs_Ex[1])*/ Edopp->Fill(Gamma.Energy()*1000);
+		if(Ex[0]>fs_Ex[0] && Ex[0]<fs_Ex[1]) Edopp->Fill(Gamma.Energy()*1000);
 		Edopp_TSgated->Fill(Egamma*1000);
 	}
 	//------------------------------------------------------------------//
@@ -176,6 +177,13 @@ void Analyzer::SlaveTerminate()
 	C1->cd();
   //Eraw->Draw();
 	Edopp->Draw();
+
+	TSpectrum * back = new TSpectrum();
+	TH1D * Edopp_back = (TH1D *) back->Background(Edopp,25);
+	Edopp_back->Draw("SAME");
+	Edopp->Add(Edopp_back,-1);
+	//cout<<endl<<endl<<"gamma 1/2+ counts ->"<<Edopp->Integral(Edopp->FindBin(862.68), Edopp->FindBin(873.87))<<endl;
+	cout<<endl<<endl<<"gamma 1/2+ counts ->"<<Edopp->Integral(Edopp->FindBin(850), Edopp->FindBin(885))<<endl;
 	//Edopp_TSgated->Draw();
 
 }

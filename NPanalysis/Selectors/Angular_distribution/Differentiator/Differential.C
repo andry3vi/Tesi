@@ -150,9 +150,12 @@ gStyle->SetOptStat(0);
 	}
 
 	O17_gs_TH = new TGraph(X.size());
+  TH1F * gsTHTot = new TH1F("","",X.size(),0,180);//--------tmp-------//
 
 	for(size_t i = 0; i<X.size(); i++){
 		O17_gs_TH->SetPoint(i,X[i],Y[i]);
+		double IntFact = factor(i*180.0/X.size(),(i+1)*180.0/X.size());//--------tmp-------//
+		gsTHTot->SetBinContent(i+1,Y[i]*IntFact);//--------tmp-------//
 	}
 
 	TF1 * fitGS = new TF1("fitGS",FitFunctionGS,10,35,1);
@@ -205,13 +208,13 @@ gStyle->SetOptStat(0);
 	//fit->Draw();
 	//Cfactor->Divide(1,2);
 
-	Cfactor->cd(1);
-	Efficiency->Draw();
+	//Cfactor->cd(1);
+	//Efficiency->Draw();
 
 	//Cfactor->cd(2);
-	//Hfactor->Draw();
+	Hfactor->Draw();
 
-	Cfactor->Update();
+	//Cfactor->Update();
 
 	TCanvas * C = new TCanvas("C","C");
 	C->cd();
@@ -259,9 +262,11 @@ gStyle->SetOptStat(0);
 	TCanvas * C2 = new TCanvas("C2","C2");
 
 	C2->cd();
+  gsTHTot->Draw();
+	cout<<"------"<<gsTHTot->Integral(gsTHTot->GetBin(100),gsTHTot->GetBin(160))<<endl;
 
-	O17_gs_eff->Draw();
-	O17_fs_eff->Draw("SAME");
+	//O17_gs_eff->Draw();
+	//O17_fs_eff->Draw("SAME");
 
 	return ;
 }

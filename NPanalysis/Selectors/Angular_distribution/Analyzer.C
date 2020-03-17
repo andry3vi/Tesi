@@ -314,38 +314,38 @@ void Analyzer::Terminate()
 	//C1->cd(2);
 	//impactMG->Draw("col");
 	//nbPmultMG->Draw();
-	ExDist->Draw();
-  //      TSpectrum * back = new TSpectrum();
-	//TH1D * ExDist_back = (TH1D *) back->Background(ExDist,26);
-  //      ExDist_back->Draw("SAME");
-  //      ExDist->Add(ExDist_back,-1);
-  //      cout<<endl<<endl<<"Proton 1/2+ counts ->"<<ExDist->Integral(ExDist->FindBin(fs_Ex[0]), ExDist->FindBin(fs_Ex[1]))<<endl;
+				ExDist->Draw();
+        TSpectrum * back = new TSpectrum();
+	      TH1D * ExDist_back = (TH1D *) back->Background(ExDist,30);
+        ExDist_back->Draw("SAME");
+        ExDist->Add(ExDist_back,-1);
+        cout<<endl<<endl<<"Proton 1/2+ counts ->"<<ExDist->Integral(ExDist->FindBin(fs_Ex[0]), ExDist->FindBin(fs_Ex[1]))<<endl;
 
-	TCanvas *C2 = new TCanvas("C2","C2");
-	C2->Divide(1,2);
-
-	C2->cd(1);
-	ELabThetaL->SetStats(kFALSE);
-	ELabThetaL->Draw("col");
-
-	kineGS->Draw("SAME");
-	kineFS->Draw("SAME");
-
-	std::cout<<endl<<endl<<"Counts inside GS peak and FS peak ->"<<CountExGS<<" - "<<CountExFS<<endl;
-
-	//gStyle->SetPalette(53,0);
-//	if(enable_cut){
-//		ELabThetaLSelected->SetStats(kFALSE);
-//		ELabThetaLSelected->SetMarkerColor(2);
-//		ELabThetaLSelected->SetMarkerStyle(3);
-//		ELabThetaLSelected->SetMarkerSize(0.2);
-//		ELabThetaLSelected->Draw("SAME");
-//	}
-	C2->cd(2);
-	//   ThetaLDist_gs->Draw();
-	//   ThetaLDist_fs->Draw("same");
-	ThetaCMDist_gs->Draw();
-	ThetaCMDist_fs->Draw("same");
+// 	TCanvas *C2 = new TCanvas("C2","C2");
+// //	C2->Divide(1,2);
+// //
+// //	C2->cd(1);
+// //	ELabThetaL->SetStats(kFALSE);
+// //	ELabThetaL->Draw("col");
+// //
+// //	kineGS->Draw("SAME");
+// //	kineFS->Draw("SAME");
+// //
+// //	std::cout<<endl<<endl<<"Counts inside GS peak and FS peak ->"<<CountExGS<<" - "<<CountExFS<<endl;
+// //
+// //	//gStyle->SetPalette(53,0);
+// ////	if(enable_cut){
+// ////		ELabThetaLSelected->SetStats(kFALSE);
+// ////		ELabThetaLSelected->SetMarkerColor(2);
+// ////		ELabThetaLSelected->SetMarkerStyle(3);
+// ////		ELabThetaLSelected->SetMarkerSize(0.2);
+// ////		ELabThetaLSelected->Draw("SAME");
+// ////	}
+// 	C2->cd();
+// 	//   ThetaLDist_gs->Draw();
+// 	//   ThetaLDist_fs->Draw("same");
+// 	ThetaCMDist_gs->Draw();
+// 	ThetaCMDist_fs->Draw("same");
 
 }
 
