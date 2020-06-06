@@ -102,8 +102,8 @@ gStyle->SetOptStat(0);
 		if(Eff !=0){
 
 
-			O17_fs_treated->SetBinContent(i+1,Yeld_2/(Eff*IntFact));
-			O17_gs_treated->SetBinContent(i+1,Yeld_1/(Eff*IntFact));
+			O17_fs_treated->SetBinContent(i+1,Yeld_2/(Eff*IntFact*IntFact));
+			O17_gs_treated->SetBinContent(i+1,Yeld_1/(Eff*IntFact*IntFact));
 
 			O17_fs_eff->SetBinContent(i+1,Yeld_2/(Eff));
 			O17_gs_eff->SetBinContent(i+1,Yeld_1/(Eff));

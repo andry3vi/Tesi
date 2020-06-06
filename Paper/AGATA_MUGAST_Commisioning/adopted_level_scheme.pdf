@@ -1,7858 +1,0 @@
-%PDF-1.4
-%öäüß
-1 0 obj
-<<
-/Type /Catalog
-/Pages 2 0 R
-/Outlines 3 0 R
-/Dests 4 0 R
-/OpenAction [5 0 R /Fit]
-/PageMode /UseOutlines
-/Metadata 6 0 R
->>
-endobj
-7 0 obj
-<<
-/Producer (dvips + GPL Ghostscript 9.07)
-/CreationDate (D:20181114124334-05'00')
-/ModDate (D:20181114124334-05'00')
-/Creator (LaTeX with hyperref package)
-/Title ()
-/Subject ()
-/Author ()
-/Keywords ()
->>
-endobj
-2 0 obj
-<<
-/Type /Pages
-/Kids [5 0 R 8 0 R 9 0 R 10 0 R]
-/Count 4
->>
-endobj
-3 0 obj
-<<
-/Count 1
-/First 11 0 R
-/Last 11 0 R
->>
-endobj
-4 0 obj
-<<
-/page.1 [5 0 R /XYZ -30.2620468 807.446716 null]
-/Doc-Start [5 0 R /XYZ 52.3666534 728.193237 null]
-/section*.1 [5 0 R /XYZ 318.320251 724.195862 null]
-/section*.2 [5 0 R /XYZ 318.320251 726.941101 null]
-/O0 [5 0 R /XYZ 52.3666534 720.240906 null]
-/17O_LEVEL [5 0 R /XYZ 52.3666534 591.479858 null]
-/table.1 [5 0 R /XYZ 52.3666534 463.85321 null]
-/page.2 [8 0 R /XYZ -30.2620468 807.446716 null]
-/table.2 [8 0 R /XYZ 52.3666534 726.193237 null]
-/page.3 [9 0 R /XYZ -30.2620468 807.446716 null]
-/table.3 [9 0 R /XYZ 52.3666534 726.193237 null]
-/page.4 [10 0 R /XYZ -30.2620468 807.446716 null]
-/table.4 [10 0 R /XYZ 52.3666534 726.193237 null]
-/O0LEVEL0 [10 0 R /XYZ 66.5797501 616.412964 null]
-/17O_GAMMA [10 0 R /XYZ 52.3666534 596.900085 null]
-/table.5 [10 0 R /XYZ 52.3666534 588.639343 null]
->>
-endobj
-5 0 obj
-<<
-/Type /Page
-/MediaBox [0 0 612 792]
-/Rotate 0
-/Parent 2 0 R
-/Resources <<
-/ProcSet [/PDF /ImageB /Text]
-/ExtGState 12 0 R
-/Font 13 0 R
->>
-/Annots [14 0 R 15 0 R 16 0 R 17 0 R 18 0 R 19 0 R 20 0 R 21 0 R 22 0 R 23 0 R
-24 0 R 25 0 R 26 0 R 27 0 R 28 0 R 29 0 R 30 0 R 31 0 R 32 0 R 33 0 R
-34 0 R 35 0 R 36 0 R 37 0 R 38 0 R 39 0 R 40 0 R 41 0 R 42 0 R 43 0 R
-44 0 R 45 0 R 46 0 R 47 0 R 48 0 R 49 0 R 50 0 R 51 0 R 52 0 R 53 0 R
-54 0 R 55 0 R 56 0 R 57 0 R 58 0 R 59 0 R 60 0 R 61 0 R 62 0 R 63 0 R
-64 0 R 65 0 R 66 0 R 67 0 R 68 0 R 69 0 R 70 0 R 71 0 R 72 0 R 73 0 R
-74 0 R 75 0 R 76 0 R 77 0 R 78 0 R 79 0 R 80 0 R 81 0 R 82 0 R 83 0 R
-84 0 R 85 0 R 86 0 R 87 0 R 88 0 R 89 0 R 90 0 R 91 0 R 92 0 R 93 0 R
-94 0 R 95 0 R 96 0 R 97 0 R 98 0 R 99 0 R 100 0 R 101 0 R 102 0 R 103 0 R
-104 0 R 105 0 R 106 0 R 107 0 R 108 0 R 109 0 R 110 0 R 111 0 R 112 0 R 113 0 R
-114 0 R 115 0 R 116 0 R 117 0 R 118 0 R 119 0 R 120 0 R 121 0 R 122 0 R 123 0 R
-124 0 R 125 0 R 126 0 R 127 0 R 128 0 R 129 0 R 130 0 R 131 0 R 132 0 R 133 0 R
-134 0 R 135 0 R 136 0 R 137 0 R 138 0 R 139 0 R 140 0 R 141 0 R 142 0 R 143 0 R
-144 0 R 145 0 R 146 0 R 147 0 R 148 0 R 149 0 R 150 0 R 151 0 R 152 0 R 153 0 R
-154 0 R 155 0 R 156 0 R 157 0 R 158 0 R 159 0 R 160 0 R 161 0 R 162 0 R 163 0 R
-164 0 R 165 0 R 166 0 R 167 0 R 168 0 R 169 0 R 170 0 R 171 0 R 172 0 R 173 0 R
-174 0 R 175 0 R 176 0 R 177 0 R 178 0 R 179 0 R 180 0 R 181 0 R 182 0 R 183 0 R
-184 0 R 185 0 R 186 0 R 187 0 R 188 0 R 189 0 R 190 0 R 191 0 R 192 0 R 193 0 R
-194 0 R 195 0 R 196 0 R 197 0 R 198 0 R 199 0 R 200 0 R 201 0 R 202 0 R 203 0 R
-204 0 R 205 0 R 206 0 R 207 0 R 208 0 R 209 0 R 210 0 R 211 0 R 212 0 R 213 0 R
-214 0 R 215 0 R 216 0 R 217 0 R 218 0 R 219 0 R 220 0 R 221 0 R 222 0 R 223 0 R
-224 0 R 225 0 R 226 0 R 227 0 R 228 0 R 229 0 R 230 0 R 231 0 R 232 0 R 233 0 R
-234 0 R 235 0 R 236 0 R 237 0 R 238 0 R 239 0 R 240 0 R 241 0 R 242 0 R 243 0 R
-244 0 R 245 0 R 246 0 R 247 0 R 248 0 R 249 0 R 250 0 R 251 0 R 252 0 R 253 0 R
-254 0 R 255 0 R 256 0 R 257 0 R 258 0 R 259 0 R 260 0 R 261 0 R 262 0 R 263 0 R
-264 0 R 265 0 R 266 0 R 267 0 R 268 0 R]
-/Contents 269 0 R
->>
-endobj
-6 0 obj
-<<
-/Type /Metadata
-/Subtype /XML
-/Length 1552
->>
-stream
-<?xpacket begin='ï»¿' id='W5M0MpCehiHzreSzNTczkc9d'?>
-<?adobe-xap-filters esc="CRLF"?>
-<x:xmpmeta xmlns:x='adobe:ns:meta/' x:xmptk='XMP toolkit 2.9.1-13, framework 1.6'>
-<rdf:RDF xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#' xmlns:iX='http://ns.adobe.com/iX/1.0/'>
-<rdf:Description rdf:about='uuid:5b8839de-2051-11f4-0000-1093772ec0da' xmlns:pdf='http://ns.adobe.com/pdf/1.3/'><pdf:Producer>dvips + GPL Ghostscript 9.07</pdf:Producer>
-<pdf:Keywords>()</pdf:Keywords>
-</rdf:Description>
-<rdf:Description rdf:about='uuid:5b8839de-2051-11f4-0000-1093772ec0da' xmlns:xmp='http://ns.adobe.com/xap/1.0/'><xmp:ModifyDate>2018-11-14T12:43:34-05:00</xmp:ModifyDate>
-<xmp:CreateDate>2018-11-14T12:43:34-05:00</xmp:CreateDate>
-<xmp:CreatorTool>LaTeX with hyperref package</xmp:CreatorTool></rdf:Description>
-<rdf:Description rdf:about='uuid:5b8839de-2051-11f4-0000-1093772ec0da' xmlns:xapMM='http://ns.adobe.com/xap/1.0/mm/' xapMM:DocumentID='uuid:5b8839de-2051-11f4-0000-1093772ec0da'/>
-<rdf:Description rdf:about='uuid:5b8839de-2051-11f4-0000-1093772ec0da' xmlns:dc='http://purl.org/dc/elements/1.1/' dc:format='application/pdf'><dc:title><rdf:Alt><rdf:li xml:lang='x-default'>()</rdf:li></rdf:Alt></dc:title><dc:creator><rdf:Seq><rdf:li>()</rdf:li></rdf:Seq></dc:creator><dc:description><rdf:Seq><rdf:li>()</rdf:li></rdf:Seq></dc:description></rdf:Description>
-</rdf:RDF>
-</x:xmpmeta>
-                                                                        
-                                                                        
-<?xpacket end='w'?>
-endstream
-endobj
-8 0 obj
-<<
-/Type /Page
-/MediaBox [0 0 612 792]
-/Rotate 0
-/Parent 2 0 R
-/Resources <<
-/ProcSet [/PDF /ImageB /Text]
-/ExtGState 270 0 R
-/Font 271 0 R
->>
-/Annots [272 0 R 273 0 R 274 0 R 275 0 R 276 0 R 277 0 R 278 0 R 279 0 R 280 0 R 281 0 R
-282 0 R 283 0 R 284 0 R 285 0 R 286 0 R 287 0 R 288 0 R 289 0 R 290 0 R 291 0 R
-292 0 R 293 0 R 294 0 R 295 0 R 296 0 R 297 0 R 298 0 R 299 0 R 300 0 R 301 0 R
-302 0 R 303 0 R 304 0 R 305 0 R 306 0 R 307 0 R 308 0 R 309 0 R 310 0 R 311 0 R
-312 0 R 313 0 R 314 0 R 315 0 R 316 0 R 317 0 R 318 0 R 319 0 R 320 0 R 321 0 R
-322 0 R 323 0 R 324 0 R 325 0 R 326 0 R 327 0 R 328 0 R 329 0 R 330 0 R 331 0 R
-332 0 R 333 0 R 334 0 R 335 0 R 336 0 R 337 0 R 338 0 R 339 0 R 340 0 R 341 0 R
-342 0 R 343 0 R 344 0 R 345 0 R 346 0 R 347 0 R 348 0 R 349 0 R 350 0 R 351 0 R
-352 0 R 353 0 R 354 0 R 355 0 R 356 0 R 357 0 R 358 0 R 359 0 R 360 0 R 361 0 R
-362 0 R 363 0 R 364 0 R 365 0 R 366 0 R 367 0 R 368 0 R 369 0 R 370 0 R 371 0 R
-372 0 R 373 0 R 374 0 R 375 0 R 376 0 R 377 0 R 378 0 R 379 0 R 380 0 R 381 0 R
-382 0 R 383 0 R 384 0 R 385 0 R 386 0 R 387 0 R 388 0 R 389 0 R 390 0 R 391 0 R
-392 0 R 393 0 R 394 0 R 395 0 R 396 0 R 397 0 R 398 0 R 399 0 R 400 0 R 401 0 R
-402 0 R]
-/Contents 403 0 R
->>
-endobj
-9 0 obj
-<<
-/Type /Page
-/MediaBox [0 0 612 792]
-/Rotate 0
-/Parent 2 0 R
-/Resources <<
-/ProcSet [/PDF /ImageB /Text]
-/ExtGState 404 0 R
-/Font 405 0 R
->>
-/Annots [406 0 R 407 0 R 408 0 R 409 0 R 410 0 R 411 0 R 412 0 R 413 0 R 414 0 R 415 0 R
-416 0 R 417 0 R 418 0 R 419 0 R 420 0 R 421 0 R 422 0 R 423 0 R 424 0 R 425 0 R
-426 0 R 427 0 R 428 0 R 429 0 R 430 0 R 431 0 R 432 0 R 433 0 R 434 0 R 435 0 R
-436 0 R 437 0 R 438 0 R 439 0 R 440 0 R 441 0 R 442 0 R 443 0 R 444 0 R 445 0 R
-446 0 R 447 0 R 448 0 R 449 0 R 450 0 R 451 0 R 452 0 R 453 0 R 454 0 R 455 0 R
-456 0 R 457 0 R 458 0 R 459 0 R 460 0 R 461 0 R 462 0 R 463 0 R 464 0 R 465 0 R
-466 0 R 467 0 R 468 0 R 469 0 R 470 0 R]
-/Contents 471 0 R
->>
-endobj
-10 0 obj
-<<
-/Type /Page
-/MediaBox [0 0 612 792]
-/Rotate 0
-/Parent 2 0 R
-/Resources <<
-/ProcSet [/PDF /ImageB /Text]
-/ExtGState 472 0 R
-/Font 473 0 R
->>
-/Annots [474 0 R 475 0 R 476 0 R]
-/Contents 477 0 R
->>
-endobj
-11 0 obj
-<<
-/Title (17 8O9 )
-/Dest /section*.1
-/Count -1
-/Parent 3 0 R
-/First 478 0 R
-/Last 478 0 R
->>
-endobj
-12 0 obj
-<<
-/R8 479 0 R
->>
-endobj
-13 0 obj
-<<
-/R23 480 0 R
-/R25 481 0 R
-/R21 482 0 R
-/R14 483 0 R
-/R93 484 0 R
-/R19 485 0 R
-/R72 486 0 R
-/R9 487 0 R
-/R31 488 0 R
-/R91 489 0 R
->>
-endobj
-14 0 obj
-<<
-/Type /Annot
-/C [1 0 0]
-/H /I
-/Border [0 0 0]
-/Rect [277.644 710.484 303.876 718.596]
-/Dest /17O_LEVEL
-/Subtype /Link
->>
-endobj
-15 0 obj
-<<
-/Type /Annot
-/C [1 0 0]
-/H /I
-/Border [0 0 0]
-/Rect [306.324 710.484 342.756 718.716]
-/Dest /17O_GAMMA
-/Subtype /Link
->>
-endobj
-16 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [355.164 710.484 392.316 718.716]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/nsr/nsrlink.jsp?1993Ti07,B)
->>
-/Subtype /Link
->>
-endobj
-17 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [304.524 637.284 345.156 645.396]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/nsr/nsrlink.jsp?2012Wa38,B)
->>
-/Subtype /Link
->>
-endobj
-18 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [350.724 614.244 390.516 622.476]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/nsr/nsrlink.jsp?1997Au04,B)
->>
-/Subtype /Link
->>
-endobj
-19 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [169.884 602.844 206.316 611.196]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/nsr/nsrlink.jsp?1993Ti07,B)
->>
-/Subtype /Link
->>
-endobj
-20 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [182.244 531.564 193.716 539.076]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/beta_decay.pdf)
->>
-/Subtype /Link
->>
-endobj
-21 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [284.484 531.564 295.956 539.076]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/14c_6li_t.pdf)
->>
-/Subtype /Link
->>
-endobj
-22 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [383.244 530.364 394.596 539.316]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_7li_6li.pdf)
->>
-/Subtype /Link
->>
-endobj
-23 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [182.244 520.644 193.716 528.156]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/ec_decay.pdf)
->>
-/Subtype /Link
->>
-endobj
-24 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [284.484 520.524 295.956 528.156]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/14n_t_g.pdf)
->>
-/Subtype /Link
->>
-endobj
-25 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [383.244 520.644 394.596 528.156]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/17o_e_e.pdf)
->>
-/Subtype /Link
->>
-endobj
-26 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [182.244 509.484 193.716 517.356]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/12c_6li_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-27 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [284.484 509.604 295.956 517.236]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/14n_6li_3he.pdf)
->>
-/Subtype /Link
->>
-endobj
-28 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [383.244 509.484 394.596 517.356]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/17o_pi_pi.pdf)
->>
-/Subtype /Link
->>
-endobj
-29 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [182.244 498.684 193.716 506.196]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/12c_9be_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-30 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [284.484 498.684 295.956 506.196]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/15n_3he_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-31 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [383.244 498.684 394.596 506.196]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/18o_d_t.pdf)
->>
-/Subtype /Link
->>
-endobj
-32 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [182.244 487.644 193.716 495.156]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_a_n_13c_a_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-33 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [284.484 487.644 295.956 495.156]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/15n_a_d.pdf)
->>
-/Subtype /Link
->>
-endobj
-34 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [383.244 487.524 394.596 495.156]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/18o_3he_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-35 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [182.244 476.604 193.716 484.236]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_6li_d.pdf)
->>
-/Subtype /Link
->>
-endobj
-36 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [284.484 476.604 295.956 484.236]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-37 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [383.244 476.604 394.596 484.236]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/18f_d_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-38 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [182.244 465.444 193.716 473.436]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_13c_9be.pdf)
->>
-/Subtype /Link
->>
-endobj
-39 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [284.484 465.444 295.956 473.436]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_p_pi+.pdf)
->>
-/Subtype /Link
->>
-endobj
-40 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [182.244 454.644 193.716 462.156]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/14c_3he_x.pdf)
->>
-/Subtype /Link
->>
-endobj
-41 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [284.484 454.644 295.956 462.156]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_d_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-42 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [216.684 422.604 223.356 430.236]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/beta_decay.pdf)
->>
-/Subtype /Link
->>
-endobj
-43 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [221.364 422.604 228.036 430.236]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/ec_decay.pdf)
->>
-/Subtype /Link
->>
-endobj
-44 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [226.044 422.484 232.716 430.476]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/12c_6li_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-45 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [230.724 422.604 237.516 430.236]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/12c_9be_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-46 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [240.204 422.604 246.876 430.236]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_6li_d.pdf)
->>
-/Subtype /Link
->>
-endobj
-47 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [254.364 422.604 261.036 430.236]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/14c_6li_t.pdf)
->>
-/Subtype /Link
->>
-endobj
-48 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [259.044 422.484 265.716 430.236]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/14n_t_g.pdf)
->>
-/Subtype /Link
->>
-endobj
-49 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [263.724 422.604 270.396 430.236]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/14n_6li_3he.pdf)
->>
-/Subtype /Link
->>
-endobj
-50 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [268.404 422.604 275.076 430.236]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/15n_3he_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-51 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [273.084 422.604 279.876 430.236]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/15n_a_d.pdf)
->>
-/Subtype /Link
->>
-endobj
-52 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [282.564 422.484 289.236 430.476]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_p_pi+.pdf)
->>
-/Subtype /Link
->>
-endobj
-53 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [287.244 422.604 293.916 430.236]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_d_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-54 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [291.924 421.404 298.716 430.476]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_7li_6li.pdf)
->>
-/Subtype /Link
->>
-endobj
-55 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [296.724 422.604 303.396 430.236]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/17o_e_e.pdf)
->>
-/Subtype /Link
->>
-endobj
-56 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [301.404 422.484 308.076 430.476]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/17o_pi_pi.pdf)
->>
-/Subtype /Link
->>
-endobj
-57 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [306.084 422.604 312.756 430.236]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/18o_d_t.pdf)
->>
-/Subtype /Link
->>
-endobj
-58 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [310.764 422.484 317.436 430.236]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/18o_3he_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-59 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [315.444 422.604 322.236 430.236]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/18f_d_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-60 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [418.764 422.364 457.716 430.596]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/nsr/nsrlink.jsp?1989Ra17,B)
->>
-/Subtype /Link
->>
-endobj
-61 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [216.684 412.644 223.356 420.276]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/beta_decay.pdf)
->>
-/Subtype /Link
->>
-endobj
-62 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [226.044 412.524 232.716 420.516]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/12c_6li_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-63 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [230.724 412.644 237.516 420.276]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/12c_9be_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-64 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [240.204 412.644 246.876 420.276]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_6li_d.pdf)
->>
-/Subtype /Link
->>
-endobj
-65 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [254.364 412.644 261.036 420.276]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/14c_6li_t.pdf)
->>
-/Subtype /Link
->>
-endobj
-66 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [259.044 412.524 265.716 420.276]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/14n_t_g.pdf)
->>
-/Subtype /Link
->>
-endobj
-67 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [263.724 412.644 270.396 420.276]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/14n_6li_3he.pdf)
->>
-/Subtype /Link
->>
-endobj
-68 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [268.404 412.644 275.076 420.276]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/15n_3he_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-69 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [273.084 412.644 279.876 420.276]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/15n_a_d.pdf)
->>
-/Subtype /Link
->>
-endobj
-70 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [282.564 412.524 289.236 420.516]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_p_pi+.pdf)
->>
-/Subtype /Link
->>
-endobj
-71 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [287.244 412.644 293.916 420.276]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_d_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-72 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [291.924 411.444 298.716 420.516]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_7li_6li.pdf)
->>
-/Subtype /Link
->>
-endobj
-73 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [296.724 412.644 303.396 420.276]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/17o_e_e.pdf)
->>
-/Subtype /Link
->>
-endobj
-74 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [306.084 412.644 312.756 420.276]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/18o_d_t.pdf)
->>
-/Subtype /Link
->>
-endobj
-75 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [310.764 412.524 317.436 420.276]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/18o_3he_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-76 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [315.444 412.644 322.236 420.276]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/18f_d_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-77 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [216.684 402.684 223.356 410.316]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/beta_decay.pdf)
->>
-/Subtype /Link
->>
-endobj
-78 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [226.044 402.564 232.716 410.436]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/12c_6li_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-79 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [230.724 402.684 237.516 410.316]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/12c_9be_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-80 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [240.204 402.684 246.876 410.316]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_6li_d.pdf)
->>
-/Subtype /Link
->>
-endobj
-81 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [254.364 402.684 261.036 410.316]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/14c_6li_t.pdf)
->>
-/Subtype /Link
->>
-endobj
-82 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [263.724 402.684 270.396 410.316]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/14n_6li_3he.pdf)
->>
-/Subtype /Link
->>
-endobj
-83 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [268.404 402.684 275.076 410.316]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/15n_3he_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-84 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [282.564 402.564 289.236 410.436]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_p_pi+.pdf)
->>
-/Subtype /Link
->>
-endobj
-85 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [287.244 402.684 293.916 410.316]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_d_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-86 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [291.924 401.484 298.716 410.436]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_7li_6li.pdf)
->>
-/Subtype /Link
->>
-endobj
-87 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [296.724 402.684 303.396 410.316]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/17o_e_e.pdf)
->>
-/Subtype /Link
->>
-endobj
-88 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [306.084 402.684 312.756 410.316]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/18o_d_t.pdf)
->>
-/Subtype /Link
->>
-endobj
-89 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [315.444 402.684 322.236 410.316]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/18f_d_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-90 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [226.044 392.604 232.716 400.476]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/12c_6li_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-91 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [230.724 392.724 237.516 400.356]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/12c_9be_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-92 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [240.204 392.724 246.876 400.356]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_6li_d.pdf)
->>
-/Subtype /Link
->>
-endobj
-93 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [244.884 392.604 251.556 400.476]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_13c_9be.pdf)
->>
-/Subtype /Link
->>
-endobj
-94 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [254.364 392.724 261.036 400.356]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/14c_6li_t.pdf)
->>
-/Subtype /Link
->>
-endobj
-95 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [263.724 392.724 270.396 400.356]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/14n_6li_3he.pdf)
->>
-/Subtype /Link
->>
-endobj
-96 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [268.404 392.724 275.076 400.356]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/15n_3he_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-97 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [273.084 392.724 279.876 400.356]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/15n_a_d.pdf)
->>
-/Subtype /Link
->>
-endobj
-98 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [287.244 392.724 293.916 400.356]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_d_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-99 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [291.924 391.524 298.716 400.476]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_7li_6li.pdf)
->>
-/Subtype /Link
->>
-endobj
-100 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [296.724 392.724 303.396 400.356]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/17o_e_e.pdf)
->>
-/Subtype /Link
->>
-endobj
-101 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [301.404 392.604 308.076 400.476]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/17o_pi_pi.pdf)
->>
-/Subtype /Link
->>
-endobj
-102 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [306.084 392.724 312.756 400.356]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/18o_d_t.pdf)
->>
-/Subtype /Link
->>
-endobj
-103 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [315.444 392.724 322.236 400.356]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/18f_d_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-104 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [216.684 382.764 223.356 390.396]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/beta_decay.pdf)
->>
-/Subtype /Link
->>
-endobj
-105 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [226.044 382.644 232.716 390.516]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/12c_6li_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-106 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [230.724 382.764 237.516 390.396]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/12c_9be_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-107 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [240.204 382.764 246.876 390.396]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_6li_d.pdf)
->>
-/Subtype /Link
->>
-endobj
-108 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [254.364 382.764 261.036 390.396]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/14c_6li_t.pdf)
->>
-/Subtype /Link
->>
-endobj
-109 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [263.724 382.764 270.396 390.396]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/14n_6li_3he.pdf)
->>
-/Subtype /Link
->>
-endobj
-110 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [268.404 382.764 275.076 390.396]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/15n_3he_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-111 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [273.084 382.764 279.876 390.396]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/15n_a_d.pdf)
->>
-/Subtype /Link
->>
-endobj
-112 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [277.884 382.764 284.556 390.396]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-113 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [287.244 382.764 293.916 390.396]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_d_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-114 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [291.924 381.564 298.716 390.516]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_7li_6li.pdf)
->>
-/Subtype /Link
->>
-endobj
-115 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [296.724 382.764 303.396 390.396]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/17o_e_e.pdf)
->>
-/Subtype /Link
->>
-endobj
-116 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [301.404 382.644 308.076 390.516]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/17o_pi_pi.pdf)
->>
-/Subtype /Link
->>
-endobj
-117 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [306.084 382.764 312.756 390.396]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/18o_d_t.pdf)
->>
-/Subtype /Link
->>
-endobj
-118 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [315.444 382.764 322.236 390.396]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/18f_d_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-119 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [216.684 372.804 223.356 380.436]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/beta_decay.pdf)
->>
-/Subtype /Link
->>
-endobj
-120 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [230.724 372.804 237.516 380.436]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/12c_9be_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-121 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [240.204 372.804 246.876 380.436]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_6li_d.pdf)
->>
-/Subtype /Link
->>
-endobj
-122 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [263.724 372.804 270.396 380.436]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/14n_6li_3he.pdf)
->>
-/Subtype /Link
->>
-endobj
-123 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [268.404 372.804 275.076 380.436]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/15n_3he_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-124 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [277.884 372.804 284.556 380.436]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-125 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [287.244 372.804 293.916 380.436]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_d_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-126 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [296.724 372.804 303.396 380.436]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/17o_e_e.pdf)
->>
-/Subtype /Link
->>
-endobj
-127 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [306.084 372.804 312.756 380.436]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/18o_d_t.pdf)
->>
-/Subtype /Link
->>
-endobj
-128 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [230.724 362.844 237.516 370.476]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/12c_9be_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-129 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [240.204 362.844 246.876 370.476]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_6li_d.pdf)
->>
-/Subtype /Link
->>
-endobj
-130 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [244.884 362.724 251.556 370.596]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_13c_9be.pdf)
->>
-/Subtype /Link
->>
-endobj
-131 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [263.724 362.844 270.396 370.476]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/14n_6li_3he.pdf)
->>
-/Subtype /Link
->>
-endobj
-132 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [268.404 362.844 275.076 370.476]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/15n_3he_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-133 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [273.084 362.844 279.876 370.476]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/15n_a_d.pdf)
->>
-/Subtype /Link
->>
-endobj
-134 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [277.884 362.844 284.556 370.476]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-135 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [287.244 362.844 293.916 370.476]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_d_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-136 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [296.724 362.844 303.396 370.476]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/17o_e_e.pdf)
->>
-/Subtype /Link
->>
-endobj
-137 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [301.404 362.724 308.076 370.596]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/17o_pi_pi.pdf)
->>
-/Subtype /Link
->>
-endobj
-138 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [315.444 362.844 322.236 370.476]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/18f_d_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-139 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [216.684 352.884 223.356 360.516]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/beta_decay.pdf)
->>
-/Subtype /Link
->>
-endobj
-140 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [230.724 352.884 237.516 360.516]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/12c_9be_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-141 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [263.724 352.884 270.396 360.516]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/14n_6li_3he.pdf)
->>
-/Subtype /Link
->>
-endobj
-142 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [268.404 352.884 275.076 360.516]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/15n_3he_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-143 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [277.884 352.884 284.556 360.516]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-144 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [287.244 352.884 293.916 360.516]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_d_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-145 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [291.924 351.684 298.716 360.636]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_7li_6li.pdf)
->>
-/Subtype /Link
->>
-endobj
-146 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [296.724 352.884 303.396 360.516]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/17o_e_e.pdf)
->>
-/Subtype /Link
->>
-endobj
-147 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [306.084 352.884 312.756 360.516]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/18o_d_t.pdf)
->>
-/Subtype /Link
->>
-endobj
-148 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [315.444 352.884 322.236 360.516]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/18f_d_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-149 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [240.204 342.924 246.876 350.556]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_6li_d.pdf)
->>
-/Subtype /Link
->>
-endobj
-150 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [254.364 342.924 261.036 350.556]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/14c_6li_t.pdf)
->>
-/Subtype /Link
->>
-endobj
-151 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [263.724 342.924 270.396 350.556]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/14n_6li_3he.pdf)
->>
-/Subtype /Link
->>
-endobj
-152 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [268.404 342.924 275.076 350.556]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/15n_3he_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-153 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [273.084 342.924 279.876 350.556]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/15n_a_d.pdf)
->>
-/Subtype /Link
->>
-endobj
-154 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [277.884 342.924 284.556 350.556]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-155 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [287.244 342.924 293.916 350.556]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_d_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-156 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [296.724 342.924 303.396 350.556]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/17o_e_e.pdf)
->>
-/Subtype /Link
->>
-endobj
-157 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [301.404 342.804 308.076 350.676]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/17o_pi_pi.pdf)
->>
-/Subtype /Link
->>
-endobj
-158 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [306.084 342.924 312.756 350.556]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/18o_d_t.pdf)
->>
-/Subtype /Link
->>
-endobj
-159 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [226.044 332.844 232.716 340.716]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/12c_6li_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-160 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [240.204 332.964 246.876 340.596]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_6li_d.pdf)
->>
-/Subtype /Link
->>
-endobj
-161 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [254.364 332.964 261.036 340.596]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/14c_6li_t.pdf)
->>
-/Subtype /Link
->>
-endobj
-162 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [263.724 332.964 270.396 340.596]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/14n_6li_3he.pdf)
->>
-/Subtype /Link
->>
-endobj
-163 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [277.884 332.964 284.556 340.596]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-164 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [287.244 332.964 293.916 340.596]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_d_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-165 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [315.444 332.964 322.236 340.596]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/18f_d_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-166 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [230.724 323.004 237.516 330.636]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/12c_9be_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-167 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [240.204 323.004 246.876 330.636]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_6li_d.pdf)
->>
-/Subtype /Link
->>
-endobj
-168 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [263.724 323.004 270.396 330.636]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/14n_6li_3he.pdf)
->>
-/Subtype /Link
->>
-endobj
-169 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [268.404 323.004 275.076 330.636]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/15n_3he_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-170 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [277.884 323.004 284.556 330.636]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-171 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [287.244 323.004 293.916 330.636]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_d_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-172 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [315.444 323.004 322.236 330.636]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/18f_d_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-173 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [216.684 313.044 223.356 320.676]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/beta_decay.pdf)
->>
-/Subtype /Link
->>
-endobj
-174 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [226.044 312.924 232.716 320.796]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/12c_6li_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-175 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [240.204 313.044 246.876 320.676]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_6li_d.pdf)
->>
-/Subtype /Link
->>
-endobj
-176 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [263.724 313.044 270.396 320.676]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/14n_6li_3he.pdf)
->>
-/Subtype /Link
->>
-endobj
-177 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [268.404 313.044 275.076 320.676]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/15n_3he_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-178 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [277.884 313.044 284.556 320.676]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-179 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [287.244 313.044 293.916 320.676]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_d_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-180 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [296.724 313.044 303.396 320.676]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/17o_e_e.pdf)
->>
-/Subtype /Link
->>
-endobj
-181 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [306.084 313.044 312.756 320.676]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/18o_d_t.pdf)
->>
-/Subtype /Link
->>
-endobj
-182 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [315.444 313.044 322.236 320.676]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/18f_d_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-183 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [226.044 302.964 232.716 310.836]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/12c_6li_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-184 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [230.724 303.084 237.516 310.716]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/12c_9be_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-185 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [254.364 303.084 261.036 310.716]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/14c_6li_t.pdf)
->>
-/Subtype /Link
->>
-endobj
-186 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [268.404 303.084 275.076 310.716]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/15n_3he_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-187 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [277.884 303.084 284.556 310.716]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-188 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [296.724 303.084 303.396 310.716]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/17o_e_e.pdf)
->>
-/Subtype /Link
->>
-endobj
-189 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [226.044 293.004 232.716 300.876]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/12c_6li_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-190 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [230.724 293.124 237.516 300.756]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/12c_9be_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-191 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [240.204 293.124 246.876 300.756]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_6li_d.pdf)
->>
-/Subtype /Link
->>
-endobj
-192 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [263.724 293.124 270.396 300.756]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/14n_6li_3he.pdf)
->>
-/Subtype /Link
->>
-endobj
-193 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [268.404 293.124 275.076 300.756]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/15n_3he_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-194 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [277.884 293.124 284.556 300.756]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-195 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [287.244 293.124 293.916 300.756]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_d_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-196 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [296.724 293.124 303.396 300.756]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/17o_e_e.pdf)
->>
-/Subtype /Link
->>
-endobj
-197 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [306.084 293.124 312.756 300.756]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/18o_d_t.pdf)
->>
-/Subtype /Link
->>
-endobj
-198 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [315.444 293.124 322.236 300.756]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/18f_d_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-199 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [230.724 283.164 237.516 290.796]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/12c_9be_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-200 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [240.204 283.164 246.876 290.796]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_6li_d.pdf)
->>
-/Subtype /Link
->>
-endobj
-201 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [263.724 283.164 270.396 290.796]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/14n_6li_3he.pdf)
->>
-/Subtype /Link
->>
-endobj
-202 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [268.404 283.164 275.076 290.796]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/15n_3he_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-203 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [277.884 283.164 284.556 290.796]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-204 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [296.724 283.164 303.396 290.796]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/17o_e_e.pdf)
->>
-/Subtype /Link
->>
-endobj
-205 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [315.444 283.164 322.236 290.796]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/18f_d_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-206 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [226.044 273.084 232.716 280.956]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/12c_6li_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-207 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [230.724 273.204 237.516 280.836]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/12c_9be_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-208 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [235.524 273.204 242.196 280.836]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_a_n_13c_a_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-209 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [240.204 273.204 246.876 280.836]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_6li_d.pdf)
->>
-/Subtype /Link
->>
-endobj
-210 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [268.404 273.204 275.076 280.836]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/15n_3he_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-211 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [277.884 273.204 284.556 280.836]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-212 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [240.204 263.244 246.876 270.876]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_6li_d.pdf)
->>
-/Subtype /Link
->>
-endobj
-213 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [277.884 263.244 284.556 270.876]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-214 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [226.044 253.164 232.716 261.036]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/12c_6li_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-215 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [230.724 253.284 237.516 260.916]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/12c_9be_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-216 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [268.404 253.284 275.076 260.916]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/15n_3he_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-217 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [273.084 253.284 279.876 260.916]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/15n_a_d.pdf)
->>
-/Subtype /Link
->>
-endobj
-218 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [277.884 253.284 284.556 260.916]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-219 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [296.724 253.284 303.396 260.916]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/17o_e_e.pdf)
->>
-/Subtype /Link
->>
-endobj
-220 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [306.084 253.284 312.756 260.916]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/18o_d_t.pdf)
->>
-/Subtype /Link
->>
-endobj
-221 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [315.444 253.284 322.236 260.916]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/18f_d_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-222 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [230.724 243.324 237.516 250.956]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/12c_9be_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-223 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [235.524 243.324 242.196 250.956]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_a_n_13c_a_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-224 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [240.204 243.324 246.876 250.956]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_6li_d.pdf)
->>
-/Subtype /Link
->>
-endobj
-225 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [273.084 243.324 279.876 250.956]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/15n_a_d.pdf)
->>
-/Subtype /Link
->>
-endobj
-226 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [277.884 243.324 284.556 250.956]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-227 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [296.724 243.324 303.396 250.956]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/17o_e_e.pdf)
->>
-/Subtype /Link
->>
-endobj
-228 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [306.084 243.324 312.756 250.956]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/18o_d_t.pdf)
->>
-/Subtype /Link
->>
-endobj
-229 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [315.444 243.324 322.236 250.956]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/18f_d_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-230 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [277.884 233.364 284.556 240.996]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-231 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [287.244 233.364 293.916 240.996]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_d_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-232 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [226.044 223.284 232.716 231.156]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/12c_6li_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-233 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [235.524 223.404 242.196 230.916]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_a_n_13c_a_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-234 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [240.204 223.404 246.876 230.916]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_6li_d.pdf)
->>
-/Subtype /Link
->>
-endobj
-235 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [268.404 223.404 275.076 230.916]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/15n_3he_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-236 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [277.884 223.404 284.556 230.916]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-237 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [296.724 223.404 303.396 230.916]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/17o_e_e.pdf)
->>
-/Subtype /Link
->>
-endobj
-238 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [226.044 213.324 232.716 221.196]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/12c_6li_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-239 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [235.524 213.444 242.196 220.956]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_a_n_13c_a_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-240 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [240.204 213.444 246.876 220.956]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_6li_d.pdf)
->>
-/Subtype /Link
->>
-endobj
-241 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [268.404 213.444 275.076 220.956]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/15n_3he_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-242 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [277.884 213.444 284.556 220.956]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-243 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [254.364 203.484 261.036 210.996]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/14c_6li_t.pdf)
->>
-/Subtype /Link
->>
-endobj
-244 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [268.404 203.484 275.076 210.996]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/15n_3he_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-245 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [273.084 203.484 279.876 210.996]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/15n_a_d.pdf)
->>
-/Subtype /Link
->>
-endobj
-246 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [296.724 203.484 303.396 210.996]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/17o_e_e.pdf)
->>
-/Subtype /Link
->>
-endobj
-247 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [301.404 203.364 308.076 211.236]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/17o_pi_pi.pdf)
->>
-/Subtype /Link
->>
-endobj
-248 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [235.524 193.524 242.196 201.036]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_a_n_13c_a_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-249 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [268.404 193.524 275.076 201.036]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/15n_3he_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-250 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [277.884 193.524 284.556 201.036]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-251 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [277.884 183.564 284.556 191.076]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-252 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [235.524 173.604 242.196 181.116]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_a_n_13c_a_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-253 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [268.404 173.604 275.076 181.116]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/15n_3he_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-254 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [277.884 173.604 284.556 181.116]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-255 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [235.524 163.644 242.196 171.156]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_a_n_13c_a_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-256 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [254.364 163.644 261.036 171.156]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/14c_6li_t.pdf)
->>
-/Subtype /Link
->>
-endobj
-257 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [268.404 163.644 275.076 171.156]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/15n_3he_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-258 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [277.884 163.644 284.556 171.156]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-259 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [306.084 163.644 312.756 171.156]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/18o_d_t.pdf)
->>
-/Subtype /Link
->>
-endobj
-260 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [235.524 153.684 242.196 161.196]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_a_n_13c_a_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-261 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [268.404 153.684 275.076 161.196]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/15n_3he_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-262 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [277.884 153.684 284.556 161.196]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-263 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [296.724 153.684 303.396 161.196]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/17o_e_e.pdf)
->>
-/Subtype /Link
->>
-endobj
-264 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [235.524 143.724 242.196 151.236]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_a_n_13c_a_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-265 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [240.204 143.724 246.876 151.236]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_6li_d.pdf)
->>
-/Subtype /Link
->>
-endobj
-266 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [268.404 143.724 275.076 151.236]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/15n_3he_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-267 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [277.884 143.724 284.556 151.236]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-268 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [296.724 143.724 303.396 151.236]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/17o_e_e.pdf)
->>
-/Subtype /Link
->>
-endobj
-269 0 obj
-<<
-/Length 5422
-/Filter /FlateDecode
->>
-stream
-xœí]Y“ÜÆ‘Öó¬7á·~qD÷Z¢î*ÛÑ¢DÊº(íXùEJa‘")É^ÿûÍÄQ•$0@wõL“œP„Due~_uàå¦®Ä¦Æÿº¿_?»¸ó…ß<ıñ¢¹»›\¼¼İ?êî™ÍİKx,l|¬U~sùäBtKe+ï7Vm.Ÿ]üïö»½¬„u*lØéÊÃ¥Ü>o®TÛŸv{UÕ:˜°ı.]>OşŸüf'+e¤ÑÛÇğ V•Ğ:+r¯d¨œ¥o³¦rü¿xkT®²Ên_Ä›°p¼Ü>%/Ãƒ²’Jo¿Úîö¢2^»í“x•êşëÎóùŸSw~ÄzTåjAšOJ]IëÚ'››©È~¬'Íx‚ïÈÊ9G+Jeş=¶ãûög-tWº«Ãö«]ßµ¿]~ÔH×UÊA÷Qº{áu¥õÆzW	¹¹|¢»½†ç4Üµ—^|WVFÖJlö®êõñÑ¾ì š#mS¶©¤6lTeÛ§?ÛíkZjÏ4…æk_×¾}>Ì•ƒ¸ÉŞãÓÒ@ØSÁ{F÷/R…¶uå7¨½&8×¾ûÁno«:á·¯Š€ãúÆU„JK³½‡µX%Œİ~Šİ±
-‘Û/Sï“Ûà‹ª
- †=ªƒmDKÊøçNAmĞR"Ïï“f4™U¶Ç	&´şôÀ×ñı¤wÏvŞpBu*dıõUj°ˆ?‡8&!Ş“ı=F¨ªö•ô@kì^¿¼îõÔ»Ó/‚dôËkV¿ôX·¼«t‹-yR·jßë–_¼wyñğâåÆ€R5<¹¨\!î7NPÜ{÷ÁÅŸl~zõó7wşºwîãÿî~şGøóàıÍ;÷lN2²Ğ,%kì¾Iù="úÇI#•¼À›¢euj)QûkìY[Ï«§kæ|#IZöq2-yá@ùhGí(åÿqcé¥¬eÖyÛÅ7HÕiĞ»D½ªõ±U5(š¤eØà
-¬Ó£8ğÏv
--ÓİtŠü
-¦B TA\5ï]î >(ÑPûZÇŸ]ÿ
-7t¡A@š(,h’i¨v
-ÿ¯±¬¡jàBÆÆTˆ,«ûDe¿ãdOù.)rbéSöÙ‹PWÈ æZtÜp¹s¦²Öšîá	ÄÊûPÙ??gE×€oã çMQV yQ§ˆôå§d•E«<vğ÷¶Ô ªƒ~ğu¥bÍ…–>:4M©iXETÿ44'Xü+¬¨òVÒæ§'GÃ7[Ê™Œ5@ÌIs3äÿEIjÇX`4	H­İ³ÁrP	?@±”qÁŠSª¡Z°f@=«x#xW”%l[È!…Y™·Kyh¨<¬,/¨QÑ¶®lÕŒ„h-7İ$İ‚´w¼%°h™ÚÔÁ4—ØFg{ßFÙû6`€†¾MóR[’¯ıÈ·i~şƒısÄš†@$l?JQ¡óŞ€µ-€Ë-”¢·ÿ´“Ğ¯ÌÈÒÄöG]k¬S­€+Ğ¸md2×*–n¶_$ÜTı£—;`TS×YG¾^©DW¥2l•÷—Wù×ÓØIÉ›Óï‡€ê¼:T*P3G·ÒQr¨v·¦jMèQüÉÎàÀ[İ4H!£XúÒ·ÔÅgÂ: h1ËFìÏ±%`h·&–c#ëäıŠş2‹îD¤³0¸Â×U¼‡±8£¶
-ÜMoïc‰ï·ŠGc­¯#ëîu';·BRNİKßèI«Ğ9ŸÉ0ô}Rª#a)(ˆCç´v2ù¾iàG#»§Õúæ”7­›k¯’€XÇwŞij³Z:º5X×&ÌŞéCÌØªÜ4¨¾=ÿ<¢k@Elyô§±ÙulHöp˜y¶E¨uõÀ{u¼Wµ^Œ»ì“¹JĞ&“5²õ@I&k`ß<•ÂïúÌ„jÃD]ÒT’à°1WŒ¤SC97::¶:y—©ÿ*Şû]ŸœğS}±´¡
-€ZÒÚÔÆÔ²$UÑ$†R_¾ú„0eU#ªFÂŒnõ2aâ–}%G¥ĞX†H¾‘®€â¤gÇ"s†¹›y\	-–ã*><';"BÀÛ²j", ó‡Â ¤q8’hjFŞ1áĞ™<ki:Lte"ZÓ@¾,xv®m5K?D’ù«Ø–ßÂÍ Ğö¦®’õ*!‹\r‰Á>o¨:ó)Àğt–W®¨ƒÕæ`1Ø¨qnrš¤m¤¦Œ¥'~Ã(zä`Ÿ¤§fğnËM´í_|Ô˜Æëiòâ%Ò¸Ë¢¾©Éd§|_zî1C2¨M|c®jsùñÅå]‹‰V)¶ØD“w^Cí¢şÖ³¬›h5 ‰7ËD§ÑQã_W90¢ÔèW^DèÌ[¬Ñà,²BC Kp]åèƒF'Æ«Fg…K`Ş8o É¡} !dÉ#´´€‹aV"mİeç3­.Ş{¤§Ò´e=€i1/£Ö17úeJ»|C¦oÚ|šp>¾7ÛÄ~mÒL¹&›yjm¡~‘ŸĞxÖsyÂİ¼ÂÇá¦¨È$*gçÔ
-áêfN›ŒùP+ÒUNÄm~G2é÷,^9V'$¸Æ*×ŠÜÁ÷ˆ¿: í…CìÆİº
-¡vÒAËúKï®Ò´©ëğÊ ©(¦¢qæ²uCqbı4ÎË†eÁÉf¢Ğ…fÂğDÉMikŒ4ŒÁÑ-dNı&÷¶I3]ü‚Ngt>›Rã<N^ã;‡XĞ´Õÿ{Bª$óÇdâºÉ]Õà^Ö’Ş&‰Æ4'ğ”é‘˜¿£â±u3ecŒ¶ëÄs%0•`‘éU%õÆÀ˜˜8¹ÙiÔ*Ll$LÁèAÑ¦Š˜_
-Ó˜Ã<ùEÂAŞßWÔ†vş>TaæııqJNXÃ9kW3dÏ§ eæ4WIş½Ş¸òÒ’¾1«TZJIKÕçyqé+Ø¬“|pŞ‡.ZÎ¤¹ì\Mª›mÌk"dIŒDšx¦V;wí‘…òzˆœ‡¥d¡¦DÑ–¬#Ë‹â3âYÍË¢‹™³·İ\…³Ì¤v1Î2Uı)4¨Œ2LVí™¾òU—{O˜RàÊ‹F8w¦Ä4f	ÆLÖ‰#L×x01u<"L®$Ìß¼.„I¤õQiÂäÅu c~ÊFµ”½Ş¸¤£ô·$éï¯0©‚©=—ÑÕD¸[‚ÉpQ˜çÀQ€Éc¢+âg–' ¾è!—å¡âÂ2Tr)4ÊzS^»Ê”7|’×t¥)OË‰ÊI¢'‰$‰?•æ^‹9"Ïó¦ü¤™0å²VyÕj¾jÏôõ>»À¶<[%¹Y˜¬x±/&«4sÜì´Ç¯`Üj£jÅš K}7f¹re"]QnqÊÔ!àº¬fXß/Ì™µÄesæÑáOXŠĞôÊ].G2/L!›6Ç¦Æ°.æÇ¥i——¦)åš- ®à>N¨<÷!	¡#R™\¦D^$¾˜ÿö8K‚Ài =yİ{eÙHÁ9»³ê´šæã N ZùœqÏ®pàqåòÎÆ<úõwv•¼Qb%zùIabPÌÂÄ:ëØ¦ŸO>ô¤IÆûÏeIsb¸‹‘æ:;¶*xŸTÈ…ÖŞ‰#“Ô7¢Üëcƒ
-s»¯¹Ø`1·Ÿet~
-xõt–$ñii6ãE1;@³aÚ0ƒ—¬âQ¦RšvÎ9«rEƒ£©<¨Á,Rm%o¦=÷&åøKaêåuc1õ¦¡¦3ÈCw7(\Á‰º]fpœhmœñú°0)ÚÀEKI‘¬¥XCŠŠn™^ìxö"æ+r¿//{ùŠÈß3õ±‘yæ%òş¬4õò_J½ùâÉ^Àdmn«Om§ÁìXtóÓ`º›gã×	—ƒ¥1Ñÿ¼_–Æ0ÅU0+vŠ
-]óS3DŸ—Æ/ÅîÊ(bæ1ç®LM¼ì¥Æ=àƒ…pİÊ)e³µİùÎÈ|o¢'%û½Ğ+¬ =Öd'jD0%ã0d¹âüj­›ÊÙImÚò1¹Œûjµ4ıÁ¢Ónb4¤vk—ÊãÖfÑ0ü¤¹EªtJ^
-ÎEêÛægMY´MXÜµ;:Xgı‰
-ñ"mÏãSd£=¿èPä{³oéĞjí¢¶—)UCÌqË¸ªØeÁ0åeic1ÏyHY¢ÆcšHaR¸ƒƒN†¬eJ)Ë (lÍ*M'ÚırZªŞ}®ãªf²´¿Æ¥Ğ±Ãí˜ƒ£	T¶ºüÎÎTà£Znm¿l$_„ÎÛÛ–¸T·ºÚ[#X{+ò8ı¸ÏŞáºî4Ø½ª£Í°#*Gè¸Ê2-J p×3.,ÃİıØÚ4;!ãZ¿´ˆ%MU§Ù“í'éíè°%3„»'pŠD“Vg¤©Ï”ñOi¬£*.`S
-Ï¿"q¹‰S©qÙÍÂªj§W™ªêÚ.TÕf3J»Ú—ÏUÚ’_¢¾ÂpÏn(!Kq†ısr¦ƒ‡mí!¸N;I†'ßä;3B>’³[Jâ{ÖQT˜¹xÄö-p‡U*î‚aoñ±‘éD”ô²£9FíÑÒ¸Lí^”
-ÍR<O'ÅÙÊ\ì+£ƒÓT’.>9»IMbš$×º'Sş:ÛR½SÅènMÑ¿n².ƒpKÔºİnÒ%x—d»ŸD[‡š".oÚ{Ë" ‰@üjü¾è#Ìø>}Tñp<nO=¸	³ÑT[}Oj- ÒiçĞµŠÒŠÙËjâ=ÓÈÔ£KĞ‘^¹òØr–‚˜zëf2ÜÇÀ äY€(Åd´1¸uü’*Ç}hÓ°ù\hH}øÍp·³™±UÃáV3c8ÚF=W0¿ƒğ<µ\…Çø(…aü}øbIÅ1‡ÉÉ!æ"¥õƒ	÷$‡¹h»&ì& Ñù³9LÛœîÑùøã$øjRøY,1ÂW¾óWª–Gò ä?:šÅ·æ(;¾aâ¼ÆCôQëLÔÊÛßü0İœPcbMZ…kBê³Wq/¢&öblCÔ±ú¼Ğräš­nL³Ç;à¦\+<o”1KG*ÔÉHü£ÍêÑ‰‰¿¤#ãØ1N ½ WSñÏÕ™’·úüizòFõ½‹°iE}“¼óa·0U°£c¥EšˆÇ\9Ò‚xt9W­­krT€›N2Êh‹ÂÂg–&ØSg§¿§¥‚°Ü´ F±Õ˜ ®ˆ­XHÉ{Î€'îFü°ĞÄx9ê¡½À“»eıïÀã].*áÔâ[/AğèĞ©€p‚Ír‡›3áiÉØ9\ïòÅ)¿_áœ²‘¢èÒ&Ö.@şQhVÍ3Ê¦­5Sª0ÎV€Ë5†›à:™ëÈÅ4éÅÛ ñ?Ğù”Î)AığAÎîÎrœ±ío¾o.‰OSÎ4ó§îašŠ+rÛª’Xb¯?QÒc˜4şmÀğñf:o½cü@ÉLŞ¶lÉ¥™ÊÑf{hË«×X^fòÎ…`Y;
-Ø—Zà	§ıê¾ãcjÖ4&­K¡š4ıÕK¬ušWKÙâ£3Ã+œoºĞl6KìÎÂ^›&G<Üº6:ót°J5d]^ãµ÷:èĞ‰ô.§¬šOĞôG¿õØŸ¢x7‡¼ÄÏ|Ô¾¼Ñ&­[.!²‰¾²àZÃã§,fšuI'ù²°X-»[¯AjŠZLz€c1mA‹YÎîâZÉµkS'ƒŒªg‹—Ñr&z…Fm¯™s&.­¸	ÿÅÎ$9gRËy]h(4Z“ñ´µ(Ç¦mO’Ößz‘Ó^d²jI+™xqrı9!wj-ÛòùÍµá:ÚÕ†Í!6´Ï`IQCsç’ã•³™W)ğC-4ºìOá>—{Øqr3%-ºEètö&!”óEgÏœ T.Gèõ†t“hM6s­4¤Kï¼9!ºùvõÌ2¡ó5Å´ñoĞ—LµĞ`r<Õr ÍÄ&O36Áok¦8¥\ØCbÎd’áÒJ‹Ëƒ–4îím²Ä	 ‚±Äìr—£s6+4ç@ŸÍZÜ#çQØÍPôsvGÄÃÊâªú¬bêl°ƒö2&¸Ÿ1‰'Ğ5îRAn#4µçôy¡•İ· bµ,ÛlsÚàØ”áVC9Ú¨} n›/Qç¶–±«d³í[»lãÖÀêŞ@·L°KW0¤q+ìª¡4JM~JÛMÔO~*ëXõò $ÕÜ"pŒ@ÎpxaÑì~Êë6¡'šXa¦Ù]Ğ„?\Ğ˜šæ\Š±5íÁ:µ(¸¾×º’f¾U^0[íÉLz5Ã€R³˜b[åêĞ2ŒÁşMûæ£#O­†x(æD^:K1…öLRL9' ¯µÆ‰Ê>¼fİt%4î<¾Y!í¼å˜óã.àö.®™å–‹èäÚ‰£Sv| aÆ/H0åÍ!®9éT²RñìÛñšçR@ª¹$–EIèéŞšéê³Í›¿v“a7¼+©($~m·_óØçÜ®ÎÉlz›4èÖª¿V=Ñ)rğÇF+¶!ßàîˆãö:¥¬~»kÛÚÚ‘ƒú}^/OD…ˆ£0[fÜÒÅùÑç¤mÌVŒÈ3L-˜›_:‡>+éúuGÁĞt}ñ´kíûïj“•h$Ø®Tãö Âş teºPœæ§[9·Úÿ|F.õ.ù%ÍiŒJDŠ‘=X,•ï½”ı9!¯Óo#»e³´I—Ò&ÕzŞ˜seÎy'J®¤ªcğLgiÛäŠğ:~İ¢8îHÙ·¸›Ë¨ø1Z×àîu[qœÅóÄ+8c‹çtìñ5¼Tá-îæìœ¯JZƒ»ÁÃ×}
-Í0Ø±m[‚¶²š|d¶MJ1½]¦O”>¶ã6CpÎ‚„ìä;]qdï`×k©„â„“eÎ5¤ù'Ë-îøÂèx2õ”É=Ù¤­ü–$^’ĞŒùgIbÍ™Lgµ—`’$–zàü*%ö„	úµ‰r«”R©åæ:ºĞ: ~ƒ³•´·ÄqÄÑ}ÑÍ ŠYut“ÍŠT°‡¸yºÄ×É–$z–ôs‡àÒıwÛïúìj>}1èáÅÿbf¶‹
-endstream
-endobj
-270 0 obj
-<<
-/R8 479 0 R
->>
-endobj
-271 0 obj
-<<
-/R23 480 0 R
-/R25 481 0 R
-/R21 482 0 R
-/R14 483 0 R
-/R19 485 0 R
-/R9 487 0 R
-/R31 488 0 R
->>
-endobj
-272 0 obj
-<<
-/Type /Annot
-/C [1 0 0]
-/H /I
-/Border [0 0 0]
-/Rect [254.604 713.604 280.836 721.716]
-/Dest /17O_LEVEL
-/Subtype /Link
->>
-endobj
-273 0 obj
-<<
-/Type /Annot
-/C [1 0 0]
-/H /I
-/Border [0 0 0]
-/Rect [283.284 713.604 319.716 721.956]
-/Dest /17O_GAMMA
-/Subtype /Link
->>
-endobj
-274 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [332.124 713.604 369.276 721.956]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/nsr/nsrlink.jsp?1993Ti07,B)
->>
-/Subtype /Link
->>
-endobj
-275 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [238.644 648.684 245.316 656.556]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/12c_6li_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-276 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [248.004 648.804 254.796 656.436]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_a_n_13c_a_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-277 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [252.804 648.804 259.476 656.436]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_6li_d.pdf)
->>
-/Subtype /Link
->>
-endobj
-278 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [281.004 648.804 287.676 656.436]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/15n_3he_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-279 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [290.364 648.804 297.156 656.436]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-280 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [309.204 648.804 315.996 656.436]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/17o_e_e.pdf)
->>
-/Subtype /Link
->>
-endobj
-281 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [318.684 648.804 325.356 656.436]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/18o_d_t.pdf)
->>
-/Subtype /Link
->>
-endobj
-282 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [396.684 618.684 433.236 627.036]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/nsr/nsrlink.jsp?1993Ti07,B)
->>
-/Subtype /Link
->>
-endobj
-283 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [248.004 608.964 254.796 616.596]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_a_n_13c_a_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-284 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [252.804 608.964 259.476 616.596]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_6li_d.pdf)
->>
-/Subtype /Link
->>
-endobj
-285 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [281.004 608.964 287.676 616.596]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/15n_3he_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-286 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [290.364 608.964 297.156 616.596]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-287 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [309.204 608.964 315.996 616.596]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/17o_e_e.pdf)
->>
-/Subtype /Link
->>
-endobj
-288 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [248.004 599.004 254.796 606.636]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_a_n_13c_a_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-289 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [281.004 599.004 287.676 606.636]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/15n_3he_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-290 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [290.364 599.004 297.156 606.636]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-291 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [318.684 599.004 325.356 606.636]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/18o_d_t.pdf)
->>
-/Subtype /Link
->>
-endobj
-292 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [309.204 589.044 315.996 596.676]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/17o_e_e.pdf)
->>
-/Subtype /Link
->>
-endobj
-293 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [248.004 579.084 254.796 586.716]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_a_n_13c_a_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-294 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [252.804 579.084 259.476 586.716]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_6li_d.pdf)
->>
-/Subtype /Link
->>
-endobj
-295 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [281.004 579.084 287.676 586.716]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/15n_3he_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-296 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [285.684 579.084 292.356 586.716]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/15n_a_d.pdf)
->>
-/Subtype /Link
->>
-endobj
-297 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [290.364 579.084 297.156 586.716]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-298 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [309.204 579.084 315.996 586.716]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/17o_e_e.pdf)
->>
-/Subtype /Link
->>
-endobj
-299 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [248.004 569.124 254.796 576.756]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_a_n_13c_a_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-300 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [252.804 569.124 259.476 576.756]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_6li_d.pdf)
->>
-/Subtype /Link
->>
-endobj
-301 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [281.004 569.124 287.676 576.756]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/15n_3he_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-302 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [290.364 569.124 297.156 576.756]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-303 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [309.204 569.124 315.996 576.756]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/17o_e_e.pdf)
->>
-/Subtype /Link
->>
-endobj
-304 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [248.004 559.164 254.796 566.676]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_a_n_13c_a_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-305 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [252.804 559.164 259.476 566.676]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_6li_d.pdf)
->>
-/Subtype /Link
->>
-endobj
-306 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [318.684 559.164 325.356 566.676]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/18o_d_t.pdf)
->>
-/Subtype /Link
->>
-endobj
-307 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [281.004 549.204 287.676 556.716]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/15n_3he_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-308 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [285.684 549.204 292.356 556.716]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/15n_a_d.pdf)
->>
-/Subtype /Link
->>
-endobj
-309 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [290.364 549.204 297.156 556.716]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-310 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [248.004 539.244 254.796 546.756]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_a_n_13c_a_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-311 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [252.804 539.244 259.476 546.756]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_6li_d.pdf)
->>
-/Subtype /Link
->>
-endobj
-312 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [248.004 529.284 254.796 536.796]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_a_n_13c_a_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-313 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [252.804 529.284 259.476 536.796]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_6li_d.pdf)
->>
-/Subtype /Link
->>
-endobj
-314 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [290.364 529.284 297.156 536.796]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-315 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [290.364 519.324 297.156 526.836]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-316 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [238.644 509.244 245.316 517.116]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/12c_6li_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-317 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [281.004 509.364 287.676 516.876]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/15n_3he_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-318 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [290.364 509.364 297.156 516.876]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-319 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [318.684 509.364 325.356 516.876]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/18o_d_t.pdf)
->>
-/Subtype /Link
->>
-endobj
-320 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [248.004 499.404 254.796 506.916]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_a_n_13c_a_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-321 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [266.844 499.404 273.636 506.916]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/14c_6li_t.pdf)
->>
-/Subtype /Link
->>
-endobj
-322 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [281.004 499.404 287.676 506.916]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/15n_3he_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-323 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [290.364 499.404 297.156 506.916]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-324 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [248.004 489.444 254.796 496.956]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_a_n_13c_a_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-325 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [290.364 489.444 297.156 496.956]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-326 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [248.004 479.484 254.796 486.996]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_a_n_13c_a_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-327 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [281.004 479.484 287.676 486.996]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/15n_3he_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-328 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [290.364 479.484 297.156 486.996]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-329 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [248.004 469.524 254.796 477.036]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_a_n_13c_a_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-330 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [281.004 469.524 287.676 477.036]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/15n_3he_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-331 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [290.364 469.524 297.156 477.036]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-332 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [248.004 459.564 254.796 467.076]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_a_n_13c_a_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-333 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [248.004 449.604 254.796 457.116]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_a_n_13c_a_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-334 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [248.004 439.644 254.796 447.156]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_a_n_13c_a_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-335 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [290.364 439.644 297.156 447.156]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-336 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [248.004 429.684 254.796 437.196]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_a_n_13c_a_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-337 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [281.004 429.684 287.676 437.196]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/15n_3he_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-338 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [248.004 419.724 254.796 427.236]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_a_n_13c_a_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-339 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [266.844 419.724 273.636 427.236]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/14c_6li_t.pdf)
->>
-/Subtype /Link
->>
-endobj
-340 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [248.004 409.764 254.796 417.276]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_a_n_13c_a_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-341 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [248.004 399.804 254.796 407.316]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_a_n_13c_a_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-342 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [257.484 399.684 264.156 407.556]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_13c_9be.pdf)
->>
-/Subtype /Link
->>
-endobj
-343 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [281.004 399.804 287.676 407.316]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/15n_3he_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-344 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [290.364 399.804 297.156 407.316]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-345 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [248.004 389.844 254.796 397.356]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_a_n_13c_a_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-346 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [276.324 389.844 282.996 397.356]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/14n_6li_3he.pdf)
->>
-/Subtype /Link
->>
-endobj
-347 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [281.004 389.844 287.676 397.356]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/15n_3he_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-348 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [290.364 389.844 297.156 397.356]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-349 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [248.004 379.884 254.796 387.396]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_a_n_13c_a_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-350 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [281.004 379.884 287.676 387.396]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/15n_3he_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-351 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [290.364 379.884 297.156 387.396]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-352 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [248.004 369.924 254.796 377.436]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_a_n_13c_a_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-353 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [281.004 369.924 287.676 377.436]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/15n_3he_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-354 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [248.004 350.004 254.796 357.516]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_a_n_13c_a_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-355 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [281.004 350.004 287.676 357.516]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/15n_3he_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-356 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [290.364 350.004 297.156 357.516]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-357 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [309.204 350.004 315.996 357.516]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/17o_e_e.pdf)
->>
-/Subtype /Link
->>
-endobj
-358 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [318.684 350.004 325.356 357.516]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/18o_d_t.pdf)
->>
-/Subtype /Link
->>
-endobj
-359 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [323.364 349.884 330.036 357.516]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/18o_3he_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-360 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [238.644 319.884 245.316 327.876]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/12c_6li_p.pdf)
->>
-/Subtype /Link
->>
-endobj
-361 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [248.004 320.004 254.796 327.636]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_a_n_13c_a_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-362 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [266.844 320.004 273.636 327.636]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/14c_6li_t.pdf)
->>
-/Subtype /Link
->>
-endobj
-363 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [290.364 310.044 297.156 317.676]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-364 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [248.004 300.084 254.796 307.716]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_a_n_13c_a_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-365 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [248.004 290.124 254.796 297.756]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_a_n_13c_a_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-366 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [309.204 290.124 315.996 297.756]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/17o_e_e.pdf)
->>
-/Subtype /Link
->>
-endobj
-367 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [248.004 280.164 254.796 287.796]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_a_n_13c_a_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-368 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [266.844 280.164 273.636 287.796]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/14c_6li_t.pdf)
->>
-/Subtype /Link
->>
-endobj
-369 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [248.004 270.204 254.796 277.836]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_a_n_13c_a_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-370 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [266.844 270.204 273.636 277.836]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/14c_6li_t.pdf)
->>
-/Subtype /Link
->>
-endobj
-371 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [276.324 270.204 282.996 277.836]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/14n_6li_3he.pdf)
->>
-/Subtype /Link
->>
-endobj
-372 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [290.364 270.204 297.156 277.836]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-373 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [309.204 270.204 315.996 277.836]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/17o_e_e.pdf)
->>
-/Subtype /Link
->>
-endobj
-374 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [248.004 260.244 254.796 267.876]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_a_n_13c_a_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-375 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [257.484 260.124 264.156 267.996]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_13c_9be.pdf)
->>
-/Subtype /Link
->>
-endobj
-376 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [290.364 260.244 297.156 267.876]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-377 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [309.204 250.284 315.996 257.916]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/17o_e_e.pdf)
->>
-/Subtype /Link
->>
-endobj
-378 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [248.004 240.324 254.796 247.956]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_a_n_13c_a_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-379 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [266.844 240.324 273.636 247.956]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/14c_6li_t.pdf)
->>
-/Subtype /Link
->>
-endobj
-380 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [248.004 230.364 254.796 237.996]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_a_n_13c_a_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-381 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [290.364 230.364 297.156 237.996]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-382 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [248.004 220.404 254.796 228.036]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_a_n_13c_a_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-383 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [248.004 210.444 254.796 218.076]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_a_n_13c_a_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-384 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [290.364 210.444 297.156 218.076]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-385 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [309.204 210.444 315.996 218.076]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/17o_e_e.pdf)
->>
-/Subtype /Link
->>
-endobj
-386 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [318.684 210.444 325.356 218.076]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/18o_d_t.pdf)
->>
-/Subtype /Link
->>
-endobj
-387 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [323.364 210.324 330.036 218.076]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/18o_3he_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-388 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [248.004 190.524 254.796 198.156]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_a_n_13c_a_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-389 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [248.004 180.564 254.796 188.196]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_a_n_13c_a_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-390 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [290.364 180.564 297.156 188.196]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-391 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [309.204 180.564 315.996 188.196]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/17o_e_e.pdf)
->>
-/Subtype /Link
->>
-endobj
-392 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [248.004 170.604 254.796 178.236]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_a_n_13c_a_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-393 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [248.004 160.644 254.796 168.276]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_a_n_13c_a_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-394 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [248.004 150.684 254.796 158.316]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_a_n_13c_a_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-395 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [290.364 150.684 297.156 158.316]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-396 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [318.684 150.684 325.356 158.316]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/18o_d_t.pdf)
->>
-/Subtype /Link
->>
-endobj
-397 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [323.364 150.564 330.036 158.316]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/18o_3he_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-398 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [248.004 130.764 254.796 138.396]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_a_n_13c_a_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-399 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [290.364 130.764 297.156 138.396]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-400 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [309.204 130.764 315.996 138.396]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/17o_e_e.pdf)
->>
-/Subtype /Link
->>
-endobj
-401 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [323.364 130.644 330.036 138.396]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/18o_3he_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-402 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [248.004 110.844 254.796 118.476]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_a_n_13c_a_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-403 0 obj
-<<
-/Length 4377
-/Filter /FlateDecode
->>
-stream
-xœí][¯Ü¶öóöµ}È›^
-ì¶]Ş/Š¢NÜä$N»§I¸í¤El'vì¢ù÷êB%®VZQ{ÖÀg³K‘9óÍ7Ã!ùª %-ˆû¯ùûäÅæê¡)¾ûiS}[ĞâûÍ«mş‡4eŠ»7PÌ¦´JqSÜ|»¡MqÆUiL¡xqóbóõöƒİ•Tin·?ìDià#Û¾¬>qk·ov{^a¥İş'||éK¾õ%ŸíXÉ%“bû
-
-^R!¢*÷œÙR+üô³•¥fPğş;×"×¥âjû£ÿò±«\XÃ¶ß¡‡¡ +ÛGÛİ–Ò½ıÖ
-mÿz—Ã?‡×ùÉµÃKM(ê†+ÉDÉ”®KV_†*Û!Puã[÷+µÖ¸¡Pç7¾ÏëŸMíšØí£]ûjÿºù¤š]]r¯ïfwO(…(”Ñ%eÅÍS˜ZºÛ(o¡ãºşh¨uÏ²R2Âi±×eSÔø¢mİ$‡©ªnY2m•-x©êÒÛí	ŒaÂ$ºâ*…îCˆ©ËÛ¡Úa‹¨ôŞ•fZÜ²İ^–ğœíƒH å%W…_iµ®şën¯Jb-5Û×Ipû–ÚR0¹½çšQœJµıÜ½²P	Ûş=Tğ!ú:Ô›xc&ğOèH;øF´ƒsß>µ–%ßˆäà‹şÀE'|²æƒOL;ğ”J÷à½›ÍƒÍ«BRUãË’ÒÒÉ¿)4³0 ÆÓİëÍÕõgÅ›×oŸm®¾*èæêc÷Ïİ/>€?×w6÷®‹áŠŠ$^1RJUh*ÜW˜õ41OÃ|MûÑ}I	­4º‚Ÿê_ı»Õ-½şnj×`ŞãİhZc›¤zûß5%#CÅó  ?í`4¼&‹ú3í:¤miDÔ£?T“j8³ßÖÔó*ÿhGÑ¾û¡±ã’µh>Ák¡_K)è\i4(Hû¥õêiıwÜw³£ÔÕ(±"şgİ>2{ğ¸î	²+OüÔE6­•½ g‘™lÅğm(d ‰nŒí¾QË-èhĞ8éTMSøKr¨œ-Ti572–"	2\(KİxTAAF­%šiğöc“u)8 ƒ!&ã¶8£¥]¸PÂ–ÔMìQñøè„`QÉ8â-5óÑ~—œø¿x6@¹İl(#òÌFB,•¨Æ´PğÁ!µ›ÆvEj„z±[‰V;¶¦a’È¦œ$0™îE¹¦ü$Â¡«‡ŒbáP…8‹Áª®&ö½.µ‘Ú$DGƒ¡«D!<qS÷œYÖ>‚Ú­it‚G¨j-©8&ÚVâ~µŒÔ…ÿät
-~*Q?²ªş¦,ëTK²qÓ"êÊ?‘áy Q	à	T2f¶Ï¬­p Ø ¦ÿŞK_êMà	ëğª €›âš•"Æı ‰HDT¥”WR}B]0P‘†Pi˜ÓŒSê¢Äù)Xİ8¡§vä?FR@í´é„Ê&é.ƒ¹#N‡Á.×ªkj!|+<Ü(ÿÚíM)5RéívcìàçFşeÄ‚ÁUjÚÄc¶Lê®4E#³	1*+oÊ^íd	–²©jKÔ©[%R½¶Ê~_©“’ 1) !ğşĞã@|+x„(â›©·ß×ÈgÂô75– q\Z%¡VÚÒñ
-Ü«¤ómK`ßH %$ôÓÙF€N0u•»ÁLPñû¡Àç\4P
-íĞG:ç×2€Ôõ'0 ¤´‚R8æƒ:÷[Oæ®½İ½ñ`—à¼V±BMM0L“ƒÖ¦ìŸı4½œëĞƒ—xºÍ»p|#³Şäàw¬©zúWĞ+
-3fR½’N€»¶Éš¤"%{VÁİÃœƒ[êÜ7oÂLlÿÂ0MT„ÆsÆ)¨ª4ˆäµTê±w’~n#ÁRõÔ[*ßœÂ<Ë16^ }éJ/¾ä,İco£ æÇàçšÈP‚-f„WóƒSûß÷77¿ûúŸiyÃh>#jï•ş#tSÃ–¡¨S7êPûDÕ j‡?®äóÎhU?·£É%‚$í§  †æg÷%k§O¡qãi“=s¤Êøgğ@´–Í C=IrFaÊ„ã®å!Õ¬Ä=Eq‡`Û§ZÒ)š<ÆÆá*cWù<Sl\I¼¿©X¹‹Zkë=€
-¬ƒ	Ş‹F:Qà6ˆäÏÓm_ÚºX]qA
-ıe­Wy(à>q/o`áÀ5`Z÷C ‘`Î5€š¡,êâ7¾• Faù±ÃlÿeP³®âW~ â`mJ£Øxİ$‰Ÿ+!áÀYTBb“ƒJ?dÂ§ÕpPßøb”ñ½sU)j0çã î²lT j‡>˜0vfæš¨+Ù¼²	âç^§cXféßéY~+EØéïzğËGñ*f£GÀ\™Â‘¬&Ô3•AôPø…æcñ€)KÁ:(ÁZ­ò{¤mË+D¼aÑ±ö4ˆu; ‚!ËÇ³¢AXç8Â%@'\Ñxm¤YŸæV3_C’S§ª`:»åWà(|C‡Â3j
-bÍA!<…ÒA5 dã#m¤VâWYRòl‘É/Ïƒ¤Iñò6mvTVĞ#œ·à.¢òˆ€W`È Æ¬MÌ\C†çøùm}µÏü§Y0îĞHCi$`l`¦öª60Ì”¼ÛúòÒÇeÓ)¨²8ç^D™Ø˜‚†g¿lT<á«fQRMªD¶ÛöPq?Vúyyô3Dµ‚iÖHœd®ÅHsMoOÿç°Ä,­—šfE\êQBë•al	ß·¸ê÷åéw0ÿ)ı–‡"GƒúÍ=uPÓíZúYºf@ò6´i«)¾›ÛµÄ-ET¦æÒ YÏdœ÷`»#p¬¿µ	±“Âx³am›™±53ÅÕ¥|†®×éÒ"Ş»œ±‘¾ğOù6fïÈò×B)XŞâã
-±ìeR°8¶‡³õ…»KÑ®”È}­Ş æVÿş t0¤F²”Q“-kFûİ(L¡İ÷ª kB˜l–à[êöKÉ*1«Æì‚ê^^ĞÇÀ?q)Ã‡üD‘€ÿ® äğßD‡ôR%&ÚùâD‘Ûœ!›V:üV>V€ö;”8ÏÚ$n|ÅöØî=Š¹ÒYœË©áÅ¤½+pdåHÄ6É¾hÆ¤¼‡Àh5AZ^!Òm6µ4³j†¶WÍìhfÊÍ®xÒâhæ»°ôyÄFÒ”fêKÕLa‰ËÍöû	«™[	q3«°q®ğİ™ì#ŞN:ÈZ“éóç½¡”š8}^¸–!ŠßOLlrNUh˜´Ò5Ñ™bÂT>Ì`æ]f•E-®*;Ie}š|z'§«²àÑéXy—&—UŞyùpÕŞcX©ñn§dÆı,Óª…;6&hÔY•×)ÁÎª¼¨ÅUyG°^›TŞ%/3ğ
-ˆ»áRlz‘ÿ÷êI DŸ„ ŠäœKaBjÉ½Üº…ê^u«Ò-@­º+õ‰ıhY dÃæÅñªY,· ë=5E`S9¬^tå9D×#³ä†ªWÁí
-.>´­/¸´oš\Si¤Mì L‹3´Gú1ği[n!ß´¿¡ù”u„ŞBËrÑKƒ_h¶F‚Tgˆ‘ fVõœfW|,ÆÕ»ê”CŠx»ôí„cq‘°Õ¨’[Ùj4H[Ò’ç_@wˆÀ«³Şú]fD@Í¬ˆ0BÎwoÑl"tÊF]4¢>Ô®GçeTÇëãyÃüÀ!4K¬ÀeXÔÌ*°ÓfXƒšËv¢ÃöFêˆı¬öæd{£ë”úø4²7(xLşg«:…>,å@¢ºWıfÂ:^ -6éAÒ!3•ÃƒÄKƒŞä2KS½ÉÃë{íA/S´›•¼ÄA¾ã ÖÒ·x/êøÑn}5%]v± ´½*õ4¥‹ºÿİL–yŞ=†­ÿØŒµc[Ü¢õ»‰­x&ÌìÅÒ{n‰;ñ¿…6ËõS¿kAôÀm¯ğ1ó§ö årR1|œ7¡g!G"mğó§Û4ø"§ÁçÆq²sæàWEcç{k'Ç—'D“8íK57šø£QâfVu+ÜÅ/Dv,Ëğáíu'4>u
-¢&˜Š=w7ÙLR?œòÉwÇw{g|Lö’Ç_”0‹Çrí¬Ì,’9\rèæƒí?rPÛ³	BÒSÖ ŞğÖDÚÜW3Ì]ºÈ‰z€§÷Û«yuœ¢Nuë“Îûğm2sr±ğç J@µz‘,†ºÓ÷ÀŒGİj ë±RµÛÒàÚït®;Œõ÷,VT§¹ÆğÑkwQ„‘"Ù€»>!*~êN_h/O_`d,b/ÍQ£{eJêT76²èv't¹ÀĞe[‡.2×ŠµwGtY¸ã‰? >Tî•H^!Ñ»ä]#å¾l¯óàöÀ=©ä¥mÏ¯ÿ>qıÆ—Nw²u.½ã ¬\±‰gŞ7×ˆŒ>ó^%~®´–í[pÇ:T9¬ÉEÈ)ä˜\XmAõ©¬=dv»” ãõæg˜»äEB­óúæVZ>Í”‰ïº¤G™¬s,~3!“u‘½”{n¥*UÿâÎÛ8Ä‚ƒ\µg g– º/ãáœáC1ÅŞ&™(ñ…8SH³ÁYÖ3?İiMá`ŞÌ³Šê^±kv…µ®Ä}1#b`ã–ª;Ñ0‘Çú:£6†Ï•\Kè´Zå‘ÙÏ¢Å­¬gUf×¢ÓÎª¬.Æ=¼ä“:ß0Á
-&iÑP¦òÁEv©1efhtæëBÌ7³€1€õÁ>•Õ4GtcÊ‹./‡ï²®<wÎ9Ó´Leğú8è§î8áâÖK„º±ŸwÃøÑ\[¡Áãv9RĞzÆçÄİGné±ÑLIQ|š.JÉãT0Ğ©ì.'nqµMÓl²Ws$»³±ØD öë	æ)>ëóŒ7%1Iı¹³Ù¬4•AM¡ş¬ÏáyÁitÙéî!Ä!‹ ÎB™ûx,—¤À¨™fº03l@Ã>S“ffK§şøÑw(ãfVÉ™f RûO‹åY7ËÄZQÕ«°Lƒ™ ,!\¯’ùNƒ"”c¯Ğ-\°›'ó)yXØˆK¹Gg>-´ˆ$Oä<oîîÆêè_†£Ó/±¿„D¤fMs(ı³·Hm^<fşNmú¥–¢ó"®{5äÓ¹Jòá{O
-™~òyg²IÔÒâ1lj(:–/mÛ2/jq5c—aÆp¼zøS‹¥§¹ÛY&ªéRGô¡ªW¬†µøò¶%CÀñÙ’SV(­„œílIª(:É.³ä¢ºWÑJ]F5%JŞ!Ã±1¹Œcæ]68ï‚òøªâ¬ÉŠTR|b4½«¦²»è¸íUãn:û#YòXÓäôşH6„*9â…·pËİ‚;%g¹şã…«èl‚fôŸÊß³•‚Pã«{uîÕ/7J˜Á×G¡»üg Ì¬GQâ(¡ÈJQœÑ_Šô£ºW
-Òé«B‚U#å¶šBº¾šBívŸ<y±¹{½¹ºş¬xóúí³ÍÕWİ\}ìş¹ûÅğçúÃâÎæŞuñ``Jœn3çn¡)!î®«Bh×½&^Ëv{	Ãm´ïÛƒÍÿgIÉ
-endstream
-endobj
-404 0 obj
-<<
-/R8 479 0 R
->>
-endobj
-405 0 obj
-<<
-/R23 480 0 R
-/R25 481 0 R
-/R21 482 0 R
-/R14 483 0 R
-/R19 485 0 R
-/R9 487 0 R
-/R31 488 0 R
->>
-endobj
-406 0 obj
-<<
-/Type /Annot
-/C [1 0 0]
-/H /I
-/Border [0 0 0]
-/Rect [254.604 713.604 280.836 721.716]
-/Dest /17O_LEVEL
-/Subtype /Link
->>
-endobj
-407 0 obj
-<<
-/Type /Annot
-/C [1 0 0]
-/H /I
-/Border [0 0 0]
-/Rect [283.284 713.604 319.716 721.956]
-/Dest /17O_GAMMA
-/Subtype /Link
->>
-endobj
-408 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [332.124 713.604 369.276 721.956]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/nsr/nsrlink.jsp?1993Ti07,B)
->>
-/Subtype /Link
->>
-endobj
-409 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [277.164 648.804 283.836 656.436]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_a_n_13c_a_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-410 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [281.844 638.844 288.516 646.476]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_6li_d.pdf)
->>
-/Subtype /Link
->>
-endobj
-411 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [338.364 638.844 345.036 646.476]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/17o_e_e.pdf)
->>
-/Subtype /Link
->>
-endobj
-412 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [277.164 628.884 283.836 636.516]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_a_n_13c_a_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-413 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [319.524 618.924 326.196 626.556]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-414 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [347.724 618.924 354.516 626.556]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/18o_d_t.pdf)
->>
-/Subtype /Link
->>
-endobj
-415 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [352.524 618.804 359.196 626.556]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/18o_3he_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-416 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [319.524 599.004 326.196 606.636]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-417 0 obj
-<<
-/Type /Annot
-/C [1 0 0]
-/H /I
-/Border [0 0 0]
-/Rect [93.9237 588.564 100.476 597.996]
-/Dest /O0LEVEL0
-/Subtype /Link
->>
-endobj
-418 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [281.844 586.644 288.516 594.156]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_6li_d.pdf)
->>
-/Subtype /Link
->>
-endobj
-419 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [319.524 576.684 326.196 584.196]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-420 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [338.364 576.684 345.036 584.196]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/17o_e_e.pdf)
->>
-/Subtype /Link
->>
-endobj
-421 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [352.524 576.564 359.196 584.196]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/18o_3he_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-422 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [319.524 556.764 326.196 564.276]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-423 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [352.524 556.644 359.196 564.276]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/18o_3he_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-424 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [319.524 536.844 326.196 544.356]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-425 0 obj
-<<
-/Type /Annot
-/C [1 0 0]
-/H /I
-/Border [0 0 0]
-/Rect [93.9237 526.404 100.476 535.836]
-/Dest /O0LEVEL0
-/Subtype /Link
->>
-endobj
-426 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [319.524 513.564 326.196 521.076]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-427 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [338.364 513.564 345.036 521.076]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/17o_e_e.pdf)
->>
-/Subtype /Link
->>
-endobj
-428 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [319.524 503.604 326.196 511.116]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-429 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [319.524 473.724 326.196 481.236]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-430 0 obj
-<<
-/Type /Annot
-/C [1 0 0]
-/H /I
-/Border [0 0 0]
-/Rect [93.9237 463.164 100.476 472.716]
-/Dest /O0LEVEL0
-/Subtype /Link
->>
-endobj
-431 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [281.844 461.244 288.516 468.876]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_6li_d.pdf)
->>
-/Subtype /Link
->>
-endobj
-432 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [296.004 451.284 302.676 458.916]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/14c_6li_t.pdf)
->>
-/Subtype /Link
->>
-endobj
-433 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [319.524 451.284 326.196 458.916]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-434 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [338.364 451.284 345.036 458.916]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/17o_e_e.pdf)
->>
-/Subtype /Link
->>
-endobj
-435 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [319.524 431.364 326.196 438.996]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-436 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [338.364 391.524 345.036 399.156]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/17o_e_e.pdf)
->>
-/Subtype /Link
->>
-endobj
-437 0 obj
-<<
-/Type /Annot
-/C [1 0 0]
-/H /I
-/Border [0 0 0]
-/Rect [93.9237 381.084 100.476 390.516]
-/Dest /O0LEVEL0
-/Subtype /Link
->>
-endobj
-438 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [281.844 379.164 288.516 386.676]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_6li_d.pdf)
->>
-/Subtype /Link
->>
-endobj
-439 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [319.524 369.204 326.196 376.716]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-440 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [338.364 349.284 345.036 356.796]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/17o_e_e.pdf)
->>
-/Subtype /Link
->>
-endobj
-441 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [347.724 349.284 354.516 356.796]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/18o_d_t.pdf)
->>
-/Subtype /Link
->>
-endobj
-442 0 obj
-<<
-/Type /Annot
-/C [1 0 0]
-/H /I
-/Border [0 0 0]
-/Rect [93.9237 338.844 100.476 348.276]
-/Dest /O0LEVEL0
-/Subtype /Link
->>
-endobj
-443 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [281.844 336.924 288.516 344.436]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_6li_d.pdf)
->>
-/Subtype /Link
->>
-endobj
-444 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [281.844 326.964 288.516 334.476]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_6li_d.pdf)
->>
-/Subtype /Link
->>
-endobj
-445 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [338.364 326.964 345.036 334.476]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/17o_e_e.pdf)
->>
-/Subtype /Link
->>
-endobj
-446 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [343.044 326.844 349.716 334.716]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/17o_pi_pi.pdf)
->>
-/Subtype /Link
->>
-endobj
-447 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [319.524 317.004 326.196 324.516]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-448 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [338.364 297.084 345.036 304.596]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/17o_e_e.pdf)
->>
-/Subtype /Link
->>
-endobj
-449 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [319.524 287.124 326.196 294.636]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/16o_n_n_16o_n_a.pdf)
->>
-/Subtype /Link
->>
-endobj
-450 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [347.724 287.124 354.516 294.636]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/18o_d_t.pdf)
->>
-/Subtype /Link
->>
-endobj
-451 0 obj
-<<
-/Type /Annot
-/C [1 0 0]
-/H /I
-/Border [0 0 0]
-/Rect [93.9237 266.604 100.476 276.156]
-/Dest /O0LEVEL0
-/Subtype /Link
->>
-endobj
-452 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [338.364 264.684 345.036 272.316]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/17o_e_e.pdf)
->>
-/Subtype /Link
->>
-endobj
-453 0 obj
-<<
-/Type /Annot
-/C [1 0 0]
-/H /I
-/Border [0 0 0]
-/Rect [93.9237 254.244 100.476 263.676]
-/Dest /O0LEVEL0
-/Subtype /Link
->>
-endobj
-454 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [281.844 252.324 288.516 259.956]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_6li_d.pdf)
->>
-/Subtype /Link
->>
-endobj
-455 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [300.684 241.284 307.356 249.036]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/14n_t_g.pdf)
->>
-/Subtype /Link
->>
-endobj
-456 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [338.364 241.404 345.036 249.036]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/17o_e_e.pdf)
->>
-/Subtype /Link
->>
-endobj
-457 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [338.364 231.444 345.036 239.076]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/17o_e_e.pdf)
->>
-/Subtype /Link
->>
-endobj
-458 0 obj
-<<
-/Type /Annot
-/C [1 0 0]
-/H /I
-/Border [0 0 0]
-/Rect [93.9237 221.004 100.476 230.436]
-/Dest /O0LEVEL0
-/Subtype /Link
->>
-endobj
-459 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [281.844 219.084 288.516 226.596]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_6li_d.pdf)
->>
-/Subtype /Link
->>
-endobj
-460 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [300.684 208.044 307.356 215.796]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/14n_t_g.pdf)
->>
-/Subtype /Link
->>
-endobj
-461 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [300.684 197.124 307.356 204.876]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/14n_t_g.pdf)
->>
-/Subtype /Link
->>
-endobj
-462 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [338.364 187.284 345.036 194.916]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/17o_e_e.pdf)
->>
-/Subtype /Link
->>
-endobj
-463 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [300.684 176.244 307.356 183.996]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/14n_t_g.pdf)
->>
-/Subtype /Link
->>
-endobj
-464 0 obj
-<<
-/Type /Annot
-/C [1 0 0]
-/H /I
-/Border [0 0 0]
-/Rect [93.9237 165.924 100.476 175.356]
-/Dest /O0LEVEL0
-/Subtype /Link
->>
-endobj
-465 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [281.844 164.004 288.516 171.636]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_6li_d.pdf)
->>
-/Subtype /Link
->>
-endobj
-466 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [291.324 153.084 297.996 160.716]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/14c_3he_x.pdf)
->>
-/Subtype /Link
->>
-endobj
-467 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [281.844 142.164 288.516 149.796]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/13c_6li_d.pdf)
->>
-/Subtype /Link
->>
-endobj
-468 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [291.324 142.164 297.996 149.796]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/14c_3he_x.pdf)
->>
-/Subtype /Link
->>
-endobj
-469 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [338.364 120.324 345.036 127.956]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/17o_e_e.pdf)
->>
-/Subtype /Link
->>
-endobj
-470 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [291.324 109.524 297.996 117.036]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/ensnds/17/O/14c_3he_x.pdf)
->>
-/Subtype /Link
->>
-endobj
-471 0 obj
-<<
-/Length 4235
-/Filter /FlateDecode
->>
-stream
-xœí][¯·ú¨¾¶}Û—ZíáıÒ¢jÇ©‘´±sÚhúàÚNZ$vlÇ.šßá^È!—Ú£•¸’¬#°tVKrIÎ|óÍpÈ}S‘šVÄıë>Ÿ½\\=1Õ·?.š«­¾[¼YĞîÒİSİ»Ûlej«7ÕÍ7ÚİÎ¸ª©¯n^.ş±¼¿Z³š*Ííò‡•¨|eËWÍ7níòİjÍk"¬´Ëÿ„¯¯üïı/V¬æ’I±|7
-^S!¢*×œÙZ+\úÅŠÊZ3¸ñşšk‘ëZqµ|í/>u•kØò[Tnd5ãbùõrµ¦µ4B/¿ñßBÛ?äºójüçĞ];¼Ö„¢Çpw2Q3¥Û;›‹¡Ê~”Añ+Ãj­5n(Ôù/ÿß·?*ºÚ5±Ë¯W}×şyó¨™]]sİw³»¦FÔBTÊèš²êæ9L-]­ÜoáÁuûÕPëÊ²Z2ÂiµÖuw«ñ·öu[¦šºeÍ´U¶âµjïşËjM`<&ó(®Rx|a1íıv¬vÄ*º{íîfZ\òÕZÖPNŠ¾ hFyÍUåÄWZ­ÛÂŸ®Öª&ÖR³|›H‚Ø—0°ÔÖ‚Éå×ŒâTªåŸ]”…JØòËPÁ'èr¨7Óc&Wğ_x~ğèæ¾|j-Ë¾ÙÁÃ7ŠNølÍ˜~à)•®àƒ›ÅãÅ›JRÕâËš’ÚTÒÉ¿©4³0 ÆÓ½ëÅÕõçÕ»·ï_,®¾ªèâê¡ûïŞ÷áãú“ê£ÅƒëêñF¸¢"‹WŒÔRUš
-7ÆfıMÌó0_AÓ^»‹”ĞF£;!ˆğ©ıÕ÷­méí·Sæ=~²Ïš¶Ø&©^şwEMÍˆÆPñ} €W0šºÉ¢ç‡ö¤mmDôD¿m&Õp"öî­içUş§Dø~ê‡şåŠ;HÖ¢ûİB¿–RĞ¹ÚhPş¢õêiı5î¯İ¬(u5Jl€ˆÿY÷Eö<®‚†ìÊ3?u‘Mëe/ÈYd&{1|î2€D7ÆöNß¨åt4hÈˆtª¦)|’*g+U[ÍŒ¥H‚WÊR7Í@PQk‰f¼ÿšÁd]hã`ˆ	Â¸‡-ÎhmA>¨akê&öVñøÖ	Á,¢&’q:Æ[Zæ£¿–ø+Pn7ÊH@£2³‘KMƒQ)%Üœ7ÓÑÙ. Hı€p`AßGìÅ6¢Õ­é˜„$²»O˜L×Q€u]K¹|áĞÕF±phÆ–8‹Ášn&öW+]k#µÉˆ‚Ù5„6¢JÜøùï‹ 6doàªzK\ü\½#íÍp:?‰\ı@Èšú»{Ù¨$C¥5Uô(G†çI€zD%€'Pd0³Cfm…Å1ı—@ğ^ù»Şş—±`‰%DÙ³RÄ¸Ï	rX	#u&ìVS\—Ñ|×º(q^
-V6iw¯Lƒ€+T×Â8İ¡²IšË U%À$÷ ÚàáusH#ü53¼ÖÉ»ŒX¯¬¹ƒÒ+G_JbC¥8.ƒgö’^oAK!DæäÒIü æ¿‘Ş™ÓËï2Øı·VM4`Ñö¤ü‘,£1-
-£ø`ÕÜƒŸ‚ÆUÿÚsï ·ãCã
-€¿8dÃ#ôöÁüØÑïƒé›õø†kõ )ısx*
->¯É=•tp›¡5ÊnûT AîVp\Ô ·ó
-…Wf„—L^––ê…7öóZåmJ`s³ıfHv\’ÙºZÁ3p–¾Vúh^›Ë‰HÎGĞ+Ie®Q¹±Œ‰QGÎ…]Ã»¡3éñÑ:C2,Ïq	fèé¥òscBÜg¨HÆ‘mõ‹,VĞ½ Æ0ç2)ŞxN€—pG0òÓÁ†eÛéÑµóõ[gæ­$&Ã õXŸŸgk ÀO½sûSïl4kÚs$ã©ç Q¼éfğsË!)Ád¥†-üal>qsLÇ7ÿCJg\¥ÿöCUo»¸˜R]/ãŸŸùoá1êâkRé½+êA??óƒíoh1”®[%œ¶ĞèˆjGz†È¨ü5’ˆìf= ojˆ¥¡j;Jœï¢{Œµœï¶K˜y3—Gu_ı4C¯2×äj)´½–p >&äœ5†cDdsvŒD“€@RŒfC;šJ€†|õØ®Ecú"ø›Q³© NÇfÓNâÒÜÀJ*K)$wQWV)
-²ÑÃ æ™‚ËÀQÀ‹GŠÃx.ÿZZMQ‹5uj*\ÌÈÄê¤”´q‰#S†d”ŠœR	¢¶Tªv`˜¹š„::±=îÚÇ ƒTH^›ŞaÆ~ÄDÛWBUéõ¤°FôÏ¯·Úø5Ì¶Ã¬)kÃÉä…™×FÔ™ àĞülz`s¬LÌÏÔ¦[¼D˜Û†9—|ûÉO»›#+jë0]ZâÙÅOØnë4È\í”4Î‰4àˆ(ˆt›ÏÌœ÷5švF£™3”bº¡Ìû—9g™u¦ˆ³<èÌĞY¾­39ÏÀ.bñÏëğnñº¯3‰ı´6ñTğÌ]è6	¨ÜaCBö¦ªaPõ˜ÖÅTU	gÖ’îÉé5-,¸ŒGr”Ì-Ò¤q9gĞÀÉ½+WíÂÊ`dU©Ng±¤ w¥R«šQ·nC‰îkiîŠ[ÆúÚ/Ys6*£ıî4Ö­q3 Vˆ\³Œ6«b{ñÔ¦Y—´ÅÌ­ìÙ¢ÆC aŞ¥êt`œ2&ğÓ¦ T
-M¢dÛ¡øÔQbBì)ĞóJìøå4¥6HÇ;=6€€“UŞ™ÅÍ\œÙÔ™=€.òÃCêbXçáYZLEºŒá}4J*Ä€TisÑ/„”ö˜qİ;|2v˜kpÆİ"x ıµÁ1)ç²3ãıvqÙ³HAot³&Q¯©{Ôá>e7 Šõ—C’tİŞÂx@›ôù¾ÌLÖ¸pY”.^ŞHİ2¯³{¤€Y…8`–N°®Iƒë¤ÌV‘ª|vG®ë¼¿ï—:=}‚'®I¡€«šaN×1‚Ğ’
-Ÿ³ù¼…,jæNØV¥eëİ´€‘Si›`Şş¤ïÖ¬¨ÙÂ»­ÍşéCà¥ÃĞÆk@ûX£˜eÒ‡8¶<%ô(¸š‰Ì†ªï”ª6—Å1¥,Ê¢}£-«àÛ3–dãÃºŸÇêòb(ŒÛ0&–¿ëbr˜[ï‘ìÜ*ÿDâb—T1ŸsRÓrµ’¾˜Kß÷2¥9QÒiW©iÍú˜ã˜5ïô”F*\÷±£]ab7à“³<ûãSÓ¬8µ 7p'kmáìßF‘İèœÓQÂå*¸åÅWé…œ8ƒUú0Û¯Ò‡2'¶J¿}gÂ*}(3ß*ıÀjc•KlÙUz!›™¬Òçp'xFSò£·‡‡6Ù<A,QÊ•` ÔxÜ€\1bMMÙœ®<nñâ_ÜJxÚÛ3¢”ppjÒ|ğs]›Àà¢mKó†iæL]ŸÕ¾ã0M©¥Æ$LSz©Qp·Ş4“Ïƒê¾ø<G/ Â4TqnxÂ7o@˜–Û€†sçÛ£ ²¾saÙ]8-O[šÌi©Ö¨í Ø¯/út}:ÇDñ ^X³9îvŞ{Ï[ˆüIíi¿Ågq´ş;âËº±…àÖ®Ûê,»Ğfi×}vö
-¬&ûµIßÕÎ¯s ’^‹™âÜÿHâ£[l/qÈ»‡ì¬<FKlÙ8¤;Ó¥aÈàå‡y‘ŞíŒ½ØÁÄ°…=ÿ øt¿ñ¨P 	Bé ªúè€×GñXä(l2ˆ;‡…Pvö±>NU)ÓØÙƒÚ+otÖü7t˜î¬Çteí}şì‘‘ï$y¶¸ÓŞ)áˆıé—«¸³Ka k…15s¹çùıAe3ÑÂc{_sÖÀõ|³¼ûfÊ²Bî×åŒÃÓ;ãs	ß‰KaßL¤U©ó“;JGíd§§G:SiŞ  Æ	sàe…`k‹Ùœ„<Ø5%`™90wö€e/VhòsçY.¿,m1QƒçºJt'lçÍW5‰ãÒİ‰3™°¹.˜É”9ì£”ÏMÍLw_ñ±ıíÓXª;ğqGw?ÇU3¬$lØ;\Ä¬Åª’÷;îxc’a¹³qZ7ŠYã_&Ql=«aÌ˜æT1ë0)Ş>ôó‹†\çÜ÷¹aLİ‡w]‡2b˜Oñ/óxÆ£3BË‚>næ‚ûGÀıCkD›Ìš"|€ƒœÁ”ñ~YñÕï
-ÛÎŞ¸÷´ mÆƒQ$™-·A¶38¨ÇÅ4ÔULòšlM¬ç	o1©üîüò¢;ëá­ùÓf:È3ŞMî>•SI·oÍ¶ú¶CÁ¦×4Ï ËnÙX¬›ÈÜf±¶%½[‡Úf¡¿kåŞ¤E5šÃR/› û†OM·Ç•0D„:„fê<±ÒîªÅsúP+'´©*c’€µ*—€Á oL’`,÷^?û	E¦ÓwIåŞÒ·ÛÙ+:á»lhz³‡±ÜíĞv<N.ÛxÜ×~9=	§,÷JŠIræ^t=K*.®ûbç–}sj’¹vl^<gÒ-cÁü—çÅMÔãœxñ~)«'Æ‹÷O}<g^Œd·0/&ÖgZä(l½µ;êÌ1
-·êQÜ÷<@”6zøÿ<)SOıÀåçe}´7·O^$—f äöHÚ•¦¨î†Òcr·%¥EJé£ãQsH±oVét¤˜ÎÓvs¡u!5K\èt˜Ê©µÆSZÍpİ5›Ãs«ç95Ó™k‡Ûş:ÿŞ˜½æNQÒvI«{¦SÏ!ë<mjÊµ.¬ç¨î3ÍTÙ`Ò2i¹3$g1ióF…—6iijA“¦µ?Æ¥¸ICu_LZyæ˜r¥ù.#&­Dl‰ªÀ[J¿L‚*Ù½0şÔBD—¥Ówøi/’éó%¨>Ş“Ó˜	<Õ¸ğ\¯¢˜3L´A·Ø¥½Í…İvÿ%úh™‹Çci|XÚö¢ºïœíGšg;G¢ õ¹_ÚwÒ4Ÿ`pçÑî4ßT{fh×Yõö½V~cg5à`yàCÍœğõµ!)Ş,È	xË»ØÙo³xËì–x+Ïo§Ç<çßœr;¹gRÕDqnsÍb¹ÈÄD3NTv[jÆİãu:€û¿Ş>7©­N54hÉ	ä¹°Ã6F£”Œ4°ÀOaA@’-7'ğ°,ÂSˆÉª6”¿ÊL‘àÁnûİ%¸Dßj?ÓÉ–¸îÒ¯C½&P±æ5®ùbß˜Æşy2êŠ0HŠ³!Ñf¯ÅQ°YÖÌ·›Œ„ï6;¡ĞÎ¤ã!lB‰?6¶¸÷€ê>!Å7Œ¥ò×c›YzSIPÍfì[˜Ü›JÇ4aª÷®W×ŸWïŞ¾±¸úª¢‹«‡î¿{_Ü‡ëOª®«Ç#“ìX9¸ñšWsäŒèv3Ë\Q˜y£ı³=^ü™,Ã
-endstream
-endobj
-472 0 obj
-<<
-/R8 479 0 R
->>
-endobj
-473 0 obj
-<<
-/R23 480 0 R
-/R25 481 0 R
-/R503 490 0 R
-/R21 482 0 R
-/R14 483 0 R
-/R501 491 0 R
-/R93 484 0 R
-/R19 485 0 R
-/R9 487 0 R
-/R91 489 0 R
->>
-endobj
-474 0 obj
-<<
-/Type /Annot
-/C [1 0 0]
-/H /I
-/Border [0 0 0]
-/Rect [265.884 713.604 292.116 721.716]
-/Dest /17O_LEVEL
-/Subtype /Link
->>
-endobj
-475 0 obj
-<<
-/Type /Annot
-/C [1 0 0]
-/H /I
-/Border [0 0 0]
-/Rect [294.564 713.604 330.996 721.956]
-/Dest /17O_GAMMA
-/Subtype /Link
->>
-endobj
-476 0 obj
-<<
-/Type /Annot
-/H /I
-/Border [0 0 0]
-/C [0 1 1]
-/Rect [343.404 713.604 380.556 721.956]
-/A <<
-/S /URI
-/URI (https://www.nndc.bnl.gov/nsr/nsrlink.jsp?1993Ti07,B)
->>
-/Subtype /Link
->>
-endobj
-477 0 obj
-<<
-/Length 3973
-/Filter /FlateDecode
->>
-stream
-xœå\[¯ÅFy\å1/y›—H»wõ½%QØ2!˜£	xpŒß@üû|Õ=}›™]Ÿ³ö“aûŞõU}UÕ3½O1Ò ø¿éï{ç›kwüğÕ³M,høvódCÓ?ÄÔf¸~†fap£rRéáìÁ†¦æFZ?8ƒ!åpv¾ùlK»½‚¶.=z
-_œİÚÈÑH¡hØ»M¿DS_šr=ÏÆ`¥s˜Qº`Ã F›Z´Û‹Ñ	!µÏÍ›%ñ {5j/„OíÃ±Ñ5šw­÷ÜZÌ¸Õ»½ÑÏèÜÑ££U;JR£²Ã^d‚s©óßv{;ŠÈoŸîö„YµÛ>ŞéÑ“
-a{¾Û+
-£–f{ƒ§±ŠŒİş÷c‘ÛOê ï5ÅuÜ•KcF'üQ’…ïu¾’r>… W„ïõªğõRğŞÒ¥¿:òAÁŸOd¸ã³ÍÇ›'ƒ!›4qObôP9´†ÆÉ zVáë77×n~8<úâşæÚ§m®}À\ÿÇ»øëæ{Ã[›7‡*6éŞ¬ÙRÑèõàH³Œ£bÿµæËŠW‚Ù¢ğ;.$Aaû¼(Áı•‘F§.\[ö–fzúÕe—fíè}·´Û;ÖGëTÀ„ÄAnûıü(…›¡ƒ—Û‡ĞÄQè`ÂöÙâôR
-Ù-è8XQ 6ÿvEïDT½ú•·Ìhl7øû;Õz{·Èş|§F(¤ÓÓ¶ÕÔ>–u°\Š}†R¦JÙÙˆG4ÛoªÌD©v¹Ë+Où…¦}¾-ús¯@WõìQU¾ªhÍ*=|Q[&p"´ºûù.÷o‚
-0Òjr°m„Åë°¹0Ø18åM´·£Öƒ…2ïÉ—ˆ1á¤ƒÀóã
-);tR1ÉøyKIláv¥]"ŒÄÀ¾Ô@öJ)½üô<v7XH®Qê”_–²U8ğ¯o#Z§k_+ji|rí³1U3“óR¶D)İŠ,Ê–U+Ë~(1 0S;# fÜ¨òÿÜş+y"¥¶wYï4—–~æ¥÷l("aüne¾ÇLü©FÜ«`%2ÔA¶G7Ø¸ŸoE4‡K~²7©Ø4”¶Úc„:tY²"œ0ØI
-ÁÓë¤2ÉR¨‰8Yª¦”‰R&àØá7 néY)¿½YUè,-ƒLÆMİ
-@>ãı'Ö-„0+4 ÇgÙÜö/ó?r Y™:}îŞ‘…¹%yGjçW&dÓà@¦ç.z·¶1,)ŠôUöÆMaK¸dÔ‡€0/5©àè„ş GÅa.NÓå'çÚèE³‘=I›2M¬ãN”2jexôÃ³šaI:ui…B²Õ=İÍE?²ÌƒV²ü²qIpx’ƒ†$wt©ó;"èåz/|C±i¾~•¢dU«¾oìFº¬Á‹Œã(AÜÿçOyğ`„_ƒDWµ¬Ş{E¯ÔĞ	õâ‡JùT×û£’Ug.gÎ\	CìŒG*}…ÜÍğäŠ‚—3g>ÉÛ´R19]¤hÓö¾Ù±£1$×òb¸Ê®ñ2Dˆ®~‚År{«KU¢n4kÕšSqßÓöowntŞdbèwgGwwv{söû¼-ë×pV>fÂ:EÄ‘oÌè°_ŒÉ‡4)HVUâåhZ›ÂÂ7t=*ÿ®Í¢.3>èÆB0ıøõb]@–g0õ`áÁ1èXe×á8fY¢ÇŒ2›#ù­]-‹ò!ë9Æ‡;ÃÌoõ†s×¯ÏëãÈá©ÈÈ–f(qeûPÓ«G¥Õ4 &½–l?˜Må2¾4Æ‰Ë…ØTª’@'NKÛE—R¼*eÆn,Ü©«š3§¤‰9_ƒ´¤6îä±B‹K§cRvÒ¹îÃ©ËºŒs°É—FOY·/A¢kƒD?œn<u®ñ?,Ù2‚HjFæQ•†7QÕ5˜$bxÑ…²Í-ÿOÉÇ%oGOl™UÆ²i}ÜîËnûö‰§}ë¼myf{eµ³¸±„„õØi¶—U&]tê¢u©8óoCøÔÜ!Öœ3±u ¬`
-v=ZØ+‚ì*>`ßÔñY9miËeáì/Píÿk{½²ssF³èÕ®´M?İy¶1©Z¾XlÏÍÅél2¢>[ U‡<ËäÚlõ 2S1DPŠ}œÈùĞaİB’…Zû€˜¹¸iµ’ÖŞDíwãbi\m/jô†üéÕŒ¾Ï¢ôjvá÷[Ç>¦]‡*újj¾·ï¦¯K­?†Ò¨¨×ˆÅ+[?>ÿ_°ëÊQ–ÇÛ{>ÏC–y°«!‡%`'‡Úg•è$r 7Ÿp||©À…(§Ñiæ“ZÂx{¶”^‹gk™i|P}¾ğ=°Ç£Û£´¥b6¦3kU+¨G[rµ< ò’ûÅ7–«ÔŒ¡ê™{Ö™¨Q{ 8i÷©ñ’éNÂ~¹QÉÿñôÇf3âùó•O<‰–AqªÒ›k5Í~d¨—˜«úùÌµ†¤4×ö½AŞ©î!su—0WZ¾iP\eÄ€L™×½¶ˆá¢éÄCIÄ¸¤òg.z®qå‰qXèp ×Cèpx%†Ì©ëÏší)øxFXäLÅş¡;HğQâÆ§S¶ªpÅÜg!½àz½æ¾ÌZ›;û‡åñÁš_”EÓjÒ
-ş*AIÓ(=¦tœM4˜‡#ªv1_ıËÍ!0€¼¢†7Í•ÿT9ÄJ¼Ê|²¾QëÈ.fc±?lh¸…ÿÿ3}
-uç}”Ÿ´Jâ¨`8ß¨ ş„NL7ŸLm|ÆZGÒµg–äh¦„%®âsKÃš`l ZP7 gIìksqÚ—Œi]ˆo°Gë¢A²wE«ÌHJ¸æ“Çº
-òóÄ6]DšÇêÈl|bkùë•Z¿^á—Ï{
-NêùŒ•LX´OïŒaÜİé…Kü»ü°TßÕŞV4#0	<¾P·­Ä§ùi’æ7ÃHùò7¾?‘¤­aŠ3Iû*×¬d	€’ÚtMTo‰(
-I™­Òúè!>;éÉÃac¶)µg¨øĞÜ³BZl©ÙcB¦9.ı|·ÀÉ´¦H@¦SÉé˜2G{{YLÕAL•+îó¦
- L˜ªrYd š•˜ZlÖí«éh{t-¿Í³3t_j¥jÀşT§Ê±Š•¥è×Ë¿.…ú0È6şº­y*9dG#ùË2äaŒİÅ0^³[µĞó¸’*¼’9:½U¤õ5³e;F#´Q4Å¤¿IK.¬,Ñp†jÌºJÍŸëûí8:#Íàï sÁb“-dSÉéyNÜLÂLı¼˜é…ÎíR]³-†UÜßîEzroìış¹ãK&ÎËv'IÍAÃRGhÙ3—œŒ’{Zñf°g£½íJVsë¶·â(gô‰˜´	U¨N’„4ø£‡ChG’¾P§Z…Î!¢T"$O(Øï,=<½¿yP*lpÌ•Ë
-Çßrø®b¦SA'•ĞTòe¾`€¸w­µŒŸØQiòç8¥Û×˜¸Ù0Ú«¨«‰óüdô ß¹ˆCärÆšd.‘ò&(¨Œ½x-
-³‰çcL“yş[2µNO¥#BÎ4R„jÈó<<~WŠGdo¬5³R~ÔµÁÈôj‚ö˜š?„0’Ó4 #­æ{S b%Ê3p¯/XëÌˆ$àÀ¼u²e2™‹^x£Ñ\³Ô³\³T4#\¬)Ş ”¬ä:°b¸%&É¬µ–	—–¥IT¨Sºõ
-ÅíY%¬Œ xŒ 
-C€4H$ü°Û8R_%D.Ñ†		½TìuU
-ehqqH5§œNW\MÅÕÔRU'%r^5ê°<ôlôjŞ\³„—£0®©ğæ’UÂ°>~İXş¢9â2U÷ŒqR¿áØ¡Ø¡ TÛ ìĞSµøZJ_9¾)mámĞ³^_Kå*¼î¼Ş;fÈ»Î5Kà=|ºiÃïR²f½Ş9>enÌpŞZØ"¸ÎzOéÖcÛC=sŠƒbª“CrÁÊ Š‚6|.•H¯E´p§b¯«B7DÒæiàÜğú
-¯~¼Š]€Dt%. Š¶Í¨sIcÌJXşR¦±Åe+<ğ™@gÃ§õëpN"C¹iÊrƒ
-ŒÍ™…âˆ© <å¡T´s+]:¸˜9 rñì@"Š¶ùP=­š±^ÅYwêq•^_I×ƒ×’jàŠ÷ÕMÖ·ÚHMï7s“ø)İz¼c{VP»©¤bÀBJ££V¦hÊ%ˆ¬y¾£Ê®
-o!“:sÂ‘¿-rwkroã¹¦½Ä®eòTsÇ÷É5VÅp4¼Õ½TÒ®ƒ|,Ğ\7ü]<"iÉ<mìfşûÑNÁÉ‚:·Ï‘Æ„ ™ ¡ákïX@SÏ4m¾ğ‰†Ş¹éRËRgE2w1Şmÿ€]ò-~ËWÙók¥›–Kï»eêvì½) â«-M¼ÃÃ‰Xnû]Yä×ñÉğìË]Õ²Gèš1ñÈ9>­w­ûİc¸{¥èëÒş›2pÒWØs:IÛy¸4.a¿ópçhf J¼¤›G¾[¤ÑÎ¶—ğw$t#¢û|D`4r—‡yYY#Ú;à "F@M‰îmV@˜mº1ìÁ¬Úör¦ÑZŸÉóy!¢‹í';~±Çëº—ê‘ñjÙ@½k;ó›˜€íª\jÓµ·DWÃ°å[ÌTàP\³–`eL-‚ÿRrìô¢Ü7ïÔ/İ(;hdmğÍO8ÜAåß)Ğ6ÿ‚…*ÿ´¿+WÎ)_z âN’o¡ºé§ø˜œÛ ÿïùXÍò5	­òÅ–wºz‡U€C•.ùÃêİtŸ—ïöKk§å}S/ùK5úü"‹Ó»RR4=érW•ËÎx/@VMÕârD©v¹KÒãC\H\EÏ¾•’—'ñïf„Œ¨™`Ñàv?¢¢(”ßñÈ?¢¢ƒ ¢{Îù…·å…HÓfñ[*Şµ¿†á™æ¦ÚÚoz„t»ò>dBB–™B7ËüGüP‡îuıf@³§òã	=ÈÎ2Şo«)#Û[YåÇ›ÿQ„uù
-endstream
-endobj
-478 0 obj
-<<
-/Title ( Adopted Levels, Gammas)
-/Dest /section*.2
-/Parent 11 0 R
->>
-endobj
-479 0 obj
-<<
-/Type /ExtGState
-/OPM 1
->>
-endobj
-480 0 obj
-<<
-/BaseFont /XWNDKT+txsy
-/FontDescriptor 492 0 R
-/Type /Font
-/FirstChar 0
-/LastChar 121
-/Widths [636 0 636 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0 0 0
-636 636 0 0 0 636 0 0 0 0
-0 0 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0 0 0
-0 500]
-/Encoding 493 0 R
-/Subtype /Type1
->>
-endobj
-481 0 obj
-<<
-/BaseFont /VQQVIQ+NimbusRomNo9L-ReguItal
-/FontDescriptor 494 0 R
-/Type /Font
-/FirstChar 12
-/LastChar 105
-/Widths [675 0 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0 0 0
-0 675 0 0 0 0 500 500 500 500
-500 500 500 500 500 500 0 0 0 0
-0 0 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0 0 0
-278 0 0 278]
-/Encoding 495 0 R
-/Subtype /Type1
->>
-endobj
-482 0 obj
-<<
-/BaseFont /BJSPNI+rtxmi
-/FontDescriptor 496 0 R
-/Type /Font
-/FirstChar 11
-/LastChar 62
-/Widths [593 508 518 0 0 0 0 0 0 0
-0 535 0 0 524 0 0 0 0 0
-0 0 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0 0 636
-441 636]
-/Encoding 497 0 R
-/Subtype /Type1
->>
-endobj
-483 0 obj
-<<
-/BaseFont /SAOXAB+NimbusRomNo9L-Medi
-/FontDescriptor 498 0 R
-/Type /Font
-/FirstChar 40
-/LastChar 118
-/Widths [333 333 0 0 250 0 0 0 500 500
-0 500 0 0 0 500 0 500 0 0
-0 0 0 0 0 722 0 0 0 0
-0 778 0 0 0 0 667 0 0 0
-0 0 0 0 667 0 0 0 0 0
-0 0 0 0 0 0 0 500 0 444
-556 444 0 0 0 278 0 0 278 833
-556 500 556 0 0 389 333 556 500]
-/Encoding /WinAnsiEncoding
-/Subtype /Type1
->>
-endobj
-484 0 obj
-<<
-/BaseFont /XIFQLI+rtcxi
-/FontDescriptor 499 0 R
-/Type /Font
-/FirstChar 61
-/LastChar 61
-/Widths [636]
-/Encoding 500 0 R
-/Subtype /Type1
->>
-endobj
-485 0 obj
-<<
-/BaseFont /NQJLTX+rtxr
-/FontDescriptor 501 0 R
-/Type /Font
-/FirstChar 0
-/LastChar 61
-/Widths [556 0 0 0 0 0 0 0 0 0
-0 600 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0 0 0
-0 0 0 636 0 0 0 273 0 0
-0 0 0 0 0 0 0 0 0 0
-0 636]
-/Encoding 502 0 R
-/Subtype /Type1
->>
-endobj
-486 0 obj
-<<
-/BaseFont /NFNJRP+rtcxr
-/FontDescriptor 503 0 R
-/Type /Font
-/FirstChar 61
-/LastChar 61
-/Widths [636]
-/Encoding 504 0 R
-/Subtype /Type1
->>
-endobj
-487 0 obj
-<<
-/BaseFont /FCEHSL+NimbusRomNo9L-Regu
-/FontDescriptor 505 0 R
-/Type /Font
-/FirstChar 2
-/LastChar 121
-/Widths [556 0 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0 0 0
-0 0 0 0 0 833 0 0 333 333
-0 0 250 333 250 278 500 500 500 500
-500 500 500 500 500 500 278 278 0 0
-0 444 0 722 667 667 722 611 556 0
-722 333 389 722 611 889 722 722 556 722
-667 556 611 0 722 944 722 0 0 333
-0 333 0 0 0 444 500 444 500 444
-333 500 500 278 0 500 278 778 500 500
-500 0 333 389 278 500 500 722 500 500]
-/Encoding 506 0 R
-/Subtype /Type1
->>
-endobj
-488 0 obj
-<<
-/BaseFont /ZHEKON+txtt
-/FontDescriptor 507 0 R
-/Type /Font
-/FirstChar 65
-/LastChar 86
-/Widths [525 525 525 525 525 525 525 525 525 525
-525 525 525 525 525 525 525 525 525 525
-525 525]
-/Encoding /WinAnsiEncoding
-/Subtype /Type1
->>
-endobj
-489 0 obj
-<<
-/BaseFont /RQGHMJ+rtxi
-/FontDescriptor 508 0 R
-/Type /Font
-/FirstChar 43
-/LastChar 43
-/Widths [636]
-/Encoding /WinAnsiEncoding
-/Subtype /Type1
->>
-endobj
-490 0 obj
-<<
-/BaseFont /BRYRBV+CMSY10
-/FontDescriptor 509 0 R
-/Type /Font
-/FirstChar 0
-/LastChar 20
-/Widths [777 0 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0 0 0
-777]
-/Encoding 510 0 R
-/Subtype /Type1
->>
-endobj
-491 0 obj
-<<
-/BaseFont /HJUFMU+CMR10
-/FontDescriptor 511 0 R
-/Type /Font
-/FirstChar 43
-/LastChar 43
-/Widths [777]
-/Encoding /WinAnsiEncoding
-/Subtype /Type1
->>
-endobj
-492 0 obj
-<<
-/Type /FontDescriptor
-/FontName /XWNDKT+txsy
-/FontBBox [0 -149 581 676]
-/Flags 4
-/Ascent 676
-/CapHeight 676
-/Descent -149
-/ItalicAngle 0
-/StemV 87
-/MissingWidth 1000
-/CharSet (/approxequal/dagger/greaterequal/lessequal/minus/multiply)
-/FontFile3 512 0 R
->>
-endobj
-493 0 obj
-<<
-/Type /Encoding
-/BaseEncoding /WinAnsiEncoding
-/Differences [0 /minus 2 /multiply 20 /lessequal /greaterequal 25 /approxequal 121
-/dagger]
->>
-endobj
-494 0 obj
-<<
-/Type /FontDescriptor
-/FontName /VQQVIQ+NimbusRomNo9L-ReguItal
-/FontBBox [-147 -207 590 678]
-/Flags 4
-/Ascent 678
-/CapHeight 678
-/Descent -207
-/ItalicAngle 0
-/StemV 88
-/MissingWidth 250
-/CharSet (/eight/f/five/four/i/minus/nine/one/plus/seven/six/three/two/zero)
-/FontFile3 513 0 R
->>
-endobj
-495 0 obj
-<<
-/Type /Encoding
-/BaseEncoding /WinAnsiEncoding
-/Differences [12 /minus]
->>
-endobj
-496 0 obj
-<<
-/Type /FontDescriptor
-/FontName /BJSPNI+rtxmi
-/FontBBox [-97 -207 584 678]
-/Flags 4
-/Ascent 678
-/CapHeight 678
-/Descent -207
-/ItalicAngle 0
-/StemV 87
-/MissingWidth 1000
-/CharSet (/alpha/beta/gamma/greater/less/mu/pi/slash)
-/FontFile3 514 0 R
->>
-endobj
-497 0 obj
-<<
-/Type /Encoding
-/BaseEncoding /WinAnsiEncoding
-/Differences [11 /alpha /beta /gamma 22 /mu 25 /pi 61 /slash]
->>
-endobj
-498 0 obj
-<<
-/Type /FontDescriptor
-/FontName /SAOXAB+NimbusRomNo9L-Medi
-/FontBBox [0 -205 814 694]
-/Flags 32
-/Ascent 694
-/CapHeight 691
-/Descent -205
-/ItalicAngle 0
-/StemV 122
-/MissingWidth 250
-/XHeight 473
-/CharSet (/A/G/L/T/a/c/comma/d/e/i/l/m/n/nine/o/one/p/parenleft/parenright/s/seven/t/three/u/v/zero)
-/FontFile3 515 0 R
->>
-endobj
-499 0 obj
-<<
-/Type /FontDescriptor
-/FontName /XIFQLI+rtcxi
-/FontBBox [0 0 574 285]
-/Flags 4
-/Ascent 285
-/CapHeight 285
-/Descent 0
-/ItalicAngle 0
-/StemV 86
-/MissingWidth 1000
-/CharSet (/minus)
-/FontFile3 516 0 R
->>
-endobj
-500 0 obj
-<<
-/Type /Encoding
-/BaseEncoding /WinAnsiEncoding
-/Differences [61 /minus]
->>
-endobj
-501 0 obj
-<<
-/Type /FontDescriptor
-/FontName /NQJLTX+rtxr
-/FontBBox [-35 -161 650 683]
-/Flags 4
-/Ascent 683
-/CapHeight 683
-/Descent -161
-/ItalicAngle 0
-/StemV 97
-/MissingWidth 1000
-/CharSet (/Gamma/equal/ff/plus/slash)
-/FontFile3 517 0 R
->>
-endobj
-502 0 obj
-<<
-/Type /Encoding
-/BaseEncoding /WinAnsiEncoding
-/Differences [0 /Gamma 11 /ff]
->>
-endobj
-503 0 obj
-<<
-/Type /FontDescriptor
-/FontName /NFNJRP+rtcxr
-/FontBBox [0 0 574 285]
-/Flags 4
-/Ascent 285
-/CapHeight 285
-/Descent 0
-/ItalicAngle 0
-/StemV 86
-/MissingWidth 1000
-/CharSet (/minus)
-/FontFile3 518 0 R
->>
-endobj
-504 0 obj
-<<
-/Type /Encoding
-/BaseEncoding /WinAnsiEncoding
-/Differences [61 /minus]
->>
-endobj
-505 0 obj
-<<
-/Type /FontDescriptor
-/FontName /FCEHSL+NimbusRomNo9L-Regu
-/FontBBox [-9 -218 932 688]
-/Flags 6
-/Ascent 688
-/CapHeight 676
-/Descent -218
-/ItalicAngle 0
-/StemV 111
-/MissingWidth 250
-/XHeight 460
-/CharSet (/A/B/C/D/E/F/H/I/J/K/L/M/N/O/P/Q/R/S/T/V/W/X/a/b/bracketleft/bracketright/c/colon/comma/d/e/eight/f/fi/five/four/g/h/hyphen/i/k/l/m/n/nine/o/one/p/parenleft/parenright/percent/period/question/r/s/semicolon/seven/six/slash/t/three/two/u/v/w/x/y/zero)
-/FontFile3 519 0 R
->>
-endobj
-506 0 obj
-<<
-/Type /Encoding
-/BaseEncoding /WinAnsiEncoding
-/Differences [2 /fi]
->>
-endobj
-507 0 obj
-<<
-/Type /FontDescriptor
-/FontName /ZHEKON+txtt
-/FontBBox [0 -136 520 639]
-/Flags 65568
-/Ascent 639
-/CapHeight 639
-/Descent -136
-/ItalicAngle 0
-/StemV 78
-/MissingWidth 1000
-/CharSet (/A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/P/Q/R/S/T/U/V)
-/FontFile3 520 0 R
->>
-endobj
-508 0 obj
-<<
-/Type /FontDescriptor
-/FontName /RQGHMJ+rtxi
-/FontBBox [0 0 574 511]
-/Flags 65568
-/Ascent 511
-/CapHeight 511
-/Descent 0
-/ItalicAngle 0
-/StemV 86
-/MissingWidth 1000
-/CharSet (/plus)
-/FontFile3 521 0 R
->>
-endobj
-509 0 obj
-<<
-/Type /FontDescriptor
-/FontName /BRYRBV+CMSY10
-/FontBBox [0 -137 694 636]
-/Flags 4
-/Ascent 636
-/CapHeight 636
-/Descent -137
-/ItalicAngle 0
-/StemV 104
-/MissingWidth 500
-/CharSet (/lessequal/minus)
-/FontFile3 522 0 R
->>
-endobj
-510 0 obj
-<<
-/Type /Encoding
-/BaseEncoding /WinAnsiEncoding
-/Differences [0 /minus 20 /lessequal]
->>
-endobj
-511 0 obj
-<<
-/Type /FontDescriptor
-/FontName /HJUFMU+CMR10
-/FontBBox [0 -83 721 583]
-/Flags 65568
-/Ascent 583
-/CapHeight 583
-/Descent -83
-/ItalicAngle 0
-/StemV 108
-/MissingWidth 500
-/CharSet (/plus)
-/FontFile3 523 0 R
->>
-endobj
-512 0 obj
-<<
-/Filter /FlateDecode
-/Subtype /Type1C
-/Length 538
->>
-stream
-xœm_HSQÇÏÙvw7»s.:áHî4èA”0Ú¢ˆz
-A"gl£8ÖÈb´yïæ¼H+wŒ
-oEln•…„ajƒz)ˆö(õ~Î:ÖÙ¨—~?øüøı¾?>XL B(¤ÆU­ûèH;L´ÃŒY7­ÖX2cÉò–.ï$²‹¸œÄŞ]¨«×ˆ)êÅÄåÎƒûûz;Oœh|¹ Ä"©˜MGâ‘dRIŒ71SÕ&  ¬@3!÷. @¼‚Ó01¹° î€uğáÄ¯«­µ6¢U ıH4T1ô!±•ŞdİùğBòhÌLOÒÓh1õ@g/Mûäq”nã7¶çé‚::–VÎ–nä˜CöİÊ¾c›–šˆ'çÊ³/ïn{p÷D†ŸœÆì3ÌÉ«}Ş:Cœ¼òÄştÅYÃ?py{j6QÆ¶¹¢¾äá.ôËb*QˆJÔè*S˜Ê8G£¤ILY6w|øõàfCüÊ‹†N¦¿H½,hğ†Dª3„6= òÃÏë[ßCÄ„´J£Œ~e0êÇîc¸Ÿ˜`/RGóÙöÂÆré®â-r»µ÷¿Úrleîı8Çóÿüû„*¢á%AÊ[à¨³ëB†{Ö?^gkVvä±(û_Dë-²¿ĞUß!·˜÷†<’]>Tœ¬Ë»‹×ê’ÔÜÈ}ÅûuÉÀoÆ‰„
-endstream
-endobj
-513 0 obj
-<<
-/Filter /FlateDecode
-/Subtype /Type1C
-/Length 1794
->>
-stream
-xœRPçŞå¸»mÀêİN4‰´Õ ÁL#¿$EBPbÁh=½cõnwİ]î€#"èÁÇüÍ= "?„ª¶kğP‰’S±ušfjšiçÛ›åîa'v¦ÿu¾¾ï}Şï}Ş÷}	@PÍ ,y…|cÉ`âÒ×e‘¦Â4AoöCârT\ ®TH¯Jñ¡/^)jƒ¤ A­P{ƒ}+_ğ!KÅ~ö´˜íC/ k²³v®ˆˆLdØb2DT\\‘WLü!’H2ÑÄ+òÅJšÖBÒÂzb;IBI)3I$¾“™“–‘J¬IÍÈ&RIšäôf"³0ÏLˆtÊ@Ò<¹–02a~ú O	Cóë‰·xBOğ,i äOd‘dı@$Á’œ…âyùNP<aâô´@æCP´Á\˜ï§—ãF†–cdÜ"#r©L†xG±!3f&¥<íQ(Ğ~^’a‚1Ê™ùŒ¡Ğ?ÍO˜ §hÈ"ÁÏ“GùÏšõÅ2¯\Šå¨…
-yŠ6=c$8Ò¤çòÍ$¿P×¿•góÿ5µeÍÅ™…¬Ÿø)'ÍÆõOÕ%dyõ4!+L¤~‰ÍzğËLş7á™lÿŸ‚,1R¯ÇÆElˆŠùÅÆM’Š¼„!$9‹!/ ÁH²Á‘‘Pd©l$q¡j4½°-€˜TlPÔj³•/ÁÚ%°[2´ˆ³=°¨•^½!¦N*úDÿ³*f>¶Ø·C4e†¦ÚšÚÚcººúš:PµdµÚ‹ªy4õw˜~N{ŞVBTUß£”U'Œ˜ş=ÀN4©pVW9è®:*0Şmom;}ªuÀØ‘››_ø¾IkÉ·í¶D`?WÉ:/â˜íA?ŸQ@ªp~…£üPIIiùa€9Íµî†Ó:P[ÛàjÄ\ê×œqº^)²9ó»úRu³Ø€Ãi¯´í’’ÃìïVš3´ut=×ZÅ8k,ûO[;ÛÛÚ::…vV·Dt:<â½Û¨ø‰o5^Ù¬œ_¬Š—V|xøÂøY÷ œÊåœWÌ§œRÉ¹­¾à¶à®›ŸİƒëfŠn††üŞƒq¸hptLc÷·|ñ2±%#:»%ß»E+ç¥$ƒÀ6ZÜ\oÖUú€…ˆpéã»?Ş°\Ş4§‹#q ©ƒíXü»™›¶ñÇ™±©»}Ú: §°‰ßá›o—´ƒ!ljpøKmÈøÄğ®ä÷8r;­s€+ÃäJ<Ğ:*.nG'çà‰E[	—·İ8ûÍuˆıå&p9CJ¨,aÒ2‰Xuí—sçú÷^ÔÖUÙ÷ä¼½-K“˜‘s ¡ƒ|+ñk¹±›¹õZwà@^		°tãoçît~=<¢ûøL÷‰O ¶Ä÷:d½¨ø²¸w¾&M-€¾ïEá¯^ƒ¸Ä¤AFb½…ŒWb ›¶°¾Ÿºí™…Wgğ¯¾X\Š’"¥"©L
-›ˆù~xÈİ=¤{rç.Œp5£3¿{M[Áà—»v¿!…¤¸¬—udZµ`ÙûÇ¾ı×E¸ëâc]ÿÄ`÷ğ/¸}¸ìŸaÛ®Êµ6·6Õj<£s5ºêkjk…ÁUâÉ:·«	ÓÔUÕ:A¨®Ö&”FWGÕ¡*M©zÜÕVã.6¨¬*?R,iç…•­å	õ¿?–ğ'…¸êp>Çz0`RÖ1Ü!Ÿçàs=cÀ«ù[Òd¹İ¢ı5ÃRtbKEØÀõáÎ« ›¾¼3Ùê,ª<¨ã³÷¤§%KFI+P=Ã”şõ|*>
-†³_³CC&aŠ8÷öµìR¿1[o5ı†Öéé½¥Ñ¥˜ìwp¢º½ùöÖŞ	áÀä0}À†İŒ¡ÙÒJ·ØŠ ÆØ?àÈsÖéñ±ãg†u³£cÀ#p‹İÚÕªe–çÏ÷õŞ¿ıÎå7R¶~µOëÔ£¿DÅX‰Gªàóbª2O5¿q>Ñ¶U	İª\)E9«…IÊ'*iÓu\*¨SÁq8­¬[xHŸFá“
-xX|ŒÃUÛ´RjR­’he©ú{koY?İs %¼‡IhüÚ(kqc­åN—6”Œ/±óŸzaÔÀe0æšpiï9±Ït2ŞãW ¢]\Ñv}=â)ß\
-/İÊmL—BÖ½)½¤U²¿oÅB\U0Fü#éÎfŸã £=êš’á?ÀEj$·tŸÉy3•O0îÔ™÷X÷,Ãôùıí#ºÑÏyÙQ6˜ä»=ª¶E÷·5!È¿sQ|
-endstream
-endobj
-514 0 obj
-<<
-/Filter /FlateDecode
-/Subtype /Type1C
-/Length 887
->>
-stream
-xœRmLSW>§åŞ^±V0^ÂÍôŞ2Ig3cC%fDÅ!²,#Z‘±f"XŠ€v)U¸çŞÊ§Ê‡”¯èPüÈİÊĞé6“I¶!KpËÇı¹äœzXº‹?äÉó&oçy_¢t BÈ:]µå–H^dƒlĞo¡%äI8AF=2FM†gÖá¸XÌ¬ı'°ÆÆÅoL°,uV9*›ßzck’97?ïåšJ‡ıXåÇö#¥.{™½¼Ü à22ß‰V× °H ôÀ(C°J3 ¢41ä{0ŞÔåêF_¸Má2ÓÆß7,§à"¢Ñhõ25†—#ŒøMÀ^¦À@RhÑ²šÈ²6œÆ±´ï¿yfŠ5‘ÏiÉ ¶}‰Åª'ßø6Ù×ìVòQ¡èööôtŞè¼%ı‚¯¤¸Óé½–³ù©{‘ğ^İÔÍnµKífğÕõ.ï8™VB§NxÊşˆ}ŒÂÊşƒçCsİ¢ì‘›P·ëas¯èc{”LäRÃ ±eA¼˜£'}dOÙdt€ê<µ\Û¸šBÜ›MËªwmkF¹ÂYÃ©Æ¡CøÕ8‹Ìûı¤éø9'ª‡/—†‚£qÑo@ßïó û¨]éğu…ğ‡ñÿj†Év'zŠ§³ôä	IæsÎTffĞh$2‹”Ş/Ñ]nÚ5k¦‰4›®±ŞÎy>÷ÃCETXZ4;ÿÕBĞ'«-õUÛĞ~±Ú;<2èú;¥óıx'îB
-Gİ”ãQÒG"™“ßß±½º0€×3‚aóOmÖ2ÑDZWZÎ¼ƒ_ìÅ¿W@rDëZ%×ù¹İ©	‰6K…H__şöT^iÁ™zá/VAÛÇqìUÌÇkUÛ–ğ–%…8–2ı²–RÁoN`‹”¡òÅ'(“~ò´+k]uí}cV”&^Û—lÎ=tí»nµÇ^ZÀ¿ö=º3¿€„—kW¸ ™
-s6ˆ?»«'cd7Ÿõi1…	ÙI‚ÿY ×ĞMˆ{÷í­ùÍÊ9ÿ`ËŸè™ô¼•Î:!»SrJ³ \]»§ÿ8óÁ¨Ø{í‹ÉàøôßoaÀ™êU–UbêeG$ZôVGV‹ÑV«5b\%n‰ˆ1Ãû#F£XôFÄuC+ïÿ?Ÿ1ê
-endstream
-endobj
-515 0 obj
-<<
-/Filter /FlateDecode
-/Subtype /Type1C
-/Length 2848
->>
-stream
-xœUyTSgÉ{
-¥Jú¢˜¼¶cİ«U™Öq/Õ"DÅâ!	/Ìf^ØBdÇ}ß$H("Š(ˆK±*Z—A§N­3]é2Ú:sj—Óû2gf^ ¶=gş›Şyïİûİ{ßïŞßãÇ"‘H¦3¨¸-&C˜)8tŞ&6Fçùı2?]Äãgx!¬r_voôæ¥¾òõB¾ã[}ø»—Læÿó,ÿå¤±8E¢6ÑY/ß¶%röœ9s×šÌ)]lœ•YÌ¨S˜_,Ì:–ÓÅ™ á%‘Õ›ÌÖhÏleYÆÇ2ZeÖ†+vlaä!aÛ˜ÖÈZTzF‘ Öë4L¨NÃ9v6£5YıØ£1ctVÉÈÍgVsŒŠáÌ¬F'b“5¬Ùc˜Ë˜Y‹AÇqÂ;£ã˜X‹Êhec«‰Ñ5ú„Ozá¿Öd´2f‹I°‹Jaâ¬œÆ¢3[!£bİc5ZãTVO^N'˜“VğŒ1i<h~µYU:#ÇXÙd«'šebtœY¯Jò
-¡Ìİh		œÎû[ö¹Œ…UYbô,7×s+¿ác~‡Ze6ëSFÏšF½~Í¯³r¬^;ŒXF`Vedr™PÆÃn‚á¿ÑõÿHÄ´ÕF“™±&$ªB51¬.BoX,Ÿ=wá¢ÅñN(ˆÍD!'¶o‘Äb±XO¼Al$^%6aÄTb1˜H<CL&ü‰çˆéB[ã	=1,’‹ºÆÍwrÜw^›½_3¾rü—Ş»½/Š'‰wŠ‹È?’±ä§Te¤NNğ›°mÂû¹µÈ«Nç€­‘{½‹ÎÇ Ôæ0s|ËT“[FÎ²ó3ÒveX ÊE*J¬Õ¨ÕV¸šß­?5ÄÇWÔÄ¢”h;W‹lÓ(< GòÁNyOp·	9yÿ¡X§ÿ )È¦HÎB¯¢ñVNÜ—]y ©(|Dª¬Ì=™9NR[šQNRà QIyUU%%yĞrØYÓ2½«Ñ¼U†sI¤µ¥êòç'S| ¡ „~ûrp¸Ò¤ĞJıøüô~E‡È³`Ìò‚Ş@c‰üˆ_üv&LúñB9Ìœ1-+ÔÓƒMx9Ÿ¹Y‘ôÁºC7dBíXÕœèä@e»ÌO¼*`¸/Z
-ò)’ßa¨ò`) ‘:+sW%y‘ƒVRÒĞL†ïw !
-'Ïïnµõ!
-Æô#ÈA¶ê[ì¥ˆµnÖË$Ó‹”4*¯l¨©un©9Œ¨g8‚'™[â-İiBéÇùå¢¶ï@úØÁßhx)ÌIËÉÍ@9è@Qji|µµ$Q7lZ¶á´òI´ì¡İ‚öR1†}{Ö+Ï~‘(5á`—¸º¹¬¼•¢Š‚ª¼¶ŒKövDııæ¯ßé•Ÿ‘…1¹Ğqª³İÕİÚfO<,mNªN©¢üÜMÉî©¢“°`¡—;zhüØ"Î­·£mÔävcÂ›¡ª¦ŞxiÔ•Äa¾°7ÁéïMaû¤½l‹®k%å›Yœg·'£L”V’P¥pîªŞ…(¼ÏÆó±«!Ïí rvß’„D÷ªkîWP~0œñ>ü«Otd^0(Üû<Xa‡½ªÙ³1‚2àäÆ^Íİ¡£Ÿœ–Zª“ØÔôD`²7öÈàİoHÆôÛú^êô¿ı´“á±î­w–Ü.¿Q>µ…Œ*Ê¨E½Œ`%G^Ì«É@Ñ>AJÎÆÇ'ÚMÓÕiwdğ+8òtVE¦§eKÉÅ#?èj¸88Úo>Ä!âS<M1‡÷Ôd#ÙóR³SÖâS_‡¨ì¦‚2T€ê«Ê]EE¨¢°¢râblÉ/Ë/Ë,*<7«A¾øÂÔV1,á™¦¾ŠŠâ€_bów	méR<fL‘Üå·èòóóæ¢€ôìÊÔ‘Ÿ­¼„ı°÷Êí«ÔNËévçñºœÚŒifU¾šjnoè’J¶šÃdkHì»3Ik‰6$ê°açöÜºÚï¸xYZ½ıpòÔ‹:ºOS’'8ò*mÖ'epˆ2$¶õ9óQ³ÌÏ½ ¹,nÂåÿ,"1»ı!‰6ŠãW$éãöªµ[Sşˆ¨°äÚ^¯'ÑıºÚ/J(şŞBŞÉ;”Š¶S#É¤¤m·Ù×dR……¿/¤Hâ<#û¼¿D´Vµ/]¨%_@àÇn4ÔgÙËd¥™!UáÎCÖ“ˆ:Óê<uãÍó‹qà¬çñL,ıZ“\éø`Ğ3ºéWZø‰W Ä)\–yhOƒ‡6º¿ÖUz£üF…@»²ØV+ˆïåÈ¡ÜÊl¤¤ğ[dt¿¡A)4æ¸`¿$“tâÀå?]êl¸xNšF9ögØ’¬‰vaäŞ¶\	Ğm×;;8¶NæÁqÂOÂ’“iÍN}J4ŠAÆC‰])Ç²:óîRP*Îù,íÜŞîøSJG„gò29ÂAŸÌI_8öè¶×ÃJº|õ\@í¨)µB_š\d*ÚN¥‘~Ğ!ê"ç}Xàà ®Gãi¼A2+3‘zTQÕÙYJ» ’YN2®4£ul®ç¦£ãâT{:ãûúwöõêº¢ÇØtû8DPK½„Ç­¶Û_ÍÔÜí"—”Ù«Ğ‡ï$áÙ¼e#ö¡ˆ@é=òq>Vz7‚Ï@?L*¡F‹sSNÑgRÕîå4ŞÂ‰»òR–)„{’.¬¦øÂÔ&Ô#ÈËOÄûcÓ96¡@óT`sª3B²Û£²„ãÙHv$Ï’(khª­¢$747–7N?Uo]j»MëÉeœK„2æ\êq>Ü(x"ª»SŒºªì¬Ç5SØ'EöŒí“-¬õ­H©áfœ3…"¥™§„D¾fˆø}À‘%â(lñv‰›n9›/¯ãİ#'¼¿6 ³ğï6Q+Ì€-ôê°ÑÀ8î¸şzíûïşŒ@BÁêà<y‘ÏÀÿòˆº[KëÚ¤Ñxî^Ç3tÀú í`n~Avnr^¢6Y¯	kª9zÁÕh·VËêMUëÑ:d.Ø›¿Ç£–î¥Q?x{Á5÷FzS¼)1F½tû L£…®WÎ¯ì_Û«ù§‚j'·œ°´&5ÜHˆ`iİ“öëÍ}ÎÖë=OãÀ!P~¾ÑÙŞÜ}zøa?ø x=´|µëCå½èÙ×(yUë²4ï9º©n>ÂKÓƒLáIQ–}á!Nq#ûÃ‚;S$ÑWñ›4PCÿ„†©»êsá;âãwH%ÍÊ£{{KËPa™T]X\„Š¦WWdÚXjU¤Ìs‘íî€v‘^@xÅŠİëèhC”zíŞˆ„yh9…ÕßàY ¬u˜JØı2ÌÁ´ôÎˆ–FŠ¬™f»15İŠ¨É×@.ƒæ4¿àØ„gyÄ[hÀÖÖ¯¬a ÷‚?Áq)yï#+‹+Š‹‹Úª\åµˆrU'ì–Ğ$
-NÚ/?Hq¼“\X´¿= ø!Ò£Óù;ûÃ	Zâ)’Ïyİı^gË ¢nÒ„nˆ‹›kí'?5vî?¡£$w;Œ‡öìš¶–U†sÉÕÇâ¥1§D±fN·í½Ø‡ğL1õ§õ»d‰Îı5šC”äó[§š\›6öÎKòU;fFHı’¼Ê‘qçD`|:;}}iñ}† ş¨Ú^
-endstream
-endobj
-516 0 obj
-<<
-/Filter /FlateDecode
-/Subtype /Type1C
-/Length 159
->>
-stream
-xœcd`ab`ddd+*I®È±H3şaú!ÃÜİıãÒ÷¬İ<Ìİ<,»¿³=¼Ç[€‰‘QP,,µ¨83?OÁXÏ@GÁ=À¢ŸÑ–aH	‹è¯¾Ÿß+3©=ügJ0;_íÌŸ=lrËó¹äŠrüç–ãbÑÈçá	ÉI¬ŒøÏÃ–“X0ó?/ br2ç
-endstream
-endobj
-517 0 obj
-<<
-/Filter /FlateDecode
-/Subtype /Type1C
-/Length 485
->>
-stream
-xœcd`ab`ddd-*©(1”~H3şaú!ÃœñÛô§ÜO{Önæn–#?<…>	>ç ÀÀÌÈ((*–ZTœ™Ÿ§`¬g £àà2À=177‘ÕV[Ÿ›A‡A€±“‘‹hƒƒ;CÃF»_5|?¾şÌøãÒ÷{¢‡ÿL	fÿ1åw<„”íÿ}n0ã÷m‡™
-*Eÿ®ø^ü»ìwEğ÷Šß•‡¿W²ó}_ú}İO+Ñp¶ßsÿŞfİÏÆ÷ã@÷¼ŸâŒï>2ÿØöc¶hÇweÖ?Ë+Ø.¶Í©ëvæøãÊŞíĞ\jÓÎQñ}Í<v—¾ò™İW8~”²/0y™Üw¶gİÛÛç¨qğıxÓ=ë‡{ö÷¹EŒïî_lÎ	&Ñ^³3ó²åŠ×„NLëş­Şí©Ûú[Ã=ûüïlİA-eş]5ßf±÷ÖÍí>ÀñıŞwÿß7Ø±Ëğ­şÍÿƒ}ëä]ûwõ;to“[<oÎùß3D«“:â»ã9~lcë^ÕµuúòY6.ÛÜ}º»Ï}_íÌaS¿ÇÍdû×Ã.g²ı?—\ëbÏÿÜr\ì"ù<œ`19±•íÿyxÀ2r"Ë$şóğ20  |”Õü
-endstream
-endobj
-518 0 obj
-<<
-/Filter /FlateDecode
-/Subtype /Type1C
-/Length 159
->>
-stream
-xœcd`ab`ddd+*I®(±H3şaú!ÃÜİıãÒ÷¬İ<Ìİ<,»¿³=¼Ç[€‰‘QP,,µ¨83?OÁXÏ@GÁ=À¢ŸÑ–aH	‹è¯¾Ÿß+3©=ügJ0;_íÌŸ=lrËó¹äŠrüç–ãbÑÈçá	ÉI¬ŒøÏÃ–“X0ó?/ j¬2ù
-endstream
-endobj
-519 0 obj
-<<
-/Filter /FlateDecode
-/Subtype /Type1C
-/Length 7283
->>
-stream
-xœxgX[GÚö‘ãšY±dI›¸$î5Æ½—ØØ˜bŒ)¢ 	 
-m¨¢I$zïÕà^pIÛq·ÇönœŞœäÍvÈ»ßœ²×·ûë½.~ˆ3gfr?Ï}?‡EØO X,gDtP¼Ì]½_ºÆe‘»8,y<ŸvbÑ³&ĞoØ¥"É?G·;Ğ‚)˜b¦ØWÍù9ö¾6:ÿú³W_“Ëjd±Fßöt?ôÎ‚·Ic’â"ÂÂå¢ekÖ¬%‰~_mË"Â$¢¹øG‚8J-–È‹ŠÅ"y¸X%m;àêóŞş]¢·wí÷íKÄqQ"×ø ¨ˆ`‘KD°X"¿#
-•Æ‰¢^ş#
-–JB"äR‰l±h‹L(’Åˆƒ#ğ&±"XÃ,,Åˆã¢#d2ü[!…ÅJäâ‘\*ŠGÅ‡0×ãç¡R‰\'ÅëÑxå*•ÉeÁq1r¾ÑuûÎ—6ÊÃåÌ½²¼,’†â7C¤ÁñŒ7®É#$2‘\¬3÷‰E!²˜¨À$|/>*&.bÜ„xY„$ì¯ÛŠâÄaq!QbÙø¹LTşòOôo^ÆÄD%ï•¿õçır™8*tñËÄŠpf%"œ\‘‹ˆÉnT`Ü®ü•¯ÿ[	‚Ø¾Eâ½Uº-fû¸2ùîø÷ö$îU¹$ïÙ/>êæîqĞ#2Ê+úĞjç5k×Íy{Ó;~ú/Z¼dé²å+V®z— Ş$kˆ·Wb6áFÌ!æ‰y„áI¼Cxó‰CÄÂ›ØJ,$|ˆmÄ"Â—ØN,&vKˆÄRb±ŒØM,'Ş#V{ˆ•Ä*Â…ØG¬&öÎà3	'bÁ&&"b±ˆ&¦‰iÄ+Ä«Äk„#Á!¦\âub±£š°'ÄÄ}VÌ„éN¸gçmwËŞßş¤Ã|‡sìÙl9™ÜI6’?P†‰ó&LÚ<©bÒ‹É±“¯NywJÿÔÙSÓ¦şkÚáiw^i}uı«=¯­Íâ¸Î1“#äæôM™ş×‰k}}òë›_¯œ‘>ãŞNàõó]ùü!ş‡ü/ùÿšytf«Ë)ËidÖ¦Y0oÚh(°Aï>úo6Ö¨—•{$OW~åÒ×x‰l2¦Ù‹æjRü²ø
-èk%ıMeyæ“pNt€vß‚²c,PñA\ršW6¥€Eä˜–p!	!…¦Ñ™ÀBÏ<Ïúø	ÜşÄ®œ~“[˜W’S
-¨Æb¥¯åÀ]«òÎ ”0ÜBzç+Ë@'ÛÉÇ«ËÚ u²6ê=!“ÀEìÃ¼b!}4eà$“È¯.lñJŞ»KğˆÔçú&Eh=Røã.NÀş¸ŒÎç¢Tû\V¹ÈR›$	CHÀ¼´ÿ©l TóÍRÔ–Ó˜Ã³¢ó
-òZf¥ò;$„,´’‡–!ÏåKÏğÎÀ®«¬¤[~R¨K]×œßæ}Dm¾•@ÉI)ºˆì ÍÖ08e%½
-•%GGlàÁ¹pÏµ‡¶²ò±aK€UÑE?íRX¡Ã˜şb-$gpæW`;9ù$½L¶Pc®$Ø¢V;gRœc
-øwò!¸UÕÕŞÙj;N€Á¤Ş¨¦è†˜²=ågLU%µU'ª®ÚÒÕ7Ú/A[kĞgÜoÁPz§o¿(kv™	<B‚å‘IAiïÊWUÜ*„}ö8|UÆb‹`Í‰‚ä¿å¼	qºtôòFVÓsh~nóè£\ôúÒH€œ¾œ¡ã7ÿpÆ’¯Ñt¡ZÊ}riz9Ùµ9$´¶7A(=“ò¸E}=|õ– û«¤êea$Ø´7&8$°	)šD
-”yÊBßrŸ¢Ã`pÚç±cŸx1@ÀâæU§İ/ïùBü=€àû¡+ŸPI•[¶¿íø.à íh·ÇÉ¨ç ÚQğ½/áD8çâ™„à^Ak¤EjİCaPtEreŒÖµÒÓ.;Ş{ãŸÍà¤Óop‹sŒ PíFİaáX8	iµ®Š37¦“œ#•äæu)xŸ‚ËÈcµº~@ÁI_@{8¾ºã³ùâ<„HC®gB¸Ú#™çoæ6_èº{r¢ïæm‡İ;› ÿÌóÏ/h6dÍàäüY\°M£Ş”3¦€]$¤À/mW/\»Ôõø<~èq~×MÄêDo 
-Õ°9³ä#}q*'êE·¥´¨ïÙµ”ˆ‚‡}« " š´zíao‰›f% ‚58­ÓhÈÜú`q7¾üû38rú+¸+eû â¨½¨¶/,ĞÓó²JA\L>µÉ™ªJ9[”¡ÔªÔÉÒ´ÃØÅ0İXXØ €NlœjeÅ2ª	ßrkdsrä]ƒIvŒƒv‡J¹{·]Aw‘Óà3\÷l¬ûOìŒôL®9¯8§PuÅ)B”G½~¯×³ŞBîÊK¶€‹Œ'[N5§ëJåªRƒ	Pµ–ŠÆ¶[¦Õí¾Â/Èô\¯ø0µ«‚?>¬ğÊ¿ùNË`
-;@jÖ%)×aÓç0¦0¦Ïú/¦?øËô$pÖ2‰QÀ6+¹1_e·)(sÈO@…²l-Æ_W­±Ñ‹mêjÇÓWášfpÂğ:7ÎrĞ²³²RõÙ¸ğ@—«- 8Eññù±Nëİ½·l~ê'9Ö‘X!Qü€H©wD”©Z!H¨K­Q_¤RĞRÛX’Ÿ‹£Ãq)æ¬ŒÈ
-CcCF¥ÓƒF>:%k;Ğ)DÄÒrehà÷¶4]lX^#˜[tgè)­&˜ö=™Áy
-‹p•qnÎ…»$;Ï Ğ§Rõ:±ÇQ¿”ŠóT«7èÓg‚Ìœ¬¼,Šsó,:Ç^İ|ôÒÉîÚ3muiB\².ğC•ïaÉyú#{Ëğä ì²²~}/¼°ƒbˆ¸Ğ‹·KK)+jQô¥Z°m<«ušL [¬äæBµ	÷/ Cÿm…vıo§ /’éB#î6zm…Êìxë	Ü‰}›EËNqÓÙşÚÒ!!ü-'9mÉäÕÌ2ğ¡†Òt•J¥‰THd{¿S¡¹*òD¦Y	ü)T@®?á}§«§¼¡A00ààLr\ò³NÙ:KO›ùZ­£öV$±‡$Sª›ÕšÕ™/Ûùš¼3¸3nî³éI>6÷”‚|ú²[c[U6z½EÇâØ#¡’İšiÑĞeé2to£2ŞXl0gšA1T–;ò(òV’İYFİĞl8õòryú¼´Â¤Â´BPŒ&Kœïòšn›óğ©ºéaÛ¶cÛZèS\p§´ô“BlE¯‚|lÀAÛJ“G4	±*CQ^ ëH)Å…/	ì‹Ä•Ûğ5!Nåï†ŞÀ†*Év}‰$¥A¦Y†âx«¡<y `âƒêRã°› $»2Ê´6O£Â¨(LZŠüxoCsFIV	(áƒª²¢ö|üÖn%Y“U¤«ö†Nèk^Yt‘ª€"SY=nzŞçHkÍ7¾—÷búøWÙŸW`ÃWàT»ê.ºĞ¼ZÇŸÂ·?™Á9Nïÿ›¬Ò¤+%×›…ƒçLz“²6¾ó¨ÕP‹¶øºÈm‰5µU¶êüì‚l£0«8»©†ÖêŞ“OÁ~-Ş—œvTŸ¨Š Ç(·Ë`À•Á¾ª3WÓ¡‚Ê„>§vlG7^BK>å‚¨ôÔL%MM T¸´}@˜O‚K}pê 5^ãØxõ…½lt·,»äƒæ¬²4âåÑŞhZÅƒäŸ™éRej°ıî²~‡•ÜÀˆ—;<@ÖWıÏ›÷7ŸÛd| Ré¥Ùé@ÆÄˆ•<”£*Yú-RÁ<t‡®7®•İ(à[°L`£WXX°åuèoaGÄò¨A4zó>…S¬Íå­9|Z®$›³J@4šø¸¨tƒ&I¨²ñ¤ıIíÀÌ&csÎ]°²˜låê–Ã_¡Ù<ÄFk¢ƒtúc™|%œc!¥šS¡Ñb²	ÁW>G¢|C®°àÑgËbvòû¬›O`â?ìà¢ÑÜôÜ@eLÚa5_’æBæä# z‹S…cådÔÓcCŞ8¾_ÙôÕ¼ına¾‰/ûáÎ3Om@ÓßŞ5‡ÔÔ	^2YıãËæC·r“Å*¹29<Ä#ÉP»Ù[Õ…B:š·ÌæG8èÿÎFœ‚?øÈUAw'àVF‹"Éú
-.)S«N¸VËSS2²™zá|Ô„HXh0g˜@)®T‹q (HEÖgTh‹’!eóòÒ,Ñ>åaŒêSÊ]’£U±ñ
-0€Ô\]Â˜œŸŒ1›˜(;Ö×ıÄ8ûœ.¦šZKKjóøÖoÓM¬ºvô›p)×oG˜ÌPK÷~ÉŸÎßú¤Ó¤-ÆI+“ª ¿¾ÚZsaÇğj_ïÄ° ¡O€tXO¡×-†vÇ{Ë[:µ8ß—¨iÿœú;BYƒtå»Ñwé¸c>wš—¸Ã¬¶µ ³ÚË–{ËdºË`ÔD±c¹(…Îu@¾
-öãt“†é$óI0[¥p6à}†“kÀ=„ùcÃf6“õ3 œÔÈjxŸØÁou\8ïŒC9™”2–†[4ı&k¿äpİŞd~
-Y”SŠ ÕU¬¢¥¤¸5¦434¹Ëñ7Ñô{+á„İ¶ává^Ü{í^¯Ñi“ãt@9{|_'ïŞ?{ò°ÓÅ´¶TÆ[GÆÛƒLÃ µ\º†—Kº¬&s‰9¿›iÑÙiÎ°¤ÚTÅa`…“c\Zá€6)ØÀœÖ{˜ÛGr¼ÿ›·³H‰ŞıeRvJZ!ÙÉ¢Bg®ß¦£’½Àm’\LêÖ·e]¡àvÚ5]S\kt§Õ!à'‰#Ålk($¸½
-’_ß»‰~zrK¶w]W@­Ô´’é-ªNú;YíMo„l;øÛ¨3D³Ğlä¿¨ué97áˆËg!ÿÀJÔÎ‚"èÿ½ä©Çe¡ËÍÕp¨í‡ÀPRgä9ß–E M®ê‰‡Rã’ãäòğğ#I^À©o94tìG¬—Á‹Æoû‡©“ÕçõR¡Ík…¬Ÿp¯2%ñ
-V#Ö–î*³NR)(-ÓU ªÆZYÓP`ŸWŒ¬06 -,{µ&ò1ºÎ[µšmÌ\f²`šÔ–‚{¼§‘/õYu/<Åˆà^ÀFGÁ#p[ŸU‘]‚s%µ—[;¯€A¿ª;¦)xpeã"ŒŠ
-6§WrZ‰îM‘¦Û¤	ãõyJ†Š9Qt‚}ƒÑØ ®=ßÕ‘‰ªœ\¹`¼Ä/Â68£ë)hd5~S44ÚÑÇh·g#™ˆçDc|/¦$¦ ³äâ-Û–º4ˆ?<&T$%%ÒIÔ‰¸­'”iú·Š9B)¯‡_ß{XßFĞİRÑ
-ºÁÕÃı[ò·ç•WÊ­­£¡¨8Û˜¬Y¦ìBĞz--m–p
-4¥×¨Z)¤›ÉmÓl8	¨ÏÛÔan›BÃ
-·¦Á£©ÿ”° ~É½ÔØ1ÔRŸ].¨/ó!ÔAI¸ÿÀkß0#Åèô¿P2ê†Vp;oİàÚ_n˜:+†zï~ØıùøDäfÁÙ@/!ğNóšK{=­‰·dÃ¼ëáÔ£p°à)¨4‡*d£ç£#Ü0¤èˆ:ç×º  ğ¶dN°hĞ!¹ğa­^Ã‘? 8|Óô]ßPßàpÕ ^õNçXwÀı<Ëà7Üş¡æŠ@ªÛ!D¾$Ø¥S»^Îõ%†"p“‚~ä/çÖºÊøàE2=/B—v0…Ã°E~NÖÔ@QÚQáX$'©nix”…t+Ô•áıã4ı©/ šÔƒÑyV®8/±DÒ‚`!ïº©¹¬­¡µŞÚ†Á€º+¶IÜç\ÏÀª‰Í9® ï¥•hÿ`ef3S÷Í¸î° Åšß‡¼SÑ¸ŠÍñó£ŸqK‹zák#Gù$†)ş±á†˜û`ö²¥Ã§¾p|øâ]¬PÛ˜iy‰‡ƒ7¼²\SN1à×<JlÓiw2…¢³ï¤•0·A’C{ÃnŒ\.•VË›jª›å5<ÇUuÆÛhÔas¼õª~dôïAÜØr­6è æš"ŠÓf-Št:
-’IÂ£’Á!°nğ ´w½->T'.V$ µÛÇër—ópš@ÎnFáÕl‹5§ÌlqÂ3`†UORv÷¦õ:Aò³G?=ö¸†x·„o‚sÔùşî«Çûa‚–Hsl¹+¢Æé™ş®ŸX“G	îX&	ŞÕjº9%s¾ÊÄHæ¢s$dƒê¤4ªeàF‡±+lÚèPË®…¬+´ÿKÎÖc<*ÚqqÜrJ ÕV¢ö%à!=3s3*ª-dbNp.n |èBB:—‘›™›™—É/Òå@:•šjĞJ(±°ò¢¬§Ñ"èÅkj¸õáÕ¡¦"¾%ßœ‹ûY‘U±{²K3°<JKU©4è4G;“¹b$Í-…æ0bÖwOì¬Ø¦BviNY¦°ÖÕaáX,	<Uj—tl•ÖBºäkJÀyŠş
-ï?”,ÖíLæÓÔèTktó*PÁ>ŸY©R¢ÑD£ycv<´ ~~ìNZ°ğÕ\Òš›KÒœƒ™Ëª Of™UËaöØÏÂ†qôHÛ£ÒÒXBŒZq¬Ş8Ãzöº0vVúM®)¯ˆù¢V_œâ'D…ŒmÊƒÙØ¶8é•«,=ì AnQ‰ÑXW3PÑ¨Áêp\¤X;ÔjİXÊ-¤{²\¥`Ù<ĞV9¨‹•1ÎBF÷´47=~Ij!cs£sÕ• ‡ƒH8)äòF7ïX7OAÒÅˆO ¤*gê©ÏõVDh=”üiÿÜş2ÿtfâ€eÆét‡`ˆÕIÑkèâÁ¯²
-R«³óø©U+(µ5%ç˜8ØäÅì’Ôöumkx"ÔfÓSô•Œ<«6OçáW²äétKR×"è9ÖÎ„j1½®[ç`a?…æ’FÈ‚ÃÖ3¥ÅgK˜¥Ùè;wY´'6eŒÍvEó*ÒnTšÎ>Œf#ß±/®±aøè›ŒRT5Nkt¼pÇ](½éqw8@“ÜïÏvôƒÔãm—ç!ÖÚİK÷X%¿,p>CÄšø¨]3ç?Úà”şô â$šú\4›{çPm8Hí9rdÏ&ï‘¿Pİ?2,à<8ù€»|$l\ F÷½c `§»ôˆ»X	@F&c.ÔĞö¬æ/ì.Ås¡½é¼õÆÉŸï_¯èDÁ5KàDÄE“—ÏENhÚíµ8ß_ŞwV„V#;ZKÁKp”3Rµ©RY¨:P›üîÁÉË/WÕ+lu¥M€úûñUh½c]í`´cÁYt 7:.6JR×ÔR_×Ô[-DÈş?áM[ÊÏ0Ú9~í4=38»EãŞl¸.S§Â{„Ëâ#œÌcÕŠ®BcNN¡€k Ç©¨Ğ)õvÓ¹œ˜ÿ<|ô®Ú¦o†eíå­0¼®¶Ù`s¼rÆÕ]»cëgpü.Ãé@"4½¶á„÷íã]åÂ³çÚ>©â=c$·»5,À=n—ø°02X’Œ#Wß}¶ñq×aCoce ásnÛÓ;8yr£ÌFqÚŸVÇª¢œ[„&#Î³î×Û:Ú„gÎ¶>w€9«,½²R_™ÙA½±·ıü›w‚Íyëéô(·01O	TrXƒÈµá²ºÎ~Û†SÃÓsMİí-N 7»0İ¬.KoJcdØèlëÄ3;x7ø-~Ñ±¡şÛW†Ïh"@œ®wş1§Ï¯>şLdY9oİûÒ˜{²ëÚûàğ‹éqÃÕÆ«Í·G0X\Ó~…?ÙàfÖÓ×~mùÂfbµZz½¢·kxè æªÖ“¦NĞºÕòšğ×O@-Ù±Ï9¸"¾¥¶¢¢Öl(SV5æôbPDµ5Ÿ¼|Âk·¿ÚCæ!îUøê|³ø%{¸ÑrY¤¤:¾¹µ¦º¹9®sÕKû¡ß3»n´ƒ{÷Ds}×Ğ­¿wŒK8=ôÛ/‚NÄVjÕ¤ğ>vioÜ\»»t˜ŞR;Çì—ºD‡msc‚€–Ö×±şqßA3¸«ØÇR*:„£+É“©Uğ¼…ıv	†±ai¡ç¶élĞ·Îñû'ğ fŞk-ô*îtŸöjÕ³p§Š±óÕfÜ•áãgä7™^BT%‰>u_úïËZø€‚TƒšÜ³gaFç°>@’ì„–°Á`^KA…y §ù8hVum„5ÆÄèá*KEu¿OãÆMn±¾aÂè m¨aµ“=æ1õà—âJ8ú)®„ëmÇ¯üY	r\	U‘5ŠÎß+áèÿ_	n¸o×ƒÃF/¡°¸gd[yr¸ğ·•d”J%À/B¯÷Y=0Û®–p]`öû$¾\‹³ğÚÿY»¸NU¶Q^íÅ ÛÍFI¿ít¸ÁrªúQÇzVí7ĞôÃâÎ\˜îvPŒÈqø±ÚĞÄáƒ]§e#à4¨èì9ß) §R0p)üš!ÈŒå>9Ç81ˆV­
-ø†ÀğãĞî™ğ%¯Ÿ5ßÂ7G`x2£Íî¥*²¬ 4??·ÒX‘y¾ªX)d¦Õciò”Teª*3á®&¹>'¥œ èoÇ?zÜ§kî²àçÏìh)|ƒ«.uW§|”Æ†ëáöÏ¾ì¹òXûà-CñÁ¡‚Èedòöªt^ïw­7õä¢ûêş‹W/¢ÈÍACÏdNÅÓ×ç—áíGâÛ387á"ø)÷¨ÉªM½ßãvR«İ÷l‰I4Ö†
-¢+“Ìt¯T%„ÄôàQ}ß°p¸¯~\§S†%-‰ÕŠ² +Åyzs¸®ëÜÌOö^Xâ&ˆQÆÆ°dğúîo{P×¸„)Ãââ„ÑÑRå.Ù¸ ²ÁyĞlğøÃfp¾¤£`
-wíÀF×ÇÜöÂv´äüø ®{ÁF»?à"=êá7ãLÕE_|Ä‚£ÙÁ÷è¹Ğ›]òsóŒİŸñRÊ]z’˜XH‡ôlÅOÏÏ,jíÕ«û=»¼M-Ø¿yCb²±:ZY#/I ”D¥‰Ëî=¹İpú”pèxÕEpÜVùœ
-t¯A“ªÆ?|6ÒöC¬ö/aşs;Ú}t3ItnŠ­ŞˆØèŠØ Í+Vøtœ“]Åì«Ï¾†8}ë'ˆHĞ‹]„p´‡\VO¡ ÔÃ}vj–BöïXáù\rº¨ÑfV•·cÅ2-ÑF{Ù ‡İ<ééäæ¢)SVN™JÿIn”‘
-endstream
-endobj
-520 0 obj
-<<
-/Filter /FlateDecode
-/Subtype /Type1C
-/Length 1432
->>
-stream
-xœ}”{LWÅï0ÌÌº]ñÅ@[q–ZtWQYñtU.ê".U0¢X‰Ñ‚ÔGxøh±ºêØÖÆŠ/”ÚÆ>H›ª‰4‘ˆº•©
-5X«®4ÖÄÛÚªßµß6ô²P1şÑ¿f23÷7çœ{¾+à "‚´¬xÙ²¶›(Ö[`A,BÔ1‚U>ë%éQ·{#äš0°Çãn7»“ Aè¡ºßyoéÂÂ‚ÈaCƒ"Óh€@HØ¸ä”Ôñœ'MN£éS¦NseLÏœá&¤/y“D‘~¤?±;@’h2ˆ&CHq¡$–#ÃÉ2’Ä‘p.Š79%˜…i‚.xƒ¢‚rƒÖÕı#öç‹Uâƒà˜àO‚[¤$©@ª‘îı½2„íÓ°6	»Áu˜-²OÃŒc˜WŠ•1Æï•r(¸§¼ëÔöS;jMàwälŸ½k¶ÉIåÏà€Šf¹ê§ª{oìM¬J¬cj'Ï îİ†X‘•ÀUoI½PyeÏYCo2=¶ph¸–~¥P,?…j·¢gÕ¸ş´BÈo¿k.J±îÃ3ê„)‹ÓµPV-7ƒœç°ò_¬¹Ìn¦	_ß…ÇTd¥•êÊœÒœUÙº	U„ƒ
-J#ôƒnG¬+?liü©ÌÜ•Uáæ¯Ç¢Œ±˜„ãÀŒ éÌ™Š=§­ÍÌK…>hNà@¸®BR"„a²†ïvÈÌ’ÁÕVH·&¬Vq µ£][Ä<õ2ô;‰&ìİNZÚæüé˜D!…‹+	ƒpêÄR(³Ë 'u¡æB¾Ó€p|;[yq)Hw`
-_[ÄÊUşU2½ä÷p\‰1†SºuPºqÊb§Æğ8M¨¾ÏF‰l,SœEoã(¥dCñÆî;Ô¯B((Wy,İY_^m}»#–¬@,R –1ĞCbı™m»ë¬° CØWîSáÚm¨(ˆ‹yÎ˜MÏã"Ì‡Eí÷~‹B¶á‚"ÈÇ"W‡©¶Ta‰OdYaÚ˜l†?„‚ÍïA[à“5¬‰
-,r¤È"aÊ^Ç†û%şı©Ñóòvîœ¯¥*Ç?8Q~R7Áğı½;÷ë²ÛJûq˜‘¡à\Øñ°Zò¶é©—17H°! îœß“Ñ®n«[±Qzxèã¹‹lIû6•1Ï¹çn:ü|¼N‘múÏzœ’ˆDğH8¬Ãx2S¸Y¾…_JWe“6ûK\T~N¸wqÂûÌË·†òE1›Ìböé ¤qÂğd˜é_*]g^¹=›–4aÿ¯¬'Ÿ¢õpQ[
-LÄQ8:hÇW1…;İ©`×bÃ¢—`<ZĞRñì‡°€å &Dk2|ğ=g•²,¬}kPÒğÃ~/0(P™ÎäCbİ¨Úcóâµ,Ør[¾ÜTg}YÏ>ªºvf~1ëØï§kÀ¦?1½$.²)ÄVTè›+´ús›
-M©,SıkÀ·TøÅG‡Š¬2Ì˜¥`,oª©»¤ßyº¢¹zˆ†‹_œÛ,ÃX¬’\,WkÖm¬¬—/\[ß©øª÷ys`°ªƒ›«t7]lØ^wìØºò£ÚLã‘2cwfÅtİdsÌå“uìaMM(Î˜7o¯àYŠ’â-»°ºA7ıæ“ÒYÂÃäÇÁ~^¢òöyÍÃpã
-ôò{ÆQ(3’yé{:;«~ÉF²ÈvšNÏâCeXYâıWİº¥Á¼\9|®~S°Oì0ä›'Ğ[ƒ–@«Ø#ÊOêl¨E7Ä ÁM¯(höOG3›.]iën­mçö]~á§xÈšílnÅ;!x›Œã·)Ú¼ƒ+ZÍÚºƒy­¯hf%Ô^héx¦…LnµX´åŸÛ[µîG´Zºò/íBtL
-endstream
-endobj
-521 0 obj
-<<
-/Filter /FlateDecode
-/Subtype /Type1C
-/Length 189
->>
-stream
-xœcd`ab`ddd-*©È1H3şaú!ÃÜİıãÒÉ¬İ<Ìİ<,G¾‹	İ¼ÃS€‰‘QP4,µ¨83?OÁXÏ@GÁ=À¬Q›¤‚EóWßOîùßç3~ßv˜ùÇ¥ï•¢‡W|/ş]ö»"ø{ÅïÊÃß+Ùù*çşp˜ù=}ÛïÔ~v9ãÎÿ¹ä
-–LùÏ-ÇÅšÏÃ	“ZÆöŸ‡,#'¸2ô?/ TADÔ
-endstream
-endobj
-522 0 obj
-<<
-/Filter /FlateDecode
-/Subtype /Type1C
-/Length 391
->>
-stream
-xœ5ÍKA ÅgtÓ>¶O*Š2ç)„Y—0¢¡C`‡:uÜlÊ%×µİÑÅ%Ô²Š$ÙŠ‹ èRÄûW:ö/ì,»‡éğxïÁŞƒ€ó ¡?ØŞ™şÅi6Ù¤‡¼Ô	Øö@å½”çŞ˜È:´öû­İÀA(ç*—q9[PÄƒA¡dÍÇb‹³h!¡5	+bRÈ „@RXH«¤Ñ¶œ1) ĞrŠìÒÜœ¦iAR#²r°EšHRh«XÉã=´.gÚ$ŒÚï"m‹ËR6G°‚òV2i¬ªø('¤ 0À+¼ ^¹°ÁÎúì†¥›ğ›Y^{ÆÒG´Ù,P=è~úôÕ´}¶ '`Z‘'öŞl£‹ìgÄ¸¾¹¦·F¹^<-UÏ«Sî—s¯—Ï*´<NKµÊı	ûrîÆî*—ôŠvõºQ¯Öô› Û´.:XÍÕÚcyzt?|Çùÿ1õÅ^}ö9†ßì6{¦º¹Ñı"ße>ğ|K½ ümxŸ^
-endstream
-endobj
-523 0 obj
-<<
-/Filter /FlateDecode
-/Subtype /Type1C
-/Length 318
->>
-stream
-xœ=KÃ@ @ïš4Åë8©í-j?\ÚŠp«B·ØMÀ$%½z­ÅI¸I% ‰]mué¢ÿ¢»?ä®d±vy¼·=ä€*Z­^*şÛ¶Ø€b3&¶$V™bñgªÄTù“­ñ«U~¹Ì/V€¡İ¹×œvß5[AÙF•ªÕò.Ú/«èØÂ®ÙĞmTÓ‰-Ìâ;“>Ê„´
-Ji^·:yÇmåv5‰ê¸ƒİ[ÜD'MĞ©na4_ËÏ©9V»K°‹jN»6  î  ‚„ò™xHMß*ïü{ÌB(âcIìñ»u>Tü€…ay™hÈGŠÏJYÏKG£h”ğzŒÒ€ù>+Åc½0dŸNuB{åöóã@‰®_ÉÉb:)—Cuağ¤ª“P]àí¶uC
-endstream
-endobj
-xref
-0 524
-0000000000 65535 f
-0000000015 00000 n
-0000000379 00000 n
-0000000455 00000 n
-0000000512 00000 n
-0000001329 00000 n
-0000003470 00000 n
-0000000157 00000 n
-0000005106 00000 n
-0000006343 00000 n
-0000007052 00000 n
-0000007266 00000 n
-0000007376 00000 n
-0000007410 00000 n
-0000007561 00000 n
-0000007701 00000 n
-0000007841 00000 n
-0000008040 00000 n
-0000008239 00000 n
-0000008438 00000 n
-0000008637 00000 n
-0000008836 00000 n
-0000009034 00000 n
-0000009234 00000 n
-0000009431 00000 n
-0000009627 00000 n
-0000009823 00000 n
-0000010021 00000 n
-0000010221 00000 n
-0000010419 00000 n
-0000010617 00000 n
-0000010815 00000 n
-0000011011 00000 n
-0000011215 00000 n
-0000011411 00000 n
-0000011609 00000 n
-0000011807 00000 n
-0000012011 00000 n
-0000012207 00000 n
-0000012407 00000 n
-0000012605 00000 n
-0000012803 00000 n
-0000012999 00000 n
-0000013198 00000 n
-0000013395 00000 n
-0000013593 00000 n
-0000013791 00000 n
-0000013989 00000 n
-0000014187 00000 n
-0000014383 00000 n
-0000014583 00000 n
-0000014781 00000 n
-0000014977 00000 n
-0000015175 00000 n
-0000015371 00000 n
-0000015571 00000 n
-0000015767 00000 n
-0000015965 00000 n
-0000016161 00000 n
-0000016359 00000 n
-0000016555 00000 n
-0000016754 00000 n
-0000016953 00000 n
-0000017151 00000 n
-0000017349 00000 n
-0000017547 00000 n
-0000017745 00000 n
-0000017941 00000 n
-0000018141 00000 n
-0000018339 00000 n
-0000018535 00000 n
-0000018733 00000 n
-0000018929 00000 n
-0000019129 00000 n
-0000019325 00000 n
-0000019521 00000 n
-0000019719 00000 n
-0000019915 00000 n
-0000020114 00000 n
-0000020312 00000 n
-0000020510 00000 n
-0000020708 00000 n
-0000020906 00000 n
-0000021106 00000 n
-0000021304 00000 n
-0000021502 00000 n
-0000021698 00000 n
-0000021898 00000 n
-0000022094 00000 n
-0000022290 00000 n
-0000022486 00000 n
-0000022684 00000 n
-0000022882 00000 n
-0000023080 00000 n
-0000023280 00000 n
-0000023478 00000 n
-0000023678 00000 n
-0000023876 00000 n
-0000024072 00000 n
-0000024268 00000 n
-0000024468 00000 n
-0000024665 00000 n
-0000024864 00000 n
-0000025061 00000 n
-0000025258 00000 n
-0000025458 00000 n
-0000025657 00000 n
-0000025856 00000 n
-0000026055 00000 n
-0000026254 00000 n
-0000026455 00000 n
-0000026654 00000 n
-0000026851 00000 n
-0000027056 00000 n
-0000027253 00000 n
-0000027454 00000 n
-0000027651 00000 n
-0000027850 00000 n
-0000028047 00000 n
-0000028244 00000 n
-0000028444 00000 n
-0000028643 00000 n
-0000028842 00000 n
-0000029043 00000 n
-0000029242 00000 n
-0000029447 00000 n
-0000029644 00000 n
-0000029841 00000 n
-0000030038 00000 n
-0000030237 00000 n
-0000030436 00000 n
-0000030637 00000 n
-0000030838 00000 n
-0000031037 00000 n
-0000031234 00000 n
-0000031439 00000 n
-0000031636 00000 n
-0000031833 00000 n
-0000032032 00000 n
-0000032229 00000 n
-0000032429 00000 n
-0000032628 00000 n
-0000032829 00000 n
-0000033028 00000 n
-0000033233 00000 n
-0000033430 00000 n
-0000033631 00000 n
-0000033828 00000 n
-0000034025 00000 n
-0000034222 00000 n
-0000034421 00000 n
-0000034620 00000 n
-0000034821 00000 n
-0000035020 00000 n
-0000035217 00000 n
-0000035422 00000 n
-0000035619 00000 n
-0000035816 00000 n
-0000036015 00000 n
-0000036212 00000 n
-0000036411 00000 n
-0000036610 00000 n
-0000036809 00000 n
-0000037010 00000 n
-0000037215 00000 n
-0000037412 00000 n
-0000037609 00000 n
-0000037808 00000 n
-0000038007 00000 n
-0000038208 00000 n
-0000038407 00000 n
-0000038612 00000 n
-0000038809 00000 n
-0000039006 00000 n
-0000039206 00000 n
-0000039405 00000 n
-0000039604 00000 n
-0000039805 00000 n
-0000040004 00000 n
-0000040209 00000 n
-0000040406 00000 n
-0000040603 00000 n
-0000040800 00000 n
-0000040997 00000 n
-0000041196 00000 n
-0000041395 00000 n
-0000041594 00000 n
-0000041793 00000 n
-0000041998 00000 n
-0000042195 00000 n
-0000042394 00000 n
-0000042593 00000 n
-0000042792 00000 n
-0000042993 00000 n
-0000043192 00000 n
-0000043397 00000 n
-0000043594 00000 n
-0000043791 00000 n
-0000043988 00000 n
-0000044185 00000 n
-0000044384 00000 n
-0000044583 00000 n
-0000044784 00000 n
-0000044983 00000 n
-0000045188 00000 n
-0000045385 00000 n
-0000045582 00000 n
-0000045781 00000 n
-0000045980 00000 n
-0000046185 00000 n
-0000046384 00000 n
-0000046583 00000 n
-0000046788 00000 n
-0000046987 00000 n
-0000047192 00000 n
-0000047391 00000 n
-0000047590 00000 n
-0000047789 00000 n
-0000047986 00000 n
-0000048191 00000 n
-0000048388 00000 n
-0000048585 00000 n
-0000048782 00000 n
-0000048981 00000 n
-0000049186 00000 n
-0000049385 00000 n
-0000049582 00000 n
-0000049787 00000 n
-0000049984 00000 n
-0000050181 00000 n
-0000050378 00000 n
-0000050583 00000 n
-0000050780 00000 n
-0000050979 00000 n
-0000051184 00000 n
-0000051383 00000 n
-0000051582 00000 n
-0000051787 00000 n
-0000051984 00000 n
-0000052183 00000 n
-0000052388 00000 n
-0000052587 00000 n
-0000052786 00000 n
-0000052991 00000 n
-0000053190 00000 n
-0000053389 00000 n
-0000053586 00000 n
-0000053783 00000 n
-0000053982 00000 n
-0000054187 00000 n
-0000054386 00000 n
-0000054591 00000 n
-0000054796 00000 n
-0000055001 00000 n
-0000055200 00000 n
-0000055405 00000 n
-0000055610 00000 n
-0000055809 00000 n
-0000056008 00000 n
-0000056213 00000 n
-0000056410 00000 n
-0000056615 00000 n
-0000056814 00000 n
-0000057019 00000 n
-0000057216 00000 n
-0000057421 00000 n
-0000057620 00000 n
-0000057819 00000 n
-0000058024 00000 n
-0000058221 00000 n
-0000063720 00000 n
-0000063755 00000 n
-0000063868 00000 n
-0000064009 00000 n
-0000064150 00000 n
-0000064350 00000 n
-0000064549 00000 n
-0000064754 00000 n
-0000064953 00000 n
-0000065152 00000 n
-0000065357 00000 n
-0000065554 00000 n
-0000065751 00000 n
-0000065951 00000 n
-0000066156 00000 n
-0000066355 00000 n
-0000066554 00000 n
-0000066759 00000 n
-0000066956 00000 n
-0000067161 00000 n
-0000067360 00000 n
-0000067565 00000 n
-0000067762 00000 n
-0000067959 00000 n
-0000068164 00000 n
-0000068363 00000 n
-0000068562 00000 n
-0000068759 00000 n
-0000068964 00000 n
-0000069161 00000 n
-0000069366 00000 n
-0000069565 00000 n
-0000069764 00000 n
-0000069969 00000 n
-0000070166 00000 n
-0000070371 00000 n
-0000070570 00000 n
-0000070767 00000 n
-0000070966 00000 n
-0000071163 00000 n
-0000071368 00000 n
-0000071573 00000 n
-0000071772 00000 n
-0000071977 00000 n
-0000072176 00000 n
-0000072381 00000 n
-0000072586 00000 n
-0000072785 00000 n
-0000072984 00000 n
-0000073189 00000 n
-0000073386 00000 n
-0000073591 00000 n
-0000073790 00000 n
-0000073989 00000 n
-0000074194 00000 n
-0000074399 00000 n
-0000074604 00000 n
-0000074809 00000 n
-0000075008 00000 n
-0000075213 00000 n
-0000075418 00000 n
-0000075617 00000 n
-0000075822 00000 n
-0000076027 00000 n
-0000076232 00000 n
-0000076437 00000 n
-0000076642 00000 n
-0000076847 00000 n
-0000077046 00000 n
-0000077251 00000 n
-0000077450 00000 n
-0000077655 00000 n
-0000077860 00000 n
-0000078061 00000 n
-0000078260 00000 n
-0000078465 00000 n
-0000078670 00000 n
-0000078871 00000 n
-0000079070 00000 n
-0000079275 00000 n
-0000079480 00000 n
-0000079679 00000 n
-0000079884 00000 n
-0000080089 00000 n
-0000080288 00000 n
-0000080493 00000 n
-0000080692 00000 n
-0000080897 00000 n
-0000081094 00000 n
-0000081291 00000 n
-0000081490 00000 n
-0000081689 00000 n
-0000081894 00000 n
-0000082093 00000 n
-0000082298 00000 n
-0000082503 00000 n
-0000082708 00000 n
-0000082905 00000 n
-0000083110 00000 n
-0000083309 00000 n
-0000083514 00000 n
-0000083713 00000 n
-0000083914 00000 n
-0000084119 00000 n
-0000084316 00000 n
-0000084521 00000 n
-0000084722 00000 n
-0000084927 00000 n
-0000085124 00000 n
-0000085329 00000 n
-0000085528 00000 n
-0000085733 00000 n
-0000085938 00000 n
-0000086143 00000 n
-0000086348 00000 n
-0000086553 00000 n
-0000086750 00000 n
-0000086947 00000 n
-0000087146 00000 n
-0000087351 00000 n
-0000087556 00000 n
-0000087761 00000 n
-0000087958 00000 n
-0000088163 00000 n
-0000088368 00000 n
-0000088573 00000 n
-0000088778 00000 n
-0000088975 00000 n
-0000089174 00000 n
-0000089379 00000 n
-0000089584 00000 n
-0000089781 00000 n
-0000089980 00000 n
-0000090185 00000 n
-0000094639 00000 n
-0000094674 00000 n
-0000094787 00000 n
-0000094928 00000 n
-0000095069 00000 n
-0000095269 00000 n
-0000095474 00000 n
-0000095673 00000 n
-0000095870 00000 n
-0000096075 00000 n
-0000096280 00000 n
-0000096477 00000 n
-0000096676 00000 n
-0000096881 00000 n
-0000097021 00000 n
-0000097220 00000 n
-0000097425 00000 n
-0000097622 00000 n
-0000097821 00000 n
-0000098026 00000 n
-0000098225 00000 n
-0000098430 00000 n
-0000098570 00000 n
-0000098775 00000 n
-0000098972 00000 n
-0000099177 00000 n
-0000099382 00000 n
-0000099522 00000 n
-0000099721 00000 n
-0000099920 00000 n
-0000100125 00000 n
-0000100322 00000 n
-0000100527 00000 n
-0000100724 00000 n
-0000100864 00000 n
-0000101063 00000 n
-0000101268 00000 n
-0000101465 00000 n
-0000101662 00000 n
-0000101802 00000 n
-0000102001 00000 n
-0000102200 00000 n
-0000102397 00000 n
-0000102596 00000 n
-0000102801 00000 n
-0000102998 00000 n
-0000103203 00000 n
-0000103400 00000 n
-0000103540 00000 n
-0000103737 00000 n
-0000103877 00000 n
-0000104076 00000 n
-0000104273 00000 n
-0000104470 00000 n
-0000104667 00000 n
-0000104807 00000 n
-0000105006 00000 n
-0000105203 00000 n
-0000105400 00000 n
-0000105597 00000 n
-0000105794 00000 n
-0000105934 00000 n
-0000106133 00000 n
-0000106332 00000 n
-0000106531 00000 n
-0000106730 00000 n
-0000106927 00000 n
-0000107126 00000 n
-0000111438 00000 n
-0000111473 00000 n
-0000111627 00000 n
-0000111768 00000 n
-0000111909 00000 n
-0000112109 00000 n
-0000116159 00000 n
-0000116248 00000 n
-0000116295 00000 n
-0000116704 00000 n
-0000117092 00000 n
-0000117366 00000 n
-0000117753 00000 n
-0000117911 00000 n
-0000118197 00000 n
-0000118355 00000 n
-0000118898 00000 n
-0000119148 00000 n
-0000119314 00000 n
-0000119514 00000 n
-0000119681 00000 n
-0000119958 00000 n
-0000120120 00000 n
-0000120425 00000 n
-0000120520 00000 n
-0000120785 00000 n
-0000120917 00000 n
-0000121254 00000 n
-0000121475 00000 n
-0000121570 00000 n
-0000121818 00000 n
-0000121919 00000 n
-0000122140 00000 n
-0000122235 00000 n
-0000122731 00000 n
-0000122822 00000 n
-0000123090 00000 n
-0000123313 00000 n
-0000123551 00000 n
-0000123659 00000 n
-0000123887 00000 n
-0000124518 00000 n
-0000126406 00000 n
-0000127386 00000 n
-0000130328 00000 n
-0000130580 00000 n
-0000131158 00000 n
-0000131410 00000 n
-0000138787 00000 n
-0000140313 00000 n
-0000140595 00000 n
-0000141079 00000 n
-trailer
-<<
-/Size 524
-/Root 1 0 R
-/Info 7 0 R
-/ID [<8B665A5895A7634197E93EAB9F04CE43> <8B665A5895A7634197E93EAB9F04CE43>]
->>
-startxref
-141490
-%%EOF
