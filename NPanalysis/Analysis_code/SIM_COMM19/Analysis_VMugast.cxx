@@ -150,7 +150,7 @@ void Analysis::TreatEvent() {
 		}
 
 		else
-			Energy = Si_E_M2;
+			Energy= Si_E_M2;
 
 
 		// Evaluate energy using the thickness //// REPEATED???
@@ -185,7 +185,12 @@ void Analysis::TreatEvent() {
 		// Part 1 : Impact Angle
 		ThetaMGSurface = 0;
 		ThetaNormalTarget = 0;
-		TVector3 HitDirection = MG -> GetPositionOfInteraction(countMugast) - BeamImpact ;
+
+		TVector3 Inter(MG->PosX[countMugast],MG->PosY[countMugast],MG->PosZ[countMugast]);
+
+		//TVector3 HitDirection = MG -> GetPositionOfInteraction(countMugast) - BeamImpact ;
+		TVector3 HitDirection = Inter - BeamImpact ;
+
 
 		//ThetaLab.push_back( HitDirection.Angle( BeamDirection ));
 		ThetaLab.push_back(HitDirection.Theta());
@@ -197,11 +202,14 @@ void Analysis::TreatEvent() {
     //if(MG->TelescopeNumber[countMugast]==11) cout<<"X-Y-Z --->>> "<<X.back()<<" "<<Y.back()<<" "<<Z.back()<<" "<<endl<<endl;
 		ThetaMGSurface = HitDirection.Angle( TVector3(0,0,1) ) ;
 		ThetaNormalTarget = HitDirection.Angle( TVector3(0,0,1) ) ;
-
+		ThetaMGSurface = HitDirection.Angle(- MG -> GetTelescopeNormal(countMugast) );
 
 		// Part 2 : Impact Energy
 		Energy = 0;
 		Energy = MG->GetEnergyDeposit(countMugast);
+		Energy = LightAl.EvaluateInitialEnergy( Energy ,0.4*micrometer , ThetaMGSurface);
+
+
 		// Target Correction
 		ELab.push_back( LightTarget.EvaluateInitialEnergy( Energy ,TargetThickness*0.5-zImpact, ThetaNormalTarget));
 

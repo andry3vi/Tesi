@@ -5,8 +5,8 @@
 // found on file: run256_wrong_det_pos.root
 //////////////////////////////////////////////////////////
 
-#ifndef Analyzer_h
-#define Analyzer_h
+#ifndef Analyzer_GCutGate_h
+#define Analyzer_GCutGate_h
 
 #include <TROOT.h>
 #include <TChain.h>
@@ -29,7 +29,7 @@
 #include <vector>
 
 
-class Analyzer : public TSelector {
+class Analyzer_GCutGate : public TSelector {
 public :
    TTreeReader     fReader;  //!the tree reader
    TTree          *fChain = 0;   //!pointer to the analyzed TTree or TChain
@@ -82,6 +82,11 @@ public :
    TFile * CutG_p_file;
    TCutG * CutG_p;
 
+   TFile * CutG_12p_file;
+   TCutG * CutG_12p;
+   TFile * CutG_52p_file;
+   TCutG * CutG_52p;
+
 
    bool enable_ExGate;
    double * gs_Ex;
@@ -91,8 +96,8 @@ public :
    int CountExFS;
    //------------//
 
-   Analyzer(TTree * /*tree*/ =0) { }
-   virtual ~Analyzer() { }
+   Analyzer_GCutGate(TTree * /*tree*/ =0) { }
+   virtual ~Analyzer_GCutGate() { }
    virtual Int_t   Version() const { return 2; }
    virtual void    Begin(TTree *tree);
    virtual void    SlaveBegin(TTree *tree);
@@ -108,14 +113,14 @@ public :
    virtual void    Terminate();
    void printProgBar( float);
 
-   ClassDef(Analyzer,0);
+   ClassDef(Analyzer_GCutGate,0);
 
 };
 
 #endif
 
-#ifdef Analyzer_cxx
-void Analyzer::Init(TTree *tree)
+#ifdef Analyzer_GCutGate_cxx
+void Analyzer_GCutGate::Init(TTree *tree)
 {
    // The Init() function is called when the selector needs to initialize
    // a new tree or chain. Typically here the reader is initialized.
@@ -127,7 +132,7 @@ void Analyzer::Init(TTree *tree)
    fReader.SetTree(tree);
 }
 
-Bool_t Analyzer::Notify()
+Bool_t Analyzer_GCutGate::Notify()
 {
    // The Notify() function is called when a new file is opened. This
    // can be either for a new TTree in a TChain or when when a new TTree
@@ -139,4 +144,4 @@ Bool_t Analyzer::Notify()
 }
 
 
-#endif // #ifdef Analyzer_cxx
+#endif // #ifdef Analyzer_GCutGate_cxx

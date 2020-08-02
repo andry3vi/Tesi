@@ -1,5 +1,5 @@
-#define Analyzer_cxx
-// The class definition in Analyzer.h has been generated automatically
+#define Analyzer_GCutGate_cxx
+// The class definition in Analyzer_GCutGate.h has been generated automatically
 // by the ROOT utility TTree::MakeSelector(). This class is derived
 // from the ROOT class TSelector. For more information on the TSelector
 // framework see $ROOTSYS/README/README.SELECTOR or the ROOT User Manual.
@@ -19,13 +19,13 @@
 //
 // To use this file, try the following session on your Tree T:
 //
-// root> T->Process("Analyzer.C")
-// root> T->Process("Analyzer.C","some options")
-// root> T->Process("Analyzer.C+")
+// root> T->Process("Analyzer_GCutGate.C")
+// root> T->Process("Analyzer_GCutGate.C","some options")
+// root> T->Process("Analyzer_GCutGate.C+")
 //
 
 
-#include "Analyzer.h"
+#include "Analyzer_GCutGate.h"
 #include <TH2.h>
 #include <TStyle.h>
 
@@ -34,7 +34,7 @@
 #include <iostream>
 #include <string>
 
-void Analyzer::Begin(TTree * /*tree*/)
+void Analyzer_GCutGate::Begin(TTree * /*tree*/)
 {
 	// The Begin() function is called at the start of the query.
 	// When running with PROOF Begin() is only called on the client.
@@ -67,7 +67,7 @@ void Analyzer::Begin(TTree * /*tree*/)
 	ELabThetaLSelected->GetXaxis()->SetTitle("#theta_{LAB} [deg]");
 	ELabThetaLSelected->GetYaxis()->SetTitle("LAB Energy [MeV]");
 
-	ExDist = new TH1D("Ex","Ex",1000,-10,10);
+	ExDist = new TH1D("Ex","Ex",500,-10,15);
 	ExDist->GetXaxis()->SetTitle("Ex [MeV]");
 	ExDist->GetYaxis()->SetTitle("Counts");
 
@@ -100,6 +100,19 @@ void Analyzer::Begin(TTree * /*tree*/)
 	if(enable_cut){
 		CutG_p_file = new TFile("../Data/cutg/EdE_CutG_p.root");
 		CutG_p = (TCutG *)CutG_p_file->Get("EdE_p");
+
+		// CutG_12p_file = new TFile("../Data/cutg/Cut_sim_12p.root");
+		// CutG_12p      = (TCutG *) CutG_12p_file->Get("Cut_sim_12p");
+		// CutG_52p_file = new TFile("../Data/cutg/Cut_sim_52p.root");
+		// CutG_52p			= (TCutG *) CutG_52p_file->Get("Cut_sim_52p");
+		CutG_12p_file = new TFile("../Data/cutg/Cut_12p.root");
+		CutG_12p      = (TCutG *) CutG_12p_file->Get("Cut_12p");
+		CutG_52p_file = new TFile("../Data/cutg/Cut_52p.root");
+		CutG_52p			= (TCutG *) CutG_52p_file->Get("Cut_52p");
+		CutG_12p->SetLineWidth(2);
+		CutG_52p->SetLineWidth(2);
+		CutG_12p->SetLineColor(4);//BLUE
+		CutG_52p->SetLineColor(2);//RED
 	}
 	//--------------------------------//
 	//------------Ex Gate-------------//
@@ -171,7 +184,7 @@ void Analyzer::Begin(TTree * /*tree*/)
 
 }
 
-void Analyzer::SlaveBegin(TTree * /*tree*/)
+void Analyzer_GCutGate::SlaveBegin(TTree * /*tree*/)
 {
 	// The SlaveBegin() function is called after the Begin() function.
 	// When running with PROOF SlaveBegin() is called on each slave server.
@@ -181,7 +194,7 @@ void Analyzer::SlaveBegin(TTree * /*tree*/)
 
 }
 
-Bool_t Analyzer::Process(Long64_t entry)
+Bool_t Analyzer_GCutGate::Process(Long64_t entry)
 {
 	// The Process() function is called for each entry in the tree (or possibly
 	// keyed object in the case of PROOF) to be processed. The entry argument
@@ -252,9 +265,9 @@ Bool_t Analyzer::Process(Long64_t entry)
 				ThetaCMDist_fs->Fill(ThetaCM[i]);
 			}
 //		        //Fill must2 proton in Ex dist
-//			if(CutG_p->IsInside(E[i],dE[i])){
-//				ExDist->Fill(Ex[i]);
-//			}
+			if(CutG_p->IsInside(E[i],dE[i])){
+				ExDist->Fill(Ex[i]);
+			}
 
 		}
 		else{
@@ -272,14 +285,17 @@ Bool_t Analyzer::Process(Long64_t entry)
 			ELabThetaL->Fill(ThetaLab[i],ELab[i]);
 			ExDist->Fill(Ex[i]);
 			//GS check
-			if(Ex[i]>gs_Ex[0] && Ex[i]<gs_Ex[1]){
+			//if(Ex[i]>gs_Ex[0] && Ex[i]<gs_Ex[1]){ //old gate
+			if(CutG_52p->IsInside(ThetaLab[i], Ex[i])){
 				ELabThetaLSelected->Fill(ThetaLab[i],ELab[i]);
 				ThetaLDist_gs->Fill(ThetaLab[i]);
 				ThetaCMDist_gs->Fill(ThetaCM[i]);
 				CountExGS++;
 			}
+
 			//1S check
-			if(Ex[i]>fs_Ex[0] && Ex[i]<fs_Ex[1]){
+			//if(Ex[i]>fs_Ex[0] && Ex[i]<fs_Ex[1]){ //old gate
+			if(CutG_12p->IsInside(ThetaLab[i], Ex[i])){
 				ELabThetaLSelected->Fill(ThetaLab[i],ELab[i]);
 				ThetaLDist_fs->Fill(ThetaLab[i]);
 				ThetaCMDist_fs->Fill(ThetaCM[i]);
@@ -302,7 +318,7 @@ Bool_t Analyzer::Process(Long64_t entry)
 	return kTRUE;
 }
 
-void Analyzer::SlaveTerminate()
+void Analyzer_GCutGate::SlaveTerminate()
 {
 	// The SlaveTerminate() function is called after all entries or objects
 	// have been processed. When running with PROOF SlaveTerminate() is called
@@ -310,69 +326,48 @@ void Analyzer::SlaveTerminate()
 
 }
 
-void Analyzer::Terminate()
+void Analyzer_GCutGate::Terminate()
 {
 	// The Terminate() function is the last function to be called during
 	// a query. It always runs on the client, it can be used to present
 	// the results graphically or save the results to file.
+	TCanvas *C0 = new TCanvas("C0","C0");
+	C0->Divide(2,2);
 
-	TCanvas *C3 = new TCanvas("C3","C3");
-	C3->cd();
-	ThetaLDist_gs->Draw();
-	ThetaLDist_fs->Draw("SAME");
+	C0->cd(1);
+	ExDist->SetStats(kFALSE);
+  ExDist->Draw();
 
-	TCanvas *C1 = new TCanvas("C1","C1");
-	//C1->Divide(1,2);
-
-	C1->cd(1);
-	//impactM2->Draw("col");
-	//nbPmultM2->Draw();
-	//EdE_M2->Draw("col");
-	//if(enable_cut) CutG_p->Draw("same");
-
-	//C1->cd(2);
-	//impactMG->Draw("col");
-	//nbPmultMG->Draw();
-				ExDist->Draw();
-        //TSpectrum * back = new TSpectrum();
-	      //TH1D * ExDist_back = (TH1D *) back->Background(ExDist,30);
-        //ExDist_back->Draw("SAME");
-        //ExDist->Add(ExDist_back,-1);
-        //cout<<endl<<endl<<"Proton 1/2+ counts ->"<<ExDist->Integral(ExDist->FindBin(fs_Ex[0]), ExDist->FindBin(fs_Ex[1]))<<endl;
-
-	TCanvas *C2 = new TCanvas("C2","C2");
-	C2->Divide(1,2);
-//
-	C2->cd(1);
+	C0->cd(2);
 	ELabThetaL->SetStats(kFALSE);
 	ELabThetaL->Draw("col");
-
 	kineGS->Draw("SAME");
 	kineFS->Draw("SAME");
 
-// std::cout<<endl<<endl<<"Counts inside GS peak and FS peak ->"<<CountExGS<<" - "<<CountExFS<<endl;
-//
-// //	//gStyle->SetPalette(53,0);
-// ////	if(enable_cut){
-// ////		ELabThetaLSelected->SetStats(kFALSE);
-// ////		ELabThetaLSelected->SetMarkerColor(2);
-// ////		ELabThetaLSelected->SetMarkerStyle(3);
-// ////		ELabThetaLSelected->SetMarkerSize(0.2);
-// ////		ELabThetaLSelected->Draw("SAME");
-// ////	}
- 	C2->cd(2);
-	//   ThetaLDist_gs->Draw();
-	//   ThetaLDist_fs->Draw("same");
-	ThetaCMDist_gs->Draw();
-	ThetaCMDist_fs->Draw("same");
+	C0->cd(3);
+	ThetaCMDist_gs->SetStats(kFALSE);
+	ThetaCMDist_fs->SetStats(kFALSE);
+	ThetaCMDist_fs->Draw();
+	ThetaCMDist_gs->Draw("same");
 
-	TCanvas *C4 = new TCanvas("C4","C4");
+	ThetaCMDist_gs->SaveAs("ADistCMgs.root");
+	ThetaCMDist_fs->SaveAs("ADistCMfs.root");
+
+	C0->cd(4);
 	ExThetaL->SetStats(kFALSE);
 	ExThetaL->Draw("col");
+	if(enable_cut){
+		CutG_12p->Draw("same");
+		CutG_52p->Draw("same");
+	}
+	TCanvas *C1 = new TCanvas("C1","C1");
+	ExThetaL->SetStats(kFALSE);
+	ExThetaL->Draw("col");
+
 }
 
 
-void Analyzer::printProgBar( float percent){
+void Analyzer_GCutGate::printProgBar( float percent){
 	std::string bar;
 
 	for(int i = 0; i < 50; i++){

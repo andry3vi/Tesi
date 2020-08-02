@@ -48,7 +48,7 @@ void Analysis::Init() {
 	myReaction.ReadConfigurationFile(NPOptionManager::getInstance()->GetReactionFile());
 	OriginalBeamEnergy = myReaction.GetBeamEnergy();
 	// target thickness
-	TargetThickness = m_DetectorManager->GetTargetThickness() - 0.004264688621; //value computed with optimization
+	TargetThickness = m_DetectorManager->GetTargetThickness(); //- 0.004264688621; //value computed with optimization
 	string TargetMaterial = m_DetectorManager->GetTargetMaterial();
 	// Cryo target case
 	WindowsThickness = 0;//m_DetectorManager->GetWindowsThickness();
@@ -183,43 +183,52 @@ void Analysis::TreatEvent() {
 
 	for(unsigned int countMugast = 0 ; countMugast < MG->DSSD_E.size() ; countMugast++){
 
-		// Part 1 : Impact Angle
-		ThetaMGSurface = 0;
-		ThetaNormalTarget = 0;
-		TVector3 HitDirection = MG -> GetPositionOfInteraction(countMugast) - BeamImpact ;
+				// Part 1 : Impact Angle
+				ThetaMGSurface = 0;
+				ThetaNormalTarget = 0;
 
-		//ThetaLab.push_back( HitDirection.Angle( BeamDirection ));
-		ThetaLab.push_back( HitDirection.Theta());
-                PhiLab.push_back(HitDirection.Phi());
+				TVector3 Inter(MG->PosX[countMugast],MG->PosY[countMugast],MG->PosZ[countMugast]);
 
-		X.push_back(  MG -> GetPositionOfInteraction(countMugast).X());
-		Y.push_back(  MG -> GetPositionOfInteraction(countMugast).Y());
-		Z.push_back(  MG -> GetPositionOfInteraction(countMugast).Z());
-
-		ThetaMGSurface = HitDirection.Angle( TVector3(0,0,1) ) ;
-		ThetaNormalTarget = HitDirection.Angle( TVector3(0,0,1) ) ;
+				//TVector3 HitDirection = MG -> GetPositionOfInteraction(countMugast) - BeamImpact ;
+				TVector3 HitDirection = Inter - BeamImpact ;
 
 
-		// Part 2 : Impact Energy
-		Energy = 0;
-		Energy = MG->GetEnergyDeposit(countMugast);
-		// Target Correction
-		ELab.push_back( LightTarget.EvaluateInitialEnergy( Energy ,TargetThickness*0.5-zImpact, ThetaNormalTarget));
+				//ThetaLab.push_back( HitDirection.Angle( BeamDirection ));
+				ThetaLab.push_back(HitDirection.Theta());
+		      PhiLab.push_back(HitDirection.Phi());
 
-		/************************************************/
-		// Part 3 : Excitation Energy Calculation
-		Ex.push_back( myReaction.ReconstructRelativistic( ELab.back() , ThetaLab.back()));
+				X.push_back(  MG -> GetPositionOfInteraction(countMugast).X());
+				Y.push_back(  MG -> GetPositionOfInteraction(countMugast).Y());
+				Z.push_back(  MG -> GetPositionOfInteraction(countMugast).Z());
+		    //if(MG->TelescopeNumber[countMugast]==11) cout<<"X-Y-Z --->>> "<<X.back()<<" "<<Y.back()<<" "<<Z.back()<<" "<<endl<<endl;
+				ThetaMGSurface = HitDirection.Angle( TVector3(0,0,1) ) ;
+				ThetaNormalTarget = HitDirection.Angle( TVector3(0,0,1) ) ;
+				ThetaMGSurface = HitDirection.Angle(- MG -> GetTelescopeNormal(countMugast) );
 
-		/************************************************/
+				// Part 2 : Impact Energy
+				Energy = 0;
+				Energy = MG->GetEnergyDeposit(countMugast);
+				Energy = LightAl.EvaluateInitialEnergy( Energy ,0.4*micrometer , ThetaMGSurface);
 
-		/************************************************/
-		// Part 4 : Theta CM Calculation
-		ThetaCM.push_back( myReaction.EnergyLabToThetaCM( ELab.back() , ThetaLab.back()));
-		/************************************************/
 
-		ThetaLab.back()=ThetaLab.back()/deg;
-		PhiLab.back()=PhiLab.back()/deg;
-		ThetaCM.back()=ThetaCM.back()/deg;
+				// Target Correction
+				ELab.push_back( LightTarget.EvaluateInitialEnergy( Energy ,TargetThickness*0.5-zImpact, ThetaNormalTarget));
+
+				/************************************************/
+				// Part 3 : Excitation Energy Calculation
+				Ex.push_back( myReaction.ReconstructRelativistic( ELab.back() , ThetaLab.back()));
+
+				/************************************************/
+
+				/************************************************/
+				// Part 4 : Theta CM Calculation
+				ThetaCM.push_back( myReaction.EnergyLabToThetaCM( ELab.back() , ThetaLab.back()));
+				/************************************************/
+
+				ThetaLab.back()=ThetaLab.back()/deg;
+				PhiLab.back()=PhiLab.back()/deg;
+				ThetaCM.back()=ThetaCM.back()/deg;
+
 
                 double thetah_tmp;
                 double Eh_tmp;

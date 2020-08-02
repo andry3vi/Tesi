@@ -1,6 +1,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Target
- THICKNESS= 12.52 micrometer
+ THICKNESS=  9.434 micrometer
  ANGLE= 0 deg
  RADIUS=        24 mm
  MATERIAL= CD2
@@ -33,7 +33,7 @@ Target
 %%%%%%% Telescope 1 %%%%%%%
 M2Telescope
  X128_Y128=  115.88  9.61  154.54 mm
- X128_Y1=  104.8  101.89  125.09 mm 
+ X128_Y1=  104.8  101.89  125.09 mm
  X1_Y1=  14.55  102.4  160.63 mm
  X1_Y128=  25.63  10.12  190.08 mm
  SI=  1.00
@@ -79,7 +79,7 @@ M2Telescope
 
 %%%%%%%%%%%%%----MUGAST---%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Mugast Trapezoid 
+Mugast Trapezoid
  DetectorNumber= 7
  X128_Y128=  40.99  21.69  -98.21 mm
  X1_Y128=  23.34  39.63  -98.04 mm
@@ -88,7 +88,7 @@ Mugast Trapezoid
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Mugast Trapezoid 
+Mugast Trapezoid
  DetectorNumber= 3
  X128_Y128=  -48.05  -23.23  -95.05 mm
  X1_Y128=  -24.83  -39.35  -99.33 mm
@@ -96,7 +96,7 @@ Mugast Trapezoid
  X128_Y1=  -122.86  -54.55  -32.41 mm
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Mugast Trapezoid      
+Mugast Trapezoid
  DetectorNumber= 1
  X128_Y128=  -23.05  42.83  -99.66 mm
  X1_Y128=  -40.74  25.21  -99.65 mm
@@ -104,7 +104,7 @@ Mugast Trapezoid
  X128_Y1=  -55.66  123.17  -32.55 mm
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Mugast Trapezoid      
+Mugast Trapezoid
  DetectorNumber= 5
  X128_Y128=  21.68  -41.48  -100.19 mm
  X1_Y128=  39.55  -23.81  -100.11 mm
@@ -112,7 +112,7 @@ Mugast Trapezoid
  X128_Y1=  54.81  -121.7  -33.12 mm
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Mugast Trapezoid      
+Mugast Trapezoid
  DetectorNumber= 4
  X128_Y128=  -15.11  -44.73  -99.25 mm
  X1_Y128=  10.11  -44.71  -99.35 mm
@@ -120,7 +120,7 @@ Mugast Trapezoid
  X128_Y1=  -48.18  -125.07  -32.45 mm
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Mugast Square      
+Mugast Square
  DetectorNumber= 10
  X128_Y128=  111.36  97.74  89.82 mm
  X1_Y128=  147.47  9.83  90 mm
@@ -128,7 +128,7 @@ Mugast Square
  X128_Y1=  111.63  97.7  -2.02 mm
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Mugast Square 
+Mugast Square
  DetectorNumber= 9
  X128_Y128= 107.49 -95.88 0.0 mm
  X1_Y128=  143.81 -8.21 0.0 mm
@@ -136,13 +136,13 @@ Mugast Square
  X128_Y1= 107.49 -95.88 91.7 mm
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Mugast Annular  
+Mugast Annular
  DetectorNumber= 11
  Center=  -0.3 1 -126.9 mm
 
 
-ModularLeaf 
+ModularLeaf
  DefaultValue= -5000
  Leafs= GATCONF_MASTER GATCONF_SLAVE1 GATCONF_SLAVE2 CONFDEC_AGATA CONFDEC_VAMOS DATATRIG_CATS1 DATATRIG_CATS2 TMG_MUGAST_HF TCATS_MUGAST_HF TVAMOS_MUGAST_HF EVAMOS_AGATA ECATS_AGATA E_AGATA T_Cats1_2 T_Si_Cats1 T_Si_Vamos T_Si_Agata T_Vamos_Cats1 T_Cats1_HF T_Fag_HF T_Vamos_Agata PLQ_L PLQ_R T_Agata_HF Xf
- X= TMG_MUGAST_HF        TMG_MUGAST_HF         TCATS_MUGAST_HF     EVAMOS_AGATA      EVAMOS_AGATA        ECATS_AGATA   T_Cats1_2  T_Vamos_Agata 
+ X= TMG_MUGAST_HF        TMG_MUGAST_HF         TCATS_MUGAST_HF     EVAMOS_AGATA      EVAMOS_AGATA        ECATS_AGATA   T_Cats1_2  T_Vamos_Agata
  Y= TVAMOS_MUGAST_HF    TCATS_MUGAST_HF        TVAMOS_MUGAST_HF       E_AGATA        ECATS_AGATA           E_AGATA     T_Fag_HF   T_Fag_HF
