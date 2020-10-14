@@ -46,7 +46,8 @@ class Analyzer : public TSelector {
 //		TTreeReaderArray<Float_t> trackT = {fReader, "trackT"};
 //              TTreeReaderArray<Int_t> trackCrystalID = {fReader, "trackCrystalID"};
 		TTreeReaderValue<Int_t> nbAdd = {fReader, "nbAdd"};
-//		TTreeReaderValue<ULong64_t> TSHit = {fReader, "TSHit"};
+    TTreeReaderArray<Int_t> AddId = {fReader, "AddId"};
+		//TTreeReaderValue<ULong64_t> TSHit = {fReader, "TSHit"};
 		TTreeReaderArray<Float_t> AddE = {fReader, "AddE"};
 		TTreeReaderArray<Float_t> AddX = {fReader, "AddX"};
 		TTreeReaderArray<Float_t> AddY = {fReader, "AddY"};

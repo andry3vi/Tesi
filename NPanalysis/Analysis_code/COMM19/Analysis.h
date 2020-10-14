@@ -1,4 +1,4 @@
-#ifndef Analysis_h 
+#ifndef Analysis_h
 #define Analysis_h
 /*****************************************************************************
  * Copyright (C) 2009-2014    this file is part of the NPTool Project        *
@@ -39,7 +39,7 @@ class Analysis: public NPL::VAnalysis{
     Analysis();
     ~Analysis();
 
-  public: 
+  public:
     void Init();
     void TreatEvent();
     void End();
@@ -48,7 +48,7 @@ class Analysis: public NPL::VAnalysis{
   void InitInputBranch();
   void ReInitValue();
   static NPL::VAnalysis* Construct();
- 
+
   private:
   std::vector<double> Ex;
   std::vector<double> ELab;
@@ -60,10 +60,10 @@ class Analysis: public NPL::VAnalysis{
   std::vector<double> Z ;
   std::vector<double> ThetaHeavy ;
   std::vector<double> EheavyAfterTg ;
-  
+
   std::vector<double> E;
   std::vector<double> dE;
-  
+
   int nbParticleM2;
   int nbParticleMG;
 
@@ -81,8 +81,8 @@ class Analysis: public NPL::VAnalysis{
   double WindowsThickness;
   // Beam Energy
   double OriginalBeamEnergy ; // AMEV
-  double FinalBeamEnergy; 
-  
+  double FinalBeamEnergy;
+
   // intermediate variable
   TVector3 BeamDirection;
   TVector3 BeamImpact;
@@ -98,7 +98,7 @@ class Analysis: public NPL::VAnalysis{
   double ThetaGDSurface ;
 
   //Agata Branches
-  int nbTrack;  
+  int nbTrack;
 
   float *trackE= new float(100);
   float *trackX1= new float(100);
@@ -108,16 +108,23 @@ class Analysis: public NPL::VAnalysis{
   int *trackCrystalID = new int(100);
   unsigned long long int TStrack;
 
-  ULong64_t LTS; 
-  
+  ULong64_t LTS;
+
   int nbAdd;
   unsigned long long int TSHit;
   float AddE[100] ;
   float AddX[100] ;
   float AddY[100] ;
   float AddZ[100] ;
+  int *AddId = new int(100);
+
 
   double dTheta;
+  //VAMOS Branches
+  Float_t *IC = new Float_t(12);
+  Float_t MW_Nr;
+  UShort_t T_FPMW_HF;
+  UShort_t TVAMOS_MUGAST_HF;
 
   // Branches and detectors
   TMust2Physics* M2;

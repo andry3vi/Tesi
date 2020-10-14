@@ -106,7 +106,10 @@ void Analysis::TreatEvent() {
 	//Particle multiplicity
 	nbParticleM2 =  M2->Si_E.size();
 	nbParticleMG =  MG->DSSD_E.size();
-
+	// cout<<"IC[2] -> "<<IC[2]<<endl;
+	// cout<<"T_FPMW_HF -> "<<T_FPMW_HF<<endl;
+	// cout<<"TVAMOS_MUGAST_HF -> "<<TVAMOS_MUGAST_HF<<endl;
+		// cout<<"MW_Nr -> "<<MW_Nr<<endl;
 	//////////////////////////// LOOP on MUST2 //////////////////
 	for(unsigned int countMust2 = 0 ; countMust2 < M2->Si_E.size() ; countMust2++){
 		/************************************************/
@@ -243,6 +246,7 @@ void Analysis::TreatEvent() {
 		EheavyAfterTg.push_back(HeavyCD2.Slow(Eh_tmp,TargetThickness*0.5,thetah_tmp));
 
 
+
 	}//end loop Mugast
 
 	////////////////////////////////////////////////////////////////////////////
@@ -370,6 +374,13 @@ void Analysis::InitOutputBranch() {
 	RootOutput::getInstance()->GetTree()->Branch("AddX",AddX,"AddX[nbAdd]/F");
 	RootOutput::getInstance()->GetTree()->Branch("AddY",AddY,"AddY[nbAdd]/F");
 	RootOutput::getInstance()->GetTree()->Branch("AddZ",AddZ,"AddZ[nbAdd]/F");
+	RootOutput::getInstance()->GetTree()->Branch("AddId",AddId,"AddId[nbAdd]/I");
+
+	//VAMOS
+	RootOutput::getInstance()->GetTree()->Branch("IC",IC,"IC[12]/F");
+	RootOutput::getInstance()->GetTree()->Branch("MW_Nr",&MW_Nr,"MW_Nr/F");
+	RootOutput::getInstance()->GetTree()->Branch("T_FPMW_HF",&T_FPMW_HF,"T_FPMW_HF/s");
+	RootOutput::getInstance()->GetTree()->Branch("TVAMOS_MUGAST_HF",&TVAMOS_MUGAST_HF,"TVAMOS_MUGAST_HF/s");
 }
 
 
@@ -391,6 +402,11 @@ void Analysis::InitInputBranch(){
 	RootInput::getInstance()->GetChain()->SetBranchAddress("AddX",AddX);
 	RootInput::getInstance()->GetChain()->SetBranchAddress("AddY",AddY);
 	RootInput::getInstance()->GetChain()->SetBranchAddress("AddZ",AddZ);
+	RootInput::getInstance()->GetChain()->SetBranchAddress("AddId",AddId);
+	RootInput::getInstance()->GetChain()->SetBranchAddress("IC",IC);
+	RootInput::getInstance()->GetChain()->SetBranchAddress("T_FPMW_HF",&T_FPMW_HF);
+	RootInput::getInstance()->GetChain()->SetBranchAddress("TVAMOS_MUGAST_HF",&TVAMOS_MUGAST_HF);
+	RootInput::getInstance()->GetChain()->SetBranchAddress("MW_Nr",&MW_Nr);
 }
 ////////////////////////////////////////////////////////////////////////////////
 void Analysis::ReInitValue(){

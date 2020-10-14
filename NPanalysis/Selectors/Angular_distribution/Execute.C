@@ -9,7 +9,10 @@ void Execute(){
 	//chain->Add("../Data/old/run256_wElThHeavy.root");
 	//chain->Add("../Data/old/run257_wElThHeavy.root");
 	//chain->Add("/home/andrea/Repository/nptool/Outputs/Analysis/analyzed_tmp.root");
-	chain->Process("Analyzer_GCutGate.C");
+	//chain->Process("Analyzer_GCutGate.C");
+
+
+	chain->Process("Analyzer_NTupleOut.C");
 	return;
 
 }

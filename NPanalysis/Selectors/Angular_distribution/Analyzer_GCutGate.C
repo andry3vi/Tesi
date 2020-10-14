@@ -67,7 +67,7 @@ void Analyzer_GCutGate::Begin(TTree * /*tree*/)
 	ELabThetaLSelected->GetXaxis()->SetTitle("#theta_{LAB} [deg]");
 	ELabThetaLSelected->GetYaxis()->SetTitle("LAB Energy [MeV]");
 
-	ExDist = new TH1D("Ex","Ex",500,-10,15);
+	ExDist = new TH1D("Ex","Ex",2000,-13,7);
 	ExDist->GetXaxis()->SetTitle("Ex [MeV]");
 	ExDist->GetYaxis()->SetTitle("Counts");
 
@@ -266,7 +266,7 @@ Bool_t Analyzer_GCutGate::Process(Long64_t entry)
 			}
 //		        //Fill must2 proton in Ex dist
 			if(CutG_p->IsInside(E[i],dE[i])){
-				ExDist->Fill(Ex[i]);
+				//ExDist->Fill(Ex[i]);
 			}
 
 		}
