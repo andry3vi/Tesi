@@ -352,6 +352,7 @@ void Analysis::InitOutputBranch() {
 
 	RootOutput::getInstance()->GetTree()->Branch("Run",&Run,"Run/I");
 	RootOutput::getInstance()->GetTree()->Branch("LTS",&LTS,"LTS/l");
+	RootOutput::getInstance()->GetTree()->Branch("VTS",&VTS,"VTS/l");
 
 	// Agata
 	// Time stamp of the agata trigger
@@ -370,6 +371,7 @@ void Analysis::InitOutputBranch() {
 	//Agata Addback
 	RootOutput::getInstance()->GetTree()->Branch("nbAdd",&nbAdd,"nbAdd/I");
 	RootOutput::getInstance()->GetTree()->Branch("TSHit",&TSHit,"TSHit/l");
+	RootOutput::getInstance()->GetTree()->Branch("AddTS",AddTS,"AddTS[nbAdd]/l");
 	RootOutput::getInstance()->GetTree()->Branch("AddE",AddE,"AddE[nbAdd]/F");
 	RootOutput::getInstance()->GetTree()->Branch("AddX",AddX,"AddX[nbAdd]/F");
 	RootOutput::getInstance()->GetTree()->Branch("AddY",AddY,"AddY[nbAdd]/F");
@@ -387,6 +389,8 @@ void Analysis::InitOutputBranch() {
 ////////////////////////////////////////////////////////////////////////////////
 void Analysis::InitInputBranch(){
 	//Agata
+
+	RootInput::getInstance()->GetChain()->SetBranchAddress("VTS",&VTS);
 	RootInput::getInstance()->GetChain()->SetBranchAddress("LTS",&LTS);
 	RootInput::getInstance()->GetChain()->SetBranchAddress("TStrack",&TStrack);
 	RootInput::getInstance()->GetChain()->SetBranchAddress("nbTrack",&nbTrack);
@@ -398,6 +402,7 @@ void Analysis::InitInputBranch(){
 	RootInput::getInstance()->GetChain()->SetBranchAddress("trackCrystalID",trackCrystalID);
 	RootInput::getInstance()->GetChain()->SetBranchAddress("TSHit",&TSHit);
 	RootInput::getInstance()->GetChain()->SetBranchAddress("nbAdd",&nbAdd);
+	RootInput::getInstance()->GetChain()->SetBranchAddress("AddTS",AddTS);
 	RootInput::getInstance()->GetChain()->SetBranchAddress("AddE",AddE);
 	RootInput::getInstance()->GetChain()->SetBranchAddress("AddX",AddX);
 	RootInput::getInstance()->GetChain()->SetBranchAddress("AddY",AddY);

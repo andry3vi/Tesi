@@ -167,28 +167,31 @@ Bool_t Analyzer_NTupleOut::Process(Long64_t entry)
 	}
 
 	for(size_t i= 0; i<*nbAdd; i++){
-		//double Beta = TMath::Sqrt(EheavyAfterTg[0]*EheavyAfterTg[0]+2*EheavyAfterTg[0]*Mass)/(EheavyAfterTg[0]+Mass); // Beta reconstructed with kinematics
-		double Beta =0.101;  //beta averaged fixed
+		if((*VTS-AddTS[i])>= -185 && (*VTS-AddTS[i])< -172 ){
+			//double Beta = TMath::Sqrt(EheavyAfterTg[0]*EheavyAfterTg[0]+2*EheavyAfterTg[0]*Mass)/(EheavyAfterTg[0]+Mass); // Beta reconstructed with kinematics
+			double Beta = 0.101;  //beta averaged fixed
 
-		//TVector3 BetaVector(-1.0*Beta*sin(ThetaHeavy[0]*M_PI/180.0)*cos(PhiLab[0]*M_PI/180.0),-1.0*Beta*sin(ThetaHeavy[0]*M_PI/180.0)*sin(PhiLab[0]*M_PI/180.0),Beta*cos(ThetaHeavy[0]*M_PI/180.0));
-		TVector3 BetaVector(0,0,Beta);//heavy direction z axis
+			//TVector3 BetaVector(-1.0*Beta*sin(ThetaHeavy[0]*M_PI/180.0)*cos((PhiLab[0]+125)*M_PI/180.0),-1.0*Beta*sin(ThetaHeavy[0]*M_PI/180.0)*sin((PhiLab[0]+125)*M_PI/180.0),Beta*cos(ThetaHeavy[0]*M_PI/180.0));
+			//Vector3 BetaVector(-1.0*Beta*sin(ThetaHeavy[0]*M_PI/180.0)*cos(PhiLab[0]*M_PI/180.0),-1.0*Beta*sin(ThetaHeavy[0]*M_PI/180.0)*sin(PhiLab[0]*M_PI/180.0),Beta*cos(ThetaHeavy[0]*M_PI/180.0));
+			TVector3 BetaVector(0,0,Beta);//heavy direction z axis
 
-		TVector3 EmissionPosition(0,0,0);//decay postion at target center
+			TVector3 EmissionPosition(0,0,0);//decay postion at target center
 
-		//AddBack
-		double EgammaAdd = (AddE[i]*m[AddId[i]]+q[AddId[i]])/1000; //MeV converted
-		TVector3 HitPositionAdd(AddX[i],AddY[i],AddZ[i]+51);
-		TVector3 GammaDirectionAdd = HitPositionAdd - EmissionPosition;
-		TVector3 GammaVersorAdd = GammaDirectionAdd.Unit();
-		TLorentzVector GammaAdd;
-		GammaAdd.SetPx(EgammaAdd*GammaVersorAdd.X());
-		GammaAdd.SetPy(EgammaAdd*GammaVersorAdd.Y());
-		GammaAdd.SetPz(EgammaAdd*GammaVersorAdd.Z());
-		GammaAdd.SetE(EgammaAdd);
-		GammaAdd.Boost(-1.0*BetaVector);
+			//AddBack
+			double EgammaAdd = (AddE[i]*m[AddId[i]]+q[AddId[i]])/1000; //MeV converted
+			TVector3 HitPositionAdd(AddX[i],AddY[i],AddZ[i]+51);
+			TVector3 GammaDirectionAdd = HitPositionAdd - EmissionPosition;
+			TVector3 GammaVersorAdd = GammaDirectionAdd.Unit();
+			TLorentzVector GammaAdd;
+			GammaAdd.SetPx(EgammaAdd*GammaVersorAdd.X());
+			GammaAdd.SetPy(EgammaAdd*GammaVersorAdd.Y());
+			GammaAdd.SetPz(EgammaAdd*GammaVersorAdd.Z());
+			GammaAdd.SetE(EgammaAdd);
+			GammaAdd.Boost(-1.0*BetaVector);
 
-		AddE_histo->Fill(GammaAdd.Energy()*1000);
-		AddEVsAddId->Fill(AddId[i],EgammaAdd*1000);
+			AddE_histo->Fill(GammaAdd.Energy()*1000);
+			AddEVsAddId->Fill(AddId[i],EgammaAdd*1000);
+		}
 
 	}
 
@@ -197,7 +200,8 @@ Bool_t Analyzer_NTupleOut::Process(Long64_t entry)
 		double Beta = TMath::Sqrt(EheavyAfterTg[0]*EheavyAfterTg[0]+2*EheavyAfterTg[0]*Mass)/(EheavyAfterTg[0]+Mass); // Beta reconstructed with kinematics
 		//double Beta =0.101;  //beta averaged fixed
 
-		TVector3 BetaVector(-1.0*Beta*sin(ThetaHeavy[0]*M_PI/180.0)*cos(PhiLab[0]*M_PI/180.0),-1.0*Beta*sin(ThetaHeavy[0]*M_PI/180.0)*sin(PhiLab[0]*M_PI/180.0),Beta*cos(ThetaHeavy[0]*M_PI/180.0));
+		// TVector3 BetaVector(-1.0*Beta*sin(ThetaHeavy[0]*M_PI/180.0)*cos(PhiLab[0]*M_PI/180.0),-1.0*Beta*sin(ThetaHeavy[0]*M_PI/180.0)*sin(PhiLab[0]*M_PI/180.0),Beta*cos(ThetaHeavy[0]*M_PI/180.0));
+		TVector3 BetaVector(-1.0*Beta*sin(ThetaHeavy[0]*M_PI/180.0)*cos((PhiLab[0]+125)*M_PI/180.0),-1.0*Beta*sin(ThetaHeavy[0]*M_PI/180.0)*sin((PhiLab[0]+125)*M_PI/180.0),Beta*cos(ThetaHeavy[0]*M_PI/180.0));
 		//TVector3 BetaVector(0,0,Beta);//heavy direction z axis
 
 		TVector3 EmissionPosition(0,0,0);//decay postion at target center

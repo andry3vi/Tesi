@@ -109,9 +109,11 @@ class Analysis: public NPL::VAnalysis{
   unsigned long long int TStrack;
 
   ULong64_t LTS;
+  ULong64_t VTS;
 
   int nbAdd;
   unsigned long long int TSHit;
+  ULong64_t AddTS[100];
   float AddE[100] ;
   float AddX[100] ;
   float AddY[100] ;

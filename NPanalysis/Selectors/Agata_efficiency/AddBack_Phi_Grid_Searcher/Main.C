@@ -138,7 +138,7 @@ std::vector<double> Scanner(string filename){
 		else {
 			RES_sig.push_back(0);
 		}
-		Centroid->SetPoint(i,BetaScan[i],MEAN.back());
+		Centroid->SetPoint(i,BetaScan[i],pow(2,MEAN.back()-870.7));
 	        Centroid->SetPointError(i,0,MEAN_sig.back());
 	}
 
@@ -177,7 +177,7 @@ std::vector<double> Scanner(string filename){
 	result.push_back(y_min*linfit->Eval(x_min));
 
 	Centroid->GetXaxis()->SetTitle("#Phi rotation [deg]");
-	Centroid->GetYaxis()->SetTitle("Peak position [keV]");
+	Centroid->GetYaxis()->SetTitle("Peak position residual [keV]");
         Centroid->Draw();
 
         filename.erase(0,8);

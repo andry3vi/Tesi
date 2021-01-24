@@ -60,6 +60,7 @@ public :
    TTreeReaderArray<double> ThetaHeavy = {fReader, "ThetaHeavy"};
    TTreeReaderArray<double> EheavyAfterTg = {fReader, "EheavyAfterTg"};
    TTreeReaderValue<ULong64_t> LTS = {fReader, "LTS"};
+   TTreeReaderValue<ULong64_t> VTS = {fReader, "VTS"};
    TTreeReaderValue<ULong64_t> TStrack = {fReader, "TStrack"};
    TTreeReaderValue<Int_t> nbTrack = {fReader, "nbTrack"};
    TTreeReaderArray<Float_t> trackE = {fReader, "trackE"};
@@ -69,6 +70,7 @@ public :
    TTreeReaderArray<Float_t> trackT = {fReader, "trackT"};
    TTreeReaderValue<Int_t> nbAdd = {fReader, "nbAdd"};
    TTreeReaderValue<ULong64_t> TSHit = {fReader, "TSHit"};
+   TTreeReaderArray<ULong64_t> AddTS = {fReader, "AddTS"};
    TTreeReaderArray<Float_t> AddE = {fReader, "AddE"};
    TTreeReaderArray<Int_t> AddId = {fReader, "AddId"};
    TTreeReaderArray<Float_t> AddX = {fReader, "AddX"};
